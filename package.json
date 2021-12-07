@@ -1,6 +1,7 @@
 {
-    "name": "crypto",
-    "version": "0.1.0",
+    "name": "Crypto",
+    "license": "MIT",
+    "version": "1.0.0",
     "homepage": "https://lukasz298punto.github.io/crypto/",
     "private": false,
     "dependencies": {
@@ -11,10 +12,13 @@
         "@types/node": "^12.0.0",
         "@types/react": "^17.0.0",
         "@types/react-dom": "^17.0.0",
+        "axios": "^0.24.0",
         "gh-pages": "^3.2.3",
         "react": "^17.0.2",
         "react-dom": "^17.0.2",
+        "react-query": "^3.34.0",
         "react-scripts": "4.0.3",
+        "rsuite": "^5.2.4",
         "typescript": "^4.1.2",
         "web-vitals": "^1.0.1"
     },
@@ -31,6 +35,7 @@
             "react-app/jest"
         ]
     },
+    "proxy": "https://rest-sandbox.coinapi.io",
     "browserslist": {
         "production": [
             ">0.2%",
