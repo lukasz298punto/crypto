@@ -70,13 +70,13 @@
       </Hosts>
       <Resources>
          <bt:Images>
-            <bt:Image id="Icon.16x16" DefaultValue="https://lukasz298punto.github.io/crypto//assets/icon-16.png" />
-            <bt:Image id="Icon.32x32" DefaultValue="https://lukasz298punto.github.io/crypto//assets/icon-32.png" />
-            <bt:Image id="Icon.80x80" DefaultValue="https://lukasz298punto.github.io/crypto//assets/icon-80.png" />
+            <bt:Image id="Icon.16x16" DefaultValue="https://lukasz298punto.github.io/crypto/assets/icon-16.png" />
+            <bt:Image id="Icon.32x32" DefaultValue="https://lukasz298punto.github.io/crypto/assets/icon-32.png" />
+            <bt:Image id="Icon.80x80" DefaultValue="https://lukasz298punto.github.io/crypto/assets/icon-80.png" />
          </bt:Images>
          <bt:Urls>
-            <bt:Url id="Commands.Url" DefaultValue="https://lukasz298punto.github.io/crypto//commands.html" />
-            <bt:Url id="Taskpane.Url" DefaultValue="https://lukasz298punto.github.io/crypto//taskpane.html" />
+            <bt:Url id="Commands.Url" DefaultValue="https://lukasz298punto.github.io/crypto/commands.html" />
+            <bt:Url id="Taskpane.Url" DefaultValue="https://lukasz298punto.github.io/crypto/taskpane.html" />
          </bt:Urls>
          <bt:ShortStrings>
             <bt:String id="GroupLabel" DefaultValue="Model Group" />
