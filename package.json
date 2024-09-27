@@ -6,22 +6,26 @@
     "type": "module",
     "scripts": {
         "build": "tsc -b && vite build",
-        "deploy": "pnpm build & gh-pages -d build",
+        "deploy": "pnpm build & gh-pages -d dist",
         "dev": "vite",
         "format": "prettier --write .",
         "lint": "eslint .",
         "preview": "vite preview"
     },
     "dependencies": {
+        "@loadable/component": "^5.16.4",
         "clsx": "^2.1.1",
         "gh-pages": "^6.1.1",
         "lodash": "^4.17.21",
         "react": "^18.3.1",
         "react-dom": "^18.3.1",
-        "react-use": "^17.5.1"
+        "react-router-dom": "^6.26.2",
+        "react-use": "^17.5.1",
+        "vite-tsconfig-paths": "^5.0.1"
     },
     "devDependencies": {
         "@eslint/js": "^9.9.0",
+        "@types/loadable__component": "^5.13.9",
         "@types/lodash": "^4.17.7",
         "@types/react": "^18.3.3",
         "@types/react-dom": "^18.3.0",
@@ -45,4 +49,3 @@
         "vite-plugin-pwa": "^0.20.5"
     }
 }
-
