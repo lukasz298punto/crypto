@@ -21,16 +21,16 @@ function Finish() {
     }, []);
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen text-center">
-            <h1 className="text-4xl font-bold text-gray-800 mb-4">
+        <div className="flex h-screen flex-col items-center justify-center text-center">
+            <h1 className="mb-4 text-4xl font-bold text-gray-800">
                 Sesja zakończona
             </h1>
-            <p className="text-lg text-gray-600 mb-8">
+            <p className="mb-8 text-lg text-gray-600">
                 Gratulacje! Ukończyłeś wszystkie fiszki w tej sesji.
             </p>
             <button
                 onClick={handleRestart}
-                className="px-6 py-3 bg-blue-500 text-white font-semibold rounded-lg hover:bg-blue-700"
+                className="rounded-lg bg-blue-500 px-6 py-3 font-semibold text-white hover:bg-blue-700"
             >
                 Rozpocznij nową sesję (enter)
             </button>

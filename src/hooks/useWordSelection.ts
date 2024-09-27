@@ -1,10 +1,13 @@
-import { useCallback, useState } from 'react';
-import { useLocalStorage } from 'react-use';
-import inputArray from '../data/words';
+/* eslint-disable lodash/prefer-lodash-method */
 import { removeDiacritics } from '../utility/common';
+import { useCallback, useState } from 'react';
+import inputArray from '../data/words.json';
+import { useLocalStorage } from 'react-use';
 
+// eslint-disable-next-line lodash/prefer-lodash-method
 const words = inputArray.reduce(
-    (acc, curr) => {
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
+    (acc: any, curr: any) => {
         // Dodaj słowo do sekcji 'english'
         acc.english.push({
             word: curr.english,

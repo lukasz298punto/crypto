@@ -52,21 +52,24 @@ const Flashcards: React.FC<FlashcardsProps> = ({ language }) => {
     };
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen space-y-4">
+        <div className="flex h-screen flex-col items-center justify-center space-y-4">
             <h2 className="text-2xl font-bold">
                 Fiszki ({language === 'english' ? 'Angielski' : 'Polski'})
             </h2>
-            <Word word={currentWord.word} language={language} />
+            <Word
+                word={currentWord.word}
+                language={language}
+            />
             {!showAnswer ? (
                 <button
                     onClick={handleCheck}
-                    className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                    className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
                 >
                     Sprawdź (enter)
                 </button>
             ) : (
                 <>
-                    <p className="text-xl text-gray-700 flex gap-2 !mt-6 bg-blue-200">
+                    <p className="!mt-6 flex gap-2 bg-blue-200 text-xl text-gray-700">
                         Odpowiedź:{' '}
                         <Word
                             word={currentWord.translation}
@@ -79,13 +82,13 @@ const Flashcards: React.FC<FlashcardsProps> = ({ language }) => {
                     <div className="space-x-4">
                         <button
                             onClick={() => handleFeedback(true)}
-                            className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
+                            className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
                         >
                             Dobrze (1)
                         </button>
                         <button
                             onClick={() => handleFeedback(false)}
-                            className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700"
+                            className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-700"
                         >
                             Źle (2)
                         </button>

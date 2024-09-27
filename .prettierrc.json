@@ -3,5 +3,15 @@
     "singleQuote": true,
     "semi": true,
     "tabWidth": 4,
-    "bracketSpacing": true
+    "bracketSpacing": true,
+    "plugins": [
+        "prettier-plugin-sort-imports",
+        "prettier-plugin-packagejson",
+        "prettier-plugin-tailwindcss"
+    ],
+    "tailwindFunctions": ["clsx"],
+    "bracketSameLine": false,
+    "arrowParens": "always",
+    "endOfLine": "crlf",
+    "singleAttributePerLine": true
 }

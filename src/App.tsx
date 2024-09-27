@@ -1,7 +1,7 @@
-import { useState, useEffect } from 'react';
 import FlashCards from './components/FlashCards';
 import Writting from './components/Writting';
 import Speaking from './components/Speaking';
+import { useState, useEffect } from 'react';
 
 function App() {
     const [language, setLanguage] = useState<string | null>(null);
@@ -43,18 +43,18 @@ function App() {
 
     if (!language) {
         return (
-            <div className="flex flex-col items-center justify-center h-screen space-y-4">
+            <div className="flex h-screen flex-col items-center justify-center space-y-4">
                 <h2 className="text-2xl font-bold">Wybierz język:</h2>
                 <div className="space-x-4">
                     <button
                         onClick={() => setLanguage('english')}
-                        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
                     >
                         Angielski (1)
                     </button>
                     <button
                         onClick={() => setLanguage('polish')}
-                        className="px-4 py-2 bg-green-500 text-white rounded hover:bg-green-700"
+                        className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
                     >
                         Polski (2)
                     </button>
@@ -65,24 +65,24 @@ function App() {
 
     if (!mode) {
         return (
-            <div className="flex flex-col items-center justify-center h-screen space-y-4">
+            <div className="flex h-screen flex-col items-center justify-center space-y-4">
                 <h2 className="text-2xl font-bold">Wybierz tryb:</h2>
                 <div className="space-x-4">
                     <button
                         onClick={() => setMode('flashcards')}
-                        className="px-4 py-2 bg-purple-500 text-white rounded hover:bg-purple-700"
+                        className="rounded bg-purple-500 px-4 py-2 text-white hover:bg-purple-700"
                     >
                         Fiszki (1)
                     </button>
                     <button
                         onClick={() => setMode('writing')}
-                        className="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-700"
+                        className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-700"
                     >
                         Pisanie (2)
                     </button>
                     <button
                         onClick={() => setMode('speaking')}
-                        className="px-4 py-2 bg-orange-500 text-white rounded hover:bg-red-700"
+                        className="rounded bg-orange-500 px-4 py-2 text-white hover:bg-red-700"
                     >
                         Mówienie (3)
                     </button>

@@ -1,3 +1,4 @@
+/* eslint-disable lodash/prefer-lodash-method */
 export const removeDiacritics = (text: string) => {
     return text
         .normalize('NFKD') // Normalizowanie tekstu do formy NFKD (usuwa znaki diakrytyczne)

@@ -109,11 +109,15 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
     }
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen space-y-4">
+        <div className="flex h-screen flex-col items-center justify-center space-y-4">
             <h2 className="text-2xl font-bold">
                 Pisanie ({language === 'english' ? 'Angielski' : 'Polski'})
             </h2>
-            <Word word={currentWord.word} language={language} noVoice />
+            <Word
+                word={currentWord.word}
+                language={language}
+                noVoice
+            />
             {!feedback ? (
                 <>
                     <input
@@ -121,11 +125,11 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
                         type="text"
                         value={inputValue}
                         onChange={(e) => setInputValue(e.target.value)}
-                        className="px-4 py-2 border rounded w-1/2"
+                        className="w-1/2 rounded border px-4 py-2"
                     />
                     <button
                         onClick={handleSubmit}
-                        className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
                     >
                         Sprawdź (Enter)
                     </button>
@@ -133,6 +137,7 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
             ) : (
                 <div className="text-center">
                     <p
+                        // eslint-disable-next-line lodash/prefer-lodash-method
                         className={`text-xl font-bold ${feedback.startsWith('Poprawna') ? 'text-green-500' : 'text-red-500'}`}
                     >
                         {feedback}
@@ -145,7 +150,7 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
                     {showNextButton && (
                         <button
                             onClick={handleNext}
-                            className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
+                            className="mt-4 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
                         >
                             Następne słowo (Enter)
                         </button>

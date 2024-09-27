@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useCallback } from 'react';
 import { useWordSelection } from '../hooks/useWordSelection';
+import { useKeyPress } from 'react-use';
 import Finish from './Finish';
 import Word from './Word';
-import { useKeyPress } from 'react-use';
 
 // Deklaracja typu dla SpeechRecognition
 
@@ -40,7 +40,8 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
         recognition.start();
         setFeedback('Słucham...');
 
-        recognition.onresult = (event: SpeechRecognitionEvent) => {
+        // eslint-disable-next-line @typescript-eslint/no-explicit-any
+        recognition.onresult = (event: any) => {
             const transcript = event.results[0][0].transcript;
             setSpeechResult(transcript);
             isResultReceived = true;
@@ -84,7 +85,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
                 handleCheck();
             }
         }
-    }, [isEnterPressed]);
+    }, [handleCheck, handleNextWord, isEnterPressed, showNextButton]);
 
     console.log(isEnterPressed, 'isEnterPressed');
 
@@ -113,15 +114,18 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
     console.log(feedback, 'feedback');
 
     return (
-        <div className="flex flex-col items-center justify-center h-screen space-y-4">
+        <div className="flex h-screen flex-col items-center justify-center space-y-4">
             <h2 className="text-2xl font-bold">
                 Mówienie ({language === 'english' ? 'Angielski' : 'Polski'})
             </h2>
-            <Word word={currentWord.word} language={language} />
+            <Word
+                word={currentWord.word}
+                language={language}
+            />
             {!showNextButton && (
                 <button
                     onClick={handleCheck}
-                    className="px-4 py-2 bg-blue-500 text-white rounded"
+                    className="rounded bg-blue-500 px-4 py-2 text-white"
                 >
                     Sprawdź wymowę (Enter)
                 </button>
@@ -132,7 +136,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
                 </div>
             )}
             {showNextButton && (
-                <p className="text-xl text-gray-700 flex gap-2 !mt-6 bg-blue-200">
+                <p className="!mt-6 flex gap-2 bg-blue-200 text-xl text-gray-700">
                     Odpowiedź:{' '}
                     <Word
                         word={currentWord.translation}
@@ -145,7 +149,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
             {showNextButton && (
                 <button
                     onClick={handleNextWord}
-                    className="px-4 py-2 bg-green-500 text-white rounded"
+                    className="rounded bg-green-500 px-4 py-2 text-white"
                 >
                     Następne słowo (Enter)
                 </button>
