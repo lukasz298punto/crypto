@@ -1,4 +1,4 @@
 function NoMatch() {
-    return <></>;
+    return <>NoMatch</>;
 }
 export default NoMatch;

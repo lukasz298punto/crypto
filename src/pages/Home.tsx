@@ -2,6 +2,7 @@ import Flashcards from '@/components/FlashCards';
 import Writting from '@/components/Writting';
 import Speaking from '@/components/Speaking';
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
     const [language, setLanguage] = useState<string | null>(null);
@@ -43,7 +44,7 @@ export default function Home() {
 
     if (!language) {
         return (
-            <div className="flex h-screen flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-green-300">
                 <h2 className="text-2xl font-bold">Wybierz język:</h2>
                 <div className="space-x-4">
                     <button
@@ -65,7 +66,7 @@ export default function Home() {
 
     if (!mode) {
         return (
-            <div className="flex h-screen flex-col items-center justify-center space-y-4">
+            <div className="flex flex-col items-center justify-center space-y-4 bg-green-300">
                 <h2 className="text-2xl font-bold">Wybierz tryb:</h2>
                 <div className="space-x-4">
                     <button
@@ -93,6 +94,7 @@ export default function Home() {
 
     return (
         <>
+            <Link to="/language">go to </Link>
             {mode === 'flashcards' && <Flashcards language={language} />}
             {mode === 'writing' && <Writting language={language} />}
             {mode === 'speaking' && <Speaking language={language} />}
