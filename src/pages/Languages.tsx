@@ -2,6 +2,7 @@ import {
     Card,
     CardActionArea,
     CardContent,
+    Divider,
     Grid2 as Grid,
     Stack,
     Typography,
@@ -23,6 +24,7 @@ export default function Languages() {
             >
                 {t('Wybierz język')}
             </Typography>
+            <Divider />
             <Grid
                 justifyContent="center"
                 container
@@ -30,13 +32,11 @@ export default function Languages() {
             >
                 {map(availableLanguages, (tile) => (
                     <Grid
-                        size={{ xs: 12, md: 4, lg: 2 }}
+                        size={{ xs: 12, md: 4, lg: 3 }}
                         key={tile.id}
                     >
-                        <Card elevation={3}>
-                            <CardActionArea
-                                onClick={() => navigate('/study-modes')}
-                            >
+                        <Card>
+                            <CardActionArea onClick={() => navigate('/levels')}>
                                 <CardContent>
                                     <Typography
                                         variant="h5"

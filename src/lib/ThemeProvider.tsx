@@ -26,6 +26,13 @@ function ThemeProvider({ children }: Readonly<PropsWithChildren>) {
                 palette: {
                     mode,
                 },
+                components: {
+                    MuiCard: {
+                        defaultProps: {
+                            elevation: 10,
+                        },
+                    },
+                },
             }),
         [mode]
     );

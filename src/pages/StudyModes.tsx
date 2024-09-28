@@ -2,18 +2,16 @@ import {
     Card,
     CardActionArea,
     CardContent,
-    Container,
+    Divider,
     Grid2 as Grid,
     Stack,
     Typography,
 } from '@mui/material';
-import availableLanguages from '@/constants/availableLanguages';
-import { Navigate, useNavigate } from 'react-router-dom';
 import StudyMode from '@/constants/enums/studyMode';
-import ReactCountryFlag from 'react-country-flag';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useMemo } from 'react';
-import { map } from 'lodash';
+import map from 'lodash/map';
 
 export default function StudyModes() {
     const { t } = useTranslation();
@@ -44,6 +42,7 @@ export default function StudyModes() {
             >
                 {t('Wybierz tryb nauki')}
             </Typography>
+            <Divider />
             <Grid
                 justifyContent="center"
                 container
@@ -51,12 +50,12 @@ export default function StudyModes() {
             >
                 {map(modes, (mode) => (
                     <Grid
-                        size={{ xs: 12, md: 4, lg: 2 }}
+                        size={{ xs: 12, md: 4, lg: 3 }}
                         key={mode.id}
                     >
-                        <Card elevation={3}>
+                        <Card>
                             <CardActionArea
-                                onClick={() => navigate('/learning-mode')}
+                                onClick={() => navigate(`${mode.id}`)}
                             >
                                 <CardContent>
                                     <Typography

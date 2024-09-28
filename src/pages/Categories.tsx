@@ -7,31 +7,34 @@ import {
     Stack,
     Typography,
 } from '@mui/material';
+import Category from '@/constants/enums/category';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Progress from '@/components/Progress';
-import Level from '@/constants/enums/level';
 import { useMemo } from 'react';
 import map from 'lodash/map';
 
-export default function Levels() {
+export default function Categories() {
     const { t } = useTranslation();
     const navigate = useNavigate();
 
-    const levels = useMemo(() => {
+    const categories = useMemo(() => {
         return [
-            {
-                id: Level.Beginner,
-                label: t('Początkujący'),
-            },
-            {
-                id: Level.Intermediate,
-                label: t('Średniozaawansowany'),
-            },
-            {
-                id: Level.Advanced,
-                label: t('Zaawansowany'),
-            },
+            { id: Category.Verbs, label: t('Czasowniki') },
+            { id: Category.Nouns, label: t('Rzeczowniki') },
+            { id: Category.Adjectives, label: t('Przymiotniki') },
+            { id: Category.Adverbs, label: t('Przysłówki') },
+            { id: Category.Pronouns, label: t('Zaimki') },
+            { id: Category.Prepositions, label: t('Przyimki') },
+            { id: Category.Conjunctions, label: t('Spójniki') },
+            { id: Category.Articles, label: t('Rodzajniki') },
+            { id: Category.Interjections, label: t('Wykrzykniki') },
+            { id: Category.PhrasalVerbs, label: t('Phrasal Verbs') },
+            { id: Category.Idioms, label: t('Idiomy') },
+            { id: Category.Synonyms, label: t('Synonimy') },
+            { id: Category.Antonyms, label: t('Antonimy') },
+            { id: Category.Phrases, label: t('Zwroty') },
+            { id: Category.Sentences, label: t('Zdania') },
         ];
     }, [t]);
 
@@ -41,7 +44,7 @@ export default function Levels() {
                 variant="h3"
                 className="text-center font-medium"
             >
-                {t('Wybierz poziom nauki')}
+                {t('Wybierz kategorię')}
             </Typography>
             <Divider />
             <Grid
@@ -49,21 +52,21 @@ export default function Levels() {
                 container
                 spacing={2}
             >
-                {map(levels, (level) => (
+                {map(categories, (category) => (
                     <Grid
                         size={{ xs: 12, md: 4, lg: 3 }}
-                        key={level.id}
+                        key={category.id}
                     >
                         <Card>
                             <CardActionArea
-                                onClick={() => navigate(`/categories`)}
+                                onClick={() => navigate(`/${category.id}`)}
                             >
                                 <CardContent>
                                     <Typography
                                         variant="h5"
                                         className="mb-1 text-center font-medium"
                                     >
-                                        {level.label}
+                                        {category.label}
                                     </Typography>
                                     <Progress />
                                 </CardContent>
