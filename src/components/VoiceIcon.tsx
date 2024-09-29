@@ -10,9 +10,10 @@ import delay from 'lodash/delay';
 interface VoiceIconProps {
     name: string;
     keyCode: KeyCode;
+    language: string;
 }
 
-function VoiceIcon({ keyCode, name }: Readonly<VoiceIconProps>) {
+function VoiceIcon({ keyCode, name, language }: Readonly<VoiceIconProps>) {
     const [isPlaying, setIsPlaying] = useState(false);
     const { findLabelById } = useKeyCodeName();
 
@@ -21,7 +22,7 @@ function VoiceIcon({ keyCode, name }: Readonly<VoiceIconProps>) {
         if (isPlaying) {
             delay(() => {
                 const utterance = new SpeechSynthesisUtterance(name);
-                utterance.lang = 'pl-PL';
+                utterance.lang = language;
 
                 utterance.onend = () => {
                     setIsPlaying(false);
@@ -38,7 +39,7 @@ function VoiceIcon({ keyCode, name }: Readonly<VoiceIconProps>) {
         return () => {
             window.speechSynthesis.cancel();
         };
-    }, [isPlaying, name]);
+    }, [isPlaying, language, name]);
 
     return (
         <Stack

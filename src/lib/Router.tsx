@@ -43,10 +43,6 @@ const router = createHashRouter([
                                         path: '',
                                         element: <Flashcards />,
                                     },
-                                    {
-                                        path: ':wordId',
-                                        element: <Flashcards />,
-                                    },
                                 ],
                             },
                             {

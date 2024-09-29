@@ -1,9 +1,11 @@
+import { Category, Settings, Word } from '@/types/database';
 import { RxCollection, RxDatabase } from 'rxdb';
-import { Settings } from '@/types/database';
 import { createContext } from 'react';
 
-interface DatabaseCollections {
+export interface DatabaseCollections {
     settings: RxCollection<Settings>;
+    categories: RxCollection<Category>;
+    words: RxCollection<Word>;
 }
 
 export type Context = RxDatabase<DatabaseCollections> | null;

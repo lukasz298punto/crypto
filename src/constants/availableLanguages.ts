@@ -1,4 +1,3 @@
-export default [
-    { id: 'english', name: 'English' },
-    { id: 'spanish', name: 'Spanish' },
-];
+import Language from '@/constants/enums/language';
+
+export default [{ id: Language.En, name: 'English' }];

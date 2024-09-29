@@ -1,7 +1,7 @@
 import { Settings } from '@/types/database';
 import { RxJsonSchema } from 'rxdb';
 
-export const settingsSchema: RxJsonSchema<Settings> = {
+export default {
     title: 'settings',
     version: 0,
     primaryKey: 'key',
@@ -16,4 +16,4 @@ export const settingsSchema: RxJsonSchema<Settings> = {
         },
     },
     required: ['key', 'value'],
-};
+} satisfies RxJsonSchema<Settings>;

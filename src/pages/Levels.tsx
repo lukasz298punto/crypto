@@ -13,13 +13,56 @@ import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Progress from '@/components/Progress';
 import Level from '@/constants/enums/level';
+import useWordsDb from '@/hooks/useWordsDb';
 import { useMemo } from 'react';
+import { size } from 'lodash';
 import map from 'lodash/map';
+
+function LevelCard({ id, label }: { id: Level; label: string }) {
+    const navigate = useNavigate();
+    const { updateSettings, getLanguage } = useSettingsDb();
+    const { words } = useWordsDb({
+        languageId: getLanguage(),
+        levelId: id,
+    });
+    const { words: knownWords } = useWordsDb({
+        languageId: getLanguage(),
+        levelId: id,
+        isKnown: true,
+    });
+
+    return (
+        <Card>
+            <CardActionArea
+                onClick={() =>
+                    updateSettings({
+                        settings: {
+                            key: SettingsDbKey.Level,
+                            value: id,
+                        },
+                        onSuccess: () => navigate('/categories'),
+                    })
+                }
+            >
+                <CardContent>
+                    <Typography
+                        variant="h5"
+                        className="mb-1 text-center font-medium"
+                    >
+                        {label}
+                    </Typography>
+                    <Progress
+                        total={size(words)}
+                        value={size(knownWords)}
+                    />
+                </CardContent>
+            </CardActionArea>
+        </Card>
+    );
+}
 
 export default function Levels() {
     const { t } = useTranslation();
-    const navigate = useNavigate();
-    const { updateSettings } = useSettingsDb();
 
     const levels = useMemo(() => {
         return [
@@ -57,30 +100,10 @@ export default function Levels() {
                         size={{ xs: 12, md: 4, lg: 3 }}
                         key={level.id}
                     >
-                        <Card>
-                            <CardActionArea
-                                onClick={() =>
-                                    updateSettings({
-                                        settings: {
-                                            key: SettingsDbKey.Level,
-                                            value: level.id,
-                                        },
-                                        onSuccess: () =>
-                                            navigate('/categories'),
-                                    })
-                                }
-                            >
-                                <CardContent>
-                                    <Typography
-                                        variant="h5"
-                                        className="mb-1 text-center font-medium"
-                                    >
-                                        {level.label}
-                                    </Typography>
-                                    <Progress />
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
+                        <LevelCard
+                            id={level.id}
+                            label={level.label}
+                        />
                     </Grid>
                 ))}
             </Grid>

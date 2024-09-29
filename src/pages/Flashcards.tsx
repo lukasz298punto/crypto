@@ -1,40 +1,48 @@
+import {
+    generatePath,
+    Navigate,
+    useNavigate,
+    useParams,
+} from 'react-router-dom';
 import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
+import useWordsDb from '@/hooks/useWordsDb';
+import { WordParams } from '@/types/common';
+import Finish from '@/components/Finish';
+import useWord from '@/hooks/useWord';
 import { useState } from 'react';
+import { concat } from 'lodash';
 import clsx from 'clsx';
 
 export default function Flashcards() {
     const { t } = useTranslation();
-
-    // Przykładowe dane fiszki
-    const flashcard = {
-        wordPolish: 'Dom',
-        wordEnglish: 'House',
-        pronunciation: 'house',
-    };
-
-    // Stan do kontrolowania, czy użytkownik sprawdził odpowiedź
+    const { currentWord, nextWord, skip, check } = useWord();
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
 
     const handleCheck = () => {
-        // Po naciśnięciu przycisku "Sprawdź" pokaż odpowiedź
         setIsAnswerChecked(true);
     };
 
     const handleCorrect = () => {
-        // Logika dla odpowiedzi poprawnej
-        console.log('Użytkownik zaznaczył odpowiedź jako poprawną');
-        setIsAnswerChecked(false); // Resetujemy, żeby wyświetlić kolejną fiszkę
+        check(currentWord.translation);
+        setIsAnswerChecked(false);
+        nextWord();
     };
 
     const handleIncorrect = () => {
-        // Logika dla odpowiedzi błędnej
-        console.log('Użytkownik zaznaczył odpowiedź jako błędną');
-        setIsAnswerChecked(false); // Resetujemy, żeby wyświetlić kolejną fiszkę
+        check(currentWord.translation + 'sss');
+        setIsAnswerChecked(false);
+        nextWord();
     };
+
+    console.log(currentWord, 'currentWord');
+
+    if (!currentWord) {
+        return <Finish />;
+    }
 
     return (
         <Container maxWidth="md">
@@ -52,11 +60,12 @@ export default function Flashcards() {
                                 variant="h2"
                                 className="font-medium"
                             >
-                                {flashcard.wordPolish}
+                                {currentWord?.word}
                             </Typography>
                             <VoiceIcon
-                                name="dupa111111111111111111111111111111"
+                                name={currentWord?.word}
                                 keyCode={KeyCode.Two}
+                                language="pl-PL"
                             />
                         </Stack>
 
@@ -71,11 +80,12 @@ export default function Flashcards() {
                                 variant="h5"
                                 color="text.secondary"
                             >
-                                {flashcard.wordEnglish}
+                                {currentWord?.translation}
                             </Typography>
                             <VoiceIcon
-                                name="dupa22222222222222222222222222222222"
+                                name={currentWord?.translation}
                                 keyCode={KeyCode.One}
+                                language="en-GB"
                             />
                         </Stack>
 
@@ -89,7 +99,9 @@ export default function Flashcards() {
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
-                                    onClick={handleCheck}
+                                    onClick={() => {
+                                        skip();
+                                    }}
                                     keyCode={KeyCode.Space}
                                 >
                                     {t('Pomiń')}

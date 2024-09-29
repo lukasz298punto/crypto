@@ -1,7 +1,9 @@
 /* eslint-disable lodash/prefer-lodash-method */
+import SettingsDbKey from '@/constants/enums/settingsDbKey';
 import { useCallback, useEffect, useState } from 'react';
 import useDatabaseContext from './useDatabaseContext';
 import { Settings } from '@/types/database';
+import { find } from 'lodash';
 import map from 'lodash/map';
 
 interface UpdateSettingsArgs {
@@ -66,5 +68,14 @@ export default function useSettingsDb() {
         [db]
     );
 
-    return { settings, updateSettings };
+    const getLanguage = useCallback(
+        () => find(settings, { key: SettingsDbKey.Language })?.value,
+        [settings]
+    );
+    const getLevel = useCallback(
+        () => find(settings, { key: SettingsDbKey.Level })?.value,
+        [settings]
+    );
+
+    return { settings, updateSettings, getLanguage, getLevel };
 }
