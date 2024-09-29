@@ -1,4 +1,5 @@
 import DatabaseProvider from '@/lib/DatabaseProvider';
+import SettingsProvider from '@/lib/SettingsProvider';
 import ThemeProvider from '@/lib/ThemeProvider';
 import { CssBaseline } from '@mui/material';
 import '@fontsource/roboto/300.css';
@@ -11,10 +12,12 @@ import '@/locales/config';
 export default function App() {
     return (
         <DatabaseProvider>
-            <ThemeProvider>
-                <CssBaseline />
-                <Router />
-            </ThemeProvider>
+            <SettingsProvider>
+                <ThemeProvider>
+                    <CssBaseline />
+                    <Router />
+                </ThemeProvider>
+            </SettingsProvider>
         </DatabaseProvider>
     );
 }

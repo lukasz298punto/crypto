@@ -19,7 +19,7 @@ import map from 'lodash/map';
 
 function CategoryCard({ id, label }: { id: Category; label: string }) {
     const navigate = useNavigate();
-    const { getLanguage, getLevel } = useSettingsDb();
+    const { language, level } = useSettingsDb();
     const db = useDatabaseContext();
     const [total, setTotal] = useState(0);
     const [value, setValue] = useState(0);
@@ -28,8 +28,8 @@ function CategoryCard({ id, label }: { id: Category; label: string }) {
         db?.words
             .find({
                 selector: {
-                    languageId: getLanguage() as string,
-                    levelId: getLevel() as string,
+                    languageId: language as string,
+                    levelId: level as string,
                     categoryId: id,
                 },
             })
@@ -39,15 +39,15 @@ function CategoryCard({ id, label }: { id: Category; label: string }) {
         db?.words
             .find({
                 selector: {
-                    languageId: getLanguage() as string,
-                    levelId: getLevel() as string,
+                    languageId: language as string,
+                    levelId: level as string,
                     isKnown: true,
                     categoryId: id,
                 },
             })
             .exec()
             .then((res) => setValue(res.length));
-    }, [db, getLanguage, getLevel, id]);
+    }, [db, id, language, level]);
 
     return (
         <Card>

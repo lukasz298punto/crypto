@@ -1,4 +1,5 @@
 import { useCallback, useMemo, useState } from 'react';
+import Language from '@/constants/enums/language';
 import { useSessionStorage } from 'react-use';
 import { useParams } from 'react-router-dom';
 import useWordsDb from '@/hooks/useWordsDb';
@@ -6,10 +7,11 @@ import useSettingsDb from './useSettingsDb';
 import { WordParams } from '@/types/common';
 import toLower from 'lodash/toLower';
 import concat from 'lodash/concat';
+import split from 'lodash/split';
 
 export default function useWord() {
     const params = useParams<WordParams>();
-    const { getLanguage, getLevel } = useSettingsDb();
+    const { language, level } = useSettingsDb();
     const [usedWords, setUsedWords] = useSessionStorage<string[]>(
         'usedWords',
         []
@@ -26,19 +28,32 @@ export default function useWord() {
         selector: useMemo(() => {
             return {
                 categoryId: { $eq: params.categoryId },
-                levelId: { $eq: getLevel() },
-                languageId: { $eq: getLanguage() },
+                levelId: { $eq: level },
+                languageId: { $eq: language },
                 id: { $nin: usedWords },
                 isKnown: { $eq: false },
             };
-        }, [getLanguage, getLevel, params.categoryId, usedWords]),
+        }, [language, level, params.categoryId, usedWords]),
     });
 
-    console.log(words, 'words22');
+    const nativeLang = split(params.languageDirectionId, '-to-')[0] as Language;
+    const lang = split(params.languageDirectionId, '-to-')[1] as Language;
 
     const currentWord = useMemo(() => {
-        return words[0];
-    }, [words]);
+        const word = words[0];
+
+        if (!word || word.nativeLanguageId === nativeLang) {
+            return word;
+        }
+
+        return {
+            ...word,
+            nativeLanguageId: nativeLang,
+            languageId: lang,
+            word: word.translation,
+            translation: word.word,
+        };
+    }, [lang, nativeLang, words]);
 
     const nextWord = useCallback(() => {
         setUsedWords(concat(usedWords, currentWord.id));
@@ -86,5 +101,14 @@ export default function useWord() {
         ]
     );
 
-    return { isCorrect, currentWord, check, nextWord, skip, reset };
+    return {
+        isCorrect,
+        currentWord,
+        check,
+        nextWord,
+        skip,
+        reset,
+        lang,
+        nativeLang,
+    };
 }

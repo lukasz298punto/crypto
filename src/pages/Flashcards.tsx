@@ -1,6 +1,5 @@
 import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
-import Language from '@/constants/enums/language';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
@@ -11,7 +10,8 @@ import clsx from 'clsx';
 
 export default function Flashcards() {
     const { t } = useTranslation();
-    const { currentWord, nextWord, skip, check, reset } = useWord();
+    const { currentWord, nextWord, skip, check, reset, lang, nativeLang } =
+        useWord();
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
 
     const handleCheck = () => {
@@ -54,8 +54,8 @@ export default function Flashcards() {
                             </Typography>
                             <VoiceIcon
                                 name={currentWord?.word}
-                                keyCode={KeyCode.Two}
-                                language={Language.Pl}
+                                keyCode={KeyCode.One}
+                                language={nativeLang}
                             />
                         </Stack>
 
@@ -76,7 +76,7 @@ export default function Flashcards() {
                                 <VoiceIcon
                                     name={currentWord?.translation}
                                     keyCode={KeyCode.One}
-                                    language={Language.En}
+                                    language={lang}
                                     autoPlay
                                 />
                             )}

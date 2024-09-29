@@ -23,9 +23,8 @@ function VoiceIcon({
 }: Readonly<VoiceIconProps>) {
     const [isPlaying, setIsPlaying] = useState(false);
     const { findLabelById } = useKeyCodeName();
-    const { getNativeLanguage } = useSettingsDb();
-
-    const nativeLang = getNativeLanguage();
+    const { nativeLanguage } = useSettingsDb();
+    const disabledVoice = nativeLanguage === language;
 
     const utterance = useMemo(() => {
         const utt = new SpeechSynthesisUtterance(name);
@@ -66,12 +65,13 @@ function VoiceIcon({
     }, [name]);
 
     useEffect(() => {
-        if (autoPlay) {
+        if (autoPlay && !disabledVoice) {
             startSpeaking();
         }
-    }, [autoPlay, name]);
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [autoPlay, name, disabledVoice]);
 
-    if (nativeLang === language) {
+    if (disabledVoice) {
         return null;
     }
 

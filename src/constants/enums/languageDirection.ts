@@ -1,6 +1,8 @@
+import Language from '@/constants/enums/language';
+
 enum LanguageDirection {
-    PlToEn = 'pl-to-en',
-    EnToPl = 'en-to-pl',
+    PlToEn = `${Language.Pl}-to-${Language.En}`,
+    EnToPl = `${Language.En}-to-${Language.Pl}`,
 }
 
 export default LanguageDirection;

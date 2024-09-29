@@ -1,10 +1,10 @@
 /* eslint-disable lodash/prefer-lodash-method */
 import SettingsDbKey from '@/constants/enums/settingsDbKey';
-import { useCallback, useEffect, useState } from 'react';
 import useDatabaseContext from './useDatabaseContext';
+import useSettingsContext from './useSettingsContext';
+import { useCallback, useMemo } from 'react';
 import { Settings } from '@/types/database';
 import find from 'lodash/find';
-import map from 'lodash/map';
 
 interface UpdateSettingsArgs {
     settings: Settings;
@@ -13,23 +13,8 @@ interface UpdateSettingsArgs {
 }
 
 export default function useSettingsDb() {
-    const [settings, setSettings] = useState<Settings[]>([]);
+    const settings = useSettingsContext();
     const db = useDatabaseContext();
-
-    useEffect(() => {
-        const subscription = db?.settings
-            ?.find()
-            .$.subscribe((settingsDocs) => {
-                setSettings(
-                    map(
-                        settingsDocs,
-                        (settings) => settings.toJSON() as Settings
-                    )
-                );
-            });
-
-        return () => subscription?.unsubscribe();
-    }, [db]);
 
     const updateSettings = useCallback(
         async ({ settings, onSuccess, onError }: UpdateSettingsArgs) => {
@@ -68,17 +53,17 @@ export default function useSettingsDb() {
         [db]
     );
 
-    const getLanguage = useCallback(
+    const language = useMemo(
         () => find(settings, { key: SettingsDbKey.Language })?.value,
         [settings]
     );
 
-    const getLevel = useCallback(
+    const level = useMemo(
         () => find(settings, { key: SettingsDbKey.Level })?.value,
         [settings]
     );
 
-    const getNativeLanguage = useCallback(
+    const nativeLanguage = useMemo(
         () => find(settings, { key: SettingsDbKey.NativeLanguage })?.value,
         [settings]
     );
@@ -86,8 +71,8 @@ export default function useSettingsDb() {
     return {
         settings,
         updateSettings,
-        getLanguage,
-        getLevel,
-        getNativeLanguage,
+        language,
+        level,
+        nativeLanguage,
     };
 }

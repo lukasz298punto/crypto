@@ -8,6 +8,7 @@ import {
     Typography,
 } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
+import Language from '@/constants/enums/language';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useNavigate } from 'react-router-dom';
@@ -57,6 +58,7 @@ export default function Writing() {
                             <VoiceIcon
                                 name="dupa111111111111111111111111111111"
                                 keyCode={KeyCode.One}
+                                language={Language.Pl}
                             />
                         </Stack>
                         <Stack
@@ -75,6 +77,7 @@ export default function Writing() {
                             <VoiceIcon
                                 name="dupa111111111111111111111111111111"
                                 keyCode={KeyCode.Two}
+                                language={Language.En}
                             />
                         </Stack>
                         {isAnswerChecked && (
