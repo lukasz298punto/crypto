@@ -63,13 +63,13 @@ const Flashcards: React.FC<FlashcardsProps> = ({ language }) => {
             {!showAnswer ? (
                 <button
                     onClick={handleCheck}
-                    className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+                    className="bg-blue-500 text-white hover:bg-blue-700 rounded px-4 py-2"
                 >
                     Sprawdź (enter)
                 </button>
             ) : (
                 <>
-                    <p className="!mt-6 flex gap-2 bg-blue-200 text-xl text-gray-700">
+                    <p className="bg-blue-200 text-gray-700 !mt-6 flex gap-2 text-xl">
                         Odpowiedź:{' '}
                         <Word
                             word={currentWord.translation}
@@ -82,13 +82,13 @@ const Flashcards: React.FC<FlashcardsProps> = ({ language }) => {
                     <div className="space-x-4">
                         <button
                             onClick={() => handleFeedback(true)}
-                            className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
+                            className="text-white rounded bg-green-500 px-4 py-2 hover:bg-green-700"
                         >
                             Dobrze (1)
                         </button>
                         <button
                             onClick={() => handleFeedback(false)}
-                            className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-700"
+                            className="text-white rounded bg-red-500 px-4 py-2 hover:bg-red-700"
                         >
                             Źle (2)
                         </button>

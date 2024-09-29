@@ -1,7 +1,7 @@
 import themeModeContext from '@/constants/context/themeModeContext';
 import { useContext } from 'react';
 
-const useThemeModeContext = () => {
+export default function useThemeModeContext() {
     const context = useContext(themeModeContext);
 
     if (!context) {
@@ -11,6 +11,4 @@ const useThemeModeContext = () => {
     }
 
     return context;
-};
-
-export default useThemeModeContext;
+}

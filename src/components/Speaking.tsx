@@ -125,7 +125,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
             {!showNextButton && (
                 <button
                     onClick={handleCheck}
-                    className="rounded bg-blue-500 px-4 py-2 text-white"
+                    className="bg-blue-500 text-white rounded px-4 py-2"
                 >
                     Sprawdź wymowę (Enter)
                 </button>
@@ -136,7 +136,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
                 </div>
             )}
             {showNextButton && (
-                <p className="!mt-6 flex gap-2 bg-blue-200 text-xl text-gray-700">
+                <p className="bg-blue-200 text-gray-700 !mt-6 flex gap-2 text-xl">
                     Odpowiedź:{' '}
                     <Word
                         word={currentWord.translation}
@@ -149,7 +149,7 @@ const Speaking: React.FC<FlashcardsProps> = ({ language }) => {
             {showNextButton && (
                 <button
                     onClick={handleNextWord}
-                    className="rounded bg-green-500 px-4 py-2 text-white"
+                    className="text-white rounded bg-green-500 px-4 py-2"
                 >
                     Następne słowo (Enter)
                 </button>

@@ -7,6 +7,8 @@ import {
     Stack,
     Typography,
 } from '@mui/material';
+import SettingsDbKey from '@/constants/enums/settingsDbKey';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Progress from '@/components/Progress';
@@ -17,6 +19,7 @@ import map from 'lodash/map';
 export default function Levels() {
     const { t } = useTranslation();
     const navigate = useNavigate();
+    const { updateSettings } = useSettingsDb();
 
     const levels = useMemo(() => {
         return [
@@ -56,7 +59,16 @@ export default function Levels() {
                     >
                         <Card>
                             <CardActionArea
-                                onClick={() => navigate(`/categories`)}
+                                onClick={() =>
+                                    updateSettings({
+                                        settings: {
+                                            key: SettingsDbKey.Level,
+                                            value: level.id,
+                                        },
+                                        onSuccess: () =>
+                                            navigate('/categories'),
+                                    })
+                                }
                             >
                                 <CardContent>
                                     <Typography

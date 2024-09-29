@@ -1,6 +1,5 @@
 import {
     Alert,
-    Button,
     Card,
     CardContent,
     Container,
@@ -8,7 +7,10 @@ import {
     TextField,
     Typography,
 } from '@mui/material';
+import KeyPressButton from '@/components/KeyPressButton';
+import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
+import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import { useRef, useState } from 'react';
 import clsx from 'clsx';
@@ -17,6 +19,7 @@ export default function Writing() {
     const [inputValue, setInputValue] = useState('');
     const { t } = useTranslation();
     const inputRef = useRef<HTMLInputElement>(null);
+    const navigate = useNavigate();
 
     // Przykładowe dane fiszki
     const flashcard = {
@@ -31,12 +34,6 @@ export default function Writing() {
     const handleCheck = () => {
         // Po naciśnięciu przycisku "Sprawdź" pokaż odpowiedź
         setIsAnswerChecked(true);
-    };
-
-    const handleCorrect = () => {
-        // Logika dla odpowiedzi poprawnej
-        console.log('Użytkownik zaznaczył odpowiedź jako poprawną');
-        setIsAnswerChecked(false); // Resetujemy, żeby wyświetlić kolejną fiszkę
     };
 
     return (
@@ -58,8 +55,8 @@ export default function Writing() {
                                 {flashcard.wordPolish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa111111111111111111111111111111"
+                                keyCode={KeyCode.One}
                             />
                         </Stack>
                         <Stack
@@ -76,8 +73,8 @@ export default function Writing() {
                                 {flashcard.wordEnglish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa111111111111111111111111111111"
+                                keyCode={KeyCode.Two}
                             />
                         </Stack>
                         {isAnswerChecked && (
@@ -96,11 +93,16 @@ export default function Writing() {
                         )}
                         {!isAnswerChecked && (
                             <TextField
+                                autoFocus
                                 className="mb-2 w-full"
                                 ref={inputRef}
                                 type="text"
                                 value={inputValue}
                                 onChange={(e) => setInputValue(e.target.value)}
+                                onKeyUpCapture={(e) => e.stopPropagation()}
+                                onKeyUp={(e) => e.stopPropagation()}
+                                onKeyDown={(e) => e.stopPropagation()}
+                                onKeyDownCapture={(e) => e.stopPropagation()}
                             />
                         )}
                         {!isAnswerChecked ? (
@@ -109,30 +111,37 @@ export default function Writing() {
                                 direction="row"
                                 gap={1}
                             >
-                                <Button
+                                <KeyPressButton
+                                    keyCode={KeyCode.Space}
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
-                                    onClick={handleCheck}
+                                    onClick={() =>
+                                        navigate('/' + Date.now()?.toString())
+                                    }
                                 >
-                                    {t('Pomiń (Spacja)')}
-                                </Button>
-                                <Button
+                                    {t('Pomiń')}
+                                </KeyPressButton>
+                                <KeyPressButton
+                                    keyCode={KeyCode.Enter}
                                     className="flex-1"
                                     variant="contained"
                                     onClick={handleCheck}
                                 >
-                                    {t('Sprawdź (Enter)')}
-                                </Button>
+                                    {t('Sprawdź')}
+                                </KeyPressButton>
                             </Stack>
                         ) : (
-                            <Button
+                            <KeyPressButton
+                                keyCode={KeyCode.Enter}
                                 className="w-full"
                                 variant="contained"
-                                onClick={handleCorrect}
+                                onClick={() =>
+                                    navigate('/' + Date.now()?.toString())
+                                }
                             >
-                                {t('Następne słowo (Enter)')}
-                            </Button>
+                                {t('Następne słowo')}
+                            </KeyPressButton>
                         )}
                     </Stack>
                 </CardContent>

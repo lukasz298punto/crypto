@@ -41,7 +41,7 @@ const Word: React.FC<WordcardsProps> = ({
     }, [speakWord]);
 
     return (
-        <p className="text-xl font-semibold">
+        <p className="font-semibold text-xl">
             {word}
 
             {!noVoice && (

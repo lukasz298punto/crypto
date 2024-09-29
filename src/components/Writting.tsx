@@ -129,7 +129,7 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
                     />
                     <button
                         onClick={handleSubmit}
-                        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+                        className="bg-blue-500 text-white hover:bg-blue-700 rounded px-4 py-2"
                     >
                         Sprawdź (Enter)
                     </button>
@@ -150,7 +150,7 @@ const Writing: React.FC<WritingProps> = ({ language }) => {
                     {showNextButton && (
                         <button
                             onClick={handleNext}
-                            className="mt-4 rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+                            className="bg-blue-500 text-white hover:bg-blue-700 mt-4 rounded px-4 py-2"
                         >
                             Następne słowo (Enter)
                         </button>

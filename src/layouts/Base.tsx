@@ -1,9 +1,9 @@
-import { FormControlLabel, Stack, styled, Switch } from '@mui/material';
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import MenuIcon from '@mui/icons-material/Menu';
 import ThemeModeToggle from './ThemeModeToggle';
 import { Link, Outlet } from 'react-router-dom';
@@ -13,6 +13,7 @@ import Toolbar from '@mui/material/Toolbar';
 import AppBar from '@mui/material/AppBar';
 import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
+import { Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import * as React from 'react';
 import map from 'lodash/map';
@@ -21,6 +22,7 @@ const drawerWidth = 240;
 
 export default function Base() {
     const [mobileOpen, setMobileOpen] = React.useState(false);
+    const { settings } = useSettingsDb();
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
@@ -35,6 +37,7 @@ export default function Base() {
         <Stack className="h-screen">
             <AppBar position="static">
                 <Toolbar className="flex items-center justify-between">
+                    {JSON.stringify(settings)}
                     <IconButton
                         color="inherit"
                         edge="start"

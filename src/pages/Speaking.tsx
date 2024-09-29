@@ -1,6 +1,5 @@
 import {
     Alert,
-    Button,
     Card,
     CardContent,
     CircularProgress,
@@ -8,13 +7,21 @@ import {
     Stack,
     Typography,
 } from '@mui/material';
+import KeyPressButton from '@/components/KeyPressButton';
+import { useCallback, useEffect, useState } from 'react';
+import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
-import { useState } from 'react';
 import clsx from 'clsx';
 
+const SpeechRecognition =
+    window.SpeechRecognition || window.webkitSpeechRecognition;
+const recognition = new SpeechRecognition();
+
+recognition.continuous = false;
+recognition.interimResults = false;
+
 export default function Speaking() {
-    const [inputValue, setInputValue] = useState('');
     const { t } = useTranslation();
 
     // Przykładowe dane fiszki
@@ -25,17 +32,42 @@ export default function Speaking() {
     };
 
     // Stan do kontrolowania, czy użytkownik sprawdził odpowiedź
-    const [isAnswerChecked, setIsAnswerChecked] = useState(false);
+    const [isRecording, setIsRecording] = useState(false);
+    const [speechResult, setSpeechResult] = useState('');
 
     const handleCheck = () => {
-        // Po naciśnięciu przycisku "Sprawdź" pokaż odpowiedź
-        setIsAnswerChecked(true);
+        recognition.stop();
     };
+
+    console.log(recognition, 'recognition');
+
+    const startListening = useCallback(() => {
+        recognition.start();
+
+        recognition.onresult = (event) => {
+            const transcript = event.results[0][0].transcript;
+            setSpeechResult(transcript);
+        };
+        recognition.onend = () => {
+            setIsRecording(false);
+        };
+        recognition.onerror = () => {
+            setIsRecording(false);
+        };
+        recognition.onstart = () => {
+            setIsRecording(true);
+        };
+    }, []);
+
+    useEffect(() => {
+        return () => {
+            recognition.stop();
+        };
+    }, []);
 
     const handleCorrect = () => {
         // Logika dla odpowiedzi poprawnej
         console.log('Użytkownik zaznaczył odpowiedź jako poprawną');
-        setIsAnswerChecked(false); // Resetujemy, żeby wyświetlić kolejną fiszkę
     };
 
     return (
@@ -57,15 +89,15 @@ export default function Speaking() {
                                 {flashcard.wordPolish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa111111111111111111111111111111"
+                                keyCode={KeyCode.Two}
                             />
                         </Stack>
                         <Stack
                             direction="row"
                             alignItems="center"
                             className={clsx('mb-2', {
-                                'opacity-0': !isAnswerChecked,
+                                'opacity-0': !speechResult,
                             })}
                         >
                             <Typography
@@ -75,25 +107,25 @@ export default function Speaking() {
                                 {flashcard.wordEnglish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa111111111111111111111111111111"
+                                keyCode={KeyCode.Two}
                             />
                         </Stack>
-                        {isAnswerChecked && (
+                        {speechResult && (
                             <>
                                 <Alert
                                     severity={
-                                        flashcard?.wordEnglish === inputValue
+                                        flashcard?.wordEnglish === speechResult
                                             ? 'success'
                                             : 'error'
                                     }
                                     className="mb-2 h-[56px] w-full xy-center"
                                 >
-                                    {inputValue}
+                                    {speechResult}
                                 </Alert>
                             </>
                         )}
-                        {!isAnswerChecked && (
+                        {isRecording && (
                             <Stack
                                 gap={1}
                                 direction="row"
@@ -102,40 +134,44 @@ export default function Speaking() {
                             >
                                 <CircularProgress size={20} />
                                 <Typography>
-                                    {t('Trwa nagrywanie dzwięku...')}
+                                    {t('Trwa nagrywanie dźwięku...')}
                                 </Typography>
                             </Stack>
                         )}
-                        {!isAnswerChecked ? (
+                        {!speechResult ? (
                             <Stack
                                 className="w-full"
                                 direction="row"
                                 gap={1}
                             >
-                                <Button
+                                <KeyPressButton
+                                    keyCode={KeyCode.One}
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
                                     onClick={handleCheck}
                                 >
-                                    {t('Pomiń (Spacja)')}
-                                </Button>
-                                <Button
+                                    {t('Pomiń')}
+                                </KeyPressButton>
+                                <KeyPressButton
+                                    disabled={isRecording}
+                                    keyCode={KeyCode.Enter}
                                     className="flex-1"
                                     variant="contained"
-                                    onClick={handleCheck}
+                                    onClick={startListening}
                                 >
-                                    {t('Nagraj (Enter)')}
-                                </Button>
+                                    {t('Nagraj')}
+                                </KeyPressButton>
                             </Stack>
                         ) : (
-                            <Button
+                            <KeyPressButton
+                                keyCode={KeyCode.Enter}
                                 className="w-full flex-1"
                                 variant="contained"
                                 onClick={handleCorrect}
                             >
-                                {t('Następne słowo (Enter)')}
-                            </Button>
+                                {t('Następne słowo')}
+                            </KeyPressButton>
                         )}
                     </Stack>
                 </CardContent>

@@ -1,11 +1,6 @@
-import {
-    Button,
-    Card,
-    CardContent,
-    Container,
-    Stack,
-    Typography,
-} from '@mui/material';
+import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
+import KeyPressButton from '@/components/KeyPressButton';
+import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
 import { useState } from 'react';
@@ -60,8 +55,8 @@ export default function Flashcards() {
                                 {flashcard.wordPolish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa111111111111111111111111111111"
+                                keyCode={KeyCode.Two}
                             />
                         </Stack>
 
@@ -79,8 +74,8 @@ export default function Flashcards() {
                                 {flashcard.wordEnglish}
                             </Typography>
                             <VoiceIcon
-                                isPlaying
-                                onPlay={() => {}}
+                                name="dupa22222222222222222222222222222222"
+                                keyCode={KeyCode.One}
                             />
                         </Stack>
 
@@ -90,21 +85,23 @@ export default function Flashcards() {
                                 direction="row"
                                 gap={1}
                             >
-                                <Button
+                                <KeyPressButton
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
                                     onClick={handleCheck}
+                                    keyCode={KeyCode.Space}
                                 >
-                                    {t('Pomiń (Spacja)')}
-                                </Button>
-                                <Button
+                                    {t('Pomiń')}
+                                </KeyPressButton>
+                                <KeyPressButton
                                     className="flex-1"
                                     variant="contained"
                                     onClick={handleCheck}
+                                    keyCode={KeyCode.Enter}
                                 >
-                                    {t('Sprawdź (Enter)')}
-                                </Button>
+                                    {t('Sprawdź')}
+                                </KeyPressButton>
                             </Stack>
                         ) : (
                             <Stack
@@ -112,22 +109,24 @@ export default function Flashcards() {
                                 direction="row"
                                 gap={1}
                             >
-                                <Button
+                                <KeyPressButton
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
                                     onClick={handleIncorrect}
+                                    keyCode={KeyCode.Space}
                                 >
-                                    {t('Źle (Spacja)')}
-                                </Button>
-                                <Button
+                                    {t('Źle')}
+                                </KeyPressButton>
+                                <KeyPressButton
                                     className="flex-1"
                                     color="success"
                                     variant="contained"
                                     onClick={handleCorrect}
+                                    keyCode={KeyCode.Enter}
                                 >
-                                    {t('Dobrze (Enter)')}
-                                </Button>
+                                    {t('Dobrze')}
+                                </KeyPressButton>
                             </Stack>
                         )}
                     </Stack>

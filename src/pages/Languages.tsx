@@ -8,6 +8,8 @@ import {
     Typography,
 } from '@mui/material';
 import availableLanguages from '@/constants/availableLanguages';
+import SettingsDbKey from '@/constants/enums/settingsDbKey';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import map from 'lodash/map';
@@ -15,6 +17,7 @@ import map from 'lodash/map';
 export default function Languages() {
     const { t } = useTranslation();
     const navigate = useNavigate();
+    const { updateSettings } = useSettingsDb();
 
     return (
         <Stack gap={2}>
@@ -36,7 +39,17 @@ export default function Languages() {
                         key={tile.id}
                     >
                         <Card>
-                            <CardActionArea onClick={() => navigate('/levels')}>
+                            <CardActionArea
+                                onClick={() =>
+                                    updateSettings({
+                                        settings: {
+                                            key: SettingsDbKey.Language,
+                                            value: tile.id,
+                                        },
+                                        onSuccess: () => navigate('/levels'),
+                                    })
+                                }
+                            >
                                 <CardContent>
                                     <Typography
                                         variant="h5"

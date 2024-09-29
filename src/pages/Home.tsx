@@ -49,13 +49,13 @@ export default function Home() {
                 <div className="space-x-4">
                     <button
                         onClick={() => setLanguage('english')}
-                        className="rounded bg-blue-500 px-4 py-2 text-white hover:bg-blue-700"
+                        className="bg-blue-500 text-white hover:bg-blue-700 rounded px-4 py-2"
                     >
                         Angielski (1)
                     </button>
                     <button
                         onClick={() => setLanguage('polish')}
-                        className="rounded bg-green-500 px-4 py-2 text-white hover:bg-green-700"
+                        className="text-white rounded bg-green-500 px-4 py-2 hover:bg-green-700"
                     >
                         Polski (2)
                     </button>
@@ -71,19 +71,19 @@ export default function Home() {
                 <div className="space-x-4">
                     <button
                         onClick={() => setMode('flashcards')}
-                        className="rounded bg-purple-500 px-4 py-2 text-white hover:bg-purple-700"
+                        className="bg-purple-500 text-white hover:bg-purple-700 rounded px-4 py-2"
                     >
                         Fiszki (1)
                     </button>
                     <button
                         onClick={() => setMode('writing')}
-                        className="rounded bg-red-500 px-4 py-2 text-white hover:bg-red-700"
+                        className="text-white rounded bg-red-500 px-4 py-2 hover:bg-red-700"
                     >
                         Pisanie (2)
                     </button>
                     <button
                         onClick={() => setMode('speaking')}
-                        className="rounded bg-orange-500 px-4 py-2 text-white hover:bg-red-700"
+                        className="text-white rounded bg-orange-500 px-4 py-2 hover:bg-red-700"
                     >
                         Mówienie (3)
                     </button>
