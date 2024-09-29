@@ -16,14 +16,13 @@ const Word: React.FC<WordcardsProps> = ({
     const speakWord = useCallback(() => {
         if (!noVoice) {
             const utterance = new SpeechSynthesisUtterance(word);
-            utterance.lang = language === 'english' ? 'en-US' : 'pl-PL'; // Ustaw odpowiedni język
+            utterance.lang = language === 'english' ? 'en-US' : 'pl-PL';
             window.speechSynthesis.speak(utterance);
         }
     }, [language, noVoice, word]);
 
     useEffect(() => {
         const handleKeyPress = (event: KeyboardEvent) => {
-            // Odtwórz wymowę słówka po naciśnięciu klawisza 3
             if (event.key === voiceKey) {
                 speakWord();
             }

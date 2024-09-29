@@ -1,3 +1,4 @@
+/* eslint-disable lodash/prefer-lodash-method */
 import {
     Card,
     CardActionArea,
@@ -7,16 +8,69 @@ import {
     Stack,
     Typography,
 } from '@mui/material';
+import useDatabaseContext from '@/hooks/useDatabaseContext';
+import { useEffect, useMemo, useState } from 'react';
 import Category from '@/constants/enums/category';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Progress from '@/components/Progress';
-import { useMemo } from 'react';
 import map from 'lodash/map';
+
+function CategoryCard({ id, label }: { id: Category; label: string }) {
+    const navigate = useNavigate();
+    const { getLanguage, getLevel } = useSettingsDb();
+    const db = useDatabaseContext();
+    const [total, setTotal] = useState(0);
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        db?.words
+            .find({
+                selector: {
+                    languageId: getLanguage() as string,
+                    levelId: getLevel() as string,
+                    categoryId: id,
+                },
+            })
+            .exec()
+            .then((res) => setTotal(res.length));
+
+        db?.words
+            .find({
+                selector: {
+                    languageId: getLanguage() as string,
+                    levelId: getLevel() as string,
+                    isKnown: true,
+                    categoryId: id,
+                },
+            })
+            .exec()
+            .then((res) => setValue(res.length));
+    }, [db, getLanguage, getLevel, id]);
+
+    return (
+        <Card>
+            <CardActionArea onClick={() => navigate(`/${id}`)}>
+                <CardContent>
+                    <Typography
+                        variant="h5"
+                        className="mb-1 text-center font-medium"
+                    >
+                        {label}
+                    </Typography>
+                    <Progress
+                        total={total}
+                        value={value}
+                    />
+                </CardContent>
+            </CardActionArea>
+        </Card>
+    );
+}
 
 export default function Categories() {
     const { t } = useTranslation();
-    const navigate = useNavigate();
 
     const categories = useMemo(() => {
         return [
@@ -57,21 +111,10 @@ export default function Categories() {
                         size={{ xs: 12, md: 4, lg: 3 }}
                         key={category.id}
                     >
-                        <Card>
-                            <CardActionArea
-                                onClick={() => navigate(`/${category.id}`)}
-                            >
-                                <CardContent>
-                                    <Typography
-                                        variant="h5"
-                                        className="mb-1 text-center font-medium"
-                                    >
-                                        {category.label}
-                                    </Typography>
-                                    <Progress />
-                                </CardContent>
-                            </CardActionArea>
-                        </Card>
+                        <CategoryCard
+                            id={category.id}
+                            label={category.label}
+                        />
                     </Grid>
                 ))}
             </Grid>

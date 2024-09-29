@@ -3,74 +3,42 @@ import { useCallback, useEffect, useState } from 'react';
 import useDatabaseContext from './useDatabaseContext';
 import { MangoQuerySelector } from 'rxdb';
 import { Word } from '@/types/database';
-import { Maybe } from '@/types/common';
-import isNil from 'lodash/isNil';
+import orderBy from 'lodash/orderBy';
 import map from 'lodash/map';
 
 interface Props {
-    categoryId?: Maybe<string>;
-    levelId?: Maybe<string>;
-    languageId?: Maybe<string>;
-    usedWords?: string[];
-    isKnown?: Maybe<boolean>;
+    selector?: MangoQuerySelector<Word>;
 }
 
-export default function useWordsDb({
-    categoryId,
-    levelId,
-    languageId,
-    usedWords,
-    isKnown,
-}: Readonly<Props>) {
+export default function useWordsDb({ selector }: Readonly<Props>) {
     const [words, setWords] = useState<Word[]>([]);
     const db = useDatabaseContext();
 
     useEffect(() => {
-        const selector: MangoQuerySelector<Word> = {};
-
-        if (!isNil(categoryId)) {
-            selector.categoryId = { $eq: categoryId };
-        }
-
-        if (!isNil(levelId)) {
-            selector.levelId = { $eq: levelId };
-        }
-
-        if (!isNil(languageId)) {
-            selector.languageId = { $eq: languageId };
-        }
-
-        if (!isNil(usedWords)) {
-            selector.id = { $nin: usedWords };
-        }
-
-        if (!isNil(isKnown)) {
-            selector.isKnown = { $eq: isKnown };
-        }
-
-        console.log(
-            {
-                categoryId,
-                levelId,
-                languageId,
-                usedWords,
-                isKnown,
-            },
-            selector
-        );
-
         const subscription = db?.words
             ?.find({
                 selector,
             })
             .$.subscribe((wordsDocs) => {
-                setWords(
-                    map(wordsDocs, (settings) => settings.toJSON() as Word)
+                const wordsList = map(wordsDocs, (doc) => doc.toJSON() as Word);
+
+                const sortedWords = orderBy(
+                    wordsList,
+                    [
+                        (word) => word.correct + word.incorrect,
+                        (word) =>
+                            word.correct === 0
+                                ? word.incorrect
+                                : word.incorrect / word.correct,
+                    ],
+                    ['asc', 'desc']
                 );
+
+                setWords(sortedWords);
             });
 
         return () => subscription?.unsubscribe();
-    }, [categoryId, db, isKnown, languageId, levelId, usedWords]);
+    }, [db, selector]);
 
     const incrementCorrect = useCallback(
         async (wordId: string) => {

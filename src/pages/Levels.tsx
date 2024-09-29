@@ -1,3 +1,4 @@
+/* eslint-disable lodash/prefer-lodash-method */
 import {
     Card,
     CardActionArea,
@@ -8,28 +9,44 @@ import {
     Typography,
 } from '@mui/material';
 import SettingsDbKey from '@/constants/enums/settingsDbKey';
+import useDatabaseContext from '@/hooks/useDatabaseContext';
+import { useEffect, useMemo, useState } from 'react';
 import useSettingsDb from '@/hooks/useSettingsDb';
 import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
 import Progress from '@/components/Progress';
 import Level from '@/constants/enums/level';
-import useWordsDb from '@/hooks/useWordsDb';
-import { useMemo } from 'react';
-import { size } from 'lodash';
 import map from 'lodash/map';
 
 function LevelCard({ id, label }: { id: Level; label: string }) {
     const navigate = useNavigate();
     const { updateSettings, getLanguage } = useSettingsDb();
-    const { words } = useWordsDb({
-        languageId: getLanguage(),
-        levelId: id,
-    });
-    const { words: knownWords } = useWordsDb({
-        languageId: getLanguage(),
-        levelId: id,
-        isKnown: true,
-    });
+    const db = useDatabaseContext();
+    const [total, setTotal] = useState(0);
+    const [value, setValue] = useState(0);
+
+    useEffect(() => {
+        db?.words
+            .find({
+                selector: {
+                    languageId: getLanguage() as string,
+                    levelId: id,
+                },
+            })
+            .exec()
+            .then((res) => setTotal(res.length));
+
+        db?.words
+            .find({
+                selector: {
+                    languageId: getLanguage() as string,
+                    levelId: id,
+                    isKnown: true,
+                },
+            })
+            .exec()
+            .then((res) => setValue(res.length));
+    }, [db, getLanguage, id]);
 
     return (
         <Card>
@@ -52,8 +69,8 @@ function LevelCard({ id, label }: { id: Level; label: string }) {
                         {label}
                     </Typography>
                     <Progress
-                        total={size(words)}
-                        value={size(knownWords)}
+                        total={total}
+                        value={value}
                     />
                 </CardContent>
             </CardActionArea>

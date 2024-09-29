@@ -136,6 +136,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -145,6 +148,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -154,6 +160,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -163,6 +172,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -172,6 +184,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -181,6 +196,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -190,6 +208,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -199,6 +220,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -208,6 +232,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
                 {
                     id: uuidv4(),
@@ -217,6 +244,9 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
                 },
             ]);
         }

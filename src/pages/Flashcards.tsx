@@ -1,25 +1,17 @@
-import {
-    generatePath,
-    Navigate,
-    useNavigate,
-    useParams,
-} from 'react-router-dom';
 import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
+import Language from '@/constants/enums/language';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
-import useWordsDb from '@/hooks/useWordsDb';
-import { WordParams } from '@/types/common';
 import Finish from '@/components/Finish';
 import useWord from '@/hooks/useWord';
 import { useState } from 'react';
-import { concat } from 'lodash';
 import clsx from 'clsx';
 
 export default function Flashcards() {
     const { t } = useTranslation();
-    const { currentWord, nextWord, skip, check } = useWord();
+    const { currentWord, nextWord, skip, check, reset } = useWord();
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
 
     const handleCheck = () => {
@@ -38,10 +30,8 @@ export default function Flashcards() {
         nextWord();
     };
 
-    console.log(currentWord, 'currentWord');
-
     if (!currentWord) {
-        return <Finish />;
+        return <Finish onReset={reset} />;
     }
 
     return (
@@ -65,14 +55,14 @@ export default function Flashcards() {
                             <VoiceIcon
                                 name={currentWord?.word}
                                 keyCode={KeyCode.Two}
-                                language="pl-PL"
+                                language={Language.Pl}
                             />
                         </Stack>
 
                         <Stack
                             direction="row"
                             alignItems="center"
-                            className={clsx('mb-2', {
+                            className={clsx('mb-2 h-[45px]', {
                                 'opacity-0': !isAnswerChecked,
                             })}
                         >
@@ -82,11 +72,14 @@ export default function Flashcards() {
                             >
                                 {currentWord?.translation}
                             </Typography>
-                            <VoiceIcon
-                                name={currentWord?.translation}
-                                keyCode={KeyCode.One}
-                                language="en-GB"
-                            />
+                            {isAnswerChecked && (
+                                <VoiceIcon
+                                    name={currentWord?.translation}
+                                    keyCode={KeyCode.One}
+                                    language={Language.En}
+                                    autoPlay
+                                />
+                            )}
                         </Stack>
 
                         {!isAnswerChecked ? (

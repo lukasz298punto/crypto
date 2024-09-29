@@ -15,6 +15,7 @@ export default function useWord() {
         []
     );
     const [isCorrect, setIsCorrect] = useState(false);
+
     const {
         words,
         setWordAsKnown,
@@ -22,11 +23,15 @@ export default function useWord() {
         incrementIncorrect,
         findWordById,
     } = useWordsDb({
-        categoryId: params.categoryId,
-        languageId: getLanguage(),
-        levelId: getLevel(),
-        usedWords,
-        isKnown: false,
+        selector: useMemo(() => {
+            return {
+                categoryId: { $eq: params.categoryId },
+                levelId: { $eq: getLevel() },
+                languageId: { $eq: getLanguage() },
+                id: { $nin: usedWords },
+                isKnown: { $eq: false },
+            };
+        }, [getLanguage, getLevel, params.categoryId, usedWords]),
     });
 
     console.log(words, 'words22');
@@ -46,6 +51,10 @@ export default function useWord() {
     const validation = useCallback((word: string, translation: string) => {
         return toLower(word) === toLower(translation);
     }, []);
+
+    const reset = useCallback(() => {
+        setUsedWords([]);
+    }, [setUsedWords]);
 
     const check = useCallback(
         async (translation: string) => {
@@ -77,5 +86,5 @@ export default function useWord() {
         ]
     );
 
-    return { isCorrect, currentWord, check, nextWord, skip };
+    return { isCorrect, currentWord, check, nextWord, skip, reset };
 }

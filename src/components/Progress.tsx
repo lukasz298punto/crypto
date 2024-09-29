@@ -22,6 +22,7 @@ export default function Progress({ total, value }: Readonly<Progress>) {
                 className="flex-1"
                 variant="determinate"
                 value={progressValue}
+                color={progressValue === 100 ? 'success' : 'warning'}
             />
             <Typography
                 variant="body2"

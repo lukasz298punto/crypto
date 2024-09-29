@@ -9,6 +9,7 @@ import {
 } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
 import { useCallback, useEffect, useState } from 'react';
+import Language from '@/constants/enums/language';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
@@ -91,6 +92,7 @@ export default function Speaking() {
                             <VoiceIcon
                                 name="dupa111111111111111111111111111111"
                                 keyCode={KeyCode.Two}
+                                language={Language.Pl}
                             />
                         </Stack>
                         <Stack
@@ -109,6 +111,7 @@ export default function Speaking() {
                             <VoiceIcon
                                 name="dupa111111111111111111111111111111"
                                 keyCode={KeyCode.Two}
+                                language={Language.En}
                             />
                         </Stack>
                         {speechResult && (
