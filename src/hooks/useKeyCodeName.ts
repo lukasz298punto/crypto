@@ -8,8 +8,10 @@ export default function useKeyCodeName() {
 
     const values = useMemo(() => {
         return [
-            { id: KeyCode.Space, label: t('Spacja') },
+            { id: KeyCode.S, label: t('S') },
+            { id: KeyCode.R, label: t('R') },
             { id: KeyCode.Enter, label: t('Enter') },
+            { id: KeyCode.Space, label: t('Spacja') },
             { id: KeyCode.One, label: '1' },
             { id: KeyCode.Two, label: '2' },
             { id: KeyCode.Three, label: '3' },

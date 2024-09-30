@@ -1,0 +1,20 @@
+[
+    { "word": "duży", "translation": "big" },
+    { "word": "mały", "translation": "small" },
+    { "word": "szybki", "translation": "fast" },
+    { "word": "wolny", "translation": "slow" },
+    { "word": "gorący", "translation": "hot" },
+    { "word": "zimny", "translation": "cold" },
+    { "word": "szczęśliwy", "translation": "happy" },
+    { "word": "smutny", "translation": "sad" },
+    { "word": "dobry", "translation": "good" },
+    { "word": "zły", "translation": "bad" },
+    { "word": "nowy", "translation": "new" },
+    { "word": "stary", "translation": "old" },
+    { "word": "młody", "translation": "young" },
+    { "word": "piękny", "translation": "beautiful" },
+    { "word": "brzydki", "translation": "ugly" },
+    { "word": "silny", "translation": "strong" },
+    { "word": "słaby", "translation": "weak" },
+    { "word": "bogaty", "translation": "rich" }
+]

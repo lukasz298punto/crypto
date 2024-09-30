@@ -16,14 +16,21 @@ import wordsSchema from '@/constants/schema/words';
 import Category from '@/constants/enums/category';
 import Language from '@/constants/enums/language';
 import { CircularProgress } from '@mui/material';
+import adjectives from '@/data/adjectives.json';
 import Level from '@/constants/enums/level';
+import adverbs from '@/data/adverbs.json';
+import nouns from '@/data/nouns.json';
+import verbs from '@/data/verbs.json';
 import { v4 as uuidv4 } from 'uuid';
+import map from 'lodash/map';
 
 addRxPlugin(RxDBUpdatePlugin);
 addRxPlugin(RxDBDevModePlugin);
 addRxPlugin(RxDBMigrationPlugin);
 
-function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
+export default function DatabaseProvider({
+    children,
+}: Readonly<PropsWithChildren>) {
     const [database, setDatabase] = useState<Context>(null);
 
     const initDatabase = useCallback(async () => {
@@ -32,6 +39,8 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
             storage: getRxStorageDexie(),
             ignoreDuplicate: true,
         });
+
+        console.log(verbs, 'verbs');
 
         await db.addCollections({
             settings: {
@@ -128,10 +137,22 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
         const existingWords = await db.words.find().exec();
         if (existingWords.length === 0) {
             await db.words.bulkInsert([
-                {
+                ...map(verbs, (verb) => ({
                     id: uuidv4(),
-                    word: 'piękny',
-                    translation: 'beautiful',
+                    word: verb.word,
+                    translation: verb.translation,
+                    categoryId: Category.Verbs,
+                    levelId: Level.Beginner,
+                    languageId: Language.En,
+                    nativeLanguageId: Language.Pl,
+                    correct: 0,
+                    incorrect: 0,
+                    isKnown: false,
+                })),
+                ...map(adjectives, (verb) => ({
+                    id: uuidv4(),
+                    word: verb.word,
+                    translation: verb.translation,
                     categoryId: Category.Adjectives,
                     levelId: Level.Beginner,
                     languageId: Language.En,
@@ -139,115 +160,31 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
                     correct: 0,
                     incorrect: 0,
                     isKnown: false,
-                },
-                {
+                })),
+                ...map(adverbs, (verb) => ({
                     id: uuidv4(),
-                    word: 'szybki',
-                    translation: 'fast',
-                    categoryId: Category.Adjectives,
+                    word: verb.word,
+                    translation: verb.translation,
+                    categoryId: Category.Adverbs,
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
                     correct: 0,
                     incorrect: 0,
                     isKnown: false,
-                },
-                {
+                })),
+                ...map(nouns, (verb) => ({
                     id: uuidv4(),
-                    word: 'duży',
-                    translation: 'big',
-                    categoryId: Category.Adjectives,
+                    word: verb.word,
+                    translation: verb.translation,
+                    categoryId: Category.Adverbs,
                     levelId: Level.Beginner,
                     languageId: Language.En,
                     nativeLanguageId: Language.Pl,
                     correct: 0,
                     incorrect: 0,
                     isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'mały',
-                    translation: 'small',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'mądry',
-                    translation: 'smart',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'leniwy',
-                    translation: 'lazy',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'silny',
-                    translation: 'strong',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'słaby',
-                    translation: 'weak',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'młody',
-                    translation: 'young',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
-                {
-                    id: uuidv4(),
-                    word: 'stary',
-                    translation: 'old',
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                },
+                })),
             ]);
         }
 
@@ -268,5 +205,3 @@ function DatabaseProvider({ children }: Readonly<PropsWithChildren>) {
         </DatabaseContext.Provider>
     );
 }
-
-export default DatabaseProvider;

@@ -5,9 +5,11 @@ import { useParams } from 'react-router-dom';
 import useWordsDb from '@/hooks/useWordsDb';
 import useSettingsDb from './useSettingsDb';
 import { WordParams } from '@/types/common';
+import orderBy from 'lodash/orderBy';
 import toLower from 'lodash/toLower';
 import concat from 'lodash/concat';
 import split from 'lodash/split';
+import size from 'lodash/size';
 
 export default function useWord() {
     const params = useParams<WordParams>();
@@ -19,7 +21,7 @@ export default function useWord() {
     const [isCorrect, setIsCorrect] = useState(false);
 
     const {
-        words,
+        words: wordsList,
         setWordAsKnown,
         incrementCorrect,
         incrementIncorrect,
@@ -35,6 +37,23 @@ export default function useWord() {
             };
         }, [language, level, params.categoryId, usedWords]),
     });
+
+    const words = useMemo(() => {
+        return orderBy(
+            wordsList,
+            [
+                (word) => word.correct + word.incorrect,
+                (word) =>
+                    word.correct === 0
+                        ? word.incorrect
+                        : word.incorrect / word.correct,
+            ],
+            ['asc', 'desc']
+        );
+        // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, [size(wordsList)]);
+
+    console.log(words, 'words');
 
     const nativeLang = split(params.languageDirectionId, '-to-')[0] as Language;
     const lang = split(params.languageDirectionId, '-to-')[1] as Language;

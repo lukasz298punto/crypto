@@ -3,10 +3,10 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemText from '@mui/material/ListItemText';
 import IconButton from '@mui/material/IconButton';
 import Typography from '@mui/material/Typography';
-import useSettingsDb from '@/hooks/useSettingsDb';
 import MenuIcon from '@mui/icons-material/Menu';
 import ThemeModeToggle from './ThemeModeToggle';
 import { Link, Outlet } from 'react-router-dom';
+import { useTranslation } from 'react-i18next';
 import ListItem from '@mui/material/ListItem';
 import Divider from '@mui/material/Divider';
 import Toolbar from '@mui/material/Toolbar';
@@ -15,29 +15,22 @@ import Drawer from '@mui/material/Drawer';
 import List from '@mui/material/List';
 import { Stack } from '@mui/material';
 import Box from '@mui/material/Box';
-import * as React from 'react';
-import map from 'lodash/map';
+import { useState } from 'react';
 
 const drawerWidth = 240;
 
 export default function Base() {
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-    const { settings } = useSettingsDb();
+    const [mobileOpen, setMobileOpen] = useState(false);
+    const { t } = useTranslation();
 
     const handleDrawerToggle = () => {
         setMobileOpen((prevState) => !prevState);
     };
 
-    const navItems = [
-        ['Home', '/'],
-        ['Choocie languiage', '/languages'],
-    ];
-
     return (
         <Stack className="h-screen">
             <AppBar position="static">
                 <Toolbar className="flex items-center justify-between">
-                    {JSON.stringify(settings)}
                     <IconButton
                         color="inherit"
                         edge="start"
@@ -81,25 +74,44 @@ export default function Base() {
                             variant="h6"
                             className="my-2"
                         >
-                            MUI
+                            Master of Lang
                         </Typography>
                         <Divider />
                         <List>
-                            {map(navItems, ([item, href]) => (
-                                <ListItem
-                                    key={item}
-                                    disablePadding
-                                >
-                                    <ListItemButton className="text-center">
-                                        <Link
-                                            to={href}
-                                            className="w-full"
-                                        >
-                                            <ListItemText primary={item} />
-                                        </Link>
-                                    </ListItemButton>
-                                </ListItem>
-                            ))}
+                            <ListItem disablePadding>
+                                <ListItemButton className="text-center">
+                                    <Link
+                                        to="/categories"
+                                        className="w-full"
+                                    >
+                                        <ListItemText primary={t('Start')} />
+                                    </Link>
+                                </ListItemButton>
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemButton className="text-center">
+                                    <Link
+                                        to="/languages"
+                                        className="w-full"
+                                    >
+                                        <ListItemText
+                                            primary={t('Wybierz język')}
+                                        />
+                                    </Link>
+                                </ListItemButton>
+                            </ListItem>
+                            <ListItem disablePadding>
+                                <ListItemButton className="text-center">
+                                    <Link
+                                        to="/levels"
+                                        className="w-full"
+                                    >
+                                        <ListItemText
+                                            primary={t('Wybierz poziom')}
+                                        />
+                                    </Link>
+                                </ListItemButton>
+                            </ListItem>
                         </List>
                     </Box>
                 </Drawer>

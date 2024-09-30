@@ -5,7 +5,9 @@ import useDatabaseContext from '@/hooks/useDatabaseContext';
 import { Settings } from '@/types/database';
 import map from 'lodash/map';
 
-function SettingsProvider({ children }: Readonly<PropsWithChildren>) {
+export default function SettingsProvider({
+    children,
+}: Readonly<PropsWithChildren>) {
     const [settings, setSettings] = useState<Settings[]>([]);
     const db = useDatabaseContext();
 
@@ -30,5 +32,3 @@ function SettingsProvider({ children }: Readonly<PropsWithChildren>) {
         </SettingsContext.Provider>
     );
 }
-
-export default SettingsProvider;

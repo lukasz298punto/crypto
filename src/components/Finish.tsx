@@ -14,7 +14,7 @@ function Finish({ onReset }: Readonly<FinishProps>) {
     const navigate = useNavigate();
 
     return (
-        <Container maxWidth="sm">
+        <Container maxWidth="md">
             <Card className="p-2">
                 <Stack
                     justifyContent="center"
@@ -39,7 +39,7 @@ function Finish({ onReset }: Readonly<FinishProps>) {
                             variant="contained"
                             color="error"
                             onClick={onReset}
-                            keyCode={KeyCode.Space}
+                            keyCode={KeyCode.R}
                         >
                             {t('Zresetuj sesję')}
                         </KeyPressButton>

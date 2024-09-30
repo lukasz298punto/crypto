@@ -3,7 +3,6 @@ import { useCallback, useEffect, useState } from 'react';
 import useDatabaseContext from './useDatabaseContext';
 import { MangoQuerySelector } from 'rxdb';
 import { Word } from '@/types/database';
-import orderBy from 'lodash/orderBy';
 import map from 'lodash/map';
 
 interface Props {
@@ -20,21 +19,7 @@ export default function useWordsDb({ selector }: Readonly<Props>) {
                 selector,
             })
             .$.subscribe((wordsDocs) => {
-                const wordsList = map(wordsDocs, (doc) => doc.toJSON() as Word);
-
-                const sortedWords = orderBy(
-                    wordsList,
-                    [
-                        (word) => word.correct + word.incorrect,
-                        (word) =>
-                            word.correct === 0
-                                ? word.incorrect
-                                : word.incorrect / word.correct,
-                    ],
-                    ['asc', 'desc']
-                );
-
-                setWords(sortedWords);
+                setWords(map(wordsDocs, (doc) => doc.toJSON() as Word));
             });
 
         return () => subscription?.unsubscribe();

@@ -8,34 +8,33 @@ import {
     Typography,
 } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
-import Language from '@/constants/enums/language';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
-import { useNavigate } from 'react-router-dom';
 import { useTranslation } from 'react-i18next';
+import Finish from '@/components/Finish';
 import { useRef, useState } from 'react';
+import useWord from '@/hooks/useWord';
 import clsx from 'clsx';
 
 export default function Writing() {
     const [inputValue, setInputValue] = useState('');
     const { t } = useTranslation();
     const inputRef = useRef<HTMLInputElement>(null);
-    const navigate = useNavigate();
-
-    // Przykładowe dane fiszki
-    const flashcard = {
-        wordPolish: 'Dom',
-        wordEnglish: 'House',
-        pronunciation: 'house',
-    };
-
-    // Stan do kontrolowania, czy użytkownik sprawdził odpowiedź
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
+    const {
+        currentWord,
+        nextWord,
+        skip,
+        check,
+        reset,
+        lang,
+        nativeLang,
+        isCorrect,
+    } = useWord();
 
-    const handleCheck = () => {
-        // Po naciśnięciu przycisku "Sprawdź" pokaż odpowiedź
-        setIsAnswerChecked(true);
-    };
+    if (!currentWord) {
+        return <Finish onReset={reset} />;
+    }
 
     return (
         <Container maxWidth="md">
@@ -53,18 +52,18 @@ export default function Writing() {
                                 variant="h2"
                                 className="font-medium"
                             >
-                                {flashcard.wordPolish}
+                                {currentWord.word}
                             </Typography>
                             <VoiceIcon
-                                name="dupa111111111111111111111111111111"
+                                name={currentWord.word}
                                 keyCode={KeyCode.One}
-                                language={Language.Pl}
+                                language={nativeLang}
                             />
                         </Stack>
                         <Stack
                             direction="row"
                             alignItems="center"
-                            className={clsx('mb-2', {
+                            className={clsx('mb-2 h-[45px]', {
                                 'opacity-0': !isAnswerChecked,
                             })}
                         >
@@ -72,22 +71,21 @@ export default function Writing() {
                                 variant="h5"
                                 color="text.secondary"
                             >
-                                {flashcard.wordEnglish}
+                                {currentWord.translation}
                             </Typography>
-                            <VoiceIcon
-                                name="dupa111111111111111111111111111111"
-                                keyCode={KeyCode.Two}
-                                language={Language.En}
-                            />
+                            {isAnswerChecked && (
+                                <VoiceIcon
+                                    name={currentWord.translation}
+                                    keyCode={KeyCode.Two}
+                                    language={lang}
+                                    autoPlay
+                                />
+                            )}
                         </Stack>
                         {isAnswerChecked && (
                             <>
                                 <Alert
-                                    severity={
-                                        flashcard?.wordEnglish === inputValue
-                                            ? 'success'
-                                            : 'error'
-                                    }
+                                    severity={isCorrect ? 'success' : 'error'}
                                     className="mb-2 h-[56px] w-full xy-center"
                                 >
                                     {inputValue}
@@ -96,16 +94,33 @@ export default function Writing() {
                         )}
                         {!isAnswerChecked && (
                             <TextField
+                                autoComplete="off"
                                 autoFocus
                                 className="mb-2 w-full"
                                 ref={inputRef}
                                 type="text"
                                 value={inputValue}
                                 onChange={(e) => setInputValue(e.target.value)}
-                                onKeyUpCapture={(e) => e.stopPropagation()}
-                                onKeyUp={(e) => e.stopPropagation()}
-                                onKeyDown={(e) => e.stopPropagation()}
-                                onKeyDownCapture={(e) => e.stopPropagation()}
+                                onKeyUpCapture={(e) => {
+                                    if (e.key !== 'Enter' && e.key !== '1') {
+                                        e.stopPropagation();
+                                    }
+                                }}
+                                onKeyUp={(e) => {
+                                    if (e.key !== 'Enter' && e.key !== '1') {
+                                        e.stopPropagation();
+                                    }
+                                }}
+                                onKeyDown={(e) => {
+                                    if (e.key !== 'Enter' && e.key !== '1') {
+                                        e.stopPropagation();
+                                    }
+                                }}
+                                onKeyDownCapture={(e) => {
+                                    if (e.key !== 'Enter' && e.key !== '1') {
+                                        e.stopPropagation();
+                                    }
+                                }}
                             />
                         )}
                         {!isAnswerChecked ? (
@@ -115,13 +130,11 @@ export default function Writing() {
                                 gap={1}
                             >
                                 <KeyPressButton
-                                    keyCode={KeyCode.Space}
+                                    keyCode={KeyCode.One}
                                     className="flex-1"
                                     color="error"
                                     variant="contained"
-                                    onClick={() =>
-                                        navigate('/' + Date.now()?.toString())
-                                    }
+                                    onClick={skip}
                                 >
                                     {t('Pomiń')}
                                 </KeyPressButton>
@@ -129,7 +142,10 @@ export default function Writing() {
                                     keyCode={KeyCode.Enter}
                                     className="flex-1"
                                     variant="contained"
-                                    onClick={handleCheck}
+                                    onClick={() => {
+                                        check(inputValue);
+                                        setIsAnswerChecked(true);
+                                    }}
                                 >
                                     {t('Sprawdź')}
                                 </KeyPressButton>
@@ -139,9 +155,11 @@ export default function Writing() {
                                 keyCode={KeyCode.Enter}
                                 className="w-full"
                                 variant="contained"
-                                onClick={() =>
-                                    navigate('/' + Date.now()?.toString())
-                                }
+                                onClick={() => {
+                                    nextWord();
+                                    setIsAnswerChecked(false);
+                                    setInputValue('');
+                                }}
                             >
                                 {t('Następne słowo')}
                             </KeyPressButton>

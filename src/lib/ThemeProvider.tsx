@@ -4,7 +4,9 @@ import { PropsWithChildren, useEffect, useMemo } from 'react';
 import ThemeMode from '@/constants/enums/themeMode';
 import { useLocalStorage } from 'react-use';
 
-function ThemeProvider({ children }: Readonly<PropsWithChildren>) {
+export default function ThemeProvider({
+    children,
+}: Readonly<PropsWithChildren>) {
     const [mode, setMode] = useLocalStorage<ThemeMode>(
         'themeMode',
         ThemeMode.Light
@@ -47,4 +49,3 @@ function ThemeProvider({ children }: Readonly<PropsWithChildren>) {
         </ThemeModeContext.Provider>
     );
 }
-export default ThemeProvider;
