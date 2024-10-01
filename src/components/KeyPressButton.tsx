@@ -1,8 +1,9 @@
+import { Button, ButtonProps, Typography } from '@mui/material';
 import useKeyCodeName from '@/hooks/useKeyCodeName';
-import { Button, ButtonProps } from '@mui/material';
 import { memo, MouseEvent, useEffect } from 'react';
 import KeyCode from '@/constants/enums/keyCode';
 import { useKeyPress } from 'react-use';
+import clsx from 'clsx';
 
 interface KeyPressButtonProps extends ButtonProps {
     keyCode: KeyCode;
@@ -34,8 +35,15 @@ function KeyPressButton({
             {...props}
             disabled={disabled}
             onClick={onClick}
+            className={clsx('flex align-baseline', props.className)}
         >
-            {children} ({findLabelById(keyCode)})
+            {children}
+            <Typography
+                variant="caption"
+                className="ml-0.5 hidden md:inline"
+            >
+                ({findLabelById(keyCode)})
+            </Typography>
         </Button>
     );
 }

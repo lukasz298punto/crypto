@@ -1,5 +1,6 @@
 import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
+import NativeWord from '@/components/NativeWord';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
@@ -46,15 +47,10 @@ export default function Flashcards() {
                             direction="row"
                             alignItems="center"
                         >
-                            <Typography
-                                variant="h2"
-                                className="font-medium"
-                            >
-                                {currentWord?.word}
-                            </Typography>
+                            <NativeWord word={currentWord?.word} />
                             <VoiceIcon
                                 name={currentWord?.word}
-                                keyCode={KeyCode.One}
+                                keyCode={KeyCode.Three}
                                 language={nativeLang}
                             />
                         </Stack>
@@ -75,7 +71,7 @@ export default function Flashcards() {
                             {isAnswerChecked && (
                                 <VoiceIcon
                                     name={currentWord?.translation}
-                                    keyCode={KeyCode.One}
+                                    keyCode={KeyCode.Three}
                                     language={lang}
                                     autoPlay
                                 />
@@ -83,56 +79,53 @@ export default function Flashcards() {
                         </Stack>
 
                         {!isAnswerChecked ? (
-                            <Stack
+                            <KeyPressButton
                                 className="w-full"
-                                direction="row"
-                                gap={1}
+                                variant="contained"
+                                onClick={handleCheck}
+                                keyCode={KeyCode.Enter}
                             >
+                                {t('Sprawdź')}
+                            </KeyPressButton>
+                        ) : (
+                            <>
+                                <Stack
+                                    className="w-full flex-wrap"
+                                    direction="row"
+                                    gap={1}
+                                >
+                                    <KeyPressButton
+                                        className="flex-1"
+                                        color="error"
+                                        variant="contained"
+                                        onClick={handleIncorrect}
+                                        keyCode={KeyCode.One}
+                                    >
+                                        {t('Źle')}
+                                    </KeyPressButton>
+                                    <KeyPressButton
+                                        className="flex-1"
+                                        color="success"
+                                        variant="contained"
+                                        onClick={handleCorrect}
+                                        keyCode={KeyCode.Two}
+                                    >
+                                        {t('Dobrze')}
+                                    </KeyPressButton>
+                                </Stack>
                                 <KeyPressButton
-                                    className="flex-1"
-                                    color="error"
+                                    className="mt-1 w-full"
                                     variant="contained"
+                                    color="secondary"
                                     onClick={() => {
                                         skip();
+                                        setIsAnswerChecked(false);
                                     }}
                                     keyCode={KeyCode.Space}
                                 >
-                                    {t('Pomiń')}
+                                    {t('Znam to')}
                                 </KeyPressButton>
-                                <KeyPressButton
-                                    className="flex-1"
-                                    variant="contained"
-                                    onClick={handleCheck}
-                                    keyCode={KeyCode.Enter}
-                                >
-                                    {t('Sprawdź')}
-                                </KeyPressButton>
-                            </Stack>
-                        ) : (
-                            <Stack
-                                className="w-full"
-                                direction="row"
-                                gap={1}
-                            >
-                                <KeyPressButton
-                                    className="flex-1"
-                                    color="error"
-                                    variant="contained"
-                                    onClick={handleIncorrect}
-                                    keyCode={KeyCode.Space}
-                                >
-                                    {t('Źle')}
-                                </KeyPressButton>
-                                <KeyPressButton
-                                    className="flex-1"
-                                    color="success"
-                                    variant="contained"
-                                    onClick={handleCorrect}
-                                    keyCode={KeyCode.Enter}
-                                >
-                                    {t('Dobrze')}
-                                </KeyPressButton>
-                            </Stack>
+                            </>
                         )}
                     </Stack>
                 </CardContent>

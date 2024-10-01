@@ -16,11 +16,8 @@ import wordsSchema from '@/constants/schema/words';
 import Category from '@/constants/enums/category';
 import Language from '@/constants/enums/language';
 import { CircularProgress } from '@mui/material';
-import adjectives from '@/data/adjectives.json';
-import Level from '@/constants/enums/level';
-import adverbs from '@/data/adverbs.json';
-import nouns from '@/data/nouns.json';
-import verbs from '@/data/verbs.json';
+import { Word } from '@/types/database';
+import forEach from 'lodash/forEach';
 import { v4 as uuidv4 } from 'uuid';
 import map from 'lodash/map';
 
@@ -39,8 +36,6 @@ export default function DatabaseProvider({
             storage: getRxStorageDexie(),
             ignoreDuplicate: true,
         });
-
-        console.log(verbs, 'verbs');
 
         await db.addCollections({
             settings: {
@@ -136,56 +131,33 @@ export default function DatabaseProvider({
 
         const existingWords = await db.words.find().exec();
         if (existingWords.length === 0) {
-            await db.words.bulkInsert([
-                ...map(verbs, (verb) => ({
-                    id: uuidv4(),
-                    word: verb.word,
-                    translation: verb.translation,
-                    categoryId: Category.Verbs,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                })),
-                ...map(adjectives, (verb) => ({
-                    id: uuidv4(),
-                    word: verb.word,
-                    translation: verb.translation,
-                    categoryId: Category.Adjectives,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                })),
-                ...map(adverbs, (verb) => ({
-                    id: uuidv4(),
-                    word: verb.word,
-                    translation: verb.translation,
-                    categoryId: Category.Adverbs,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                })),
-                ...map(nouns, (verb) => ({
-                    id: uuidv4(),
-                    word: verb.word,
-                    translation: verb.translation,
-                    categoryId: Category.Adverbs,
-                    levelId: Level.Beginner,
-                    languageId: Language.En,
-                    nativeLanguageId: Language.Pl,
-                    correct: 0,
-                    incorrect: 0,
-                    isKnown: false,
-                })),
-            ]);
+            const modules = import.meta.glob('../data/*.json');
+
+            forEach(modules, async (loadModule, path) => {
+                const fileContent = (await loadModule()) as {
+                    default: Pick<Word, 'translation' | 'word'>[];
+                };
+
+                const [category, level] = path
+                    .replace('../data/', '')
+                    .replace('.json', '')
+                    .split('-');
+
+                db.words.bulkInsert(
+                    map(fileContent.default, (verb) => ({
+                        id: uuidv4(),
+                        word: verb.word,
+                        translation: verb.translation,
+                        categoryId: category,
+                        levelId: level,
+                        languageId: Language.En,
+                        nativeLanguageId: Language.Pl,
+                        correct: 0,
+                        incorrect: 0,
+                        isKnown: false,
+                    }))
+                );
+            });
         }
 
         setDatabase(db);

@@ -10,6 +10,7 @@ import {
 import KeyPressButton from '@/components/KeyPressButton';
 import { useCallback, useEffect, useState } from 'react';
 import Language from '@/constants/enums/language';
+import NativeWord from '@/components/NativeWord';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
@@ -38,8 +39,6 @@ export default function Speaking() {
         nativeLang,
         isCorrect,
     } = useWord();
-
-    console.log(recognition, 'recognition');
 
     const startListening = useCallback(() => {
         recognition.start();
@@ -88,12 +87,8 @@ export default function Speaking() {
                             direction="row"
                             alignItems="center"
                         >
-                            <Typography
-                                variant="h2"
-                                className="font-medium"
-                            >
-                                {currentWord.word}
-                            </Typography>
+                            <NativeWord word={currentWord.word} />
+
                             <VoiceIcon
                                 name={currentWord.word}
                                 keyCode={KeyCode.One}
@@ -153,16 +148,6 @@ export default function Speaking() {
                             >
                                 <KeyPressButton
                                     disabled={isRecording}
-                                    keyCode={KeyCode.Space}
-                                    className="flex-1"
-                                    color="error"
-                                    variant="contained"
-                                    onClick={skip}
-                                >
-                                    {t('Pomiń')}
-                                </KeyPressButton>
-                                <KeyPressButton
-                                    disabled={isRecording}
                                     keyCode={KeyCode.Enter}
                                     className="flex-1"
                                     variant="contained"
@@ -172,17 +157,31 @@ export default function Speaking() {
                                 </KeyPressButton>
                             </Stack>
                         ) : (
-                            <KeyPressButton
-                                keyCode={KeyCode.Enter}
-                                className="w-full flex-1"
-                                variant="contained"
-                                onClick={() => {
-                                    nextWord();
-                                    setSpeechResult('');
-                                }}
-                            >
-                                {t('Następne słowo')}
-                            </KeyPressButton>
+                            <>
+                                <KeyPressButton
+                                    keyCode={KeyCode.Enter}
+                                    className="w-full flex-1"
+                                    variant="contained"
+                                    onClick={() => {
+                                        nextWord();
+                                        setSpeechResult('');
+                                    }}
+                                >
+                                    {t('Następne słowo')}
+                                </KeyPressButton>
+                                <KeyPressButton
+                                    className="mt-1 w-full"
+                                    variant="contained"
+                                    color="secondary"
+                                    onClick={() => {
+                                        skip();
+                                        setSpeechResult('');
+                                    }}
+                                    keyCode={KeyCode.S}
+                                >
+                                    {t('Znam to')}
+                                </KeyPressButton>
+                            </>
                         )}
                     </Stack>
                 </CardContent>

@@ -83,7 +83,10 @@ function VoiceIcon({
         >
             <Badge
                 badgeContent={
-                    <Typography variant="caption">
+                    <Typography
+                        variant="caption"
+                        className="hidden md:block"
+                    >
                         ({findLabelById(keyCode)})
                     </Typography>
                 }
