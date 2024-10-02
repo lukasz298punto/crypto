@@ -13,11 +13,11 @@ import Divider from '@mui/material/Divider';
 import Toolbar from '@mui/material/Toolbar';
 import AppBar from '@mui/material/AppBar';
 import Drawer from '@mui/material/Drawer';
-import invokeMap from 'lodash/invokeMap';
 import List from '@mui/material/List';
 import { Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
+import map from 'lodash/map';
 
 const drawerWidth = 240;
 
@@ -33,8 +33,9 @@ export default function Base() {
     const clearDatabase = async () => {
         // eslint-disable-next-line lodash/prefer-lodash-method
         const allWords = await db.words.find().exec();
-        await Promise.all(invokeMap(allWords, (word) => word.remove()));
-        location.reload();
+        console.log(allWords, 'allWords');
+        await Promise.all(map(allWords, (word) => word?.remove()));
+        window.location.href = '/';
     };
 
     return (

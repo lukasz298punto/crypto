@@ -16,8 +16,8 @@ import wordsSchema from '@/constants/schema/words';
 import Category from '@/constants/enums/category';
 import Language from '@/constants/enums/language';
 import { CircularProgress } from '@mui/material';
-import { Word } from '@/types/database';
 import forEach from 'lodash/forEach';
+import modules from '@/data/modules';
 import { v4 as uuidv4 } from 'uuid';
 import map from 'lodash/map';
 
@@ -131,20 +131,9 @@ export default function DatabaseProvider({
 
         const existingWords = await db.words.find().exec();
         if (existingWords.length === 0) {
-            const modules = import.meta.glob('../data/*.json');
-
-            forEach(modules, async (loadModule, path) => {
-                const fileContent = (await loadModule()) as {
-                    default: Pick<Word, 'translation' | 'word'>[];
-                };
-
-                const [category, level] = path
-                    .replace('../data/', '')
-                    .replace('.json', '')
-                    .split('-');
-
+            forEach(modules, ([category, level, content]) => {
                 db.words.bulkInsert(
-                    map(fileContent.default, (verb) => ({
+                    map(content, (verb) => ({
                         id: uuidv4(),
                         word: verb.word,
                         translation: verb.translation,
