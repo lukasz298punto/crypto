@@ -85,8 +85,6 @@ export default function Categories() {
             { id: Category.Interjections, label: t('Wykrzykniki') },
             { id: Category.PhrasalVerbs, label: t('Phrasal Verbs') },
             { id: Category.Idioms, label: t('Idiomy') },
-            { id: Category.Synonyms, label: t('Synonimy') },
-            { id: Category.Antonyms, label: t('Antonimy') },
             { id: Category.Phrases, label: t('Zwroty') },
             { id: Category.Sentences, label: t('Zdania') },
         ];

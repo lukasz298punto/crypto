@@ -10,8 +10,6 @@ enum Category {
     Interjections = 'interjections', //Wykrzykniki
     PhrasalVerbs = 'phrasalVerbs',
     Idioms = 'idioms', //Idiomy
-    Synonyms = 'synonyms', //Synonimy
-    Antonyms = 'antonyms', //Antonimy
     Phrases = 'phrases', //Zwroty
     Sentences = 'sentences', //Zdania
 }

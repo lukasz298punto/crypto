@@ -107,16 +107,6 @@ export default function DatabaseProvider({
                     languageId: Language.En,
                 },
                 {
-                    id: Category.Synonyms,
-                    name: 'Synonyms',
-                    languageId: Language.En,
-                },
-                {
-                    id: Category.Antonyms,
-                    name: 'Antonyms',
-                    languageId: Language.En,
-                },
-                {
                     id: Category.Phrases,
                     name: 'Phrases',
                     languageId: Language.En,

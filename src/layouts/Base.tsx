@@ -35,7 +35,7 @@ export default function Base() {
         const allWords = await db.words.find().exec();
         console.log(allWords, 'allWords');
         await Promise.all(map(allWords, (word) => word?.remove()));
-        window.location.href = '/';
+        location.reload();
     };
 
     return (

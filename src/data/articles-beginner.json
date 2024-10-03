@@ -1,0 +1,8 @@
+[
+    { "translation": "The", "word": "Ten/Ta/To (określony)" },
+    { "translation": "A", "word": "Jeden/Jedna/Jedno (nieokreślony)" },
+    {
+        "translation": "An",
+        "word": "Jeden/Jedna/Jedno (nieokreślony, przed samogłoską)"
+    }
+]

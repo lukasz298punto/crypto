@@ -151,19 +151,21 @@ export default function Writing() {
                                 >
                                     {t('Następne słowo')}
                                 </KeyPressButton>
-                                <KeyPressButton
-                                    className="mt-1 w-full"
-                                    variant="contained"
-                                    color="secondary"
-                                    onClick={() => {
-                                        skip();
-                                        setInputValue('');
-                                        setIsAnswerChecked(false);
-                                    }}
-                                    keyCode={KeyCode.S}
-                                >
-                                    {t('Znam to')}
-                                </KeyPressButton>
+                                {isCorrect && (
+                                    <KeyPressButton
+                                        className="mt-1 w-full"
+                                        variant="contained"
+                                        color="secondary"
+                                        onClick={() => {
+                                            skip();
+                                            setInputValue('');
+                                            setIsAnswerChecked(false);
+                                        }}
+                                        keyCode={KeyCode.S}
+                                    >
+                                        {t('Znam to')}
+                                    </KeyPressButton>
+                                )}
                             </>
                         )}
                     </Stack>
