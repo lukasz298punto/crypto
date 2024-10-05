@@ -1,51 +1,296 @@
 [
-    { "translation": "At", "word": "W/Na/Przy" },
-    { "translation": "In", "word": "W" },
-    { "translation": "On", "word": "Na" },
-    { "translation": "By", "word": "Przez/Obok" },
-    { "translation": "With", "word": "Z" },
-    { "translation": "About", "word": "O" },
-    { "translation": "For", "word": "Dla/Za" },
-    { "translation": "To", "word": "Do" },
-    { "translation": "From", "word": "Z/Skąd" },
-    { "translation": "Up", "word": "W górę" },
-    { "translation": "Down", "word": "W dół" },
-    { "translation": "Over", "word": "Nad" },
-    { "translation": "Under", "word": "Pod" },
-    { "translation": "Between", "word": "Pomiędzy" },
-    { "translation": "Among", "word": "Wśród" },
-    { "translation": "Into", "word": "Do (środka)" },
-    { "translation": "Out of", "word": "Z (wychodząc)" },
-    { "translation": "Through", "word": "Przez" },
-    { "translation": "Across", "word": "Przez (na drugą stronę)" },
-    { "translation": "Before", "word": "Przed (w czasie)" },
-    { "translation": "After", "word": "Po" },
-    { "translation": "During", "word": "Podczas" },
-    { "translation": "Since", "word": "Od (czasu)" },
-    { "translation": "Until", "word": "Do (czasu)" },
-    { "translation": "Without", "word": "Bez" },
-    { "translation": "Within", "word": "W obrębie/W ciągu" },
-    { "translation": "Beyond", "word": "Poza" },
-    { "translation": "Around", "word": "Wokół/Około" },
-    { "translation": "Near", "word": "Blisko" },
-    { "translation": "Next to", "word": "Obok" },
-    { "translation": "Behind", "word": "Za" },
-    { "translation": "In front of", "word": "Przed" },
-    { "translation": "Above", "word": "Nad" },
-    { "translation": "Below", "word": "Pod" },
-    { "translation": "Against", "word": "Przeciwko/Oparty o" },
-    { "translation": "Toward", "word": "W kierunku" },
-    { "translation": "Amongst", "word": "Pośród" },
-    { "translation": "Beside", "word": "Obok" },
-    { "translation": "Along", "word": "Wzdłuż" },
-    { "translation": "Past", "word": "Obok (mijając)" },
-    { "translation": "Across from", "word": "Naprzeciwko" },
-    { "translation": "Inside", "word": "Wewnątrz" },
-    { "translation": "Outside", "word": "Na zewnątrz" },
-    { "translation": "Onto", "word": "Na (wejść na coś)" },
-    { "translation": "Off", "word": "Z (zejść z czegoś)" },
-    { "translation": "Amid", "word": "Pośród" },
-    { "translation": "Opposite", "word": "Naprzeciwko" },
-    { "translation": "Despite", "word": "Pomimo" },
-    { "translation": "Regarding", "word": "Odnośnie" }
+    {
+        "translation": "At",
+        "word": "W/Na/Przy",
+        "exampleUsed": "Spotkamy się w restauracji o 18:00.",
+        "exampleUsedTranslation": "We will meet at the restaurant at 6 p.m."
+    },
+    {
+        "translation": "In",
+        "word": "W",
+        "exampleUsed": "Mieszkam w dużym mieście.",
+        "exampleUsedTranslation": "I live in a big city."
+    },
+    {
+        "translation": "On",
+        "word": "Na",
+        "exampleUsed": "Książka jest na stole.",
+        "exampleUsedTranslation": "The book is on the table."
+    },
+    {
+        "translation": "By",
+        "word": "Przez/Obok",
+        "exampleUsed": "Dom znajduje się obok rzeki.",
+        "exampleUsedTranslation": "The house is by the river."
+    },
+    {
+        "translation": "With",
+        "word": "Z",
+        "exampleUsed": "Idę do kina z moim przyjacielem.",
+        "exampleUsedTranslation": "I'm going to the cinema with my friend."
+    },
+    {
+        "translation": "About",
+        "word": "O",
+        "exampleUsed": "Rozmawiamy o pogodzie.",
+        "exampleUsedTranslation": "We are talking about the weather."
+    },
+    {
+        "translation": "For",
+        "word": "Dla/Za",
+        "exampleUsed": "To jest prezent dla ciebie.",
+        "exampleUsedTranslation": "This is a present for you."
+    },
+    {
+        "translation": "To",
+        "word": "Do",
+        "exampleUsed": "Idę do szkoły.",
+        "exampleUsedTranslation": "I'm going to school."
+    },
+    {
+        "translation": "From",
+        "word": "Z/Skąd",
+        "exampleUsed": "Otrzymałem wiadomość od kolegi.",
+        "exampleUsedTranslation": "I received a message from a colleague."
+    },
+    {
+        "translation": "Up",
+        "word": "W górę",
+        "exampleUsed": "Wspinamy się w górę wzgórza.",
+        "exampleUsedTranslation": "We are climbing up the hill."
+    },
+    {
+        "translation": "Down",
+        "word": "W dół",
+        "exampleUsed": "Zjeżdżamy w dół ulicy.",
+        "exampleUsedTranslation": "We are driving down the street."
+    },
+    {
+        "translation": "Over",
+        "word": "Nad",
+        "exampleUsed": "Most jest nad rzeką.",
+        "exampleUsedTranslation": "The bridge is over the river."
+    },
+    {
+        "translation": "Under",
+        "word": "Pod",
+        "exampleUsed": "Pies schował się pod stołem.",
+        "exampleUsedTranslation": "The dog is hiding under the table."
+    },
+    {
+        "translation": "Between",
+        "word": "Pomiędzy",
+        "exampleUsed": "Mieszkam pomiędzy dwoma parkami.",
+        "exampleUsedTranslation": "I live between two parks."
+    },
+    {
+        "translation": "Among",
+        "word": "Wśród",
+        "exampleUsed": "Był wśród tłumu ludzi.",
+        "exampleUsedTranslation": "He was among a crowd of people."
+    },
+    {
+        "translation": "Into",
+        "word": "Do (środka)",
+        "exampleUsed": "Wszedłem do budynku.",
+        "exampleUsedTranslation": "I walked into the building."
+    },
+    {
+        "translation": "Out of",
+        "word": "Z (wychodząc)",
+        "exampleUsed": "Wyszedłem z pokoju.",
+        "exampleUsedTranslation": "I walked out of the room."
+    },
+    {
+        "translation": "Through",
+        "word": "Przez",
+        "exampleUsed": "Szliśmy przez las.",
+        "exampleUsedTranslation": "We walked through the forest."
+    },
+    {
+        "translation": "Across",
+        "word": "Przez (na drugą stronę)",
+        "exampleUsed": "Przeszliśmy przez most.",
+        "exampleUsedTranslation": "We walked across the bridge."
+    },
+    {
+        "translation": "Before",
+        "word": "Przed (w czasie)",
+        "exampleUsed": "Zrobiłem zadanie domowe przed obiadem.",
+        "exampleUsedTranslation": "I did my homework before dinner."
+    },
+    {
+        "translation": "After",
+        "word": "Po",
+        "exampleUsed": "Spotkamy się po szkole.",
+        "exampleUsedTranslation": "We will meet after school."
+    },
+    {
+        "translation": "During",
+        "word": "Podczas",
+        "exampleUsed": "Nie rozmawiaj podczas lekcji.",
+        "exampleUsedTranslation": "Don't talk during the lesson."
+    },
+    {
+        "translation": "Since",
+        "word": "Od (czasu)",
+        "exampleUsed": "Mieszkam tutaj od 2010 roku.",
+        "exampleUsedTranslation": "I have lived here since 2010."
+    },
+    {
+        "translation": "Until",
+        "word": "Do (czasu)",
+        "exampleUsed": "Będziemy tutaj do 18:00.",
+        "exampleUsedTranslation": "We will be here until 6 p.m."
+    },
+    {
+        "translation": "Without",
+        "word": "Bez",
+        "exampleUsed": "Nie mogę żyć bez muzyki.",
+        "exampleUsedTranslation": "I can't live without music."
+    },
+    {
+        "translation": "Within",
+        "word": "W obrębie/W ciągu",
+        "exampleUsed": "Projekt musi być zrobiony w ciągu tygodnia.",
+        "exampleUsedTranslation": "The project must be done within a week."
+    },
+    {
+        "translation": "Beyond",
+        "word": "Poza",
+        "exampleUsed": "To jest poza moimi możliwościami.",
+        "exampleUsedTranslation": "This is beyond my capabilities."
+    },
+    {
+        "translation": "Around",
+        "word": "Wokół/Około",
+        "exampleUsed": "Spacerowaliśmy wokół jeziora.",
+        "exampleUsedTranslation": "We walked around the lake."
+    },
+    {
+        "translation": "Near",
+        "word": "Blisko",
+        "exampleUsed": "Mieszkam blisko szkoły.",
+        "exampleUsedTranslation": "I live near the school."
+    },
+    {
+        "translation": "Next to",
+        "word": "Obok",
+        "exampleUsed": "Usiadłem obok mojego przyjaciela.",
+        "exampleUsedTranslation": "I sat next to my friend."
+    },
+    {
+        "translation": "Behind",
+        "word": "Za",
+        "exampleUsed": "Samochód stoi za budynkiem.",
+        "exampleUsedTranslation": "The car is parked behind the building."
+    },
+    {
+        "translation": "In front of",
+        "word": "Przed",
+        "exampleUsed": "Stałem przed drzwiami.",
+        "exampleUsedTranslation": "I was standing in front of the door."
+    },
+    {
+        "translation": "Above",
+        "word": "Nad",
+        "exampleUsed": "Lampa wisi nad stołem.",
+        "exampleUsedTranslation": "The lamp is hanging above the table."
+    },
+    {
+        "translation": "Below",
+        "word": "Pod",
+        "exampleUsed": "Temperatura jest poniżej zera.",
+        "exampleUsedTranslation": "The temperature is below zero."
+    },
+    {
+        "translation": "Against",
+        "word": "Przeciwko/Oparty o",
+        "exampleUsed": "Jestem przeciwko tej decyzji.",
+        "exampleUsedTranslation": "I am against this decision."
+    },
+    {
+        "translation": "Toward",
+        "word": "W kierunku",
+        "exampleUsed": "Idziemy w kierunku parku.",
+        "exampleUsedTranslation": "We are walking toward the park."
+    },
+    {
+        "translation": "Amongst",
+        "word": "Pośród",
+        "exampleUsed": "Czuł się zagubiony pośród tłumu.",
+        "exampleUsedTranslation": "He felt lost amongst the crowd."
+    },
+    {
+        "translation": "Beside",
+        "word": "Obok",
+        "exampleUsed": "Mój dom jest obok szkoły.",
+        "exampleUsedTranslation": "My house is beside the school."
+    },
+    {
+        "translation": "Along",
+        "word": "Wzdłuż",
+        "exampleUsed": "Spacerowaliśmy wzdłuż rzeki.",
+        "exampleUsedTranslation": "We walked along the river."
+    },
+    {
+        "translation": "Past",
+        "word": "Obok (mijając)",
+        "exampleUsed": "Przeszliśmy obok sklepu.",
+        "exampleUsedTranslation": "We walked past the store."
+    },
+    {
+        "translation": "Across from",
+        "word": "Naprzeciwko",
+        "exampleUsed": "Mieszkam naprzeciwko szkoły.",
+        "exampleUsedTranslation": "I live across from the school."
+    },
+    {
+        "translation": "Inside",
+        "word": "Wewnątrz",
+        "exampleUsed": "Jest bardzo ciepło wewnątrz domu.",
+        "exampleUsedTranslation": "It is very warm inside the house."
+    },
+    {
+        "translation": "Outside",
+        "word": "Na zewnątrz",
+        "exampleUsed": "Dzieci bawią się na zewnątrz.",
+        "exampleUsedTranslation": "The children are playing outside."
+    },
+    {
+        "translation": "Onto",
+        "word": "Na (wejść na coś)",
+        "exampleUsed": "Wszedł na scenę.",
+        "exampleUsedTranslation": "He stepped onto the stage."
+    },
+    {
+        "translation": "Off",
+        "word": "Z (zejść z czegoś)",
+        "exampleUsed": "Zszedłem z roweru.",
+        "exampleUsedTranslation": "I got off the bike."
+    },
+    {
+        "translation": "Amid",
+        "word": "Pośród",
+        "exampleUsed": "Zgubiliśmy się pośród chaosu.",
+        "exampleUsedTranslation": "We got lost amid the chaos."
+    },
+    {
+        "translation": "Opposite",
+        "word": "Naprzeciwko",
+        "exampleUsed": "Restauracja jest naprzeciwko kina.",
+        "exampleUsedTranslation": "The restaurant is opposite the cinema."
+    },
+    {
+        "translation": "Despite",
+        "word": "Pomimo",
+        "exampleUsed": "Pomimo deszczu, poszliśmy na spacer.",
+        "exampleUsedTranslation": "Despite the rain, we went for a walk."
+    },
+    {
+        "translation": "Regarding",
+        "word": "Odnośnie",
+        "exampleUsed": "Mam pytanie odnośnie projektu.",
+        "exampleUsedTranslation": "I have a question regarding the project."
+    }
 ]

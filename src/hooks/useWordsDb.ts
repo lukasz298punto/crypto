@@ -11,16 +11,24 @@ interface Props {
 
 export default function useWordsDb({ selector }: Readonly<Props>) {
     const [words, setWords] = useState<Word[]>([]);
+    const [isLoading, setIsLoading] = useState(true);
     const db = useDatabaseContext();
 
     useEffect(() => {
+        setIsLoading(true);
         const subscription = db?.words
             ?.find({
                 selector,
             })
-            .$.subscribe((wordsDocs) => {
-                setWords(map(wordsDocs, (doc) => doc.toJSON() as Word));
-            });
+            .$.subscribe(
+                (wordsDocs) => {
+                    setWords(map(wordsDocs, (doc) => doc.toJSON() as Word));
+                    setIsLoading(false);
+                },
+                () => {
+                    setIsLoading(false);
+                }
+            );
 
         return () => subscription?.unsubscribe();
     }, [db, selector]);
@@ -99,5 +107,6 @@ export default function useWordsDb({ selector }: Readonly<Props>) {
         setWordAsKnown,
         incrementIncorrect,
         findWordById,
+        isLoading,
     };
 }

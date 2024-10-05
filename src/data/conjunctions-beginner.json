@@ -1,54 +1,296 @@
 [
-    { "translation": "And", "word": "I" },
-    { "translation": "But", "word": "Ale" },
-    { "translation": "Or", "word": "Lub" },
-    { "translation": "Nor", "word": "Ani" },
-    { "translation": "For", "word": "Ponieważ" },
-    { "translation": "Yet", "word": "Jednak" },
-    { "translation": "So", "word": "Więc" },
-    { "translation": "Because", "word": "Ponieważ" },
-    { "translation": "Although", "word": "Chociaż" },
-    { "translation": "Though", "word": "Choć" },
-    { "translation": "Since", "word": "Od/Skoro" },
-    { "translation": "As", "word": "Jak" },
-    { "translation": "Unless", "word": "Chyba że" },
-    { "translation": "Until", "word": "Dopóki" },
-    { "translation": "While", "word": "Podczas gdy" },
-    { "translation": "Whereas", "word": "Podczas gdy" },
-    { "translation": "If", "word": "Jeśli" },
-    { "translation": "Even if", "word": "Nawet jeśli" },
-    { "translation": "Whether", "word": "Czy" },
-    { "translation": "As long as", "word": "Tak długo jak" },
-    { "translation": "In case", "word": "Na wypadek gdyby" },
-    { "translation": "Though", "word": "Mimo że" },
-    { "translation": "Rather than", "word": "Zamiast" },
-    { "translation": "Neither... nor", "word": "Ani... ani" },
-    { "translation": "Both... and", "word": "Zarówno... jak i" },
-    { "translation": "Either... or", "word": "Albo... albo" },
+    {
+        "translation": "And",
+        "word": "I",
+        "exampleUsed": "Lubię kawę i herbatę.",
+        "exampleUsedTranslation": "I like coffee and tea."
+    },
+    {
+        "translation": "But",
+        "word": "Ale",
+        "exampleUsed": "Chciałem iść, ale padało.",
+        "exampleUsedTranslation": "I wanted to go, but it was raining."
+    },
+    {
+        "translation": "Or",
+        "word": "Lub",
+        "exampleUsed": "Możemy iść do kina lub do parku.",
+        "exampleUsedTranslation": "We can go to the cinema or the park."
+    },
+    {
+        "translation": "Nor",
+        "word": "Ani",
+        "exampleUsed": "Nie lubię ani kawy, ani herbaty.",
+        "exampleUsedTranslation": "I don't like coffee nor tea."
+    },
+    {
+        "translation": "For",
+        "word": "Ponieważ",
+        "exampleUsed": "Zostałem w domu, ponieważ padał deszcz.",
+        "exampleUsedTranslation": "I stayed home, for it was raining."
+    },
+    {
+        "translation": "Yet",
+        "word": "Jednak",
+        "exampleUsed": "Jest zimno, jednak wyszedłem na spacer.",
+        "exampleUsedTranslation": "It's cold, yet I went for a walk."
+    },
+    {
+        "translation": "So",
+        "word": "Więc",
+        "exampleUsed": "Byłem zmęczony, więc poszedłem spać.",
+        "exampleUsedTranslation": "I was tired, so I went to bed."
+    },
+    {
+        "translation": "Because",
+        "word": "Ponieważ",
+        "exampleUsed": "Zostałem w domu, ponieważ padało.",
+        "exampleUsedTranslation": "I stayed home because it was raining."
+    },
+    {
+        "translation": "Although",
+        "word": "Chociaż",
+        "exampleUsed": "Chociaż pada, pójdziemy na spacer.",
+        "exampleUsedTranslation": "Although it's raining, we'll go for a walk."
+    },
+    {
+        "translation": "Though",
+        "word": "Choć",
+        "exampleUsed": "Choć padało, poszedłem na spacer.",
+        "exampleUsedTranslation": "Though it was raining, I went for a walk."
+    },
+    {
+        "translation": "Since",
+        "word": "Od/Skoro",
+        "exampleUsed": "Skoro jest późno, musimy iść.",
+        "exampleUsedTranslation": "Since it’s late, we have to go."
+    },
+    {
+        "translation": "As",
+        "word": "Jak",
+        "exampleUsed": "Zrób to, jak powiedziałem.",
+        "exampleUsedTranslation": "Do it as I said."
+    },
+    {
+        "translation": "Unless",
+        "word": "Chyba że",
+        "exampleUsed": "Nie pójdziemy, chyba że przestanie padać.",
+        "exampleUsedTranslation": "We won't go unless it stops raining."
+    },
+    {
+        "translation": "Until",
+        "word": "Dopóki",
+        "exampleUsed": "Czekaj tutaj, dopóki nie wrócę.",
+        "exampleUsedTranslation": "Wait here until I come back."
+    },
+    {
+        "translation": "While",
+        "word": "Podczas gdy",
+        "exampleUsed": "Ona gotuje, podczas gdy on ogląda telewizję.",
+        "exampleUsedTranslation": "She is cooking while he is watching TV."
+    },
+    {
+        "translation": "Whereas",
+        "word": "Podczas gdy",
+        "exampleUsed": "On lubi kawę, podczas gdy ona woli herbatę.",
+        "exampleUsedTranslation": "He likes coffee, whereas she prefers tea."
+    },
+    {
+        "translation": "If",
+        "word": "Jeśli",
+        "exampleUsed": "Jeśli pada, weź parasol.",
+        "exampleUsedTranslation": "If it rains, take an umbrella."
+    },
+    {
+        "translation": "Even if",
+        "word": "Nawet jeśli",
+        "exampleUsed": "Nawet jeśli pada, pójdziemy.",
+        "exampleUsedTranslation": "Even if it rains, we'll go."
+    },
+    {
+        "translation": "Whether",
+        "word": "Czy",
+        "exampleUsed": "Nie wiem, czy przyjdzie.",
+        "exampleUsedTranslation": "I don't know whether he will come."
+    },
+    {
+        "translation": "As long as",
+        "word": "Tak długo jak",
+        "exampleUsed": "Zostań, tak długo jak chcesz.",
+        "exampleUsedTranslation": "Stay as long as you want."
+    },
+    {
+        "translation": "In case",
+        "word": "Na wypadek gdyby",
+        "exampleUsed": "Zabierz parasol na wypadek gdyby padało.",
+        "exampleUsedTranslation": "Take an umbrella in case it rains."
+    },
+    {
+        "translation": "Though",
+        "word": "Mimo że",
+        "exampleUsed": "Mimo że padało, poszedłem na spacer.",
+        "exampleUsedTranslation": "Though it rained, I went for a walk."
+    },
+    {
+        "translation": "Rather than",
+        "word": "Zamiast",
+        "exampleUsed": "Wolę herbatę zamiast kawy.",
+        "exampleUsedTranslation": "I prefer tea rather than coffee."
+    },
+    {
+        "translation": "Neither... nor",
+        "word": "Ani... ani",
+        "exampleUsed": "Nie lubię ani kawy, ani herbaty.",
+        "exampleUsedTranslation": "I like neither coffee nor tea."
+    },
+    {
+        "translation": "Both... and",
+        "word": "Zarówno... jak i",
+        "exampleUsed": "Lubię zarówno kawę, jak i herbatę.",
+        "exampleUsedTranslation": "I like both coffee and tea."
+    },
+    {
+        "translation": "Either... or",
+        "word": "Albo... albo",
+        "exampleUsed": "Możemy iść albo do kina, albo do parku.",
+        "exampleUsedTranslation": "We can go either to the cinema or to the park."
+    },
     {
         "translation": "Not only... but also",
-        "word": "Nie tylko... ale także"
+        "word": "Nie tylko... ale także",
+        "exampleUsed": "Nie tylko padało, ale także było zimno.",
+        "exampleUsedTranslation": "Not only was it raining, but it was also cold."
     },
-    { "translation": "Whether... or", "word": "Czy... czy" },
-    { "translation": "As if", "word": "Jakby" },
-    { "translation": "In order that", "word": "Aby" },
-    { "translation": "So that", "word": "Tak aby" },
-    { "translation": "Provided that", "word": "Pod warunkiem że" },
-    { "translation": "Once", "word": "Gdy tylko" },
-    { "translation": "Even though", "word": "Nawet jeśli" },
-    { "translation": "In addition to", "word": "Oprócz" },
-    { "translation": "Furthermore", "word": "Co więcej" },
-    { "translation": "Moreover", "word": "Ponadto" },
-    { "translation": "However", "word": "Jednakże" },
-    { "translation": "Nevertheless", "word": "Niemniej jednak" },
-    { "translation": "On the other hand", "word": "Z drugiej strony" },
-    { "translation": "Therefore", "word": "Dlatego" },
-    { "translation": "Thus", "word": "Tak więc" },
-    { "translation": "Consequently", "word": "W rezultacie" },
-    { "translation": "Hence", "word": "Stąd" },
-    { "translation": "As a result", "word": "W wyniku" },
-    { "translation": "For example", "word": "Na przykład" },
-    { "translation": "For instance", "word": "Na przykład" },
-    { "translation": "In fact", "word": "W rzeczywistości" },
-    { "translation": "That is", "word": "To znaczy" }
+    {
+        "translation": "Whether... or",
+        "word": "Czy... czy",
+        "exampleUsed": "Nie wiem, czy on przyjdzie, czy nie.",
+        "exampleUsedTranslation": "I don’t know whether he will come or not."
+    },
+    {
+        "translation": "As if",
+        "word": "Jakby",
+        "exampleUsed": "On zachowuje się, jakby wiedział wszystko.",
+        "exampleUsedTranslation": "He acts as if he knows everything."
+    },
+    {
+        "translation": "In order that",
+        "word": "Aby",
+        "exampleUsed": "Zrobiliśmy to, aby pomóc.",
+        "exampleUsedTranslation": "We did it in order to help."
+    },
+    {
+        "translation": "So that",
+        "word": "Tak aby",
+        "exampleUsed": "Pracuj szybko, tak aby skończyć na czas.",
+        "exampleUsedTranslation": "Work fast so that you finish on time."
+    },
+    {
+        "translation": "Provided that",
+        "word": "Pod warunkiem że",
+        "exampleUsed": "Pójdziemy na spacer, pod warunkiem że przestanie padać.",
+        "exampleUsedTranslation": "We’ll go for a walk provided that it stops raining."
+    },
+    {
+        "translation": "Once",
+        "word": "Gdy tylko",
+        "exampleUsed": "Gdy tylko skończę, zadzwonię.",
+        "exampleUsedTranslation": "Once I finish, I’ll call."
+    },
+    {
+        "translation": "Even though",
+        "word": "Nawet jeśli",
+        "exampleUsed": "Nawet jeśli jest zimno, pójdziemy.",
+        "exampleUsedTranslation": "Even though it’s cold, we’ll go."
+    },
+    {
+        "translation": "In addition to",
+        "word": "Oprócz",
+        "exampleUsed": "Oprócz kawy zamówiłem też ciastko.",
+        "exampleUsedTranslation": "In addition to coffee, I ordered a cake."
+    },
+    {
+        "translation": "Furthermore",
+        "word": "Co więcej",
+        "exampleUsed": "Co więcej, pogoda się poprawia.",
+        "exampleUsedTranslation": "Furthermore, the weather is improving."
+    },
+    {
+        "translation": "Moreover",
+        "word": "Ponadto",
+        "exampleUsed": "Ponadto, musimy zapłacić za bilet.",
+        "exampleUsedTranslation": "Moreover, we need to pay for the ticket."
+    },
+    {
+        "translation": "However",
+        "word": "Jednakże",
+        "exampleUsed": "Chciałem wyjść, jednakże padało.",
+        "exampleUsedTranslation": "I wanted to go out; however, it was raining."
+    },
+    {
+        "translation": "Nevertheless",
+        "word": "Niemniej jednak",
+        "exampleUsed": "Padało, niemniej jednak wyszedłem.",
+        "exampleUsedTranslation": "It was raining; nevertheless, I went out."
+    },
+    {
+        "translation": "On the other hand",
+        "word": "Z drugiej strony",
+        "exampleUsed": "Uwielbiam kawę, ale z drugiej strony lubię też herbatę.",
+        "exampleUsedTranslation": "I love coffee, but on the other hand, I also like tea."
+    },
+    {
+        "translation": "Therefore",
+        "word": "Dlatego",
+        "exampleUsed": "Padało, dlatego zostałem w domu.",
+        "exampleUsedTranslation": "It was raining, therefore I stayed home."
+    },
+    {
+        "translation": "Thus",
+        "word": "Tak więc",
+        "exampleUsed": "Było zimno, tak więc wróciliśmy do domu.",
+        "exampleUsedTranslation": "It was cold, thus we went back home."
+    },
+    {
+        "translation": "Consequently",
+        "word": "W rezultacie",
+        "exampleUsed": "Nie uczył się, w rezultacie oblał egzamin.",
+        "exampleUsedTranslation": "He didn’t study; consequently, he failed the exam."
+    },
+    {
+        "translation": "Hence",
+        "word": "Stąd",
+        "exampleUsed": "Było późno, stąd musieliśmy iść.",
+        "exampleUsedTranslation": "It was late, hence we had to leave."
+    },
+    {
+        "translation": "As a result",
+        "word": "W wyniku",
+        "exampleUsed": "Padało, w wyniku czego odwołano mecz.",
+        "exampleUsedTranslation": "It was raining, as a result, the match was canceled."
+    },
+    {
+        "translation": "For example",
+        "word": "Na przykład",
+        "exampleUsed": "Lubię owoce, na przykład jabłka.",
+        "exampleUsedTranslation": "I like fruits, for example, apples."
+    },
+    {
+        "translation": "For instance",
+        "word": "Na przykład",
+        "exampleUsed": "Lubię warzywa, na przykład marchew.",
+        "exampleUsedTranslation": "I like vegetables, for instance, carrots."
+    },
+    {
+        "translation": "In fact",
+        "word": "W rzeczywistości",
+        "exampleUsed": "On nie lubi herbaty. W rzeczywistości, nigdy jej nie pije.",
+        "exampleUsedTranslation": "He doesn't like tea. In fact, he never drinks it."
+    },
+    {
+        "translation": "That is",
+        "word": "To znaczy",
+        "exampleUsed": "Musimy iść o 7:00, to znaczy wcześnie rano.",
+        "exampleUsedTranslation": "We have to go at 7:00, that is, early in the morning."
+    }
 ]

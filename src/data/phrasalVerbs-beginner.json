@@ -1,46 +1,266 @@
 [
-    { "translation": "Get up", "word": "Wstać" },
-    { "translation": "Turn on", "word": "Włączyć" },
-    { "translation": "Turn off", "word": "Wyłączyć" },
-    { "translation": "Give up", "word": "Poddać się" },
-    { "translation": "Look for", "word": "Szukaj" },
-    { "translation": "Put on", "word": "Założyć" },
-    { "translation": "Take off", "word": "Zdejmować/Startować (samolot)" },
-    { "translation": "Break down", "word": "Zepsuć się" },
-    { "translation": "Call off", "word": "Odwołać" },
-    { "translation": "Run out of", "word": "Skończyć się" },
-    { "translation": "Pick up", "word": "Odebrać" },
-    { "translation": "Put up with", "word": "Znosić" },
-    { "translation": "Come across", "word": "Natknąć się" },
-    { "translation": "Look after", "word": "Opiekować się" },
-    { "translation": "Take care of", "word": "Zajmować się" },
-    { "translation": "Turn up", "word": "Pojawić się/Zgłośnić" },
-    { "translation": "Turn down", "word": "Ściszyć/Odrzucić" },
-    { "translation": "Give away", "word": "Oddać za darmo" },
-    { "translation": "Get along", "word": "Dogadywać się" },
-    { "translation": "Hang out", "word": "Spędzać czas" },
-    { "translation": "Break up", "word": "Zerwać (z kimś)" },
-    { "translation": "Get over", "word": "Przeboleć coś" },
-    { "translation": "Carry on", "word": "Kontynuować" },
-    { "translation": "Put off", "word": "Odłożyć na później" },
-    { "translation": "Figure out", "word": "Rozgryźć coś/Zrozumieć" },
-    { "translation": "Work out", "word": "Ćwiczyć/Zrozumieć coś" },
-    { "translation": "Come up with", "word": "Wymyślić coś" },
-    { "translation": "Give in", "word": "Poddać się (czemuś)" },
-    { "translation": "Take over", "word": "Przejąć (np. firmę)" },
-    { "translation": "Look forward to", "word": "Nie móc się doczekać" },
-    { "translation": "Make up", "word": "Wymyślić/Pogodzić się" },
-    { "translation": "Wake up", "word": "Obudzić się" },
-    { "translation": "Check out", "word": "Sprawdzić/Wymeldować się" },
-    { "translation": "Break into", "word": "Włamać się" },
-    { "translation": "Turn in", "word": "Oddać coś/Złożyć coś" },
-    { "translation": "Catch up", "word": "Dogonić/Nadrobić" },
-    { "translation": "Set up", "word": "Założyć/Ustawić" },
-    { "translation": "Fill in", "word": "Wypełnić" },
-    { "translation": "Look up to", "word": "Podziwiać kogoś" },
-    { "translation": "Stand up for", "word": "Stanąć w obronie" },
-    { "translation": "Go through", "word": "Przejść przez coś" },
-    { "translation": "Cut down on", "word": "Ograniczyć" },
-    { "translation": "Put down", "word": "Położyć/Opuścić" },
-    { "translation": "Let down", "word": "Zawieść" }
+    {
+        "translation": "Get up",
+        "word": "Wstać",
+        "exampleUsed": "Wstałem o 7 rano.",
+        "exampleUsedTranslation": "I got up at 7 a.m."
+    },
+    {
+        "translation": "Turn on",
+        "word": "Włączyć",
+        "exampleUsed": "Włącz światło, proszę.",
+        "exampleUsedTranslation": "Turn on the light, please."
+    },
+    {
+        "translation": "Turn off",
+        "word": "Wyłączyć",
+        "exampleUsed": "Wyłącz telewizor przed snem.",
+        "exampleUsedTranslation": "Turn off the TV before bed."
+    },
+    {
+        "translation": "Give up",
+        "word": "Poddać się",
+        "exampleUsed": "Nie poddawaj się, walcz dalej!",
+        "exampleUsedTranslation": "Don't give up, keep fighting!"
+    },
+    {
+        "translation": "Look for",
+        "word": "Szukaj",
+        "exampleUsed": "Szukam kluczy od godziny.",
+        "exampleUsedTranslation": "I've been looking for my keys for an hour."
+    },
+    {
+        "translation": "Put on",
+        "word": "Założyć",
+        "exampleUsed": "Załóż kurtkę, jest zimno.",
+        "exampleUsedTranslation": "Put on your jacket, it's cold."
+    },
+    {
+        "translation": "Take off",
+        "word": "Zdejmować/Startować (samolot)",
+        "exampleUsed": "Samolot wystartował o 10 rano.",
+        "exampleUsedTranslation": "The plane took off at 10 a.m."
+    },
+    {
+        "translation": "Break down",
+        "word": "Zepsuć się",
+        "exampleUsed": "Samochód zepsuł się w drodze.",
+        "exampleUsedTranslation": "The car broke down on the way."
+    },
+    {
+        "translation": "Call off",
+        "word": "Odwołać",
+        "exampleUsed": "Spotkanie zostało odwołane.",
+        "exampleUsedTranslation": "The meeting was called off."
+    },
+    {
+        "translation": "Run out of",
+        "word": "Skończyć się",
+        "exampleUsed": "Skończył nam się cukier.",
+        "exampleUsedTranslation": "We've run out of sugar."
+    },
+    {
+        "translation": "Pick up",
+        "word": "Odebrać",
+        "exampleUsed": "Odebrałem paczkę z poczty.",
+        "exampleUsedTranslation": "I picked up the package from the post office."
+    },
+    {
+        "translation": "Put up with",
+        "word": "Znosić",
+        "exampleUsed": "Nie mogę już dłużej tego znosić.",
+        "exampleUsedTranslation": "I can't put up with this any longer."
+    },
+    {
+        "translation": "Come across",
+        "word": "Natknąć się",
+        "exampleUsed": "Natknąłem się na starą fotografię.",
+        "exampleUsedTranslation": "I came across an old photograph."
+    },
+    {
+        "translation": "Look after",
+        "word": "Opiekować się",
+        "exampleUsed": "Opiekuję się moją babcią.",
+        "exampleUsedTranslation": "I'm looking after my grandmother."
+    },
+    {
+        "translation": "Take care of",
+        "word": "Zajmować się",
+        "exampleUsed": "Zajmę się tym projektem.",
+        "exampleUsedTranslation": "I will take care of this project."
+    },
+    {
+        "translation": "Turn up",
+        "word": "Pojawić się/Zgłośnić",
+        "exampleUsed": "Muzyka jest za cicho, zgłośnij ją.",
+        "exampleUsedTranslation": "The music is too quiet, turn it up."
+    },
+    {
+        "translation": "Turn down",
+        "word": "Ściszyć/Odrzucić",
+        "exampleUsed": "Ścisz radio, proszę.",
+        "exampleUsedTranslation": "Turn down the radio, please."
+    },
+    {
+        "translation": "Give away",
+        "word": "Oddać za darmo",
+        "exampleUsed": "Oddałem stare ubrania na cele charytatywne.",
+        "exampleUsedTranslation": "I gave away my old clothes to charity."
+    },
+    {
+        "translation": "Get along",
+        "word": "Dogadywać się",
+        "exampleUsed": "Dogaduję się z moimi współpracownikami.",
+        "exampleUsedTranslation": "I get along with my coworkers."
+    },
+    {
+        "translation": "Hang out",
+        "word": "Spędzać czas",
+        "exampleUsed": "Lubię spędzać czas z przyjaciółmi.",
+        "exampleUsedTranslation": "I like to hang out with my friends."
+    },
+    {
+        "translation": "Break up",
+        "word": "Zerwać (z kimś)",
+        "exampleUsed": "Oni zerwali po trzech latach.",
+        "exampleUsedTranslation": "They broke up after three years."
+    },
+    {
+        "translation": "Get over",
+        "word": "Przeboleć coś",
+        "exampleUsed": "Potrzebuję czasu, aby to przeboleć.",
+        "exampleUsedTranslation": "I need time to get over it."
+    },
+    {
+        "translation": "Carry on",
+        "word": "Kontynuować",
+        "exampleUsed": "Kontynuuj swoją dobrą pracę.",
+        "exampleUsedTranslation": "Carry on with your good work."
+    },
+    {
+        "translation": "Put off",
+        "word": "Odłożyć na później",
+        "exampleUsed": "Nie mogę dłużej odkładać tej decyzji.",
+        "exampleUsedTranslation": "I can't put off this decision any longer."
+    },
+    {
+        "translation": "Figure out",
+        "word": "Rozgryźć coś/Zrozumieć",
+        "exampleUsed": "Muszę rozgryźć, jak to działa.",
+        "exampleUsedTranslation": "I need to figure out how this works."
+    },
+    {
+        "translation": "Work out",
+        "word": "Ćwiczyć/Zrozumieć coś",
+        "exampleUsed": "Ćwiczę na siłowni trzy razy w tygodniu.",
+        "exampleUsedTranslation": "I work out at the gym three times a week."
+    },
+    {
+        "translation": "Come up with",
+        "word": "Wymyślić coś",
+        "exampleUsed": "Muszę wymyślić nowy pomysł.",
+        "exampleUsedTranslation": "I need to come up with a new idea."
+    },
+    {
+        "translation": "Give in",
+        "word": "Poddać się (czemuś)",
+        "exampleUsed": "Poddałem się presji.",
+        "exampleUsedTranslation": "I gave in to the pressure."
+    },
+    {
+        "translation": "Take over",
+        "word": "Przejąć (np. firmę)",
+        "exampleUsed": "Firma została przejęta przez nowego właściciela.",
+        "exampleUsedTranslation": "The company was taken over by a new owner."
+    },
+    {
+        "translation": "Look forward to",
+        "word": "Nie móc się doczekać",
+        "exampleUsed": "Nie mogę się doczekać wakacji.",
+        "exampleUsedTranslation": "I am looking forward to the holidays."
+    },
+    {
+        "translation": "Make up",
+        "word": "Wymyślić/Pogodzić się",
+        "exampleUsed": "Wymyśliłem nową historię.",
+        "exampleUsedTranslation": "I made up a new story."
+    },
+    {
+        "translation": "Wake up",
+        "word": "Obudzić się",
+        "exampleUsed": "Obudziłem się wcześnie rano.",
+        "exampleUsedTranslation": "I woke up early in the morning."
+    },
+    {
+        "translation": "Check out",
+        "word": "Sprawdzić/Wymeldować się",
+        "exampleUsed": "Sprawdzę ten nowy film.",
+        "exampleUsedTranslation": "I'll check out this new movie."
+    },
+    {
+        "translation": "Break into",
+        "word": "Włamać się",
+        "exampleUsed": "Ktoś włamał się do mojego domu.",
+        "exampleUsedTranslation": "Someone broke into my house."
+    },
+    {
+        "translation": "Turn in",
+        "word": "Oddać coś/Złożyć coś",
+        "exampleUsed": "Oddałem moje zadanie na czas.",
+        "exampleUsedTranslation": "I turned in my assignment on time."
+    },
+    {
+        "translation": "Catch up",
+        "word": "Dogonić/Nadrobić",
+        "exampleUsed": "Muszę nadrobić zaległości w pracy.",
+        "exampleUsedTranslation": "I need to catch up on work."
+    },
+    {
+        "translation": "Set up",
+        "word": "Założyć/Ustawić",
+        "exampleUsed": "Założyłem nową firmę.",
+        "exampleUsedTranslation": "I set up a new company."
+    },
+    {
+        "translation": "Fill in",
+        "word": "Wypełnić",
+        "exampleUsed": "Proszę wypełnić ten formularz.",
+        "exampleUsedTranslation": "Please fill in this form."
+    },
+    {
+        "translation": "Look up to",
+        "word": "Podziwiać kogoś",
+        "exampleUsed": "Podziwiam mojego nauczyciela.",
+        "exampleUsedTranslation": "I look up to my teacher."
+    },
+    {
+        "translation": "Stand up for",
+        "word": "Stanąć w obronie",
+        "exampleUsed": "Zawsze staję w obronie moich przyjaciół.",
+        "exampleUsedTranslation": "I always stand up for my friends."
+    },
+    {
+        "translation": "Go through",
+        "word": "Przejść przez coś",
+        "exampleUsed": "Przeszedłem przez trudny okres.",
+        "exampleUsedTranslation": "I went through a tough time."
+    },
+    {
+        "translation": "Cut down on",
+        "word": "Ograniczyć",
+        "exampleUsed": "Muszę ograniczyć spożycie cukru.",
+        "exampleUsedTranslation": "I need to cut down on sugar."
+    },
+    {
+        "translation": "Put down",
+        "word": "Położyć/Opuścić",
+        "exampleUsed": "Połóż to na stole.",
+        "exampleUsedTranslation": "Put it down on the table."
+    },
+    {
+        "translation": "Let down",
+        "word": "Zawieść",
+        "exampleUsed": "Nie chcę cię zawieść.",
+        "exampleUsedTranslation": "I don't want to let you down."
+    }
 ]

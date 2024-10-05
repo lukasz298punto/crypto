@@ -6,7 +6,9 @@ export type Settings = {
 export interface Word {
     id: string;
     word: string;
+    exampleUsed?: string;
     translation: string;
+    exampleUsedTranslation: string;
     categoryId: string;
     levelId: string;
     languageId: string;

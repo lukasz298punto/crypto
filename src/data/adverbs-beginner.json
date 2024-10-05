@@ -1,51 +1,296 @@
 [
-    { "translation": "Quickly", "word": "Szybko" },
-    { "translation": "Slowly", "word": "Powoli" },
-    { "translation": "Carefully", "word": "Ostrożnie" },
-    { "translation": "Easily", "word": "Łatwo" },
-    { "translation": "Happily", "word": "Szczęśliwie" },
-    { "translation": "Loudly", "word": "Głośno" },
-    { "translation": "Quietly", "word": "Cicho" },
-    { "translation": "Badly", "word": "Źle" },
-    { "translation": "Well", "word": "Dobrze" },
-    { "translation": "Clearly", "word": "Wyraźnie" },
-    { "translation": "Certainly", "word": "Z pewnością" },
-    { "translation": "Probably", "word": "Prawdopodobnie" },
-    { "translation": "Usually", "word": "Zazwyczaj" },
-    { "translation": "Rarely", "word": "Rzadko" },
-    { "translation": "Never", "word": "Nigdy" },
-    { "translation": "Always", "word": "Zawsze" },
-    { "translation": "Sometimes", "word": "Czasami" },
-    { "translation": "Frequently", "word": "Często" },
-    { "translation": "Daily", "word": "Codziennie" },
-    { "translation": "Monthly", "word": "Miesięcznie" },
-    { "translation": "Annually", "word": "Rocznie" },
-    { "translation": "Hardly", "word": "Ledwo" },
-    { "translation": "Soon", "word": "Wkrótce" },
-    { "translation": "Later", "word": "Później" },
-    { "translation": "Now", "word": "Teraz" },
-    { "translation": "Then", "word": "Potem" },
-    { "translation": "Immediately", "word": "Natychmiast" },
-    { "translation": "Eventually", "word": "Ostatecznie" },
-    { "translation": "Finally", "word": "W końcu" },
-    { "translation": "Together", "word": "Razem" },
-    { "translation": "Apart", "word": "Osobno" },
-    { "translation": "Inside", "word": "Wewnątrz" },
-    { "translation": "Outside", "word": "Na zewnątrz" },
-    { "translation": "Everywhere", "word": "Wszędzie" },
-    { "translation": "Nowhere", "word": "Nigdzie" },
-    { "translation": "Here", "word": "Tutaj" },
-    { "translation": "There", "word": "Tam" },
-    { "translation": "Up", "word": "W górę" },
-    { "translation": "Down", "word": "W dół" },
-    { "translation": "Backwards", "word": "Wstecz" },
-    { "translation": "Forward", "word": "Do przodu" },
-    { "translation": "Upstairs", "word": "Na górze" },
-    { "translation": "Downstairs", "word": "Na dole" },
-    { "translation": "Far", "word": "Daleko" },
-    { "translation": "Close", "word": "Blisko" },
-    { "translation": "Very", "word": "Bardzo" },
-    { "translation": "Too", "word": "Zbyt" },
-    { "translation": "Enough", "word": "Wystarczająco" },
-    { "translation": "Quite", "word": "Całkiem" }
+    {
+        "translation": "Quickly",
+        "word": "Szybko",
+        "exampleUsed": "On biega bardzo szybko.",
+        "exampleUsedTranslation": "He runs very quickly."
+    },
+    {
+        "translation": "Slowly",
+        "word": "Powoli",
+        "exampleUsed": "Chodzę powoli po parku.",
+        "exampleUsedTranslation": "I walk slowly in the park."
+    },
+    {
+        "translation": "Carefully",
+        "word": "Ostrożnie",
+        "exampleUsed": "Ona prowadzi samochód bardzo ostrożnie.",
+        "exampleUsedTranslation": "She drives the car very carefully."
+    },
+    {
+        "translation": "Easily",
+        "word": "Łatwo",
+        "exampleUsed": "Rozwiązał to zadanie łatwo.",
+        "exampleUsedTranslation": "He solved the task easily."
+    },
+    {
+        "translation": "Happily",
+        "word": "Szczęśliwie",
+        "exampleUsed": "Dzieci bawią się szczęśliwie.",
+        "exampleUsedTranslation": "The children are playing happily."
+    },
+    {
+        "translation": "Loudly",
+        "word": "Głośno",
+        "exampleUsed": "Muzyka gra głośno.",
+        "exampleUsedTranslation": "The music is playing loudly."
+    },
+    {
+        "translation": "Quietly",
+        "word": "Cicho",
+        "exampleUsed": "Ona mówi bardzo cicho.",
+        "exampleUsedTranslation": "She speaks very quietly."
+    },
+    {
+        "translation": "Badly",
+        "word": "Źle",
+        "exampleUsed": "On gra w piłkę nożną źle.",
+        "exampleUsedTranslation": "He plays football badly."
+    },
+    {
+        "translation": "Well",
+        "word": "Dobrze",
+        "exampleUsed": "Ona śpiewa bardzo dobrze.",
+        "exampleUsedTranslation": "She sings very well."
+    },
+    {
+        "translation": "Clearly",
+        "word": "Wyraźnie",
+        "exampleUsed": "On mówi bardzo wyraźnie.",
+        "exampleUsedTranslation": "He speaks very clearly."
+    },
+    {
+        "translation": "Certainly",
+        "word": "Z pewnością",
+        "exampleUsed": "Z pewnością przyjdę na imprezę.",
+        "exampleUsedTranslation": "I will certainly come to the party."
+    },
+    {
+        "translation": "Probably",
+        "word": "Prawdopodobnie",
+        "exampleUsed": "Prawdopodobnie pójdziemy do kina.",
+        "exampleUsedTranslation": "We will probably go to the cinema."
+    },
+    {
+        "translation": "Usually",
+        "word": "Zazwyczaj",
+        "exampleUsed": "Zazwyczaj piję kawę rano.",
+        "exampleUsedTranslation": "I usually drink coffee in the morning."
+    },
+    {
+        "translation": "Rarely",
+        "word": "Rzadko",
+        "exampleUsed": "Rzadko oglądam telewizję.",
+        "exampleUsedTranslation": "I rarely watch TV."
+    },
+    {
+        "translation": "Never",
+        "word": "Nigdy",
+        "exampleUsed": "Nigdy nie palę papierosów.",
+        "exampleUsedTranslation": "I never smoke cigarettes."
+    },
+    {
+        "translation": "Always",
+        "word": "Zawsze",
+        "exampleUsed": "Zawsze jem śniadanie o 8:00.",
+        "exampleUsedTranslation": "I always have breakfast at 8:00."
+    },
+    {
+        "translation": "Sometimes",
+        "word": "Czasami",
+        "exampleUsed": "Czasami chodzę na siłownię.",
+        "exampleUsedTranslation": "Sometimes I go to the gym."
+    },
+    {
+        "translation": "Frequently",
+        "word": "Często",
+        "exampleUsed": "Często odwiedzam moją babcię.",
+        "exampleUsedTranslation": "I frequently visit my grandmother."
+    },
+    {
+        "translation": "Daily",
+        "word": "Codziennie",
+        "exampleUsed": "Codziennie chodzę do pracy.",
+        "exampleUsedTranslation": "I go to work daily."
+    },
+    {
+        "translation": "Monthly",
+        "word": "Miesięcznie",
+        "exampleUsed": "Płacimy za rachunki miesięcznie.",
+        "exampleUsedTranslation": "We pay the bills monthly."
+    },
+    {
+        "translation": "Annually",
+        "word": "Rocznie",
+        "exampleUsed": "Płacę podatki rocznie.",
+        "exampleUsedTranslation": "I pay taxes annually."
+    },
+    {
+        "translation": "Hardly",
+        "word": "Ledwo",
+        "exampleUsed": "Ledwo mogłem usłyszeć jego głos.",
+        "exampleUsedTranslation": "I could hardly hear his voice."
+    },
+    {
+        "translation": "Soon",
+        "word": "Wkrótce",
+        "exampleUsed": "Wkrótce się zobaczymy.",
+        "exampleUsedTranslation": "We will see each other soon."
+    },
+    {
+        "translation": "Later",
+        "word": "Później",
+        "exampleUsed": "Porozmawiamy później.",
+        "exampleUsedTranslation": "We will talk later."
+    },
+    {
+        "translation": "Now",
+        "word": "Teraz",
+        "exampleUsed": "Musimy wyjść teraz.",
+        "exampleUsedTranslation": "We have to leave now."
+    },
+    {
+        "translation": "Then",
+        "word": "Potem",
+        "exampleUsed": "Najpierw zjem obiad, a potem pójdę na spacer.",
+        "exampleUsedTranslation": "I will eat lunch first, then I will go for a walk."
+    },
+    {
+        "translation": "Immediately",
+        "word": "Natychmiast",
+        "exampleUsed": "Natychmiast zadzwonię do lekarza.",
+        "exampleUsedTranslation": "I will call the doctor immediately."
+    },
+    {
+        "translation": "Eventually",
+        "word": "Ostatecznie",
+        "exampleUsed": "Ostatecznie zdecydowaliśmy się na wakacje.",
+        "exampleUsedTranslation": "We eventually decided on a vacation."
+    },
+    {
+        "translation": "Finally",
+        "word": "W końcu",
+        "exampleUsed": "W końcu skończyłem książkę.",
+        "exampleUsedTranslation": "I finally finished the book."
+    },
+    {
+        "translation": "Together",
+        "word": "Razem",
+        "exampleUsed": "Idziemy razem do kina.",
+        "exampleUsedTranslation": "We are going to the cinema together."
+    },
+    {
+        "translation": "Apart",
+        "word": "Osobno",
+        "exampleUsed": "Mieszkamy osobno, ale się często widujemy.",
+        "exampleUsedTranslation": "We live apart, but we see each other often."
+    },
+    {
+        "translation": "Inside",
+        "word": "Wewnątrz",
+        "exampleUsed": "Zostań wewnątrz budynku.",
+        "exampleUsedTranslation": "Stay inside the building."
+    },
+    {
+        "translation": "Outside",
+        "word": "Na zewnątrz",
+        "exampleUsed": "Zabawki są na zewnątrz.",
+        "exampleUsedTranslation": "The toys are outside."
+    },
+    {
+        "translation": "Everywhere",
+        "word": "Wszędzie",
+        "exampleUsed": "Szukaliśmy wszędzie, ale nie mogliśmy znaleźć kluczy.",
+        "exampleUsedTranslation": "We searched everywhere but couldn't find the keys."
+    },
+    {
+        "translation": "Nowhere",
+        "word": "Nigdzie",
+        "exampleUsed": "Nigdzie nie mogę znaleźć mojego portfela.",
+        "exampleUsedTranslation": "I can't find my wallet anywhere."
+    },
+    {
+        "translation": "Here",
+        "word": "Tutaj",
+        "exampleUsed": "Zostań tutaj.",
+        "exampleUsedTranslation": "Stay here."
+    },
+    {
+        "translation": "There",
+        "word": "Tam",
+        "exampleUsed": "Oni mieszkają tam.",
+        "exampleUsedTranslation": "They live there."
+    },
+    {
+        "translation": "Up",
+        "word": "W górę",
+        "exampleUsed": "Patrz w górę!",
+        "exampleUsedTranslation": "Look up!"
+    },
+    {
+        "translation": "Down",
+        "word": "W dół",
+        "exampleUsed": "Zejdź w dół po schodach.",
+        "exampleUsedTranslation": "Go down the stairs."
+    },
+    {
+        "translation": "Backwards",
+        "word": "Wstecz",
+        "exampleUsed": "Samochód cofnął się wstecz.",
+        "exampleUsedTranslation": "The car moved backwards."
+    },
+    {
+        "translation": "Forward",
+        "word": "Do przodu",
+        "exampleUsed": "Zrób krok do przodu.",
+        "exampleUsedTranslation": "Take a step forward."
+    },
+    {
+        "translation": "Upstairs",
+        "word": "Na górze",
+        "exampleUsed": "Mój pokój jest na górze.",
+        "exampleUsedTranslation": "My room is upstairs."
+    },
+    {
+        "translation": "Downstairs",
+        "word": "Na dole",
+        "exampleUsed": "Kuchnia jest na dole.",
+        "exampleUsedTranslation": "The kitchen is downstairs."
+    },
+    {
+        "translation": "Far",
+        "word": "Daleko",
+        "exampleUsed": "Dom jest daleko od miasta.",
+        "exampleUsedTranslation": "The house is far from the city."
+    },
+    {
+        "translation": "Close",
+        "word": "Blisko",
+        "exampleUsed": "Sklep jest blisko.",
+        "exampleUsedTranslation": "The store is close."
+    },
+    {
+        "translation": "Very",
+        "word": "Bardzo",
+        "exampleUsed": "Jestem bardzo zmęczony.",
+        "exampleUsedTranslation": "I am very tired."
+    },
+    {
+        "translation": "Too",
+        "word": "Zbyt",
+        "exampleUsed": "To jest zbyt trudne.",
+        "exampleUsedTranslation": "This is too difficult."
+    },
+    {
+        "translation": "Enough",
+        "word": "Wystarczająco",
+        "exampleUsed": "Mam wystarczająco pieniędzy.",
+        "exampleUsedTranslation": "I have enough money."
+    },
+    {
+        "translation": "Quite",
+        "word": "Całkiem",
+        "exampleUsed": "To jest całkiem interesujące.",
+        "exampleUsedTranslation": "This is quite interesting."
+    }
 ]

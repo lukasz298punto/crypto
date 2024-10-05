@@ -10,12 +10,13 @@ import categoriesSchema from '@/constants/schema/categories';
 import SettingsDbKey from '@/constants/enums/settingsDbKey';
 import { RxDBDevModePlugin } from 'rxdb/plugins/dev-mode';
 import settingsSchema from '@/constants/schema/settings';
+import CentralLoading from '@/components/CentralLoading';
 import { RxDBUpdatePlugin } from 'rxdb/plugins/update';
 import { addRxPlugin, createRxDatabase } from 'rxdb';
 import wordsSchema from '@/constants/schema/words';
 import Category from '@/constants/enums/category';
 import Language from '@/constants/enums/language';
-import { CircularProgress } from '@mui/material';
+import { Word } from '@/types/database';
 import forEach from 'lodash/forEach';
 import modules from '@/data/modules';
 import { v4 as uuidv4 } from 'uuid';
@@ -24,6 +25,19 @@ import map from 'lodash/map';
 addRxPlugin(RxDBUpdatePlugin);
 addRxPlugin(RxDBDevModePlugin);
 addRxPlugin(RxDBMigrationPlugin);
+
+const migrations = {
+    words: {
+        1: (oldDoc: typeof wordsSchema.properties) => {
+            const newDoc = {
+                ...oldDoc,
+                exampleUsed: '',
+                exampleUsedTranslation: '',
+            };
+            return newDoc;
+        },
+    },
+};
 
 export default function DatabaseProvider({
     children,
@@ -41,7 +55,10 @@ export default function DatabaseProvider({
             settings: {
                 schema: settingsSchema,
             },
-            words: { schema: wordsSchema },
+            words: {
+                schema: wordsSchema,
+                migrationStrategies: migrations.words,
+            },
             categories: { schema: categoriesSchema },
         });
 
@@ -123,8 +140,11 @@ export default function DatabaseProvider({
         if (existingWords.length === 0) {
             forEach(modules, ([category, level, content]) => {
                 db.words.bulkInsert(
-                    map(content, (verb) => ({
+                    map(content as Word[], (verb) => ({
                         id: uuidv4(),
+                        exampleUsed: verb.exampleUsed || '',
+                        exampleUsedTranslation:
+                            verb.exampleUsedTranslation || '',
                         word: verb.word,
                         translation: verb.translation,
                         categoryId: category,
@@ -152,7 +172,7 @@ export default function DatabaseProvider({
 
     return (
         <DatabaseContext.Provider value={database}>
-            {database ? children : <CircularProgress />}
+            {database ? children : <CentralLoading />}
         </DatabaseContext.Provider>
     );
 }

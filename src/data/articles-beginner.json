@@ -1,8 +1,20 @@
 [
-    { "translation": "The", "word": "Ten/Ta/To (określony)" },
-    { "translation": "A", "word": "Jeden/Jedna/Jedno (nieokreślony)" },
+    {
+        "translation": "The",
+        "word": "Ten/Ta/To (określony)",
+        "exampleUsed": "Ten dom jest duży.",
+        "exampleUsedTranslation": "The house is big."
+    },
+    {
+        "translation": "A",
+        "word": "Jeden/Jedna/Jedno (nieokreślony)",
+        "exampleUsed": "To jest jedna książka.",
+        "exampleUsedTranslation": "This is a book."
+    },
     {
         "translation": "An",
-        "word": "Jeden/Jedna/Jedno (nieokreślony, przed samogłoską)"
+        "word": "Jeden/Jedna/Jedno (nieokreślony, przed samogłoską)",
+        "exampleUsed": "To jest jedno jabłko.",
+        "exampleUsedTranslation": "This is an apple."
     }
 ]

@@ -15,6 +15,7 @@ export default function useKeyCodeName() {
             { id: KeyCode.One, label: '1' },
             { id: KeyCode.Two, label: '2' },
             { id: KeyCode.Three, label: '3' },
+            { id: KeyCode.Four, label: '4' },
         ];
     }, [t]);
 

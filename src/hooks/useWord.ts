@@ -26,6 +26,7 @@ export default function useWord() {
         incrementCorrect,
         incrementIncorrect,
         findWordById,
+        isLoading,
     } = useWordsDb({
         selector: useMemo(() => {
             return {
@@ -52,8 +53,6 @@ export default function useWord() {
         );
         // eslint-disable-next-line react-hooks/exhaustive-deps
     }, [size(wordsList)]);
-
-    console.log(words, 'words');
 
     const nativeLang = split(params.languageDirectionId, '-to-')[0] as Language;
     const lang = split(params.languageDirectionId, '-to-')[1] as Language;
@@ -121,6 +120,7 @@ export default function useWord() {
     );
 
     return {
+        isLoading,
         isCorrect,
         currentWord,
         check,

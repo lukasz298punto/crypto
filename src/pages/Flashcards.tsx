@@ -1,5 +1,15 @@
-import { Card, CardContent, Container, Stack, Typography } from '@mui/material';
+import {
+    Box,
+    Card,
+    CardContent,
+    Container,
+    Stack,
+    Typography,
+} from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
+import CentralLoading from '@/components/CentralLoading';
+import HighlightText from '@/components/HighlightText';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import NativeWord from '@/components/NativeWord';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
@@ -11,9 +21,18 @@ import clsx from 'clsx';
 
 export default function Flashcards() {
     const { t } = useTranslation();
-    const { currentWord, nextWord, skip, check, reset, lang, nativeLang } =
-        useWord();
+    const {
+        currentWord,
+        nextWord,
+        skip,
+        check,
+        reset,
+        lang,
+        nativeLang,
+        isLoading,
+    } = useWord();
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
+    const { language } = useSettingsDb();
 
     const handleCheck = () => {
         setIsAnswerChecked(true);
@@ -30,6 +49,10 @@ export default function Flashcards() {
         setIsAnswerChecked(false);
         nextWord();
     };
+
+    if (isLoading) {
+        return <CentralLoading />;
+    }
 
     if (!currentWord) {
         return <Finish onReset={reset} />;
@@ -52,13 +75,13 @@ export default function Flashcards() {
                                 name={currentWord?.word}
                                 keyCode={KeyCode.Three}
                                 language={nativeLang}
+                                autoPlay
                             />
                         </Stack>
-
                         <Stack
                             direction="row"
                             alignItems="center"
-                            className={clsx('mb-2 h-[45px]', {
+                            className={clsx('h-[45px]', {
                                 'opacity-0': !isAnswerChecked,
                             })}
                         >
@@ -77,7 +100,45 @@ export default function Flashcards() {
                                 />
                             )}
                         </Stack>
+                        <Box
+                            className={clsx('mb-2', {
+                                'opacity-0': !isAnswerChecked,
+                            })}
+                        >
+                            {currentWord?.exampleUsedTranslation && (
+                                <Stack
+                                    className="mt-2"
+                                    direction="row"
+                                    alignItems="center"
+                                >
+                                    <HighlightText
+                                        text={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        trans={
+                                            language === lang
+                                                ? currentWord.translation
+                                                : currentWord.word
+                                        }
+                                    />
+                                    <VoiceIcon
+                                        name={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        keyCode={KeyCode.Four}
+                                        language={lang}
+                                    />
+                                </Stack>
+                            )}
 
+                            <Typography
+                                color="text.secondary"
+                                variant="body2"
+                                align="center"
+                            >
+                                {currentWord?.exampleUsed}
+                            </Typography>
+                        </Box>
                         {!isAnswerChecked ? (
                             <KeyPressButton
                                 className="w-full"

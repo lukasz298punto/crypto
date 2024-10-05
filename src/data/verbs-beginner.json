@@ -1,143 +1,848 @@
 [
-    { "translation": "be", "word": "być" },
-    { "translation": "have", "word": "mieć" },
-    { "translation": "do", "word": "robić" },
-    { "translation": "say", "word": "mówić" },
-    { "translation": "go", "word": "iść" },
-    { "translation": "can", "word": "móc" },
-    { "translation": "get", "word": "dostać" },
-    { "translation": "make", "word": "robić" },
-    { "translation": "know", "word": "wiedzieć" },
-    { "translation": "think", "word": "myśleć" },
-    { "translation": "take", "word": "brać" },
-    { "translation": "see", "word": "widzieć" },
-    { "translation": "come", "word": "przyjść" },
-    { "translation": "want", "word": "chcieć" },
-    { "translation": "look", "word": "patrzeć" },
-    { "translation": "use", "word": "używać" },
-    { "translation": "find", "word": "znaleźć" },
-    { "translation": "give", "word": "dać" },
-    { "translation": "tell", "word": "powiedzieć" },
-    { "translation": "work", "word": "pracować" },
-    { "translation": "call", "word": "dzwonić" },
-    { "translation": "try", "word": "próbować" },
-    { "translation": "ask", "word": "pytać" },
-    { "translation": "need", "word": "potrzebować" },
-    { "translation": "feel", "word": "czuć" },
-    { "translation": "become", "word": "stać się" },
-    { "translation": "leave", "word": "opuścić" },
-    { "translation": "put", "word": "położyć" },
-    { "translation": "mean", "word": "znaczyć" },
-    { "translation": "keep", "word": "zachować" },
-    { "translation": "let", "word": "pozwalać" },
-    { "translation": "begin", "word": "zacząć" },
-    { "translation": "seem", "word": "wydawać się" },
-    { "translation": "help", "word": "pomagać" },
-    { "translation": "talk", "word": "rozmawiać" },
-    { "translation": "turn", "word": "skręcać" },
-    { "translation": "start", "word": "zacząć" },
-    { "translation": "show", "word": "pokazywać" },
-    { "translation": "hear", "word": "słyszeć" },
-    { "translation": "play", "word": "grać" },
-    { "translation": "run", "word": "biegać" },
-    { "translation": "move", "word": "ruszać" },
-    { "translation": "like", "word": "lubić" },
-    { "translation": "live", "word": "żyć" },
-    { "translation": "believe", "word": "wierzyć" },
-    { "translation": "hold", "word": "trzymać" },
-    { "translation": "bring", "word": "przynieść" },
-    { "translation": "happen", "word": "zdarzyć się" },
-    { "translation": "write", "word": "pisać" },
-    { "translation": "provide", "word": "dostarczać" },
-    { "translation": "sit", "word": "siedzieć" },
-    { "translation": "stand", "word": "stać" },
-    { "translation": "lose", "word": "tracić" },
-    { "translation": "pay", "word": "płacić" },
-    { "translation": "meet", "word": "spotykać" },
-    { "translation": "include", "word": "zawierać" },
-    { "translation": "continue", "word": "kontynuować" },
-    { "translation": "set", "word": "ustawiać" },
-    { "translation": "learn", "word": "uczyć się" },
-    { "translation": "change", "word": "zmieniać" },
-    { "translation": "lead", "word": "prowadzić" },
-    { "translation": "understand", "word": "rozumieć" },
-    { "translation": "watch", "word": "oglądać" },
-    { "translation": "follow", "word": "podążać" },
-    { "translation": "stop", "word": "zatrzymać" },
-    { "translation": "create", "word": "tworzyć" },
-    { "translation": "speak", "word": "mówić" },
-    { "translation": "read", "word": "czytać" },
-    { "translation": "allow", "word": "pozwalać" },
-    { "translation": "add", "word": "dodawać" },
-    { "translation": "spend", "word": "spędzać" },
-    { "translation": "grow", "word": "rosnąć" },
-    { "translation": "open", "word": "otwierać" },
-    { "translation": "walk", "word": "chodzić" },
-    { "translation": "win", "word": "wygrywać" },
-    { "translation": "offer", "word": "oferować" },
-    { "translation": "remember", "word": "pamiętać" },
-    { "translation": "love", "word": "kochać" },
-    { "translation": "consider", "word": "rozważać" },
-    { "translation": "appear", "word": "pojawić się" },
-    { "translation": "buy", "word": "kupować" },
-    { "translation": "wait", "word": "czekać" },
-    { "translation": "serve", "word": "służyć" },
-    { "translation": "die", "word": "umrzeć" },
-    { "translation": "send", "word": "wysyłać" },
-    { "translation": "expect", "word": "oczekiwać" },
-    { "translation": "build", "word": "budować" },
-    { "translation": "stay", "word": "zostawać" },
-    { "translation": "fall", "word": "upadać" },
-    { "translation": "cut", "word": "ciąć" },
-    { "translation": "reach", "word": "osiągać" },
-    { "translation": "kill", "word": "zabijać" },
-    { "translation": "remain", "word": "pozostawać" },
-    { "translation": "suggest", "word": "sugerować" },
-    { "translation": "raise", "word": "podnosić" },
-    { "translation": "pass", "word": "przechodzić" },
-    { "translation": "sell", "word": "sprzedawać" },
-    { "translation": "require", "word": "wymagać" },
-    { "translation": "report", "word": "raportować" },
-    { "translation": "decide", "word": "decydować" },
-    { "translation": "pull", "word": "ciągnąć" },
-    { "translation": "break", "word": "łamać" },
-    { "translation": "receive", "word": "otrzymywać" },
-    { "translation": "agree", "word": "zgadzać się" },
-    { "translation": "support", "word": "wspierać" },
-    { "translation": "hit", "word": "uderzać" },
-    { "translation": "produce", "word": "produkować" },
-    { "translation": "eat", "word": "jeść" },
-    { "translation": "cover", "word": "pokrywać" },
-    { "translation": "catch", "word": "łapać" },
-    { "translation": "draw", "word": "rysować" },
-    { "translation": "choose", "word": "wybierać" },
-    { "translation": "cause", "word": "powodować" },
-    { "translation": "point", "word": "wskazywać" },
-    { "translation": "listen", "word": "słuchać" },
-    { "translation": "argue", "word": "kłócić się" },
-    { "translation": "prove", "word": "udowadniać" },
-    { "translation": "return", "word": "wracać" },
-    { "translation": "explain", "word": "wyjaśniać" },
-    { "translation": "hope", "word": "mieć nadzieję" },
-    { "translation": "develop", "word": "rozwijać" },
-    { "translation": "carry", "word": "nosić" },
-    { "translation": "join", "word": "dołączyć" },
-    { "translation": "jump", "word": "skakać" },
-    { "translation": "push", "word": "pchać" },
-    { "translation": "improve", "word": "poprawiać" },
-    { "translation": "avoid", "word": "unikać" },
-    { "translation": "plan", "word": "planować" },
-    { "translation": "act", "word": "działać" },
-    { "translation": "fly", "word": "lecieć" },
-    { "translation": "sleep", "word": "spać" },
-    { "translation": "sing", "word": "śpiewać" },
-    { "translation": "operate", "word": "operować" },
-    { "translation": "announce", "word": "ogłaszać" },
-    { "translation": "behave", "word": "zachowywać się" },
-    { "translation": "climb", "word": "wspinać się" },
-    { "translation": "gather", "word": "zbierać" },
-    { "translation": "explore", "word": "badać" },
-    { "translation": "bake", "word": "piec" },
-    { "translation": "clean", "word": "czyścić" },
-    { "translation": "breathe", "word": "oddychać" }
+    {
+        "translation": "be",
+        "word": "być",
+        "exampleUsed": "Chcę być lekarzem.",
+        "exampleUsedTranslation": "I want to be a doctor."
+    },
+    {
+        "translation": "have",
+        "word": "mieć",
+        "exampleUsed": "Mam kota.",
+        "exampleUsedTranslation": "I have a cat."
+    },
+    {
+        "translation": "do",
+        "word": "robić",
+        "exampleUsed": "Co robisz?",
+        "exampleUsedTranslation": "What are you doing?"
+    },
+    {
+        "translation": "say",
+        "word": "mówić",
+        "exampleUsed": "Powiedziałem coś zabawnego.",
+        "exampleUsedTranslation": "I said something funny."
+    },
+    {
+        "translation": "go",
+        "word": "iść",
+        "exampleUsed": "Idę do sklepu.",
+        "exampleUsedTranslation": "I am going to the store."
+    },
+    {
+        "translation": "can",
+        "word": "móc",
+        "exampleUsed": "Mogę ci pomóc.",
+        "exampleUsedTranslation": "I can help you."
+    },
+    {
+        "translation": "get",
+        "word": "dostać",
+        "exampleUsed": "Dostałem prezent.",
+        "exampleUsedTranslation": "I got a present."
+    },
+    {
+        "translation": "make",
+        "word": "robić",
+        "exampleUsed": "Robię obiad.",
+        "exampleUsedTranslation": "I am making dinner."
+    },
+    {
+        "translation": "know",
+        "word": "wiedzieć",
+        "exampleUsed": "Wiem, gdzie jest klucz.",
+        "exampleUsedTranslation": "I know where the key is."
+    },
+    {
+        "translation": "think",
+        "word": "myśleć",
+        "exampleUsed": "Myślę o wakacjach.",
+        "exampleUsedTranslation": "I am thinking about the holidays."
+    },
+    {
+        "translation": "take",
+        "word": "brać",
+        "exampleUsed": "Weź to proszę.",
+        "exampleUsedTranslation": "Take this, please."
+    },
+    {
+        "translation": "see",
+        "word": "widzieć",
+        "exampleUsed": "Widzę cię z daleka.",
+        "exampleUsedTranslation": "I can see you from afar."
+    },
+    {
+        "translation": "come",
+        "word": "przyjść",
+        "exampleUsed": "Przyjdź na moją imprezę.",
+        "exampleUsedTranslation": "Come to my party."
+    },
+    {
+        "translation": "want",
+        "word": "chcieć",
+        "exampleUsed": "Chcę kupić nowy samochód.",
+        "exampleUsedTranslation": "I want to buy a new car."
+    },
+    {
+        "translation": "look",
+        "word": "patrzeć",
+        "exampleUsed": "Spójrz na ten widok.",
+        "exampleUsedTranslation": "Look at this view."
+    },
+    {
+        "translation": "use",
+        "word": "używać",
+        "exampleUsed": "Używam telefonu codziennie.",
+        "exampleUsedTranslation": "I use my phone every day."
+    },
+    {
+        "translation": "find",
+        "word": "znaleźć",
+        "exampleUsed": "Znalazłem klucz pod stołem.",
+        "exampleUsedTranslation": "I found the key under the table."
+    },
+    {
+        "translation": "give",
+        "word": "dać",
+        "exampleUsed": "Dałem jej prezent.",
+        "exampleUsedTranslation": "I gave her a present."
+    },
+    {
+        "translation": "tell",
+        "word": "powiedzieć",
+        "exampleUsed": "Powiedz mi prawdę.",
+        "exampleUsedTranslation": "Tell me the truth."
+    },
+    {
+        "translation": "work",
+        "word": "pracować",
+        "exampleUsed": "Pracuję w biurze.",
+        "exampleUsedTranslation": "I work in an office."
+    },
+    {
+        "translation": "call",
+        "word": "dzwonić",
+        "exampleUsed": "Zadzwoniłem do mamy.",
+        "exampleUsedTranslation": "I called my mom."
+    },
+    {
+        "translation": "try",
+        "word": "próbować",
+        "exampleUsed": "Próbuję się nauczyć nowego języka.",
+        "exampleUsedTranslation": "I am trying to learn a new language."
+    },
+    {
+        "translation": "ask",
+        "word": "pytać",
+        "exampleUsed": "Zapytaj nauczyciela o pomoc.",
+        "exampleUsedTranslation": "Ask the teacher for help."
+    },
+    {
+        "translation": "need",
+        "word": "potrzebować",
+        "exampleUsed": "Potrzebuję twojej rady.",
+        "exampleUsedTranslation": "I need your advice."
+    },
+    {
+        "translation": "feel",
+        "word": "czuć",
+        "exampleUsed": "Czuję się świetnie.",
+        "exampleUsedTranslation": "I feel great."
+    },
+    {
+        "translation": "become",
+        "word": "stać się",
+        "exampleUsed": "Stał się znanym aktorem.",
+        "exampleUsedTranslation": "He became a famous actor."
+    },
+    {
+        "translation": "leave",
+        "word": "opuścić",
+        "exampleUsed": "Opuściłem dom o 7 rano.",
+        "exampleUsedTranslation": "I left the house at 7 a.m."
+    },
+    {
+        "translation": "put",
+        "word": "położyć",
+        "exampleUsed": "Położyłem książkę na stole.",
+        "exampleUsedTranslation": "I put the book on the table."
+    },
+    {
+        "translation": "mean",
+        "word": "znaczyć",
+        "exampleUsed": "Co to słowo znaczy?",
+        "exampleUsedTranslation": "What does this word mean?"
+    },
+    {
+        "translation": "keep",
+        "word": "zachować",
+        "exampleUsed": "Zachowaj to na później.",
+        "exampleUsedTranslation": "Keep this for later."
+    },
+    {
+        "translation": "let",
+        "word": "pozwalać",
+        "exampleUsed": "Pozwól mi ci pomóc.",
+        "exampleUsedTranslation": "Let me help you."
+    },
+    {
+        "translation": "begin",
+        "word": "zacząć",
+        "exampleUsed": "Zaczynamy teraz.",
+        "exampleUsedTranslation": "We begin now."
+    },
+    {
+        "translation": "seem",
+        "word": "wydawać się",
+        "exampleUsed": "To wydaje się być dobrym pomysłem.",
+        "exampleUsedTranslation": "This seems like a good idea."
+    },
+    {
+        "translation": "help",
+        "word": "pomagać",
+        "exampleUsed": "Pomagam mojej siostrze w lekcjach.",
+        "exampleUsedTranslation": "I help my sister with her homework."
+    },
+    {
+        "translation": "talk",
+        "word": "rozmawiać",
+        "exampleUsed": "Rozmawialiśmy przez telefon.",
+        "exampleUsedTranslation": "We talked on the phone."
+    },
+    {
+        "translation": "turn",
+        "word": "skręcać",
+        "exampleUsed": "Skręć w lewo na skrzyżowaniu.",
+        "exampleUsedTranslation": "Turn left at the intersection."
+    },
+    {
+        "translation": "start",
+        "word": "zacząć",
+        "exampleUsed": "Startuję nowy projekt.",
+        "exampleUsedTranslation": "I am starting a new project."
+    },
+    {
+        "translation": "show",
+        "word": "pokazywać",
+        "exampleUsed": "Pokaż mi swoje zdjęcia.",
+        "exampleUsedTranslation": "Show me your pictures."
+    },
+    {
+        "translation": "hear",
+        "word": "słyszeć",
+        "exampleUsed": "Słyszę muzykę w tle.",
+        "exampleUsedTranslation": "I can hear music in the background."
+    },
+    {
+        "translation": "play",
+        "word": "grać",
+        "exampleUsed": "Gramy w piłkę nożną w parku.",
+        "exampleUsedTranslation": "We play football in the park."
+    },
+    {
+        "translation": "run",
+        "word": "biegać",
+        "exampleUsed": "Biegam codziennie rano.",
+        "exampleUsedTranslation": "I run every morning."
+    },
+    {
+        "translation": "move",
+        "word": "ruszać",
+        "exampleUsed": "Ruszaj samochodem, proszę.",
+        "exampleUsedTranslation": "Move the car, please."
+    },
+    {
+        "translation": "like",
+        "word": "lubić",
+        "exampleUsed": "Lubię lody czekoladowe.",
+        "exampleUsedTranslation": "I like chocolate ice cream."
+    },
+    {
+        "translation": "live",
+        "word": "żyć",
+        "exampleUsed": "Mieszkam w Polsce.",
+        "exampleUsedTranslation": "I live in Poland."
+    },
+    {
+        "translation": "believe",
+        "word": "wierzyć",
+        "exampleUsed": "Wierzę w twoje możliwości.",
+        "exampleUsedTranslation": "I believe in your abilities."
+    },
+    {
+        "translation": "hold",
+        "word": "trzymać",
+        "exampleUsed": "Trzymam książkę w rękach.",
+        "exampleUsedTranslation": "I am holding a book in my hands."
+    },
+    {
+        "translation": "bring",
+        "word": "przynieść",
+        "exampleUsed": "Przynieś mi wodę, proszę.",
+        "exampleUsedTranslation": "Bring me some water, please."
+    },
+    {
+        "translation": "happen",
+        "word": "zdarzyć się",
+        "exampleUsed": "To wydarzyło się wczoraj.",
+        "exampleUsedTranslation": "This happened yesterday."
+    },
+    {
+        "translation": "write",
+        "word": "pisać",
+        "exampleUsed": "Piszemy list do znajomego.",
+        "exampleUsedTranslation": "We are writing a letter to a friend."
+    },
+    {
+        "translation": "provide",
+        "word": "dostarczać",
+        "exampleUsed": "Firma dostarcza produkty na czas.",
+        "exampleUsedTranslation": "The company provides products on time."
+    },
+    {
+        "translation": "sit",
+        "word": "siedzieć",
+        "exampleUsed": "Siedzę na krześle.",
+        "exampleUsedTranslation": "I am sitting on the chair."
+    },
+    {
+        "translation": "stand",
+        "word": "stać",
+        "exampleUsed": "Stoję przed drzwiami.",
+        "exampleUsedTranslation": "I am standing in front of the door."
+    },
+    {
+        "translation": "lose",
+        "word": "tracić",
+        "exampleUsed": "Zgubiłem mój portfel.",
+        "exampleUsedTranslation": "I lost my wallet."
+    },
+    {
+        "translation": "pay",
+        "word": "płacić",
+        "exampleUsed": "Płacę kartą kredytową.",
+        "exampleUsedTranslation": "I am paying with a credit card."
+    },
+    {
+        "translation": "meet",
+        "word": "spotykać",
+        "exampleUsed": "Spotkamy się o 17:00.",
+        "exampleUsedTranslation": "We will meet at 5 p.m."
+    },
+    {
+        "translation": "include",
+        "word": "zawierać",
+        "exampleUsed": "Cena zawiera podatki.",
+        "exampleUsedTranslation": "The price includes taxes."
+    },
+    {
+        "translation": "continue",
+        "word": "kontynuować",
+        "exampleUsed": "Kontynuuję swoją pracę.",
+        "exampleUsedTranslation": "I am continuing my work."
+    },
+    {
+        "translation": "set",
+        "word": "ustawiać",
+        "exampleUsed": "Ustawiłem budzik na 6:00.",
+        "exampleUsedTranslation": "I set the alarm for 6 a.m."
+    },
+    {
+        "translation": "learn",
+        "word": "uczyć się",
+        "exampleUsed": "Uczę się hiszpańskiego.",
+        "exampleUsedTranslation": "I am learning Spanish."
+    },
+    {
+        "translation": "change",
+        "word": "zmieniać",
+        "exampleUsed": "Zmieniam zdanie.",
+        "exampleUsedTranslation": "I am changing my mind."
+    },
+    {
+        "translation": "lead",
+        "word": "prowadzić",
+        "exampleUsed": "On prowadzi drużynę do zwycięstwa.",
+        "exampleUsedTranslation": "He is leading the team to victory."
+    },
+    {
+        "translation": "understand",
+        "word": "rozumieć",
+        "exampleUsed": "Rozumiem, co mówisz.",
+        "exampleUsedTranslation": "I understand what you are saying."
+    },
+    {
+        "translation": "watch",
+        "word": "oglądać",
+        "exampleUsed": "Oglądam film wieczorem.",
+        "exampleUsedTranslation": "I am watching a movie in the evening."
+    },
+    {
+        "translation": "follow",
+        "word": "podążać",
+        "exampleUsed": "Podążam za moimi marzeniami.",
+        "exampleUsedTranslation": "I am following my dreams."
+    },
+    {
+        "translation": "stop",
+        "word": "zatrzymać",
+        "exampleUsed": "Zatrzymałem się przed sklepem.",
+        "exampleUsedTranslation": "I stopped in front of the store."
+    },
+    {
+        "translation": "create",
+        "word": "tworzyć",
+        "exampleUsed": "Tworzę nową aplikację.",
+        "exampleUsedTranslation": "I am creating a new application."
+    },
+    {
+        "translation": "speak",
+        "word": "mówić",
+        "exampleUsed": "Mówię po angielsku.",
+        "exampleUsedTranslation": "I speak English."
+    },
+    {
+        "translation": "read",
+        "word": "czytać",
+        "exampleUsed": "Czytam książkę w wolnym czasie.",
+        "exampleUsedTranslation": "I read a book in my free time."
+    },
+    {
+        "translation": "allow",
+        "word": "pozwalać",
+        "exampleUsed": "Pozwoliłem mu wyjść wcześniej.",
+        "exampleUsedTranslation": "I allowed him to leave early."
+    },
+    {
+        "translation": "add",
+        "word": "dodawać",
+        "exampleUsed": "Dodaj sól do zupy.",
+        "exampleUsedTranslation": "Add some salt to the soup."
+    },
+    {
+        "translation": "spend",
+        "word": "spędzać",
+        "exampleUsed": "Spędzam wakacje nad morzem.",
+        "exampleUsedTranslation": "I am spending my vacation by the sea."
+    },
+    {
+        "translation": "grow",
+        "word": "rosnąć",
+        "exampleUsed": "Rośliny rosną bardzo szybko.",
+        "exampleUsedTranslation": "The plants are growing very fast."
+    },
+    {
+        "translation": "open",
+        "word": "otwierać",
+        "exampleUsed": "Otwórz okno, proszę.",
+        "exampleUsedTranslation": "Open the window, please."
+    },
+    {
+        "translation": "walk",
+        "word": "chodzić",
+        "exampleUsed": "Chodzimy po parku co niedzielę.",
+        "exampleUsedTranslation": "We walk in the park every Sunday."
+    },
+    {
+        "translation": "win",
+        "word": "wygrywać",
+        "exampleUsed": "Nasza drużyna wygrała mecz.",
+        "exampleUsedTranslation": "Our team won the match."
+    },
+    {
+        "translation": "offer",
+        "word": "oferować",
+        "exampleUsed": "Oferuję ci pomoc.",
+        "exampleUsedTranslation": "I am offering you help."
+    },
+    {
+        "translation": "remember",
+        "word": "pamiętać",
+        "exampleUsed": "Pamiętaj o spotkaniu o 14:00.",
+        "exampleUsedTranslation": "Remember the meeting at 2 p.m."
+    },
+    {
+        "translation": "love",
+        "word": "kochać",
+        "exampleUsed": "Kocham spędzać czas z rodziną.",
+        "exampleUsedTranslation": "I love spending time with my family."
+    },
+    {
+        "translation": "consider",
+        "word": "rozważać",
+        "exampleUsed": "Rozważam zmianę pracy.",
+        "exampleUsedTranslation": "I am considering changing jobs."
+    },
+    {
+        "translation": "appear",
+        "word": "pojawić się",
+        "exampleUsed": "Nowy produkt pojawił się na rynku.",
+        "exampleUsedTranslation": "A new product appeared on the market."
+    },
+    {
+        "translation": "buy",
+        "word": "kupować",
+        "exampleUsed": "Kupuję nowy telefon.",
+        "exampleUsedTranslation": "I am buying a new phone."
+    },
+    {
+        "translation": "wait",
+        "word": "czekać",
+        "exampleUsed": "Czekam na autobus.",
+        "exampleUsedTranslation": "I am waiting for the bus."
+    },
+    {
+        "translation": "serve",
+        "word": "służyć",
+        "exampleUsed": "On służy w wojsku.",
+        "exampleUsedTranslation": "He serves in the army."
+    },
+    {
+        "translation": "die",
+        "word": "umrzeć",
+        "exampleUsed": "On umarł w wieku 80 lat.",
+        "exampleUsedTranslation": "He died at the age of 80."
+    },
+    {
+        "translation": "send",
+        "word": "wysyłać",
+        "exampleUsed": "Wysyłam e-mail do mojego szefa.",
+        "exampleUsedTranslation": "I am sending an email to my boss."
+    },
+    {
+        "translation": "expect",
+        "word": "oczekiwać",
+        "exampleUsed": "Oczekuję odpowiedzi wkrótce.",
+        "exampleUsedTranslation": "I expect a response soon."
+    },
+    {
+        "translation": "build",
+        "word": "budować",
+        "exampleUsed": "Buduję nowy dom.",
+        "exampleUsedTranslation": "I am building a new house."
+    },
+    {
+        "translation": "stay",
+        "word": "zostawać",
+        "exampleUsed": "Zostałem w domu przez cały dzień.",
+        "exampleUsedTranslation": "I stayed home all day."
+    },
+    {
+        "translation": "fall",
+        "word": "upadać",
+        "exampleUsed": "Upadłem na ziemię.",
+        "exampleUsedTranslation": "I fell on the ground."
+    },
+    {
+        "translation": "cut",
+        "word": "ciąć",
+        "exampleUsed": "Przeciąłem papier nożyczkami.",
+        "exampleUsedTranslation": "I cut the paper with scissors."
+    },
+    {
+        "translation": "reach",
+        "word": "osiągać",
+        "exampleUsed": "Osiągnąłem swój cel.",
+        "exampleUsedTranslation": "I have reached my goal."
+    },
+    {
+        "translation": "kill",
+        "word": "zabijać",
+        "exampleUsed": "Zabiłem muchę.",
+        "exampleUsedTranslation": "I killed the fly."
+    },
+    {
+        "translation": "remain",
+        "word": "pozostawać",
+        "exampleUsed": "Pozostałem w domu przez cały dzień.",
+        "exampleUsedTranslation": "I remained at home all day."
+    },
+    {
+        "translation": "suggest",
+        "word": "sugerować",
+        "exampleUsed": "Sugeruję, żebyśmy poszli do kina.",
+        "exampleUsedTranslation": "I suggest we go to the cinema."
+    },
+    {
+        "translation": "raise",
+        "word": "podnosić",
+        "exampleUsed": "Podniosłem rękę, aby zadać pytanie.",
+        "exampleUsedTranslation": "I raised my hand to ask a question."
+    },
+    {
+        "translation": "pass",
+        "word": "przechodzić",
+        "exampleUsed": "Przeszliśmy obok parku.",
+        "exampleUsedTranslation": "We passed by the park."
+    },
+    {
+        "translation": "sell",
+        "word": "sprzedawać",
+        "exampleUsed": "Sprzedaję mój samochód.",
+        "exampleUsedTranslation": "I am selling my car."
+    },
+    {
+        "translation": "require",
+        "word": "wymagać",
+        "exampleUsed": "To zadanie wymaga dużego wysiłku.",
+        "exampleUsedTranslation": "This task requires a lot of effort."
+    },
+    {
+        "translation": "report",
+        "word": "raportować",
+        "exampleUsed": "Złożyłem raport szefowi.",
+        "exampleUsedTranslation": "I submitted a report to my boss."
+    },
+    {
+        "translation": "decide",
+        "word": "decydować",
+        "exampleUsed": "Zdecydowałem się na podróż do Hiszpanii.",
+        "exampleUsedTranslation": "I decided to travel to Spain."
+    },
+    {
+        "translation": "pull",
+        "word": "ciągnąć",
+        "exampleUsed": "Pociągnąłem drzwi, aby je otworzyć.",
+        "exampleUsedTranslation": "I pulled the door to open it."
+    },
+    {
+        "translation": "break",
+        "word": "łamać",
+        "exampleUsed": "Złamałem ołówek.",
+        "exampleUsedTranslation": "I broke the pencil."
+    },
+    {
+        "translation": "receive",
+        "word": "otrzymywać",
+        "exampleUsed": "Otrzymałem list od znajomego.",
+        "exampleUsedTranslation": "I received a letter from a friend."
+    },
+    {
+        "translation": "agree",
+        "word": "zgadzać się",
+        "exampleUsed": "Zgadzam się z tobą.",
+        "exampleUsedTranslation": "I agree with you."
+    },
+    {
+        "translation": "support",
+        "word": "wspierać",
+        "exampleUsed": "Wspieram moich przyjaciół.",
+        "exampleUsedTranslation": "I support my friends."
+    },
+    {
+        "translation": "hit",
+        "word": "uderzać",
+        "exampleUsed": "Uderzyłem piłkę kijem.",
+        "exampleUsedTranslation": "I hit the ball with a bat."
+    },
+    {
+        "translation": "produce",
+        "word": "produkować",
+        "exampleUsed": "Firma produkuje elektronikę.",
+        "exampleUsedTranslation": "The company produces electronics."
+    },
+    {
+        "translation": "eat",
+        "word": "jeść",
+        "exampleUsed": "Jem śniadanie codziennie o 8:00.",
+        "exampleUsedTranslation": "I eat breakfast every day at 8 a.m."
+    },
+    {
+        "translation": "cover",
+        "word": "pokrywać",
+        "exampleUsed": "Pokryłem stół obrusem.",
+        "exampleUsedTranslation": "I covered the table with a cloth."
+    },
+    {
+        "translation": "catch",
+        "word": "łapać",
+        "exampleUsed": "Złapałem piłkę jedną ręką.",
+        "exampleUsedTranslation": "I caught the ball with one hand."
+    },
+    {
+        "translation": "draw",
+        "word": "rysować",
+        "exampleUsed": "Rysuję obrazek dla mojej mamy.",
+        "exampleUsedTranslation": "I am drawing a picture for my mom."
+    },
+    {
+        "translation": "choose",
+        "word": "wybierać",
+        "exampleUsed": "Wybrałem niebieską koszulę.",
+        "exampleUsedTranslation": "I chose the blue shirt."
+    },
+    {
+        "translation": "cause",
+        "word": "powodować",
+        "exampleUsed": "To spowodowało wiele problemów.",
+        "exampleUsedTranslation": "It caused a lot of problems."
+    },
+    {
+        "translation": "point",
+        "word": "wskazywać",
+        "exampleUsed": "Wskazałem na mapie nasze miejsce.",
+        "exampleUsedTranslation": "I pointed to our location on the map."
+    },
+    {
+        "translation": "listen",
+        "word": "słuchać",
+        "exampleUsed": "Słucham muzyki w wolnym czasie.",
+        "exampleUsedTranslation": "I listen to music in my free time."
+    },
+    {
+        "translation": "argue",
+        "word": "kłócić się",
+        "exampleUsed": "Oni często się kłócą.",
+        "exampleUsedTranslation": "They argue a lot."
+    },
+    {
+        "translation": "prove",
+        "word": "udowadniać",
+        "exampleUsed": "Udowodniłem swoją rację.",
+        "exampleUsedTranslation": "I proved I was right."
+    },
+    {
+        "translation": "return",
+        "word": "wracać",
+        "exampleUsed": "Wracam do domu późno.",
+        "exampleUsedTranslation": "I return home late."
+    },
+    {
+        "translation": "explain",
+        "word": "wyjaśniać",
+        "exampleUsed": "Wyjaśniłem zasady gry.",
+        "exampleUsedTranslation": "I explained the rules of the game."
+    },
+    {
+        "translation": "hope",
+        "word": "mieć nadzieję",
+        "exampleUsed": "Mam nadzieję, że wszystko się uda.",
+        "exampleUsedTranslation": "I hope everything works out."
+    },
+    {
+        "translation": "develop",
+        "word": "rozwijać",
+        "exampleUsed": "Rozwijam nową aplikację.",
+        "exampleUsedTranslation": "I am developing a new app."
+    },
+    {
+        "translation": "carry",
+        "word": "nosić",
+        "exampleUsed": "Niosłem torbę przez cały dzień.",
+        "exampleUsedTranslation": "I carried the bag all day."
+    },
+    {
+        "translation": "join",
+        "word": "dołączyć",
+        "exampleUsed": "Dołączam do drużyny piłkarskiej.",
+        "exampleUsedTranslation": "I am joining the football team."
+    },
+    {
+        "translation": "jump",
+        "word": "skakać",
+        "exampleUsed": "Skaczę na trampolinie.",
+        "exampleUsedTranslation": "I am jumping on the trampoline."
+    },
+    {
+        "translation": "push",
+        "word": "pchać",
+        "exampleUsed": "Pchnij drzwi, aby je otworzyć.",
+        "exampleUsedTranslation": "Push the door to open it."
+    },
+    {
+        "translation": "improve",
+        "word": "poprawiać",
+        "exampleUsed": "Muszę poprawić moje umiejętności językowe.",
+        "exampleUsedTranslation": "I need to improve my language skills."
+    },
+    {
+        "translation": "avoid",
+        "word": "unikać",
+        "exampleUsed": "Staram się unikać konfliktów.",
+        "exampleUsedTranslation": "I try to avoid conflicts."
+    },
+    {
+        "translation": "plan",
+        "word": "planować",
+        "exampleUsed": "Planuję wyjazd na wakacje.",
+        "exampleUsedTranslation": "I am planning a holiday trip."
+    },
+    {
+        "translation": "act",
+        "word": "działać",
+        "exampleUsed": "Działam zgodnie z planem.",
+        "exampleUsedTranslation": "I am acting according to the plan."
+    },
+    {
+        "translation": "fly",
+        "word": "lecieć",
+        "exampleUsed": "Lecę do Londynu w przyszłym tygodniu.",
+        "exampleUsedTranslation": "I am flying to London next week."
+    },
+    {
+        "translation": "sleep",
+        "word": "spać",
+        "exampleUsed": "Spałem tylko cztery godziny.",
+        "exampleUsedTranslation": "I slept only four hours."
+    },
+    {
+        "translation": "sing",
+        "word": "śpiewać",
+        "exampleUsed": "Śpiewam w zespole muzycznym.",
+        "exampleUsedTranslation": "I sing in a band."
+    },
+    {
+        "translation": "operate",
+        "word": "operować",
+        "exampleUsed": "Lekarz operował pacjenta.",
+        "exampleUsedTranslation": "The doctor operated on the patient."
+    },
+    {
+        "translation": "announce",
+        "word": "ogłaszać",
+        "exampleUsed": "Ogłosili wyniki konkursu.",
+        "exampleUsedTranslation": "They announced the competition results."
+    },
+    {
+        "translation": "behave",
+        "word": "zachowywać się",
+        "exampleUsed": "Zachowywał się bardzo dobrze.",
+        "exampleUsedTranslation": "He behaved very well."
+    },
+    {
+        "translation": "climb",
+        "word": "wspinać się",
+        "exampleUsed": "Wspinam się na górę.",
+        "exampleUsedTranslation": "I am climbing the mountain."
+    },
+    {
+        "translation": "gather",
+        "word": "zbierać",
+        "exampleUsed": "Zbieramy owoce w sadzie.",
+        "exampleUsedTranslation": "We are gathering fruit in the orchard."
+    },
+    {
+        "translation": "explore",
+        "word": "badać",
+        "exampleUsed": "Badałem nową okolicę.",
+        "exampleUsedTranslation": "I explored the new area."
+    },
+    {
+        "translation": "bake",
+        "word": "piec",
+        "exampleUsed": "Piekłem ciasto wczoraj wieczorem.",
+        "exampleUsedTranslation": "I baked a cake last night."
+    },
+    {
+        "translation": "clean",
+        "word": "czyścić",
+        "exampleUsed": "Czyszczę mój pokój co tydzień.",
+        "exampleUsedTranslation": "I clean my room every week."
+    },
+    {
+        "translation": "breathe",
+        "word": "oddychać",
+        "exampleUsed": "Oddycham głęboko.",
+        "exampleUsedTranslation": "I am breathing deeply."
+    }
 ]

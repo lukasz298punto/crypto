@@ -3,7 +3,7 @@ import { RxJsonSchema } from 'rxdb';
 
 export default {
     title: 'words',
-    version: 0,
+    version: 1,
     primaryKey: 'id',
     type: 'object',
     properties: {
@@ -15,9 +15,17 @@ export default {
             type: 'string',
             maxLength: 100,
         },
+        exampleUsed: {
+            type: 'string',
+            default: '',
+        },
         translation: {
             type: 'string',
             maxLength: 100,
+        },
+        exampleUsedTranslation: {
+            type: 'string',
+            default: '',
         },
         categoryId: {
             type: 'string',

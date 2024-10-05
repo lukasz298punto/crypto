@@ -1,180 +1,1070 @@
 [
-    { "translation": "time", "word": "czas" },
-    { "translation": "year", "word": "rok" },
-    { "translation": "people", "word": "ludzie" },
-    { "translation": "way", "word": "droga" },
-    { "translation": "day", "word": "dzień" },
-    { "translation": "man", "word": "mężczyzna" },
-    { "translation": "thing", "word": "rzecz" },
-    { "translation": "woman", "word": "kobieta" },
-    { "translation": "life", "word": "życie" },
-    { "translation": "child", "word": "dziecko" },
-    { "translation": "world", "word": "świat" },
-    { "translation": "school", "word": "szkoła" },
-    { "translation": "state", "word": "stan" },
-    { "translation": "family", "word": "rodzina" },
-    { "translation": "student", "word": "uczeń" },
-    { "translation": "group", "word": "grupa" },
-    { "translation": "country", "word": "kraj" },
-    { "translation": "problem", "word": "problem" },
-    { "translation": "hand", "word": "ręka" },
-    { "translation": "part", "word": "część" },
-    { "translation": "place", "word": "miejsce" },
-    { "translation": "case", "word": "przypadek" },
-    { "translation": "week", "word": "tydzień" },
-    { "translation": "company", "word": "firma" },
-    { "translation": "system", "word": "system" },
-    { "translation": "program", "word": "program" },
-    { "translation": "question", "word": "pytanie" },
-    { "translation": "work", "word": "praca" },
-    { "translation": "government", "word": "rząd" },
-    { "translation": "number", "word": "numer" },
-    { "translation": "night", "word": "noc" },
-    { "translation": "point", "word": "punkt" },
-    { "translation": "home", "word": "dom" },
-    { "translation": "water", "word": "woda" },
-    { "translation": "room", "word": "pokój" },
-    { "translation": "mother", "word": "matka" },
-    { "translation": "area", "word": "obszar" },
-    { "translation": "money", "word": "pieniądze" },
-    { "translation": "story", "word": "historia" },
-    { "translation": "fact", "word": "fakt" },
-    { "translation": "month", "word": "miesiąc" },
-    { "translation": "lot", "word": "dużo" },
-    { "translation": "right", "word": "prawo" },
-    { "translation": "study", "word": "badanie" },
-    { "translation": "book", "word": "książka" },
-    { "translation": "eye", "word": "oko" },
-    { "translation": "job", "word": "praca" },
-    { "translation": "translation", "word": "słowo" },
-    { "translation": "business", "word": "biznes" },
-    { "translation": "issue", "word": "kwestia" },
-    { "translation": "side", "word": "strona" },
-    { "translation": "kind", "word": "rodzaj" },
-    { "translation": "head", "word": "głowa" },
-    { "translation": "house", "word": "dom" },
-    { "translation": "service", "word": "usługa" },
-    { "translation": "friend", "word": "przyjaciel" },
-    { "translation": "father", "word": "ojciec" },
-    { "translation": "power", "word": "moc" },
-    { "translation": "hour", "word": "godzina" },
-    { "translation": "game", "word": "gra" },
-    { "translation": "line", "word": "linia" },
-    { "translation": "end", "word": "koniec" },
-    { "translation": "member", "word": "członek" },
-    { "translation": "law", "word": "prawo" },
-    { "translation": "car", "word": "samochód" },
-    { "translation": "city", "word": "miasto" },
-    { "translation": "community", "word": "społeczność" },
-    { "translation": "name", "word": "imię" },
-    { "translation": "president", "word": "prezydent" },
-    { "translation": "team", "word": "drużyna" },
-    { "translation": "minute", "word": "minuta" },
-    { "translation": "idea", "word": "pomysł" },
-    { "translation": "kid", "word": "dziecko" },
-    { "translation": "body", "word": "ciało" },
-    { "translation": "information", "word": "informacja" },
-    { "translation": "back", "word": "plecy" },
-    { "translation": "parent", "word": "rodzic" },
-    { "translation": "face", "word": "twarz" },
-    { "translation": "others", "word": "inni" },
-    { "translation": "level", "word": "poziom" },
-    { "translation": "office", "word": "biuro" },
-    { "translation": "door", "word": "drzwi" },
-    { "translation": "health", "word": "zdrowie" },
-    { "translation": "person", "word": "osoba" },
-    { "translation": "art", "word": "sztuka" },
-    { "translation": "war", "word": "wojna" },
-    { "translation": "history", "word": "historia" },
-    { "translation": "party", "word": "impreza" },
-    { "translation": "result", "word": "wynik" },
-    { "translation": "change", "word": "zmiana" },
-    { "translation": "morning", "word": "rano" },
-    { "translation": "reason", "word": "powód" },
-    { "translation": "research", "word": "badanie" },
-    { "translation": "girl", "word": "dziewczyna" },
-    { "translation": "guy", "word": "facet" },
-    { "translation": "moment", "word": "moment" },
-    { "translation": "air", "word": "powietrze" },
-    { "translation": "teacher", "word": "nauczyciel" },
-    { "translation": "force", "word": "siła" },
-    { "translation": "education", "word": "edukacja" },
-    { "translation": "foot", "word": "stopa" },
-    { "translation": "boy", "word": "chłopiec" },
-    { "translation": "age", "word": "wiek" },
-    { "translation": "policy", "word": "polityka" },
-    { "translation": "process", "word": "proces" },
-    { "translation": "music", "word": "muzyka" },
-    { "translation": "market", "word": "rynek" },
-    { "translation": "sense", "word": "zmysł" },
-    { "translation": "nation", "word": "naród" },
-    { "translation": "plan", "word": "plan" },
-    { "translation": "college", "word": "kolegium" },
-    { "translation": "interest", "word": "zainteresowanie" },
-    { "translation": "death", "word": "śmierć" },
-    { "translation": "experience", "word": "doświadczenie" },
-    { "translation": "effect", "word": "efekt" },
-    { "translation": "use", "word": "użycie" },
-    { "translation": "class", "word": "klasa" },
-    { "translation": "control", "word": "kontrola" },
-    { "translation": "care", "word": "opieka" },
-    { "translation": "field", "word": "pole" },
-    { "translation": "development", "word": "rozwój" },
-    { "translation": "role", "word": "rola" },
-    { "translation": "effort", "word": "wysiłek" },
-    { "translation": "rate", "word": "wskaźnik" },
-    { "translation": "heart", "word": "serce" },
-    { "translation": "drug", "word": "lek" },
-    { "translation": "show", "word": "pokaz" },
-    { "translation": "leader", "word": "lider" },
-    { "translation": "light", "word": "światło" },
-    { "translation": "voice", "word": "głos" },
-    { "translation": "wife", "word": "żona" },
-    { "translation": "police", "word": "policja" },
-    { "translation": "mind", "word": "umysł" },
-    { "translation": "price", "word": "cena" },
-    { "translation": "report", "word": "raport" },
-    { "translation": "decision", "word": "decyzja" },
-    { "translation": "son", "word": "syn" },
-    { "translation": "view", "word": "widok" },
-    { "translation": "relationship", "word": "relacja" },
-    { "translation": "town", "word": "miasto" },
-    { "translation": "road", "word": "droga" },
-    { "translation": "arm", "word": "ręka" },
-    { "translation": "difference", "word": "różnica" },
-    { "translation": "value", "word": "wartość" },
-    { "translation": "building", "word": "budynek" },
-    { "translation": "action", "word": "akcja" },
-    { "translation": "model", "word": "model" },
-    { "translation": "season", "word": "sezon" },
-    { "translation": "society", "word": "społeczeństwo" },
-    { "translation": "tax", "word": "podatek" },
-    { "translation": "director", "word": "dyrektor" },
-    { "translation": "position", "word": "pozycja" },
-    { "translation": "player", "word": "gracz" },
-    { "translation": "record", "word": "rekord" },
-    { "translation": "paper", "word": "papier" },
-    { "translation": "space", "word": "przestrzeń" },
-    { "translation": "ground", "word": "ziemia" },
-    { "translation": "form", "word": "forma" },
-    { "translation": "event", "word": "wydarzenie" },
-    { "translation": "official", "word": "urzędnik" },
-    { "translation": "matter", "word": "sprawa" },
-    { "translation": "center", "word": "centrum" },
-    { "translation": "couple", "word": "para" },
-    { "translation": "site", "word": "miejsce" },
-    { "translation": "project", "word": "projekt" },
-    { "translation": "activity", "word": "działanie" },
-    { "translation": "star", "word": "gwiazda" },
-    { "translation": "table", "word": "stół" },
-    { "translation": "need", "word": "potrzeba" },
-    { "translation": "court", "word": "sąd" },
-    { "translation": "oil", "word": "olej" },
-    { "translation": "situation", "word": "sytuacja" },
-    { "translation": "cost", "word": "koszt" },
-    { "translation": "industry", "word": "przemysł" },
-    { "translation": "figure", "word": "postać" },
-    { "translation": "street", "word": "ulica" },
-    { "translation": "image", "word": "obraz" },
-    { "translation": "phone", "word": "telefon" }
+    {
+        "translation": "time",
+        "word": "czas",
+        "exampleUsed": "Czas mija bardzo szybko.",
+        "exampleUsedTranslation": "Time flies very fast."
+    },
+    {
+        "translation": "year",
+        "word": "rok",
+        "exampleUsed": "To był trudny rok.",
+        "exampleUsedTranslation": "It was a difficult year."
+    },
+    {
+        "translation": "people",
+        "word": "ludzie",
+        "exampleUsed": "Ludzie są bardzo mili.",
+        "exampleUsedTranslation": "People are very nice."
+    },
+    {
+        "translation": "way",
+        "word": "droga",
+        "exampleUsed": "Zgubiłem drogę do domu.",
+        "exampleUsedTranslation": "I lost my way home."
+    },
+    {
+        "translation": "day",
+        "word": "dzień",
+        "exampleUsed": "Dzień był słoneczny.",
+        "exampleUsedTranslation": "The day was sunny."
+    },
+    {
+        "translation": "man",
+        "word": "mężczyzna",
+        "exampleUsed": "Ten mężczyzna jest bardzo wysoki.",
+        "exampleUsedTranslation": "This man is very tall."
+    },
+    {
+        "translation": "thing",
+        "word": "rzecz",
+        "exampleUsed": "To jest bardzo ciekawa rzecz.",
+        "exampleUsedTranslation": "This is a very interesting thing."
+    },
+    {
+        "translation": "woman",
+        "word": "kobieta",
+        "exampleUsed": "Kobieta czekała na autobus.",
+        "exampleUsedTranslation": "The woman was waiting for the bus."
+    },
+    {
+        "translation": "life",
+        "word": "życie",
+        "exampleUsed": "Życie jest piękne.",
+        "exampleUsedTranslation": "Life is beautiful."
+    },
+    {
+        "translation": "child",
+        "word": "dziecko",
+        "exampleUsed": "To dziecko jest bardzo urocze.",
+        "exampleUsedTranslation": "This child is very cute."
+    },
+    {
+        "translation": "world",
+        "word": "świat",
+        "exampleUsed": "Świat jest pełen cudów.",
+        "exampleUsedTranslation": "The world is full of wonders."
+    },
+    {
+        "translation": "school",
+        "word": "szkoła",
+        "exampleUsed": "Szkoła zaczyna się o ósmej.",
+        "exampleUsedTranslation": "School starts at eight."
+    },
+    {
+        "translation": "state",
+        "word": "stan",
+        "exampleUsed": "Stan zdrowia pacjenta się poprawił.",
+        "exampleUsedTranslation": "The patient's health state has improved."
+    },
+    {
+        "translation": "family",
+        "word": "rodzina",
+        "exampleUsed": "Moja rodzina jest bardzo duża.",
+        "exampleUsedTranslation": "My family is very large."
+    },
+    {
+        "translation": "student",
+        "word": "uczeń",
+        "exampleUsed": "Uczeń odrobił swoje zadanie domowe.",
+        "exampleUsedTranslation": "The student did his homework."
+    },
+    {
+        "translation": "group",
+        "word": "grupa",
+        "exampleUsed": "Grupa spotkała się na rynku.",
+        "exampleUsedTranslation": "The group met at the square."
+    },
+    {
+        "translation": "country",
+        "word": "kraj",
+        "exampleUsed": "Polska jest pięknym krajem.",
+        "exampleUsedTranslation": "Poland is a beautiful country."
+    },
+    {
+        "translation": "problem",
+        "word": "problem",
+        "exampleUsed": "Mam problem z komputerem.",
+        "exampleUsedTranslation": "I have a problem with my computer."
+    },
+    {
+        "translation": "hand",
+        "word": "ręka",
+        "exampleUsed": "Podaj mi swoją rękę.",
+        "exampleUsedTranslation": "Give me your hand."
+    },
+    {
+        "translation": "part",
+        "word": "część",
+        "exampleUsed": "To jest część większego projektu.",
+        "exampleUsedTranslation": "This is part of a bigger project."
+    },
+    {
+        "translation": "place",
+        "word": "miejsce",
+        "exampleUsed": "To miejsce jest piękne.",
+        "exampleUsedTranslation": "This place is beautiful."
+    },
+    {
+        "translation": "case",
+        "word": "przypadek",
+        "exampleUsed": "W tym przypadku musimy działać szybko.",
+        "exampleUsedTranslation": "In this case, we need to act quickly."
+    },
+    {
+        "translation": "week",
+        "word": "tydzień",
+        "exampleUsed": "To był długi tydzień.",
+        "exampleUsedTranslation": "It was a long week."
+    },
+    {
+        "translation": "company",
+        "word": "firma",
+        "exampleUsed": "Moja firma rozwija się szybko.",
+        "exampleUsedTranslation": "My company is growing fast."
+    },
+    {
+        "translation": "system",
+        "word": "system",
+        "exampleUsed": "System jest offline.",
+        "exampleUsedTranslation": "The system is offline."
+    },
+    {
+        "translation": "program",
+        "word": "program",
+        "exampleUsed": "Program jest bardzo skomplikowany.",
+        "exampleUsedTranslation": "The program is very complicated."
+    },
+    {
+        "translation": "question",
+        "word": "pytanie",
+        "exampleUsed": "Mam pytanie do nauczyciela.",
+        "exampleUsedTranslation": "I have a question for the teacher."
+    },
+    {
+        "translation": "work",
+        "word": "praca",
+        "exampleUsed": "Muszę skończyć pracę do jutra.",
+        "exampleUsedTranslation": "I need to finish my work by tomorrow."
+    },
+    {
+        "translation": "government",
+        "word": "rząd",
+        "exampleUsed": "Rząd ogłosił nowe przepisy.",
+        "exampleUsedTranslation": "The government announced new regulations."
+    },
+    {
+        "translation": "number",
+        "word": "numer",
+        "exampleUsed": "Zadzwoń na ten numer.",
+        "exampleUsedTranslation": "Call this number."
+    },
+    {
+        "translation": "night",
+        "word": "noc",
+        "exampleUsed": "Noc była bardzo chłodna.",
+        "exampleUsedTranslation": "The night was very cold."
+    },
+    {
+        "translation": "point",
+        "word": "punkt",
+        "exampleUsed": "Punkt spotkania to rynek.",
+        "exampleUsedTranslation": "The meeting point is the square."
+    },
+    {
+        "translation": "home",
+        "word": "dom",
+        "exampleUsed": "Mój dom jest bardzo przytulny.",
+        "exampleUsedTranslation": "My home is very cozy."
+    },
+    {
+        "translation": "water",
+        "word": "woda",
+        "exampleUsed": "Piję dużo wody każdego dnia.",
+        "exampleUsedTranslation": "I drink a lot of water every day."
+    },
+    {
+        "translation": "room",
+        "word": "pokój",
+        "exampleUsed": "Mój pokój jest bardzo duży.",
+        "exampleUsedTranslation": "My room is very big."
+    },
+    {
+        "translation": "mother",
+        "word": "matka",
+        "exampleUsed": "Moja matka jest bardzo opiekuńcza.",
+        "exampleUsedTranslation": "My mother is very caring."
+    },
+    {
+        "translation": "area",
+        "word": "obszar",
+        "exampleUsed": "To jest niebezpieczny obszar.",
+        "exampleUsedTranslation": "This is a dangerous area."
+    },
+    {
+        "translation": "money",
+        "word": "pieniądze",
+        "exampleUsed": "Potrzebuję więcej pieniędzy.",
+        "exampleUsedTranslation": "I need more money."
+    },
+    {
+        "translation": "story",
+        "word": "historia",
+        "exampleUsed": "To jest niesamowita historia.",
+        "exampleUsedTranslation": "This is an amazing story."
+    },
+    {
+        "translation": "fact",
+        "word": "fakt",
+        "exampleUsed": "To jest niezaprzeczalny fakt.",
+        "exampleUsedTranslation": "This is an undeniable fact."
+    },
+    {
+        "translation": "month",
+        "word": "miesiąc",
+        "exampleUsed": "Za miesiąc zaczynamy nowy projekt.",
+        "exampleUsedTranslation": "We are starting a new project in a month."
+    },
+    {
+        "translation": "lot",
+        "word": "dużo",
+        "exampleUsed": "Mam dużo pracy.",
+        "exampleUsedTranslation": "I have a lot of work."
+    },
+    {
+        "translation": "right",
+        "word": "prawo",
+        "exampleUsed": "Masz prawo do swojego zdania.",
+        "exampleUsedTranslation": "You have the right to your opinion."
+    },
+    {
+        "translation": "study",
+        "word": "badanie",
+        "exampleUsed": "Badanie wykazało interesujące wyniki.",
+        "exampleUsedTranslation": "The study showed interesting results."
+    },
+    {
+        "translation": "book",
+        "word": "książka",
+        "exampleUsed": "Ta książka jest bardzo wciągająca.",
+        "exampleUsedTranslation": "This book is very engaging."
+    },
+    {
+        "translation": "eye",
+        "word": "oko",
+        "exampleUsed": "Moje oko boli.",
+        "exampleUsedTranslation": "My eye hurts."
+    },
+    {
+        "translation": "job",
+        "word": "praca",
+        "exampleUsed": "Mam nową pracę.",
+        "exampleUsedTranslation": "I have a new job."
+    },
+    {
+        "translation": "translation",
+        "word": "słowo",
+        "exampleUsed": "Tłumaczenie tego tekstu jest trudne.",
+        "exampleUsedTranslation": "The translation of this text is difficult."
+    },
+    {
+        "translation": "business",
+        "word": "biznes",
+        "exampleUsed": "Biznes rozwija się bardzo dobrze.",
+        "exampleUsedTranslation": "The business is growing very well."
+    },
+    {
+        "translation": "issue",
+        "word": "kwestia",
+        "exampleUsed": "To jest poważna kwestia.",
+        "exampleUsedTranslation": "This is a serious issue."
+    },
+    {
+        "translation": "side",
+        "word": "strona",
+        "exampleUsed": "Która strona jest twoja?",
+        "exampleUsedTranslation": "Which side is yours?"
+    },
+    {
+        "translation": "kind",
+        "word": "rodzaj",
+        "exampleUsed": "To jest bardzo rzadki rodzaj kwiatu.",
+        "exampleUsedTranslation": "This is a very rare kind of flower."
+    },
+    {
+        "translation": "head",
+        "word": "głowa",
+        "exampleUsed": "Boli mnie głowa.",
+        "exampleUsedTranslation": "I have a headache."
+    },
+    {
+        "translation": "house",
+        "word": "dom",
+        "exampleUsed": "Mieszkam w dużym domu.",
+        "exampleUsedTranslation": "I live in a big house."
+    },
+    {
+        "translation": "service",
+        "word": "usługa",
+        "exampleUsed": "Ta usługa jest bardzo droga.",
+        "exampleUsedTranslation": "This service is very expensive."
+    },
+    {
+        "translation": "friend",
+        "word": "przyjaciel",
+        "exampleUsed": "Mój przyjaciel jest bardzo pomocny.",
+        "exampleUsedTranslation": "My friend is very helpful."
+    },
+    {
+        "translation": "father",
+        "word": "ojciec",
+        "exampleUsed": "Mój ojciec jest nauczycielem.",
+        "exampleUsedTranslation": "My father is a teacher."
+    },
+    {
+        "translation": "power",
+        "word": "moc",
+        "exampleUsed": "Ta maszyna ma dużą moc.",
+        "exampleUsedTranslation": "This machine has a lot of power."
+    },
+    {
+        "translation": "hour",
+        "word": "godzina",
+        "exampleUsed": "Spotkanie trwało godzinę.",
+        "exampleUsedTranslation": "The meeting lasted an hour."
+    },
+    {
+        "translation": "game",
+        "word": "gra",
+        "exampleUsed": "Ta gra jest bardzo wciągająca.",
+        "exampleUsedTranslation": "This game is very engaging."
+    },
+    {
+        "translation": "line",
+        "word": "linia",
+        "exampleUsed": "Rysuj prostą linię.",
+        "exampleUsedTranslation": "Draw a straight line."
+    },
+    {
+        "translation": "end",
+        "word": "koniec",
+        "exampleUsed": "To jest koniec filmu.",
+        "exampleUsedTranslation": "This is the end of the movie."
+    },
+    {
+        "translation": "member",
+        "word": "członek",
+        "exampleUsed": "Jestem członkiem tej grupy.",
+        "exampleUsedTranslation": "I am a member of this group."
+    },
+    {
+        "translation": "law",
+        "word": "prawo",
+        "exampleUsed": "Musimy przestrzegać prawa.",
+        "exampleUsedTranslation": "We must follow the law."
+    },
+    {
+        "translation": "car",
+        "word": "samochód",
+        "exampleUsed": "Mam nowy samochód.",
+        "exampleUsedTranslation": "I have a new car."
+    },
+    {
+        "translation": "city",
+        "word": "miasto",
+        "exampleUsed": "Moje miasto jest bardzo duże.",
+        "exampleUsedTranslation": "My city is very big."
+    },
+    {
+        "translation": "community",
+        "word": "społeczność",
+        "exampleUsed": "Ta społeczność jest bardzo zgrana.",
+        "exampleUsedTranslation": "This community is very close-knit."
+    },
+    {
+        "translation": "name",
+        "word": "imię",
+        "exampleUsed": "Moje imię to Jan.",
+        "exampleUsedTranslation": "My name is Jan."
+    },
+    {
+        "translation": "president",
+        "word": "prezydent",
+        "exampleUsed": "Prezydent wygłosił przemówienie.",
+        "exampleUsedTranslation": "The president gave a speech."
+    },
+    {
+        "translation": "team",
+        "word": "drużyna",
+        "exampleUsed": "Nasza drużyna wygrała mecz.",
+        "exampleUsedTranslation": "Our team won the game."
+    },
+    {
+        "translation": "minute",
+        "word": "minuta",
+        "exampleUsed": "Spotkanie zaczyna się za minutę.",
+        "exampleUsedTranslation": "The meeting starts in a minute."
+    },
+    {
+        "translation": "idea",
+        "word": "pomysł",
+        "exampleUsed": "Mam świetny pomysł.",
+        "exampleUsedTranslation": "I have a great idea."
+    },
+    {
+        "translation": "kid",
+        "word": "dziecko",
+        "exampleUsed": "To dziecko jest bardzo mądre.",
+        "exampleUsedTranslation": "This kid is very smart."
+    },
+    {
+        "translation": "body",
+        "word": "ciało",
+        "exampleUsed": "Ciało człowieka jest fascynujące.",
+        "exampleUsedTranslation": "The human body is fascinating."
+    },
+    {
+        "translation": "information",
+        "word": "informacja",
+        "exampleUsed": "Ta informacja jest bardzo ważna.",
+        "exampleUsedTranslation": "This information is very important."
+    },
+    {
+        "translation": "back",
+        "word": "plecy",
+        "exampleUsed": "Boli mnie plecy.",
+        "exampleUsedTranslation": "My back hurts."
+    },
+    {
+        "translation": "parent",
+        "word": "rodzic",
+        "exampleUsed": "Moi rodzice są bardzo troskliwi.",
+        "exampleUsedTranslation": "My parents are very caring."
+    },
+    {
+        "translation": "face",
+        "word": "twarz",
+        "exampleUsed": "Jej twarz jest uśmiechnięta.",
+        "exampleUsedTranslation": "Her face is smiling."
+    },
+    {
+        "translation": "others",
+        "word": "inni",
+        "exampleUsed": "Inni też chcą iść na koncert.",
+        "exampleUsedTranslation": "Others also want to go to the concert."
+    },
+    {
+        "translation": "level",
+        "word": "poziom",
+        "exampleUsed": "Mój poziom języka angielskiego jest wysoki.",
+        "exampleUsedTranslation": "My English level is high."
+    },
+    {
+        "translation": "office",
+        "word": "biuro",
+        "exampleUsed": "Moje biuro jest na pierwszym piętrze.",
+        "exampleUsedTranslation": "My office is on the first floor."
+    },
+    {
+        "translation": "door",
+        "word": "drzwi",
+        "exampleUsed": "Drzwi są zamknięte.",
+        "exampleUsedTranslation": "The door is closed."
+    },
+    {
+        "translation": "health",
+        "word": "zdrowie",
+        "exampleUsed": "Zdrowie jest najważniejsze.",
+        "exampleUsedTranslation": "Health is the most important."
+    },
+    {
+        "translation": "person",
+        "word": "osoba",
+        "exampleUsed": "Jestem miłą osobą.",
+        "exampleUsedTranslation": "I am a nice person."
+    },
+    {
+        "translation": "art",
+        "word": "sztuka",
+        "exampleUsed": "Sztuka jest częścią kultury.",
+        "exampleUsedTranslation": "Art is part of culture."
+    },
+    {
+        "translation": "war",
+        "word": "wojna",
+        "exampleUsed": "Wojna jest straszna.",
+        "exampleUsedTranslation": "War is terrible."
+    },
+    {
+        "translation": "history",
+        "word": "historia",
+        "exampleUsed": "Historia Polski jest bogata.",
+        "exampleUsedTranslation": "Poland's history is rich."
+    },
+    {
+        "translation": "party",
+        "word": "impreza",
+        "exampleUsed": "Impreza była świetna!",
+        "exampleUsedTranslation": "The party was great!"
+    },
+    {
+        "translation": "result",
+        "word": "wynik",
+        "exampleUsed": "Wynik testu był pozytywny.",
+        "exampleUsedTranslation": "The test result was positive."
+    },
+    {
+        "translation": "change",
+        "word": "zmiana",
+        "exampleUsed": "Zmiana jest nieunikniona.",
+        "exampleUsedTranslation": "Change is inevitable."
+    },
+    {
+        "translation": "morning",
+        "word": "rano",
+        "exampleUsed": "Rano jest zimno.",
+        "exampleUsedTranslation": "It's cold in the morning."
+    },
+    {
+        "translation": "reason",
+        "word": "powód",
+        "exampleUsed": "Jaki jest powód twojej decyzji?",
+        "exampleUsedTranslation": "What is the reason for your decision?"
+    },
+    {
+        "translation": "research",
+        "word": "badanie",
+        "exampleUsed": "Badania są bardzo skomplikowane.",
+        "exampleUsedTranslation": "Research is very complicated."
+    },
+    {
+        "translation": "girl",
+        "word": "dziewczyna",
+        "exampleUsed": "Ta dziewczyna jest bardzo inteligentna.",
+        "exampleUsedTranslation": "This girl is very smart."
+    },
+    {
+        "translation": "guy",
+        "word": "facet",
+        "exampleUsed": "Ten facet jest bardzo silny.",
+        "exampleUsedTranslation": "This guy is very strong."
+    },
+    {
+        "translation": "moment",
+        "word": "moment",
+        "exampleUsed": "To był ważny moment w moim życiu.",
+        "exampleUsedTranslation": "It was an important moment in my life."
+    },
+    {
+        "translation": "air",
+        "word": "powietrze",
+        "exampleUsed": "Powietrze jest czyste dzisiaj.",
+        "exampleUsedTranslation": "The air is clean today."
+    },
+    {
+        "translation": "teacher",
+        "word": "nauczyciel",
+        "exampleUsed": "Mój nauczyciel jest bardzo mądry.",
+        "exampleUsedTranslation": "My teacher is very wise."
+    },
+    {
+        "translation": "force",
+        "word": "siła",
+        "exampleUsed": "Musimy użyć siły, aby to otworzyć.",
+        "exampleUsedTranslation": "We need to use force to open it."
+    },
+    {
+        "translation": "education",
+        "word": "edukacja",
+        "exampleUsed": "Edukacja jest bardzo ważna.",
+        "exampleUsedTranslation": "Education is very important."
+    },
+    {
+        "translation": "foot",
+        "word": "stopa",
+        "exampleUsed": "Moja stopa boli po długim spacerze.",
+        "exampleUsedTranslation": "My foot hurts after the long walk."
+    },
+    {
+        "translation": "boy",
+        "word": "chłopiec",
+        "exampleUsed": "Ten chłopiec jest bardzo grzeczny.",
+        "exampleUsedTranslation": "This boy is very polite."
+    },
+    {
+        "translation": "age",
+        "word": "wiek",
+        "exampleUsed": "W jakim wieku jesteś?",
+        "exampleUsedTranslation": "How old are you?"
+    },
+    {
+        "translation": "policy",
+        "word": "polityka",
+        "exampleUsed": "Polityka rządu jest skomplikowana.",
+        "exampleUsedTranslation": "The government's policy is complicated."
+    },
+    {
+        "translation": "process",
+        "word": "proces",
+        "exampleUsed": "Proces produkcji jest skomplikowany.",
+        "exampleUsedTranslation": "The production process is complicated."
+    },
+    {
+        "translation": "music",
+        "word": "muzyka",
+        "exampleUsed": "Muzyka sprawia mi przyjemność.",
+        "exampleUsedTranslation": "Music brings me joy."
+    },
+    {
+        "translation": "market",
+        "word": "rynek",
+        "exampleUsed": "Rynek jest pełen ludzi.",
+        "exampleUsedTranslation": "The market is full of people."
+    },
+    {
+        "translation": "sense",
+        "word": "zmysł",
+        "exampleUsed": "Mój zmysł smaku jest wspaniały.",
+        "exampleUsedTranslation": "My sense of taste is great."
+    },
+    {
+        "translation": "nation",
+        "word": "naród",
+        "exampleUsed": "Nasz naród jest dumny ze swojej historii.",
+        "exampleUsedTranslation": "Our nation is proud of its history."
+    },
+    {
+        "translation": "plan",
+        "word": "plan",
+        "exampleUsed": "Mam plan na weekend.",
+        "exampleUsedTranslation": "I have a plan for the weekend."
+    },
+    {
+        "translation": "college",
+        "word": "kolegium",
+        "exampleUsed": "Studiuję w kolegium.",
+        "exampleUsedTranslation": "I study at a college."
+    },
+    {
+        "translation": "interest",
+        "word": "zainteresowanie",
+        "exampleUsed": "Mam duże zainteresowanie nauką.",
+        "exampleUsedTranslation": "I have a big interest in science."
+    },
+    {
+        "translation": "death",
+        "word": "śmierć",
+        "exampleUsed": "Śmierć jest naturalną częścią życia.",
+        "exampleUsedTranslation": "Death is a natural part of life."
+    },
+    {
+        "translation": "experience",
+        "word": "doświadczenie",
+        "exampleUsed": "Moje doświadczenie w pracy jest duże.",
+        "exampleUsedTranslation": "My work experience is extensive."
+    },
+    {
+        "translation": "effect",
+        "word": "efekt",
+        "exampleUsed": "Efekt mojej pracy jest widoczny.",
+        "exampleUsedTranslation": "The effect of my work is visible."
+    },
+    {
+        "translation": "use",
+        "word": "użycie",
+        "exampleUsed": "Użycie tej metody jest skuteczne.",
+        "exampleUsedTranslation": "The use of this method is effective."
+    },
+    {
+        "translation": "class",
+        "word": "klasa",
+        "exampleUsed": "Moja klasa jest bardzo duża.",
+        "exampleUsedTranslation": "My class is very large."
+    },
+    {
+        "translation": "control",
+        "word": "kontrola",
+        "exampleUsed": "Musisz mieć kontrolę nad sytuacją.",
+        "exampleUsedTranslation": "You need to have control over the situation."
+    },
+    {
+        "translation": "care",
+        "word": "opieka",
+        "exampleUsed": "Opieka nad dziećmi jest ważna.",
+        "exampleUsedTranslation": "Child care is important."
+    },
+    {
+        "translation": "field",
+        "word": "pole",
+        "exampleUsed": "To pole jest bardzo szerokie.",
+        "exampleUsedTranslation": "This field is very wide."
+    },
+    {
+        "translation": "development",
+        "word": "rozwój",
+        "exampleUsed": "Rozwój technologii jest szybki.",
+        "exampleUsedTranslation": "Technology development is fast."
+    },
+    {
+        "translation": "role",
+        "word": "rola",
+        "exampleUsed": "Mam ważną rolę w projekcie.",
+        "exampleUsedTranslation": "I have an important role in the project."
+    },
+    {
+        "translation": "effort",
+        "word": "wysiłek",
+        "exampleUsed": "To wymaga dużo wysiłku.",
+        "exampleUsedTranslation": "This requires a lot of effort."
+    },
+    {
+        "translation": "rate",
+        "word": "wskaźnik",
+        "exampleUsed": "Wskaźnik sukcesu jest wysoki.",
+        "exampleUsedTranslation": "The success rate is high."
+    },
+    {
+        "translation": "heart",
+        "word": "serce",
+        "exampleUsed": "Moje serce bije szybko.",
+        "exampleUsedTranslation": "My heart is beating fast."
+    },
+    {
+        "translation": "drug",
+        "word": "lek",
+        "exampleUsed": "Ten lek jest bardzo skuteczny.",
+        "exampleUsedTranslation": "This drug is very effective."
+    },
+    {
+        "translation": "show",
+        "word": "pokaz",
+        "exampleUsed": "Pokaz był niesamowity.",
+        "exampleUsedTranslation": "The show was amazing."
+    },
+    {
+        "translation": "leader",
+        "word": "lider",
+        "exampleUsed": "On jest liderem zespołu.",
+        "exampleUsedTranslation": "He is the leader of the team."
+    },
+    {
+        "translation": "light",
+        "word": "światło",
+        "exampleUsed": "Światło było bardzo jasne.",
+        "exampleUsedTranslation": "The light was very bright."
+    },
+    {
+        "translation": "voice",
+        "word": "głos",
+        "exampleUsed": "Jej głos jest piękny.",
+        "exampleUsedTranslation": "Her voice is beautiful."
+    },
+    {
+        "translation": "wife",
+        "word": "żona",
+        "exampleUsed": "Moja żona jest bardzo mądra.",
+        "exampleUsedTranslation": "My wife is very smart."
+    },
+    {
+        "translation": "police",
+        "word": "policja",
+        "exampleUsed": "Policja przyjechała na miejsce.",
+        "exampleUsedTranslation": "The police arrived at the scene."
+    },
+    {
+        "translation": "mind",
+        "word": "umysł",
+        "exampleUsed": "Jego umysł jest bardzo bystry.",
+        "exampleUsedTranslation": "His mind is very sharp."
+    },
+    {
+        "translation": "price",
+        "word": "cena",
+        "exampleUsed": "Cena tego produktu jest wysoka.",
+        "exampleUsedTranslation": "The price of this product is high."
+    },
+    {
+        "translation": "report",
+        "word": "raport",
+        "exampleUsed": "Napiszę raport po spotkaniu.",
+        "exampleUsedTranslation": "I will write a report after the meeting."
+    },
+    {
+        "translation": "decision",
+        "word": "decyzja",
+        "exampleUsed": "Podjęliśmy ważną decyzję.",
+        "exampleUsedTranslation": "We made an important decision."
+    },
+    {
+        "translation": "son",
+        "word": "syn",
+        "exampleUsed": "Mój syn jest w szkole.",
+        "exampleUsedTranslation": "My son is at school."
+    },
+    {
+        "translation": "view",
+        "word": "widok",
+        "exampleUsed": "Widok z góry jest niesamowity.",
+        "exampleUsedTranslation": "The view from the top is amazing."
+    },
+    {
+        "translation": "relationship",
+        "word": "relacja",
+        "exampleUsed": "Mam dobrą relację z moimi kolegami.",
+        "exampleUsedTranslation": "I have a good relationship with my colleagues."
+    },
+    {
+        "translation": "town",
+        "word": "miasto",
+        "exampleUsed": "Moje miasto jest pełne zabytków.",
+        "exampleUsedTranslation": "My town is full of monuments."
+    },
+    {
+        "translation": "road",
+        "word": "droga",
+        "exampleUsed": "Droga jest długa i kręta.",
+        "exampleUsedTranslation": "The road is long and winding."
+    },
+    {
+        "translation": "arm",
+        "word": "ręka",
+        "exampleUsed": "Podniosłem rękę, żeby odpowiedzieć na pytanie.",
+        "exampleUsedTranslation": "I raised my arm to answer the question."
+    },
+    {
+        "translation": "difference",
+        "word": "różnica",
+        "exampleUsed": "Jaka jest różnica między tymi produktami?",
+        "exampleUsedTranslation": "What is the difference between these products?"
+    },
+    {
+        "translation": "value",
+        "word": "wartość",
+        "exampleUsed": "Wartość tego domu jest bardzo wysoka.",
+        "exampleUsedTranslation": "The value of this house is very high."
+    },
+    {
+        "translation": "building",
+        "word": "budynek",
+        "exampleUsed": "Budynek jest bardzo nowoczesny.",
+        "exampleUsedTranslation": "The building is very modern."
+    },
+    {
+        "translation": "action",
+        "word": "akcja",
+        "exampleUsed": "Akcja filmu była szybka i emocjonująca.",
+        "exampleUsedTranslation": "The action in the movie was fast and exciting."
+    },
+    {
+        "translation": "model",
+        "word": "model",
+        "exampleUsed": "To jest najnowszy model samochodu.",
+        "exampleUsedTranslation": "This is the latest model of the car."
+    },
+    {
+        "translation": "season",
+        "word": "sezon",
+        "exampleUsed": "Sezon piłkarski zaczyna się w kwietniu.",
+        "exampleUsedTranslation": "The football season starts in April."
+    },
+    {
+        "translation": "society",
+        "word": "społeczeństwo",
+        "exampleUsed": "Nasze społeczeństwo się zmienia.",
+        "exampleUsedTranslation": "Our society is changing."
+    },
+    {
+        "translation": "tax",
+        "word": "podatek",
+        "exampleUsed": "Podatek dochodowy wzrósł w tym roku.",
+        "exampleUsedTranslation": "The income tax increased this year."
+    },
+    {
+        "translation": "director",
+        "word": "dyrektor",
+        "exampleUsed": "Dyrektor wygłosił przemówienie na konferencji.",
+        "exampleUsedTranslation": "The director gave a speech at the conference."
+    },
+    {
+        "translation": "position",
+        "word": "pozycja",
+        "exampleUsed": "Moja pozycja w firmie jest stabilna.",
+        "exampleUsedTranslation": "My position in the company is stable."
+    },
+    {
+        "translation": "player",
+        "word": "gracz",
+        "exampleUsed": "Jestem zawodowym graczem.",
+        "exampleUsedTranslation": "I am a professional player."
+    },
+    {
+        "translation": "record",
+        "word": "rekord",
+        "exampleUsed": "Ustanowił nowy rekord świata.",
+        "exampleUsedTranslation": "He set a new world record."
+    },
+    {
+        "translation": "paper",
+        "word": "papier",
+        "exampleUsed": "Potrzebuję papieru do drukarki.",
+        "exampleUsedTranslation": "I need paper for the printer."
+    },
+    {
+        "translation": "space",
+        "word": "przestrzeń",
+        "exampleUsed": "W tym pokoju jest mało przestrzeni.",
+        "exampleUsedTranslation": "There is little space in this room."
+    },
+    {
+        "translation": "ground",
+        "word": "ziemia",
+        "exampleUsed": "Ziemia jest wilgotna po deszczu.",
+        "exampleUsedTranslation": "The ground is wet after the rain."
+    },
+    {
+        "translation": "form",
+        "word": "forma",
+        "exampleUsed": "Wypełnij formularz.",
+        "exampleUsedTranslation": "Fill out the form."
+    },
+    {
+        "translation": "event",
+        "word": "wydarzenie",
+        "exampleUsed": "To było ważne wydarzenie.",
+        "exampleUsedTranslation": "It was an important event."
+    },
+    {
+        "translation": "official",
+        "word": "urzędnik",
+        "exampleUsed": "Urzędnik pomógł mi w załatwieniu sprawy.",
+        "exampleUsedTranslation": "The official helped me with the matter."
+    },
+    {
+        "translation": "matter",
+        "word": "sprawa",
+        "exampleUsed": "To jest delikatna sprawa.",
+        "exampleUsedTranslation": "This is a delicate matter."
+    },
+    {
+        "translation": "center",
+        "word": "centrum",
+        "exampleUsed": "Centrum miasta jest bardzo zatłoczone.",
+        "exampleUsedTranslation": "The city center is very crowded."
+    },
+    {
+        "translation": "couple",
+        "word": "para",
+        "exampleUsed": "Ta para jest bardzo szczęśliwa.",
+        "exampleUsedTranslation": "This couple is very happy."
+    },
+    {
+        "translation": "site",
+        "word": "miejsce",
+        "exampleUsed": "To jest idealne miejsce na piknik.",
+        "exampleUsedTranslation": "This is a perfect site for a picnic."
+    },
+    {
+        "translation": "project",
+        "word": "projekt",
+        "exampleUsed": "Pracuję nad dużym projektem.",
+        "exampleUsedTranslation": "I am working on a big project."
+    },
+    {
+        "translation": "activity",
+        "word": "działanie",
+        "exampleUsed": "To działanie jest nielegalne.",
+        "exampleUsedTranslation": "This activity is illegal."
+    },
+    {
+        "translation": "star",
+        "word": "gwiazda",
+        "exampleUsed": "Na niebie jest wiele gwiazd.",
+        "exampleUsedTranslation": "There are many stars in the sky."
+    },
+    {
+        "translation": "table",
+        "word": "stół",
+        "exampleUsed": "Postawiłem książki na stole.",
+        "exampleUsedTranslation": "I placed the books on the table."
+    },
+    {
+        "translation": "need",
+        "word": "potrzeba",
+        "exampleUsed": "Mam dużą potrzebę odpoczynku.",
+        "exampleUsedTranslation": "I have a strong need for rest."
+    },
+    {
+        "translation": "court",
+        "word": "sąd",
+        "exampleUsed": "Sąd wydał wyrok.",
+        "exampleUsedTranslation": "The court issued a verdict."
+    },
+    {
+        "translation": "oil",
+        "word": "olej",
+        "exampleUsed": "Olej wyciekł z silnika.",
+        "exampleUsedTranslation": "Oil leaked from the engine."
+    },
+    {
+        "translation": "situation",
+        "word": "sytuacja",
+        "exampleUsed": "Sytuacja jest pod kontrolą.",
+        "exampleUsedTranslation": "The situation is under control."
+    },
+    {
+        "translation": "cost",
+        "word": "koszt",
+        "exampleUsed": "Koszt remontu był wysoki.",
+        "exampleUsedTranslation": "The cost of the renovation was high."
+    },
+    {
+        "translation": "industry",
+        "word": "przemysł",
+        "exampleUsed": "Przemysł technologiczny rozwija się szybko.",
+        "exampleUsedTranslation": "The technology industry is growing fast."
+    },
+    {
+        "translation": "figure",
+        "word": "postać",
+        "exampleUsed": "To jest ważna postać w historii.",
+        "exampleUsedTranslation": "This is an important figure in history."
+    },
+    {
+        "translation": "street",
+        "word": "ulica",
+        "exampleUsed": "Moja ulica jest bardzo spokojna.",
+        "exampleUsedTranslation": "My street is very quiet."
+    },
+    {
+        "translation": "image",
+        "word": "obraz",
+        "exampleUsed": "Ten obraz jest bardzo piękny.",
+        "exampleUsedTranslation": "This image is very beautiful."
+    },
+    {
+        "translation": "phone",
+        "word": "telefon",
+        "exampleUsed": "Mój telefon jest zepsuty.",
+        "exampleUsedTranslation": "My phone is broken."
+    }
 ]
