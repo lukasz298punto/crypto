@@ -1,5 +1,6 @@
 import {
     Alert,
+    Box,
     Card,
     CardContent,
     Container,
@@ -8,6 +9,9 @@ import {
     Typography,
 } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
+import CentralLoading from '@/components/CentralLoading';
+import HighlightText from '@/components/HighlightText';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import NativeWord from '@/components/NativeWord';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
@@ -22,6 +26,7 @@ export default function Writing() {
     const { t } = useTranslation();
     const inputRef = useRef<HTMLInputElement>(null);
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
+    const { language } = useSettingsDb();
     const {
         currentWord,
         nextWord,
@@ -30,8 +35,13 @@ export default function Writing() {
         reset,
         lang,
         nativeLang,
+        isLoading,
         isCorrect,
     } = useWord();
+
+    if (isLoading) {
+        return <CentralLoading />;
+    }
 
     if (!currentWord) {
         return <Finish onReset={reset} />;
@@ -49,7 +59,14 @@ export default function Writing() {
                             direction="row"
                             alignItems="center"
                         >
-                            <NativeWord word={currentWord?.word} />
+                            <NativeWord
+                                word={
+                                    currentWord?.word +
+                                    (currentWord?.wordDesc
+                                        ? ` (${currentWord?.wordDesc})`
+                                        : '')
+                                }
+                            />
                             <VoiceIcon
                                 name={currentWord.word}
                                 keyCode={KeyCode.One}
@@ -78,15 +95,54 @@ export default function Writing() {
                                 />
                             )}
                         </Stack>
-                        {isAnswerChecked && (
-                            <>
-                                <Alert
-                                    severity={isCorrect ? 'success' : 'error'}
-                                    className="mb-2 h-[56px] w-full xy-center"
+                        <Alert
+                            className={clsx('mb-2 h-[56px] w-full xy-center', {
+                                'opacity-0': !isAnswerChecked,
+                            })}
+                            severity={isCorrect ? 'success' : 'error'}
+                        >
+                            {inputValue}
+                        </Alert>
+                        <Box
+                            className={clsx({
+                                'opacity-0': !isAnswerChecked,
+                            })}
+                        >
+                            {currentWord?.exampleUsedTranslation && (
+                                <Stack
+                                    className="mt-1"
+                                    direction="row"
+                                    alignItems="center"
                                 >
-                                    {inputValue}
-                                </Alert>
-                            </>
+                                    <HighlightText
+                                        text={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        trans={
+                                            language === lang
+                                                ? currentWord.translation
+                                                : currentWord.word
+                                        }
+                                    />
+                                    <VoiceIcon
+                                        name={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        keyCode={KeyCode.Four}
+                                        language={lang}
+                                    />
+                                </Stack>
+                            )}
+                        </Box>
+                        {currentWord?.exampleUsed && (
+                            <Typography
+                                className="mb-2"
+                                color="text.secondary"
+                                variant="body2"
+                                align="center"
+                            >
+                                {currentWord?.exampleUsed}
+                            </Typography>
                         )}
                         {!isAnswerChecked && (
                             <TextField
@@ -140,7 +196,7 @@ export default function Writing() {
                         ) : (
                             <>
                                 <KeyPressButton
-                                    keyCode={KeyCode.Enter}
+                                    keyCode={KeyCode.One}
                                     className="w-full"
                                     variant="contained"
                                     onClick={() => {
@@ -160,8 +216,9 @@ export default function Writing() {
                                             skip();
                                             setInputValue('');
                                             setIsAnswerChecked(false);
+                                            nextWord();
                                         }}
-                                        keyCode={KeyCode.S}
+                                        keyCode={KeyCode.Space}
                                     >
                                         {t('Znam to')}
                                     </KeyPressButton>

@@ -9,17 +9,19 @@ import { getRxStorageDexie } from 'rxdb/plugins/storage-dexie';
 import categoriesSchema from '@/constants/schema/categories';
 import SettingsDbKey from '@/constants/enums/settingsDbKey';
 import { RxDBDevModePlugin } from 'rxdb/plugins/dev-mode';
-import settingsSchema from '@/constants/schema/settings';
 import CentralLoading from '@/components/CentralLoading';
+import settingsSchema from '@/constants/schema/settings';
 import { RxDBUpdatePlugin } from 'rxdb/plugins/update';
 import { addRxPlugin, createRxDatabase } from 'rxdb';
 import wordsSchema from '@/constants/schema/words';
 import Category from '@/constants/enums/category';
 import Language from '@/constants/enums/language';
 import { Word } from '@/types/database';
-import forEach from 'lodash/forEach';
+import flatMap from 'lodash/flatMap';
 import modules from '@/data/modules';
+import forEach from 'lodash/forEach';
 import { v4 as uuidv4 } from 'uuid';
+import find from 'lodash/find';
 import map from 'lodash/map';
 
 addRxPlugin(RxDBUpdatePlugin);
@@ -36,8 +38,24 @@ const migrations = {
             };
             return newDoc;
         },
+        2: (oldDoc: typeof wordsSchema.properties) => {
+            const newDoc = {
+                ...oldDoc,
+                wordDesc: '',
+            };
+            return newDoc;
+        },
+        3: (oldDoc: typeof wordsSchema.properties) => {
+            const newDoc = {
+                ...oldDoc,
+                lastCorrectHit: null,
+            };
+            return newDoc;
+        },
     },
 };
+
+const activeVersion: string = '4';
 
 export default function DatabaseProvider({
     children,
@@ -104,16 +122,6 @@ export default function DatabaseProvider({
                     languageId: Language.En,
                 },
                 {
-                    id: Category.Articles,
-                    name: 'Articles',
-                    languageId: Language.En,
-                },
-                {
-                    id: Category.Interjections,
-                    name: 'Interjections',
-                    languageId: Language.En,
-                },
-                {
                     id: Category.PhrasalVerbs,
                     name: 'Phrasal Verbs',
                     languageId: Language.En,
@@ -133,31 +141,130 @@ export default function DatabaseProvider({
                     name: 'Sentences',
                     languageId: Language.En,
                 },
+                {
+                    id: Category.PastSimple,
+                    name: 'PastSimple',
+                    languageId: Language.En,
+                },
             ]);
         }
 
-        const existingWords = await db.words.find().exec();
-        if (existingWords.length === 0) {
+        const wordVersion = await db.settings
+            .findOne(SettingsDbKey.WordsVersion)
+            .exec();
+
+        const dbWordVersion = wordVersion?.toJSON()?.value;
+
+        if (!dbWordVersion) {
             forEach(modules, ([category, level, content]) => {
                 db.words.bulkInsert(
-                    map(content as Word[], (verb) => ({
-                        id: uuidv4(),
-                        exampleUsed: verb.exampleUsed || '',
-                        exampleUsedTranslation:
-                            verb.exampleUsedTranslation || '',
-                        word: verb.word,
-                        translation: verb.translation,
-                        categoryId: category,
-                        levelId: level,
-                        languageId: Language.En,
-                        nativeLanguageId: Language.Pl,
-                        correct: 0,
-                        incorrect: 0,
-                        isKnown: false,
-                    }))
+                    map(
+                        flatMap(content, 'words') as Word[],
+                        (verb) =>
+                            ({
+                                id: uuidv4(),
+                                exampleUsed: verb.exampleUsed || '',
+                                exampleUsedTranslation:
+                                    verb.exampleUsedTranslation || '',
+                                wordDesc: verb.wordDesc || '',
+                                word: verb.word,
+                                translation: verb.translation,
+                                lastCorrectHit: null,
+                                categoryId: category,
+                                levelId: level,
+                                languageId: Language.En,
+                                nativeLanguageId: Language.Pl,
+                                correct: 0,
+                                incorrect: 0,
+                                isKnown: false,
+                            }) satisfies Word
+                    )
                 );
             });
+            await db.settings.insert({
+                key: SettingsDbKey.WordsVersion,
+                value: activeVersion,
+            });
         }
+
+        console.log(dbWordVersion, 'dbWordVersion');
+
+        if (dbWordVersion && dbWordVersion !== activeVersion) {
+            forEach(modules, ([category, level, content]) => {
+                db.words.bulkInsert(
+                    map(
+                        find(content, { version: activeVersion })
+                            ?.words as Word[],
+                        (verb) =>
+                            ({
+                                id: uuidv4(),
+                                exampleUsed: verb.exampleUsed || '',
+                                exampleUsedTranslation:
+                                    verb.exampleUsedTranslation || '',
+                                wordDesc: verb.wordDesc || '',
+                                word: verb.word,
+                                translation: verb.translation,
+                                lastCorrectHit: null,
+                                categoryId: category,
+                                levelId: level,
+                                languageId: Language.En,
+                                nativeLanguageId: Language.Pl,
+                                correct: 0,
+                                incorrect: 0,
+                                isKnown: false,
+                            }) satisfies Word
+                    )
+                );
+            });
+
+            const doc = await db?.settings
+                .findOne(SettingsDbKey.WordsVersion)
+                .exec();
+
+            await doc?.update({
+                $set: {
+                    value: activeVersion,
+                },
+            });
+
+            // await db.settings.insert({
+            //     key: SettingsDbKey.WordsVersion,
+            //     value: activeVersion,
+            // });
+        }
+
+        // const existingWords = await db.words.find().exec();
+        // if (existingWords.length === 0) {
+        //     await db.settings.insert({
+        //         key: SettingsDbKey.WordsVersion,
+        //         value: activeVersion,
+        //     });
+        // forEach(modules, ([category, level, content]) => {
+        //     db.words.bulkInsert(
+        //         map(
+        //             content as Word[],
+        //             (verb) =>
+        //                 ({
+        //                     id: uuidv4(),
+        //                     exampleUsed: verb.exampleUsed || '',
+        //                     exampleUsedTranslation:
+        //                         verb.exampleUsedTranslation || '',
+        //                     wordDesc: verb.wordDesc || '',
+        //                     word: verb.word,
+        //                     translation: verb.translation,
+        //                     lastCorrectHit: null,
+        //                     categoryId: category,
+        //                     levelId: level,
+        //                     languageId: Language.En,
+        //                     nativeLanguageId: Language.Pl,
+        //                     correct: 0,
+        //                     incorrect: 0,
+        //                     isKnown: false,
+        //                 }) satisfies Word
+        //         )
+        //     );
+        // });
+        // }
 
         setDatabase(db);
     }, []);

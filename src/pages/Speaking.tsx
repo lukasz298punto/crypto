@@ -1,5 +1,6 @@
 import {
     Alert,
+    Box,
     Card,
     CardContent,
     CircularProgress,
@@ -9,7 +10,9 @@ import {
 } from '@mui/material';
 import KeyPressButton from '@/components/KeyPressButton';
 import { useCallback, useEffect, useState } from 'react';
+import HighlightText from '@/components/HighlightText';
 import Language from '@/constants/enums/language';
+import useSettingsDb from '@/hooks/useSettingsDb';
 import NativeWord from '@/components/NativeWord';
 import KeyCode from '@/constants/enums/keyCode';
 import VoiceIcon from '@/components/VoiceIcon';
@@ -29,6 +32,7 @@ export default function Speaking() {
     const { t } = useTranslation();
     const [isRecording, setIsRecording] = useState(false);
     const [speechResult, setSpeechResult] = useState('');
+    const { language } = useSettingsDb();
     const {
         currentWord,
         nextWord,
@@ -87,7 +91,14 @@ export default function Speaking() {
                             direction="row"
                             alignItems="center"
                         >
-                            <NativeWord word={currentWord.word} />
+                            <NativeWord
+                                word={
+                                    currentWord?.word +
+                                    (currentWord?.wordDesc
+                                        ? ` (${currentWord?.wordDesc})`
+                                        : '')
+                                }
+                            />
 
                             <VoiceIcon
                                 name={currentWord.word}
@@ -121,24 +132,67 @@ export default function Speaking() {
                             <>
                                 <Alert
                                     severity={isCorrect ? 'success' : 'error'}
-                                    className="mb-2 h-[56px] w-full xy-center"
+                                    className="h-[56px] w-full xy-center"
                                 >
                                     {speechResult}
                                 </Alert>
                             </>
                         )}
-                        {isRecording && (
+                        {!speechResult && (
                             <Stack
                                 gap={1}
                                 direction="row"
                                 alignItems="center"
-                                className="mb-2 h-[56px]"
+                                className={clsx('h-[56px]', {
+                                    'opacity-0': !isRecording,
+                                })}
                             >
                                 <CircularProgress size={20} />
                                 <Typography>
                                     {t('Trwa nagrywanie dźwięku...')}
                                 </Typography>
                             </Stack>
+                        )}
+                        <Box
+                            className={clsx({
+                                'opacity-0': !speechResult,
+                            })}
+                        >
+                            {currentWord?.exampleUsedTranslation && (
+                                <Stack
+                                    className="mt-1"
+                                    direction="row"
+                                    alignItems="center"
+                                >
+                                    <HighlightText
+                                        text={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        trans={
+                                            language === lang
+                                                ? currentWord.translation
+                                                : currentWord.word
+                                        }
+                                    />
+                                    <VoiceIcon
+                                        name={
+                                            currentWord?.exampleUsedTranslation
+                                        }
+                                        keyCode={KeyCode.Four}
+                                        language={lang}
+                                    />
+                                </Stack>
+                            )}
+                        </Box>
+                        {currentWord?.exampleUsed && (
+                            <Typography
+                                className="mb-2"
+                                color="text.secondary"
+                                variant="body2"
+                                align="center"
+                            >
+                                {currentWord?.exampleUsed}
+                            </Typography>
                         )}
                         {!speechResult ? (
                             <Stack

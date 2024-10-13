@@ -7,12 +7,14 @@ export interface Word {
     id: string;
     word: string;
     exampleUsed?: string;
+    wordDesc?: string;
     translation: string;
     exampleUsedTranslation: string;
     categoryId: string;
     levelId: string;
     languageId: string;
     nativeLanguageId: string;
+    lastCorrectHit: string | null;
     correct: number;
     incorrect: number;
     isKnown: boolean;

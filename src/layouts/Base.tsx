@@ -1,3 +1,4 @@
+/* eslint-disable lodash/prefer-lodash-method */
 import AccountCircle from '@mui/icons-material/AccountCircle';
 import useDatabaseContext from '@/hooks/useDatabaseContext';
 import ListItemButton from '@mui/material/ListItemButton';
@@ -17,7 +18,6 @@ import List from '@mui/material/List';
 import { Stack } from '@mui/material';
 import Box from '@mui/material/Box';
 import { useState } from 'react';
-import map from 'lodash/map';
 
 const drawerWidth = 240;
 
@@ -31,11 +31,13 @@ export default function Base() {
     };
 
     const clearDatabase = async () => {
-        // eslint-disable-next-line lodash/prefer-lodash-method
-        const allWords = await db.words.find().exec();
-        console.log(allWords, 'allWords');
-        await Promise.all(map(allWords, (word) => word?.remove()));
-        location.reload();
+        try {
+            await db.remove();
+            location.reload();
+            console.log('Baza danych została pomyślnie usunięta.');
+        } catch (error) {
+            console.error('Wystąpił błąd podczas usuwania bazy danych:', error);
+        }
     };
 
     return (

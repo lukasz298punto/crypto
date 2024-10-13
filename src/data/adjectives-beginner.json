@@ -1,1208 +1,307 @@
 [
     {
-        "word": "duży",
-        "translation": "big",
-        "exampleUsed": "To jest bardzo duży dom.",
-        "exampleUsedTranslation": "This is a very big house."
-    },
-    {
-        "word": "mały",
-        "translation": "small",
-        "exampleUsed": "Mamy mały samochód.",
-        "exampleUsedTranslation": "We have a small car."
-    },
-    {
-        "word": "szybki",
-        "translation": "fast",
-        "exampleUsed": "To jest bardzo szybki pociąg.",
-        "exampleUsedTranslation": "This is a very fast train."
-    },
-    {
-        "word": "wolny",
-        "translation": "slow",
-        "exampleUsed": "Internet tutaj jest wolny.",
-        "exampleUsedTranslation": "The internet here is slow."
-    },
-    {
-        "word": "nowy",
-        "translation": "new",
-        "exampleUsed": "Kupiłem nowy telefon.",
-        "exampleUsedTranslation": "I bought a new phone."
-    },
-    {
-        "word": "stary",
-        "translation": "old",
-        "exampleUsed": "To jest bardzo stary budynek.",
-        "exampleUsedTranslation": "This is a very old building."
-    },
-    {
-        "word": "dobry",
-        "translation": "good",
-        "exampleUsed": "To był dobry film.",
-        "exampleUsedTranslation": "It was a good movie."
-    },
-    {
-        "word": "zły",
-        "translation": "bad",
-        "exampleUsed": "Mam zły humor.",
-        "exampleUsedTranslation": "I'm in a bad mood."
-    },
-    {
-        "word": "piękny",
-        "translation": "beautiful",
-        "exampleUsed": "To jest piękny krajobraz.",
-        "exampleUsedTranslation": "This is a beautiful landscape."
-    },
-    {
-        "word": "brzydki",
-        "translation": "ugly",
-        "exampleUsed": "To był brzydki dzień.",
-        "exampleUsedTranslation": "It was an ugly day."
-    },
-    {
-        "word": "młody",
-        "translation": "young",
-        "exampleUsed": "Jestem jeszcze młody.",
-        "exampleUsedTranslation": "I'm still young."
-    },
-    {
-        "word": "starszy",
-        "translation": "older",
-        "exampleUsed": "On jest starszy ode mnie.",
-        "exampleUsedTranslation": "He is older than me."
-    },
-    {
-        "word": "wysoki",
-        "translation": "tall",
-        "exampleUsed": "On jest bardzo wysoki.",
-        "exampleUsedTranslation": "He is very tall."
-    },
-    {
-        "word": "niski",
-        "translation": "short",
-        "exampleUsed": "Mój brat jest niski.",
-        "exampleUsedTranslation": "My brother is short."
-    },
-    {
-        "word": "długi",
-        "translation": "long",
-        "exampleUsed": "To był długi dzień.",
-        "exampleUsedTranslation": "It was a long day."
-    },
-    {
-        "word": "krótki",
-        "translation": "short",
-        "exampleUsed": "To była krótka rozmowa.",
-        "exampleUsedTranslation": "It was a short conversation."
-    },
-    {
-        "word": "ciekawy",
-        "translation": "interesting",
-        "exampleUsed": "To była ciekawa książka.",
-        "exampleUsedTranslation": "It was an interesting book."
-    },
-    {
-        "word": "nudny",
-        "translation": "boring",
-        "exampleUsed": "Lekcja była nudna.",
-        "exampleUsedTranslation": "The lesson was boring."
-    },
-    {
-        "word": "silny",
-        "translation": "strong",
-        "exampleUsed": "On jest bardzo silny.",
-        "exampleUsedTranslation": "He is very strong."
-    },
-    {
-        "word": "słaby",
-        "translation": "weak",
-        "exampleUsed": "Czuję się słaby.",
-        "exampleUsedTranslation": "I feel weak."
-    },
-    {
-        "word": "trudny",
-        "translation": "difficult",
-        "exampleUsed": "To było trudne zadanie.",
-        "exampleUsedTranslation": "It was a difficult task."
-    },
-    {
-        "word": "łatwy",
-        "translation": "easy",
-        "exampleUsed": "To było łatwe pytanie.",
-        "exampleUsedTranslation": "It was an easy question."
-    },
-    {
-        "word": "czysty",
-        "translation": "clean",
-        "exampleUsed": "Pokój jest czysty.",
-        "exampleUsedTranslation": "The room is clean."
-    },
-    {
-        "word": "brudny",
-        "translation": "dirty",
-        "exampleUsed": "Twoje buty są brudne.",
-        "exampleUsedTranslation": "Your shoes are dirty."
-    },
-    {
-        "word": "ciepły",
-        "translation": "warm",
-        "exampleUsed": "Dziś jest ciepło.",
-        "exampleUsedTranslation": "It is warm today."
-    },
-    {
-        "word": "zimny",
-        "translation": "cold",
-        "exampleUsed": "Zupa jest zimna.",
-        "exampleUsedTranslation": "The soup is cold."
-    },
-    {
-        "word": "szczęśliwy",
-        "translation": "happy",
-        "exampleUsed": "Czuję się szczęśliwy.",
-        "exampleUsedTranslation": "I feel happy."
-    },
-    {
-        "word": "smutny",
-        "translation": "sad",
-        "exampleUsed": "Ona wygląda na smutną.",
-        "exampleUsedTranslation": "She looks sad."
-    },
-    {
-        "word": "głośny",
-        "translation": "loud",
-        "exampleUsed": "Muzyka jest za głośna.",
-        "exampleUsedTranslation": "The music is too loud."
-    },
-    {
-        "word": "cichy",
-        "translation": "quiet",
-        "exampleUsed": "Jest tutaj bardzo cicho.",
-        "exampleUsedTranslation": "It is very quiet here."
-    },
-    {
-        "word": "ciemny",
-        "translation": "dark",
-        "exampleUsed": "Pokój jest bardzo ciemny.",
-        "exampleUsedTranslation": "The room is very dark."
-    },
-    {
-        "word": "jasny",
-        "translation": "bright",
-        "exampleUsed": "Światło jest bardzo jasne.",
-        "exampleUsedTranslation": "The light is very bright."
-    },
-    {
-        "word": "gruby",
-        "translation": "thick",
-        "exampleUsed": "To jest gruba książka.",
-        "exampleUsedTranslation": "This is a thick book."
-    },
-    {
-        "word": "chudy",
-        "translation": "thin",
-        "exampleUsed": "Ten papier jest bardzo chudy.",
-        "exampleUsedTranslation": "This paper is very thin."
-    },
-    {
-        "word": "ciężki",
-        "translation": "heavy",
-        "exampleUsed": "Ta walizka jest ciężka.",
-        "exampleUsedTranslation": "This suitcase is heavy."
-    },
-    {
-        "word": "lekki",
-        "translation": "light",
-        "exampleUsed": "To jest lekki plecak.",
-        "exampleUsedTranslation": "This is a light backpack."
-    },
-    {
-        "word": "mocny",
-        "translation": "strong",
-        "exampleUsed": "To jest bardzo mocna kawa.",
-        "exampleUsedTranslation": "This is very strong coffee."
-    },
-    {
-        "word": "miękki",
-        "translation": "soft",
-        "exampleUsed": "Poduszka jest miękka.",
-        "exampleUsedTranslation": "The pillow is soft."
-    },
-    {
-        "word": "twardy",
-        "translation": "hard",
-        "exampleUsed": "Krzesło jest twarde.",
-        "exampleUsedTranslation": "The chair is hard."
-    },
-    {
-        "word": "słodki",
-        "translation": "sweet",
-        "exampleUsed": "Ciasto jest bardzo słodkie.",
-        "exampleUsedTranslation": "The cake is very sweet."
-    },
-    {
-        "word": "kwaśny",
-        "translation": "sour",
-        "exampleUsed": "Cytryna jest kwaśna.",
-        "exampleUsedTranslation": "The lemon is sour."
-    },
-    {
-        "word": "słony",
-        "translation": "salty",
-        "exampleUsed": "Zupa jest za słona.",
-        "exampleUsedTranslation": "The soup is too salty."
-    },
-    {
-        "word": "gorący",
-        "translation": "hot",
-        "exampleUsed": "Kawa jest gorąca.",
-        "exampleUsedTranslation": "The coffee is hot."
-    },
-    {
-        "word": "pełny",
-        "translation": "full",
-        "exampleUsed": "Jestem pełny.",
-        "exampleUsedTranslation": "I am full."
-    },
-    {
-        "word": "pusty",
-        "translation": "empty",
-        "exampleUsed": "Szklanka jest pusta.",
-        "exampleUsedTranslation": "The glass is empty."
-    },
-    {
-        "word": "szeroki",
-        "translation": "wide",
-        "exampleUsed": "Ulica jest szeroka.",
-        "exampleUsedTranslation": "The street is wide."
-    },
-    {
-        "word": "wąski",
-        "translation": "narrow",
-        "exampleUsed": "Korytarz jest wąski.",
-        "exampleUsedTranslation": "The corridor is narrow."
-    },
-    {
-        "word": "wysoki",
-        "translation": "high",
-        "exampleUsed": "To jest wysoka góra.",
-        "exampleUsedTranslation": "This is a high mountain."
-    },
-    {
-        "word": "niski",
-        "translation": "low",
-        "exampleUsed": "Ceny są niskie.",
-        "exampleUsedTranslation": "Prices are low."
-    },
-    {
-        "word": "zdrowy",
-        "translation": "healthy",
-        "exampleUsed": "Jem zdrową żywność.",
-        "exampleUsedTranslation": "I eat healthy food."
-    },
-    {
-        "word": "chory",
-        "translation": "sick",
-        "exampleUsed": "Czuję się chory.",
-        "exampleUsedTranslation": "I feel sick."
-    },
-    {
-        "word": "bogaty",
-        "translation": "rich",
-        "exampleUsed": "Jestem bogaty.",
-        "exampleUsedTranslation": "I am rich."
-    },
-    {
-        "word": "biedny",
-        "translation": "poor",
-        "exampleUsed": "On jest biedny.",
-        "exampleUsedTranslation": "He is poor."
-    },
-    {
-        "word": "inteligentny",
-        "translation": "intelligent",
-        "exampleUsed": "On jest bardzo inteligentny.",
-        "exampleUsedTranslation": "He is very intelligent."
-    },
-    {
-        "word": "głupi",
-        "translation": "stupid",
-        "exampleUsed": "To było głupie pytanie.",
-        "exampleUsedTranslation": "That was a stupid question."
-    },
-    {
-        "word": "szczery",
-        "translation": "honest",
-        "exampleUsed": "On jest bardzo szczery.",
-        "exampleUsedTranslation": "He is very honest."
-    },
-    {
-        "word": "kłamliwy",
-        "translation": "dishonest",
-        "exampleUsed": "To był kłamliwy człowiek.",
-        "exampleUsedTranslation": "He was a dishonest man."
-    },
-    {
-        "word": "cierpliwy",
-        "translation": "patient",
-        "exampleUsed": "Musisz być cierpliwy.",
-        "exampleUsedTranslation": "You must be patient."
-    },
-    {
-        "word": "niecierpliwy",
-        "translation": "impatient",
-        "exampleUsed": "Jestem niecierpliwy.",
-        "exampleUsedTranslation": "I am impatient."
-    },
-    {
-        "word": "śmieszny",
-        "translation": "funny",
-        "exampleUsed": "To jest śmieszny żart.",
-        "exampleUsedTranslation": "That is a funny joke."
-    },
-    {
-        "word": "poważny",
-        "translation": "serious",
-        "exampleUsed": "To jest poważna sprawa.",
-        "exampleUsedTranslation": "This is a serious matter."
-    },
-    {
-        "word": "spokojny",
-        "translation": "calm",
-        "exampleUsed": "Pozostań spokojny.",
-        "exampleUsedTranslation": "Stay calm."
-    },
-    {
-        "word": "nerwowy",
-        "translation": "nervous",
-        "exampleUsed": "Jestem bardzo nerwowy.",
-        "exampleUsedTranslation": "I am very nervous."
-    },
-    {
-        "word": "uprzejmy",
-        "translation": "polite",
-        "exampleUsed": "On jest bardzo uprzejmy.",
-        "exampleUsedTranslation": "He is very polite."
-    },
-    {
-        "word": "nieuprzejmy",
-        "translation": "rude",
-        "exampleUsed": "To było nieuprzejme.",
-        "exampleUsedTranslation": "That was rude."
-    },
-    {
-        "word": "odważny",
-        "translation": "brave",
-        "exampleUsed": "On jest bardzo odważny.",
-        "exampleUsedTranslation": "He is very brave."
-    },
-    {
-        "word": "tchórzliwy",
-        "translation": "cowardly",
-        "exampleUsed": "To było tchórzliwe zachowanie.",
-        "exampleUsedTranslation": "That was cowardly behavior."
-    },
-    {
-        "word": "energiczny",
-        "translation": "energetic",
-        "exampleUsed": "Dziś czuję się energiczny.",
-        "exampleUsedTranslation": "I feel energetic today."
-    },
-    {
-        "word": "leniwy",
-        "translation": "lazy",
-        "exampleUsed": "On jest bardzo leniwy.",
-        "exampleUsedTranslation": "He is very lazy."
-    },
-    {
-        "word": "aktywny",
-        "translation": "active",
-        "exampleUsed": "On jest bardzo aktywny.",
-        "exampleUsedTranslation": "He is very active."
-    },
-    {
-        "word": "pasywny",
-        "translation": "passive",
-        "exampleUsed": "On jest bardzo pasywny.",
-        "exampleUsedTranslation": "He is very passive."
-    },
-    {
-        "word": "wolny",
-        "translation": "free",
-        "exampleUsed": "Jestem wolny dzisiaj wieczorem.",
-        "exampleUsedTranslation": "I am free tonight."
-    },
-    {
-        "word": "zajęty",
-        "translation": "busy",
-        "exampleUsed": "Jestem zajęty dzisiaj.",
-        "exampleUsedTranslation": "I am busy today."
-    },
-    {
-        "word": "bogaty",
-        "translation": "rich",
-        "exampleUsed": "To jest bogaty człowiek.",
-        "exampleUsedTranslation": "He is a rich man."
-    },
-    {
-        "word": "biedny",
-        "translation": "poor",
-        "exampleUsed": "To jest biedna rodzina.",
-        "exampleUsedTranslation": "This is a poor family."
-    },
-    {
-        "word": "trzeźwy",
-        "translation": "sober",
-        "exampleUsed": "On jest trzeźwy od dwóch lat.",
-        "exampleUsedTranslation": "He has been sober for two years."
-    },
-    {
-        "word": "pijany",
-        "translation": "drunk",
-        "exampleUsed": "On jest pijany.",
-        "exampleUsedTranslation": "He is drunk."
-    },
-    {
-        "word": "zwinny",
-        "translation": "agile",
-        "exampleUsed": "On jest bardzo zwinny.",
-        "exampleUsedTranslation": "He is very agile."
-    },
-    {
-        "word": "niezgrabny",
-        "translation": "clumsy",
-        "exampleUsed": "Jestem dość niezgrabny.",
-        "exampleUsedTranslation": "I am quite clumsy."
-    },
-    {
-        "word": "suchy",
-        "translation": "dry",
-        "exampleUsed": "Ta koszula jest sucha.",
-        "exampleUsedTranslation": "This shirt is dry."
-    },
-    {
-        "word": "mokry",
-        "translation": "wet",
-        "exampleUsed": "Buty są mokre.",
-        "exampleUsedTranslation": "The shoes are wet."
-    },
-    {
-        "word": "tani",
-        "translation": "cheap",
-        "exampleUsed": "Ten telefon jest tani.",
-        "exampleUsedTranslation": "This phone is cheap."
-    },
-    {
-        "word": "drogi",
-        "translation": "expensive",
-        "exampleUsed": "Ten samochód jest drogi.",
-        "exampleUsedTranslation": "This car is expensive."
-    },
-    {
-        "word": "zabawny",
-        "translation": "amusing",
-        "exampleUsed": "To był zabawny film.",
-        "exampleUsedTranslation": "It was an amusing movie."
-    },
-    {
-        "word": "nudny",
-        "translation": "boring",
-        "exampleUsed": "Ta lekcja była nudna.",
-        "exampleUsedTranslation": "This lesson was boring."
-    },
-    {
-        "word": "ważny",
-        "translation": "important",
-        "exampleUsed": "To jest bardzo ważna decyzja.",
-        "exampleUsedTranslation": "This is a very important decision."
-    },
-    {
-        "word": "nieistotny",
-        "translation": "irrelevant",
-        "exampleUsed": "To jest nieistotne pytanie.",
-        "exampleUsedTranslation": "This is an irrelevant question."
-    },
-    {
-        "word": "dokładny",
-        "translation": "accurate",
-        "exampleUsed": "Ten zegar jest bardzo dokładny.",
-        "exampleUsedTranslation": "This clock is very accurate."
-    },
-    {
-        "word": "niedokładny",
-        "translation": "inaccurate",
-        "exampleUsed": "Ten raport jest niedokładny.",
-        "exampleUsedTranslation": "This report is inaccurate."
-    },
-    {
-        "word": "oryginalny",
-        "translation": "original",
-        "exampleUsed": "To jest oryginalny pomysł.",
-        "exampleUsedTranslation": "This is an original idea."
-    },
-    {
-        "word": "fałszywy",
-        "translation": "false",
-        "exampleUsed": "To jest fałszywa informacja.",
-        "exampleUsedTranslation": "This is false information."
-    },
-    {
-        "word": "przyjazny",
-        "translation": "friendly",
-        "exampleUsed": "On jest bardzo przyjazny.",
-        "exampleUsedTranslation": "He is very friendly."
-    },
-    {
-        "word": "wrogi",
-        "translation": "hostile",
-        "exampleUsed": "To jest wrogie zachowanie.",
-        "exampleUsedTranslation": "This is hostile behavior."
-    },
-    {
-        "word": "ciekawy",
-        "translation": "curious",
-        "exampleUsed": "Jestem ciekawy, co się stanie.",
-        "exampleUsedTranslation": "I am curious what will happen."
-    },
-    {
-        "word": "obojętny",
-        "translation": "indifferent",
-        "exampleUsed": "Jestem obojętny na tę sytuację.",
-        "exampleUsedTranslation": "I am indifferent to this situation."
-    },
-    {
-        "word": "odpowiedzialny",
-        "translation": "responsible",
-        "exampleUsed": "On jest odpowiedzialny za to zadanie.",
-        "exampleUsedTranslation": "He is responsible for this task."
-    },
-    {
-        "word": "nieodpowiedzialny",
-        "translation": "irresponsible",
-        "exampleUsed": "To było nieodpowiedzialne zachowanie.",
-        "exampleUsedTranslation": "That was irresponsible behavior."
-    },
-    {
-        "word": "delikatny",
-        "translation": "delicate",
-        "exampleUsed": "To jest bardzo delikatne szkło.",
-        "exampleUsedTranslation": "This is very delicate glass."
-    },
-    {
-        "word": "szorstki",
-        "translation": "rough",
-        "exampleUsed": "Materiał jest szorstki w dotyku.",
-        "exampleUsedTranslation": "The fabric feels rough."
-    },
-    {
-        "word": "radosny",
-        "translation": "joyful",
-        "exampleUsed": "On wygląda na bardzo radosnego.",
-        "exampleUsedTranslation": "He looks very joyful."
-    },
-    {
-        "word": "smutny",
-        "translation": "sad",
-        "exampleUsed": "To jest smutna wiadomość.",
-        "exampleUsedTranslation": "This is sad news."
-    },
-    {
-        "word": "uroczy",
-        "translation": "charming",
-        "exampleUsed": "On jest bardzo uroczy.",
-        "exampleUsedTranslation": "He is very charming."
-    },
-    {
-        "word": "odpychający",
-        "translation": "repulsive",
-        "exampleUsed": "To było odpychające zachowanie.",
-        "exampleUsedTranslation": "That was repulsive behavior."
-    },
-    {
-        "word": "przyjemny",
-        "translation": "pleasant",
-        "exampleUsed": "To był przyjemny wieczór.",
-        "exampleUsedTranslation": "It was a pleasant evening."
-    },
-    {
-        "word": "nieprzyjemny",
-        "translation": "unpleasant",
-        "exampleUsed": "To była nieprzyjemna rozmowa.",
-        "exampleUsedTranslation": "It was an unpleasant conversation."
-    },
-    {
-        "word": "wspaniały",
-        "translation": "wonderful",
-        "exampleUsed": "To był wspaniały dzień.",
-        "exampleUsedTranslation": "It was a wonderful day."
-    },
-    {
-        "word": "okropny",
-        "translation": "terrible",
-        "exampleUsed": "To był okropny błąd.",
-        "exampleUsedTranslation": "It was a terrible mistake."
-    },
-    {
-        "word": "szybki",
-        "translation": "fast",
-        "exampleUsed": "On jest szybki biegacz.",
-        "exampleUsedTranslation": "He is a fast runner."
-    },
-    {
-        "word": "powolny",
-        "translation": "slow",
-        "exampleUsed": "Ten komputer działa powoli.",
-        "exampleUsedTranslation": "This computer works slowly."
-    },
-    {
-        "word": "odważny",
-        "translation": "brave",
-        "exampleUsed": "To była odważna decyzja.",
-        "exampleUsedTranslation": "It was a brave decision."
-    },
-    {
-        "word": "tchórzliwy",
-        "translation": "cowardly",
-        "exampleUsed": "Tchórzliwie uciekł.",
-        "exampleUsedTranslation": "He cowardly ran away."
-    },
-    {
-        "word": "wygodny",
-        "translation": "comfortable",
-        "exampleUsed": "To jest wygodne krzesło.",
-        "exampleUsedTranslation": "This is a comfortable chair."
-    },
-    {
-        "word": "niewygodny",
-        "translation": "uncomfortable",
-        "exampleUsed": "To jest niewygodne łóżko.",
-        "exampleUsedTranslation": "This is an uncomfortable bed."
-    },
-    {
-        "word": "prosty",
-        "translation": "simple",
-        "exampleUsed": "To jest prosty problem.",
-        "exampleUsedTranslation": "This is a simple problem."
-    },
-    {
-        "word": "skomplikowany",
-        "translation": "complicated",
-        "exampleUsed": "To jest skomplikowana sprawa.",
-        "exampleUsedTranslation": "This is a complicated matter."
-    },
-    {
-        "word": "szeroki",
-        "translation": "broad",
-        "exampleUsed": "To jest szeroka droga.",
-        "exampleUsedTranslation": "This is a broad road."
-    },
-    {
-        "word": "wąski",
-        "translation": "narrow",
-        "exampleUsed": "To jest wąska ścieżka.",
-        "exampleUsedTranslation": "This is a narrow path."
-    },
-    {
-        "word": "ostry",
-        "translation": "sharp",
-        "exampleUsed": "Ten nóż jest ostry.",
-        "exampleUsedTranslation": "This knife is sharp."
-    },
-    {
-        "word": "tępy",
-        "translation": "blunt",
-        "exampleUsed": "Ten nóż jest tępy.",
-        "exampleUsedTranslation": "This knife is blunt."
-    },
-    {
-        "word": "gruby",
-        "translation": "fat",
-        "exampleUsed": "On jest bardzo gruby.",
-        "exampleUsedTranslation": "He is very fat."
-    },
-    {
-        "word": "szczupły",
-        "translation": "slim",
-        "exampleUsed": "Ona jest bardzo szczupła.",
-        "exampleUsedTranslation": "She is very slim."
-    },
-    {
-        "word": "głęboki",
-        "translation": "deep",
-        "exampleUsed": "To jest głęboka rzeka.",
-        "exampleUsedTranslation": "This is a deep river."
-    },
-    {
-        "word": "płytki",
-        "translation": "shallow",
-        "exampleUsed": "To jest płytkie jezioro.",
-        "exampleUsedTranslation": "This is a shallow lake."
-    },
-    {
-        "word": "mokry",
-        "translation": "wet",
-        "exampleUsed": "Ubrania są mokre.",
-        "exampleUsedTranslation": "The clothes are wet."
-    },
-    {
-        "word": "suchy",
-        "translation": "dry",
-        "exampleUsed": "Ubrania są suche.",
-        "exampleUsedTranslation": "The clothes are dry."
-    },
-    {
-        "word": "ciężki",
-        "translation": "heavy",
-        "exampleUsed": "Ta torba jest ciężka.",
-        "exampleUsedTranslation": "This bag is heavy."
-    },
-    {
-        "word": "lekki",
-        "translation": "light",
-        "exampleUsed": "Ta torba jest lekka.",
-        "exampleUsedTranslation": "This bag is light."
-    },
-    {
-        "word": "niedrogi",
-        "translation": "affordable",
-        "exampleUsed": "To jest niedroga restauracja.",
-        "exampleUsedTranslation": "This is an affordable restaurant."
-    },
-    {
-        "word": "luksusowy",
-        "translation": "luxurious",
-        "exampleUsed": "To jest luksusowy hotel.",
-        "exampleUsedTranslation": "This is a luxurious hotel."
-    },
-    {
-        "word": "krzywy",
-        "translation": "crooked",
-        "exampleUsed": "To jest krzywa linia.",
-        "exampleUsedTranslation": "This is a crooked line."
-    },
-    {
-        "word": "prosty",
-        "translation": "straight",
-        "exampleUsed": "To jest prosta linia.",
-        "exampleUsedTranslation": "This is a straight line."
-    },
-    {
-        "word": "wąski",
-        "translation": "tight",
-        "exampleUsed": "Te spodnie są wąskie.",
-        "exampleUsedTranslation": "These pants are tight."
-    },
-    {
-        "word": "luźny",
-        "translation": "loose",
-        "exampleUsed": "Ta koszula jest luźna.",
-        "exampleUsedTranslation": "This shirt is loose."
-    },
-    {
-        "word": "bogaty",
-        "translation": "wealthy",
-        "exampleUsed": "To jest bogaty człowiek.",
-        "exampleUsedTranslation": "He is a wealthy man."
-    },
-    {
-        "word": "ubogi",
-        "translation": "needy",
-        "exampleUsed": "On jest ubogi.",
-        "exampleUsedTranslation": "He is needy."
-    },
-    {
-        "word": "dostępny",
-        "translation": "available",
-        "exampleUsed": "Jestem dostępny na spotkanie.",
-        "exampleUsedTranslation": "I am available for the meeting."
-    },
-    {
-        "word": "niedostępny",
-        "translation": "unavailable",
-        "exampleUsed": "Nie jestem dostępny w tym terminie.",
-        "exampleUsedTranslation": "I am unavailable at this time."
-    },
-    {
-        "word": "aktywny",
-        "translation": "active",
-        "exampleUsed": "On jest bardzo aktywny na spotkaniach.",
-        "exampleUsedTranslation": "He is very active in meetings."
-    },
-    {
-        "word": "pasywny",
-        "translation": "passive",
-        "exampleUsed": "On jest pasywny w tej dyskusji.",
-        "exampleUsedTranslation": "He is passive in this discussion."
-    },
-    {
-        "word": "inteligentny",
-        "translation": "intelligent",
-        "exampleUsed": "To jest inteligentne rozwiązanie.",
-        "exampleUsedTranslation": "This is an intelligent solution."
-    },
-    {
-        "word": "głupi",
-        "translation": "foolish",
-        "exampleUsed": "To była głupia decyzja.",
-        "exampleUsedTranslation": "It was a foolish decision."
-    },
-    {
-        "word": "zdolny",
-        "translation": "capable",
-        "exampleUsed": "On jest zdolny do tego zadania.",
-        "exampleUsedTranslation": "He is capable of this task."
-    },
-    {
-        "word": "niezdolny",
-        "translation": "incapable",
-        "exampleUsed": "On jest niezdolny do wykonania tego zadania.",
-        "exampleUsedTranslation": "He is incapable of completing this task."
-    },
-    {
-        "word": "normalny",
-        "translation": "normal",
-        "exampleUsed": "To jest normalne zachowanie.",
-        "exampleUsedTranslation": "This is normal behavior."
-    },
-    {
-        "word": "nienormalny",
-        "translation": "abnormal",
-        "exampleUsed": "To jest nienormalna sytuacja.",
-        "exampleUsedTranslation": "This is an abnormal situation."
-    },
-    {
-        "word": "sprawny",
-        "translation": "efficient",
-        "exampleUsed": "On jest sprawny w pracy.",
-        "exampleUsedTranslation": "He is efficient at work."
-    },
-    {
-        "word": "niesprawny",
-        "translation": "inefficient",
-        "exampleUsed": "To jest niesprawne urządzenie.",
-        "exampleUsedTranslation": "This is an inefficient device."
-    },
-    {
-        "word": "świeży",
-        "translation": "fresh",
-        "exampleUsed": "To są świeże owoce.",
-        "exampleUsedTranslation": "These are fresh fruits."
-    },
-    {
-        "word": "zepsuty",
-        "translation": "spoiled",
-        "exampleUsed": "Mleko jest zepsute.",
-        "exampleUsedTranslation": "The milk is spoiled."
-    },
-    {
-        "word": "błyszczący",
-        "translation": "shiny",
-        "exampleUsed": "Ten samochód jest bardzo błyszczący.",
-        "exampleUsedTranslation": "This car is very shiny."
-    },
-    {
-        "word": "matowy",
-        "translation": "dull",
-        "exampleUsed": "Ten papier jest matowy.",
-        "exampleUsedTranslation": "This paper is dull."
-    },
-    {
-        "word": "tani",
-        "translation": "cheap",
-        "exampleUsed": "To jest tani długopis.",
-        "exampleUsedTranslation": "This is a cheap pen."
-    },
-    {
-        "word": "drogi",
-        "translation": "expensive",
-        "exampleUsed": "To jest drogi zegarek.",
-        "exampleUsedTranslation": "This is an expensive watch."
-    },
-    {
-        "word": "otwarty",
-        "translation": "open",
-        "exampleUsed": "Drzwi są otwarte.",
-        "exampleUsedTranslation": "The door is open."
-    },
-    {
-        "word": "zamknięty",
-        "translation": "closed",
-        "exampleUsed": "Sklep jest zamknięty.",
-        "exampleUsedTranslation": "The store is closed."
-    },
-    {
-        "word": "pewny",
-        "translation": "certain",
-        "exampleUsed": "Jestem pewny tej odpowiedzi.",
-        "exampleUsedTranslation": "I am certain of this answer."
-    },
-    {
-        "word": "niepewny",
-        "translation": "uncertain",
-        "exampleUsed": "Nie jestem pewny tej decyzji.",
-        "exampleUsedTranslation": "I am uncertain about this decision."
-    },
-    {
-        "word": "tradycyjny",
-        "translation": "traditional",
-        "exampleUsed": "To jest tradycyjny sposób gotowania.",
-        "exampleUsedTranslation": "This is a traditional way of cooking."
-    },
-    {
-        "word": "nowoczesny",
-        "translation": "modern",
-        "exampleUsed": "To jest nowoczesny styl.",
-        "exampleUsedTranslation": "This is a modern style."
-    },
-    {
-        "word": "prawdziwy",
-        "translation": "true",
-        "exampleUsed": "To jest prawdziwa historia.",
-        "exampleUsedTranslation": "This is a true story."
-    },
-    {
-        "word": "fałszywy",
-        "translation": "false",
-        "exampleUsed": "To jest fałszywe oświadczenie.",
-        "exampleUsedTranslation": "This is a false statement."
-    },
-    {
-        "word": "szczery",
-        "translation": "honest",
-        "exampleUsed": "On jest bardzo szczery w swoich odpowiedziach.",
-        "exampleUsedTranslation": "He is very honest in his answers."
-    },
-    {
-        "word": "nieszczery",
-        "translation": "dishonest",
-        "exampleUsed": "To była nieszczera odpowiedź.",
-        "exampleUsedTranslation": "That was a dishonest answer."
-    },
-    {
-        "word": "lojalny",
-        "translation": "loyal",
-        "exampleUsed": "On jest bardzo lojalnym przyjacielem.",
-        "exampleUsedTranslation": "He is a very loyal friend."
-    },
-    {
-        "word": "nielojalny",
-        "translation": "disloyal",
-        "exampleUsed": "To jest nielojalne zachowanie.",
-        "exampleUsedTranslation": "This is disloyal behavior."
-    },
-    {
-        "word": "praktyczny",
-        "translation": "practical",
-        "exampleUsed": "To jest praktyczne rozwiązanie.",
-        "exampleUsedTranslation": "This is a practical solution."
-    },
-    {
-        "word": "niepraktyczny",
-        "translation": "impractical",
-        "exampleUsed": "To jest niepraktyczna metoda.",
-        "exampleUsedTranslation": "This is an impractical method."
-    },
-    {
-        "word": "skromny",
-        "translation": "modest",
-        "exampleUsed": "On jest bardzo skromnym człowiekiem.",
-        "exampleUsedTranslation": "He is a very modest man."
-    },
-    {
-        "word": "arogancki",
-        "translation": "arrogant",
-        "exampleUsed": "To było aroganckie zachowanie.",
-        "exampleUsedTranslation": "That was arrogant behavior."
-    },
-    {
-        "word": "szczodry",
-        "translation": "generous",
-        "exampleUsed": "On jest bardzo szczodry.",
-        "exampleUsedTranslation": "He is very generous."
-    },
-    {
-        "word": "skąpy",
-        "translation": "stingy",
-        "exampleUsed": "On jest skąpy, nigdy nie płaci za nic.",
-        "exampleUsedTranslation": "He is stingy, he never pays for anything."
-    },
-    {
-        "word": "pomysłowy",
-        "translation": "inventive",
-        "exampleUsed": "On jest bardzo pomysłowy.",
-        "exampleUsedTranslation": "He is very inventive."
-    },
-    {
-        "word": "nudny",
-        "translation": "dull",
-        "exampleUsed": "Ten wykład był nudny.",
-        "exampleUsedTranslation": "This lecture was dull."
-    },
-    {
-        "word": "rozsądny",
-        "translation": "sensible",
-        "exampleUsed": "To jest rozsądna decyzja.",
-        "exampleUsedTranslation": "This is a sensible decision."
-    },
-    {
-        "word": "nierozsądny",
-        "translation": "insensible",
-        "exampleUsed": "To była nierozsądna decyzja.",
-        "exampleUsedTranslation": "It was an insensible decision."
-    },
-    {
-        "word": "łagodny",
-        "translation": "gentle",
-        "exampleUsed": "On jest bardzo łagodnym człowiekiem.",
-        "exampleUsedTranslation": "He is a very gentle man."
-    },
-    {
-        "word": "agresywny",
-        "translation": "aggressive",
-        "exampleUsed": "To było agresywne zachowanie.",
-        "exampleUsedTranslation": "That was aggressive behavior."
-    },
-    {
-        "word": "pracowity",
-        "translation": "hardworking",
-        "exampleUsed": "On jest bardzo pracowity.",
-        "exampleUsedTranslation": "He is very hardworking."
-    },
-    {
-        "word": "leniwy",
-        "translation": "lazy",
-        "exampleUsed": "On jest bardzo leniwy.",
-        "exampleUsedTranslation": "He is very lazy."
-    },
-    {
-        "word": "ambitny",
-        "translation": "ambitious",
-        "exampleUsed": "On jest bardzo ambitny.",
-        "exampleUsedTranslation": "He is very ambitious."
-    },
-    {
-        "word": "bez ambicji",
-        "translation": "unambitious",
-        "exampleUsed": "On jest bez ambicji.",
-        "exampleUsedTranslation": "He is unambitious."
-    },
-    {
-        "word": "szczęśliwy",
-        "translation": "lucky",
-        "exampleUsed": "On jest bardzo szczęśliwy.",
-        "exampleUsedTranslation": "He is very lucky."
-    },
-    {
-        "word": "nieszczęśliwy",
-        "translation": "unlucky",
-        "exampleUsed": "On jest nieszczęśliwy.",
-        "exampleUsedTranslation": "He is unlucky."
-    },
-    {
-        "word": "pozytywny",
-        "translation": "positive",
-        "exampleUsed": "To jest pozytywne podejście.",
-        "exampleUsedTranslation": "This is a positive approach."
-    },
-    {
-        "word": "negatywny",
-        "translation": "negative",
-        "exampleUsed": "To jest negatywne nastawienie.",
-        "exampleUsedTranslation": "This is a negative attitude."
-    },
-    {
-        "word": "odpowiedzialny",
-        "translation": "responsible",
-        "exampleUsed": "On jest odpowiedzialny za ten projekt.",
-        "exampleUsedTranslation": "He is responsible for this project."
-    },
-    {
-        "word": "nieodpowiedzialny",
-        "translation": "irresponsible",
-        "exampleUsed": "To było nieodpowiedzialne zachowanie.",
-        "exampleUsedTranslation": "That was irresponsible behavior."
-    },
-    {
-        "word": "oszczędny",
-        "translation": "economical",
-        "exampleUsed": "On jest bardzo oszczędny.",
-        "exampleUsedTranslation": "He is very economical."
-    },
-    {
-        "word": "rozrzutny",
-        "translation": "extravagant",
-        "exampleUsed": "On jest bardzo rozrzutny.",
-        "exampleUsedTranslation": "He is very extravagant."
-    },
-    {
-        "word": "staranny",
-        "translation": "careful",
-        "exampleUsed": "On jest bardzo staranny w swojej pracy.",
-        "exampleUsedTranslation": "He is very careful in his work."
-    },
-    {
-        "word": "niestaranny",
-        "translation": "careless",
-        "exampleUsed": "To było niestarannie wykonane.",
-        "exampleUsedTranslation": "It was carelessly done."
-    },
-    {
-        "word": "porządny",
-        "translation": "decent",
-        "exampleUsed": "On jest bardzo porządnym człowiekiem.",
-        "exampleUsedTranslation": "He is a very decent man."
-    },
-    {
-        "word": "nieporządny",
-        "translation": "indecent",
-        "exampleUsed": "To było nieporządne zachowanie.",
-        "exampleUsedTranslation": "That was indecent behavior."
-    },
-    {
-        "word": "cierpliwy",
-        "translation": "patient",
-        "exampleUsed": "Musisz być cierpliwy w tej sytuacji.",
-        "exampleUsedTranslation": "You must be patient in this situation."
-    },
-    {
-        "word": "niecierpliwy",
-        "translation": "impatient",
-        "exampleUsed": "On jest bardzo niecierpliwy.",
-        "exampleUsedTranslation": "He is very impatient."
-    },
-    {
-        "word": "ostrożny",
-        "translation": "cautious",
-        "exampleUsed": "On jest bardzo ostrożny.",
-        "exampleUsedTranslation": "He is very cautious."
-    },
-    {
-        "word": "nieostrożny",
-        "translation": "reckless",
-        "exampleUsed": "To było nieostrożne działanie.",
-        "exampleUsedTranslation": "That was reckless action."
-    },
-    {
-        "word": "dumny",
-        "translation": "proud",
-        "exampleUsed": "Jestem dumny z mojego syna.",
-        "exampleUsedTranslation": "I am proud of my son."
-    },
-    {
-        "word": "skromny",
-        "translation": "humble",
-        "exampleUsed": "On jest bardzo skromny.",
-        "exampleUsedTranslation": "He is very humble."
-    },
-    {
-        "word": "szlachetny",
-        "translation": "noble",
-        "exampleUsed": "To było szlachetne działanie.",
-        "exampleUsedTranslation": "That was a noble act."
-    },
-    {
-        "word": "podły",
-        "translation": "mean",
-        "exampleUsed": "To było podłe zachowanie.",
-        "exampleUsedTranslation": "That was mean behavior."
+        "version": "1",
+        "words": [
+            {
+                "translation": "good",
+                "word": "dobry",
+                "exampleUsed": "To jest dobry pomysł.",
+                "exampleUsedTranslation": "This is a good idea."
+            },
+            {
+                "translation": "new",
+                "word": "nowy",
+                "exampleUsed": "Kupiłem nowy samochód.",
+                "exampleUsedTranslation": "I bought a new car."
+            },
+            {
+                "translation": "first",
+                "word": "pierwszy",
+                "exampleUsed": "To jest mój pierwszy dzień w pracy.",
+                "exampleUsedTranslation": "This is my first day at work."
+            },
+            {
+                "translation": "last",
+                "word": "ostatni",
+                "exampleUsed": "To jest ostatni rozdział książki.",
+                "exampleUsedTranslation": "This is the last chapter of the book."
+            },
+            {
+                "translation": "long",
+                "word": "długi",
+                "exampleUsed": "To była długa podróż.",
+                "exampleUsedTranslation": "It was a long journey."
+            },
+            {
+                "translation": "great",
+                "word": "wspaniały",
+                "exampleUsed": "Mieliśmy wspaniały czas na wakacjach.",
+                "exampleUsedTranslation": "We had a great time on vacation."
+            },
+            {
+                "translation": "little",
+                "word": "mały",
+                "exampleUsed": "Mały chłopiec się uśmiechnął.",
+                "exampleUsedTranslation": "The little boy smiled."
+            },
+            {
+                "translation": "own",
+                "word": "własny",
+                "exampleUsed": "Mam własny dom.",
+                "exampleUsedTranslation": "I have my own house."
+            },
+            {
+                "translation": "other",
+                "word": "inny",
+                "exampleUsed": "Czy masz inny pomysł?",
+                "exampleUsedTranslation": "Do you have another idea?"
+            },
+            {
+                "translation": "old",
+                "word": "stary",
+                "exampleUsed": "To jest stary budynek.",
+                "exampleUsedTranslation": "This is an old building."
+            },
+            {
+                "translation": "right",
+                "word": "właściwy",
+                "exampleUsed": "To jest właściwy wybór.",
+                "exampleUsedTranslation": "This is the right choice."
+            },
+            {
+                "translation": "big",
+                "word": "duży",
+                "exampleUsed": "Mieszkam w dużym mieście.",
+                "exampleUsedTranslation": "I live in a big city."
+            },
+            {
+                "translation": "high",
+                "word": "wysoki",
+                "exampleUsed": "To jest wysoki budynek.",
+                "exampleUsedTranslation": "This is a high building."
+            },
+            {
+                "translation": "different",
+                "word": "różny",
+                "exampleUsed": "Mamy różne opinie.",
+                "exampleUsedTranslation": "We have different opinions."
+            },
+            {
+                "translation": "small",
+                "word": "mały",
+                "exampleUsed": "Mam mały problem.",
+                "exampleUsedTranslation": "I have a small problem."
+            },
+            {
+                "translation": "large",
+                "word": "duży",
+                "exampleUsed": "Potrzebuję dużego samochodu.",
+                "exampleUsedTranslation": "I need a large car."
+            },
+            {
+                "translation": "next",
+                "word": "następny",
+                "exampleUsed": "Spotkamy się w następnym tygodniu.",
+                "exampleUsedTranslation": "We will meet next week."
+            },
+            {
+                "translation": "early",
+                "word": "wcześny",
+                "exampleUsed": "Wstałem wcześnie rano.",
+                "exampleUsedTranslation": "I got up early in the morning."
+            },
+            {
+                "translation": "young",
+                "word": "młody",
+                "exampleUsed": "Jestem młody duchem.",
+                "exampleUsedTranslation": "I am young at heart."
+            },
+            {
+                "translation": "important",
+                "word": "ważny",
+                "exampleUsed": "To jest ważna informacja.",
+                "exampleUsedTranslation": "This is important information."
+            },
+            {
+                "translation": "few",
+                "word": "kilka",
+                "exampleUsed": "Mam kilka pytań.",
+                "exampleUsedTranslation": "I have a few questions."
+            },
+            {
+                "translation": "public",
+                "word": "publiczny",
+                "exampleUsed": "To jest publiczna biblioteka.",
+                "exampleUsedTranslation": "This is a public library."
+            },
+            {
+                "translation": "bad",
+                "word": "zły",
+                "exampleUsed": "To jest zły pomysł.",
+                "exampleUsedTranslation": "This is a bad idea."
+            },
+            {
+                "translation": "same",
+                "word": "ten sam",
+                "exampleUsed": "Mamy ten sam problem.",
+                "exampleUsedTranslation": "We have the same problem."
+            },
+            {
+                "translation": "able",
+                "word": "zdolny",
+                "exampleUsed": "Jestem zdolny to zrobić.",
+                "exampleUsedTranslation": "I am able to do it."
+            },
+            {
+                "translation": "happy",
+                "word": "szczęśliwy",
+                "exampleUsed": "Czuję się szczęśliwy.",
+                "exampleUsedTranslation": "I feel happy."
+            },
+            {
+                "translation": "sure",
+                "word": "pewny",
+                "exampleUsed": "Jestem pewny swojej decyzji.",
+                "exampleUsedTranslation": "I am sure of my decision."
+            },
+            {
+                "translation": "clear",
+                "word": "jasny",
+                "exampleUsed": "To jest jasne wyjaśnienie.",
+                "exampleUsedTranslation": "This is a clear explanation."
+            },
+            {
+                "translation": "possible",
+                "word": "możliwy",
+                "exampleUsed": "To jest możliwe do zrobienia.",
+                "exampleUsedTranslation": "It is possible to do."
+            },
+            {
+                "translation": "whole",
+                "word": "cały",
+                "exampleUsed": "Przeczytałem całą książkę.",
+                "exampleUsedTranslation": "I read the whole book."
+            },
+            {
+                "translation": "easy",
+                "word": "łatwy",
+                "exampleUsed": "To jest łatwe zadanie.",
+                "exampleUsedTranslation": "This is an easy task."
+            },
+            {
+                "translation": "strong",
+                "word": "silny",
+                "exampleUsed": "On jest silnym człowiekiem.",
+                "exampleUsedTranslation": "He is a strong man."
+            },
+            {
+                "translation": "free",
+                "word": "wolny",
+                "exampleUsed": "Jestem wolny w weekend.",
+                "exampleUsedTranslation": "I am free on the weekend."
+            },
+            {
+                "translation": "hard",
+                "word": "trudny",
+                "exampleUsed": "To jest trudne pytanie.",
+                "exampleUsedTranslation": "This is a hard question."
+            },
+            {
+                "translation": "local",
+                "word": "lokalny",
+                "exampleUsed": "Czytamy lokalną gazetę.",
+                "exampleUsedTranslation": "We read the local newspaper."
+            },
+            {
+                "translation": "special",
+                "word": "specjalny",
+                "exampleUsed": "To jest specjalna okazja.",
+                "exampleUsedTranslation": "This is a special occasion."
+            },
+            {
+                "translation": "difficult",
+                "word": "trudny",
+                "exampleUsed": "To była trudna decyzja.",
+                "exampleUsedTranslation": "It was a difficult decision."
+            },
+            {
+                "translation": "certain",
+                "word": "pewny",
+                "exampleUsed": "Jestem pewny sukcesu.",
+                "exampleUsedTranslation": "I am certain of success."
+            },
+            {
+                "translation": "open",
+                "word": "otwarty",
+                "exampleUsed": "Sklep jest otwarty.",
+                "exampleUsedTranslation": "The store is open."
+            },
+            {
+                "translation": "likely",
+                "word": "prawdopodobny",
+                "exampleUsed": "To jest prawdopodobny wynik.",
+                "exampleUsedTranslation": "This is a likely outcome."
+            },
+            {
+                "translation": "simple",
+                "word": "prosty",
+                "exampleUsed": "To jest prosty problem.",
+                "exampleUsedTranslation": "This is a simple problem."
+            },
+            {
+                "translation": "top",
+                "word": "najlepszy",
+                "exampleUsed": "To jest najlepszy wybór.",
+                "exampleUsedTranslation": "This is the top choice."
+            },
+            {
+                "translation": "single",
+                "word": "pojedynczy",
+                "exampleUsed": "Nie straciłem ani jednego dnia pracy.",
+                "exampleUsedTranslation": "I haven't missed a single day of work."
+            },
+            {
+                "translation": "personal",
+                "word": "osobisty",
+                "exampleUsed": "To jest moja osobista opinia.",
+                "exampleUsedTranslation": "This is my personal opinion."
+            },
+            {
+                "translation": "real",
+                "word": "prawdziwy",
+                "exampleUsed": "To jest prawdziwy problem.",
+                "exampleUsedTranslation": "This is a real problem."
+            },
+            {
+                "translation": "recent",
+                "word": "niedawny",
+                "exampleUsed": "To jest niedawne wydarzenie.",
+                "exampleUsedTranslation": "This is a recent event."
+            },
+            {
+                "translation": "wrong",
+                "word": "zły",
+                "exampleUsed": "To jest zła odpowiedź.",
+                "exampleUsedTranslation": "This is the wrong answer."
+            },
+            {
+                "translation": "general",
+                "word": "ogólny",
+                "exampleUsed": "To jest ogólne pytanie.",
+                "exampleUsedTranslation": "This is a general question."
+            },
+            {
+                "translation": "main",
+                "word": "główny",
+                "exampleUsed": "To jest główny problem.",
+                "exampleUsedTranslation": "This is the main problem."
+            },
+            {
+                "translation": "common",
+                "word": "powszechny",
+                "exampleUsed": "To jest powszechny błąd.",
+                "exampleUsedTranslation": "This is a common mistake."
+            }
+        ]
     }
 ]

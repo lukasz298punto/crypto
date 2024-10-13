@@ -3,7 +3,7 @@ import { RxJsonSchema } from 'rxdb';
 
 export default {
     title: 'words',
-    version: 1,
+    version: 3,
     primaryKey: 'id',
     type: 'object',
     properties: {
@@ -12,6 +12,10 @@ export default {
             maxLength: 50,
         },
         word: {
+            type: 'string',
+            maxLength: 100,
+        },
+        wordDesc: {
             type: 'string',
             maxLength: 100,
         },
@@ -56,6 +60,11 @@ export default {
         isKnown: {
             type: 'boolean',
             default: false,
+        },
+        lastCorrectHit: {
+            type: ['string', 'null'],
+            format: 'date-time',
+            default: null,
         },
     },
     required: [

@@ -81,12 +81,11 @@ export default function Categories() {
             { id: Category.Pronouns, label: t('Zaimki') },
             { id: Category.Prepositions, label: t('Przyimki') },
             { id: Category.Conjunctions, label: t('Spójniki') },
-            { id: Category.Articles, label: t('Rodzajniki') },
-            { id: Category.Interjections, label: t('Wykrzykniki') },
             { id: Category.PhrasalVerbs, label: t('Phrasal Verbs') },
             { id: Category.Idioms, label: t('Idiomy') },
             { id: Category.Phrases, label: t('Zwroty') },
             { id: Category.Sentences, label: t('Zdania') },
+            { id: Category.PastSimple, label: t('Past Simple') },
         ];
     }, [t]);
 

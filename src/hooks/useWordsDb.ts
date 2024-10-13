@@ -43,8 +43,9 @@ export default function useWordsDb({ selector }: Readonly<Props>) {
 
             if (wordDoc) {
                 await wordDoc.update({
-                    $inc: {
-                        correct: 1,
+                    $set: {
+                        correct: wordDoc.correct + 1,
+                        lastCorrectHit: new Date('2020-01-01').toISOString(),
                     },
                 });
             }

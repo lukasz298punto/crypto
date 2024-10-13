@@ -1,139 +1,307 @@
 [
-    { "translation": "How are you?", "word": "Jak się masz?" },
-    { "translation": "What's your name?", "word": "Jak masz na imię?" },
-    { "translation": "Nice to meet you.", "word": "Miło cię poznać." },
-    { "translation": "How's it going?", "word": "Jak leci?" },
-    { "translation": "What do you do?", "word": "Czym się zajmujesz?" },
-    { "translation": "Where are you from?", "word": "Skąd jesteś?" },
     {
-        "translation": "I'm fine, thank you.",
-        "word": "Mam się dobrze, dziękuję."
-    },
-    { "translation": "See you later.", "word": "Do zobaczenia później." },
-    { "translation": "Have a good day.", "word": "Miłego dnia." },
-    { "translation": "Thank you very much.", "word": "Dziękuję bardzo." },
-    { "translation": "You're welcome.", "word": "Proszę bardzo." },
-    { "translation": "Excuse me.", "word": "Przepraszam." },
-    { "translation": "I'm sorry.", "word": "Przepraszam." },
-    { "translation": "Can you help me?", "word": "Czy możesz mi pomóc?" },
-    { "translation": "How much is this?", "word": "Ile to kosztuje?" },
-    { "translation": "Where is the restroom?", "word": "Gdzie jest toaleta?" },
-    { "translation": "What time is it?", "word": "Która godzina?" },
-    {
-        "translation": "Could you repeat that?",
-        "word": "Czy możesz to powtórzyć?"
-    },
-    { "translation": "I don't understand.", "word": "Nie rozumiem." },
-    {
-        "translation": "Do you speak English?",
-        "word": "Czy mówisz po angielsku?"
-    },
-    { "translation": "What does that mean?", "word": "Co to znaczy?" },
-    {
-        "translation": "How do you say this in English?",
-        "word": "Jak to się mówi po angielsku?"
-    },
-    { "translation": "I'd like to...", "word": "Chciałbym..." },
-    { "translation": "Can I have...?", "word": "Czy mogę prosić o...?" },
-    { "translation": "What do you think?", "word": "Co o tym myślisz?" },
-    { "translation": "Let's go!", "word": "Chodźmy!" },
-    { "translation": "What's happening?", "word": "Co się dzieje?" },
-    { "translation": "I have no idea.", "word": "Nie mam pojęcia." },
-    { "translation": "What's the matter?", "word": "Co się stało?" },
-    {
-        "translation": "Long time no see.",
-        "word": "Dawno się nie widzieliśmy."
-    },
-    { "translation": "Take care.", "word": "Trzymaj się." },
-    { "translation": "That's great!", "word": "To świetnie!" },
-    { "translation": "I don't know.", "word": "Nie wiem." },
-    { "translation": "Sounds good.", "word": "Brzmi dobrze." },
-    { "translation": "I'm hungry.", "word": "Jestem głodny." },
-    { "translation": "I'm thirsty.", "word": "Jestem spragniony." },
-    { "translation": "I'm tired.", "word": "Jestem zmęczony." },
-    { "translation": "I'm bored.", "word": "Nudzę się." },
-    { "translation": "I like it.", "word": "Podoba mi się to." },
-    { "translation": "I don't like it.", "word": "Nie podoba mi się to." },
-    { "translation": "It's up to you.", "word": "To zależy od ciebie." },
-    { "translation": "What are you doing?", "word": "Co robisz?" },
-    { "translation": "Where are you?", "word": "Gdzie jesteś?" },
-    { "translation": "Do you need help?", "word": "Czy potrzebujesz pomocy?" },
-    {
-        "translation": "I'm sorry to hear that.",
-        "word": "Przykro mi to słyszeć."
-    },
-    {
-        "translation": "Can you repeat, please?",
-        "word": "Czy możesz powtórzyć?"
-    },
-    {
-        "translation": "What's your opinion?",
-        "word": "Jaka jest twoja opinia?"
-    },
-    {
-        "translation": "Where should we meet?",
-        "word": "Gdzie powinniśmy się spotkać?"
-    },
-    { "translation": "Are you sure?", "word": "Czy jesteś pewny?" },
-    { "translation": "I'm just kidding.", "word": "Tylko żartuję." },
-    { "translation": "How's your day?", "word": "Jak minął twój dzień?" },
-    { "translation": "How old are you?", "word": "Ile masz lat?" },
-    { "translation": "Where do you live?", "word": "Gdzie mieszkasz?" },
-    { "translation": "I don't believe it.", "word": "Nie mogę w to uwierzyć." },
-    { "translation": "That's not fair.", "word": "To nie jest sprawiedliwe." },
-    { "translation": "What do you need?", "word": "Czego potrzebujesz?" },
-    {
-        "translation": "What's your favorite...",
-        "word": "Jaki jest twój ulubiony..."
-    },
-    { "translation": "Do you want to...?", "word": "Czy chcesz...?" },
-    { "translation": "Let's hang out.", "word": "Spotkajmy się." },
-    { "translation": "I'm in a hurry.", "word": "Śpieszę się." },
-    { "translation": "No problem.", "word": "Nie ma problemu." },
-    {
-        "translation": "Can I ask you something?",
-        "word": "Czy mogę o coś zapytać?"
-    },
-    { "translation": "Let me know.", "word": "Daj mi znać." },
-    {
-        "translation": "What's your phone number?",
-        "word": "Jaki jest twój numer telefonu?"
-    },
-    { "translation": "What are your plans?", "word": "Jakie masz plany?" },
-    { "translation": "I'm looking for...", "word": "Szukam..." },
-    { "translation": "I'll call you later.", "word": "Zadzwonię później." },
-    {
-        "translation": "Can you wait a moment?",
-        "word": "Czy możesz chwilę poczekać?"
-    },
-    { "translation": "I'm on my way.", "word": "Jestem w drodze." },
-    { "translation": "Are you busy?", "word": "Czy jesteś zajęty?" },
-    { "translation": "Take it easy.", "word": "Na luzie." },
-    { "translation": "How do you feel?", "word": "Jak się czujesz?" },
-    { "translation": "I don't mind.", "word": "Nie mam nic przeciwko." },
-    { "translation": "I miss you.", "word": "Tęsknię za tobą." },
-    { "translation": "I'm not sure.", "word": "Nie jestem pewny." },
-    { "translation": "I hope so.", "word": "Mam nadzieję." },
-    { "translation": "It doesn't matter.", "word": "To nie ma znaczenia." },
-    { "translation": "I'm ready.", "word": "Jestem gotowy." },
-    { "translation": "Are you hungry?", "word": "Czy jesteś głodny?" },
-    {
-        "translation": "What time do we meet?",
-        "word": "O której się spotykamy?"
-    },
-    { "translation": "How's the weather?", "word": "Jaką mamy pogodę?" },
-    { "translation": "Where do you work?", "word": "Gdzie pracujesz?" },
-    { "translation": "I love you.", "word": "Kocham cię." },
-    { "translation": "How much time do we have?", "word": "Ile mamy czasu?" },
-    { "translation": "I'm not feeling well.", "word": "Nie czuję się dobrze." },
-    { "translation": "I'm cold.", "word": "Jest mi zimno." },
-    { "translation": "I'm hot.", "word": "Jest mi gorąco." },
-    { "translation": "Can I join you?", "word": "Czy mogę dołączyć?" },
-    { "translation": "How can I help?", "word": "Jak mogę pomóc?" },
-    { "translation": "I'm lost.", "word": "Zgubiłem się." },
-    {
-        "translation": "Can I ask for directions?",
-        "word": "Czy mogę poprosić o wskazówki?"
-    },
-    { "translation": "What's the address?", "word": "Jaki jest adres?" }
+        "version": "1",
+        "words": [
+            {
+                "translation": "Jak się masz?",
+                "word": "How are you?",
+                "exampleUsed": "Cześć! Jak się masz?",
+                "exampleUsedTranslation": "Hi! How are you?"
+            },
+            {
+                "translation": "Do zobaczenia później",
+                "word": "See you later",
+                "exampleUsed": "Muszę iść. Do zobaczenia później!",
+                "exampleUsedTranslation": "I have to go. See you later!"
+            },
+            {
+                "translation": "Bardzo dziękuję",
+                "word": "Thank you very much",
+                "exampleUsed": "Bardzo dziękuję za pomoc.",
+                "exampleUsedTranslation": "Thank you very much for your help."
+            },
+            {
+                "translation": "Miło cię poznać",
+                "word": "Nice to meet you",
+                "exampleUsed": "Cześć, jestem Anna. Miło cię poznać.",
+                "exampleUsedTranslation": "Hi, I'm Anna. Nice to meet you."
+            },
+            {
+                "translation": "Przepraszam",
+                "word": "Excuse me",
+                "exampleUsed": "Przepraszam, czy możesz mi powiedzieć, która jest godzina?",
+                "exampleUsedTranslation": "Excuse me, can you tell me what time it is?"
+            },
+            {
+                "translation": "Przepraszam",
+                "word": "I'm sorry",
+                "exampleUsed": "Przepraszam za spóźnienie.",
+                "exampleUsedTranslation": "I'm sorry for being late."
+            },
+            {
+                "translation": "Dzień dobry",
+                "word": "Good morning",
+                "exampleUsed": "Dzień dobry wszystkim!",
+                "exampleUsedTranslation": "Good morning, everyone!"
+            },
+            {
+                "translation": "Dobranoc",
+                "word": "Good night",
+                "exampleUsed": "Dobranoc, do zobaczenia jutro.",
+                "exampleUsedTranslation": "Good night, see you tomorrow."
+            },
+            {
+                "translation": "Nie rozumiem",
+                "word": "I don't understand",
+                "exampleUsed": "Przepraszam, nie rozumiem pytania.",
+                "exampleUsedTranslation": "I'm sorry, I don't understand the question."
+            },
+            {
+                "translation": "Czy mógłbyś mi pomóc?",
+                "word": "Could you help me?",
+                "exampleUsed": "Przepraszam, czy mógłbyś mi pomóc znaleźć tę ulicę?",
+                "exampleUsedTranslation": "Excuse me, could you help me find this street?"
+            },
+            {
+                "translation": "Jak masz na imię?",
+                "word": "What's your name?",
+                "exampleUsed": "Cześć! Jak masz na imię?",
+                "exampleUsedTranslation": "Hi! What's your name?"
+            },
+            {
+                "translation": "Gdzie jest toaleta?",
+                "word": "Where is the restroom?",
+                "exampleUsed": "Przepraszam, gdzie jest toaleta?",
+                "exampleUsedTranslation": "Excuse me, where is the restroom?"
+            },
+            {
+                "translation": "Ile to kosztuje?",
+                "word": "How much does it cost?",
+                "exampleUsed": "Przepraszam, ile to kosztuje?",
+                "exampleUsedTranslation": "Excuse me, how much does it cost?"
+            },
+            {
+                "translation": "Zgubiłem się",
+                "word": "I'm lost",
+                "exampleUsed": "Przepraszam, jestem zgubiony. Czy możesz mi pomóc?",
+                "exampleUsedTranslation": "Excuse me, I'm lost. Can you help me?"
+            },
+            {
+                "translation": "Kocham cię",
+                "word": "I love you",
+                "exampleUsed": "Chcę ci powiedzieć, że cię kocham.",
+                "exampleUsedTranslation": "I want to tell you that I love you."
+            },
+            {
+                "translation": "Wszystkiego najlepszego",
+                "word": "Happy birthday",
+                "exampleUsed": "Wszystkiego najlepszego z okazji urodzin!",
+                "exampleUsedTranslation": "Happy birthday!"
+            },
+            {
+                "translation": "Gratulacje",
+                "word": "Congratulations",
+                "exampleUsed": "Gratulacje z okazji ukończenia szkoły!",
+                "exampleUsedTranslation": "Congratulations on graduating!"
+            },
+            {
+                "translation": "Powodzenia",
+                "word": "Good luck",
+                "exampleUsed": "Powodzenia na egzaminie!",
+                "exampleUsedTranslation": "Good luck on your exam!"
+            },
+            {
+                "translation": "Trzymaj się",
+                "word": "Take care",
+                "exampleUsed": "Do zobaczenia później, trzymaj się!",
+                "exampleUsedTranslation": "See you later, take care!"
+            },
+            {
+                "translation": "Do zobaczenia jutro",
+                "word": "See you tomorrow",
+                "exampleUsed": "Koniec na dziś. Do zobaczenia jutro!",
+                "exampleUsedTranslation": "That's it for today. See you tomorrow!"
+            },
+            {
+                "translation": "Miłego dnia",
+                "word": "Have a nice day",
+                "exampleUsed": "Dziękuję za zakupy. Miłego dnia!",
+                "exampleUsedTranslation": "Thank you for shopping. Have a nice day!"
+            },
+            {
+                "translation": "Zgadzam się",
+                "word": "I agree",
+                "exampleUsed": "To dobry plan. Zgadzam się.",
+                "exampleUsedTranslation": "That's a good plan. I agree."
+            },
+            {
+                "translation": "Nie zgadzam się",
+                "word": "I disagree",
+                "exampleUsed": "Przepraszam, ale się nie zgadzam.",
+                "exampleUsedTranslation": "I'm sorry, but I disagree."
+            },
+            {
+                "translation": "Która godzina?",
+                "word": "What time is it?",
+                "exampleUsed": "Przepraszam, która jest godzina?",
+                "exampleUsedTranslation": "Excuse me, what time is it?"
+            },
+            {
+                "translation": "Jestem głodny",
+                "word": "I'm hungry",
+                "exampleUsed": "Czy zjemy coś? Jestem głodny.",
+                "exampleUsedTranslation": "Shall we eat something? I'm hungry."
+            },
+            {
+                "translation": "Chce mi się pić",
+                "word": "I'm thirsty",
+                "exampleUsed": "Po bieganiu jestem spragniony.",
+                "exampleUsedTranslation": "After running, I'm thirsty."
+            },
+            {
+                "translation": "Nie wiem",
+                "word": "I don't know",
+                "exampleUsed": "Nie wiem, jak to się stało.",
+                "exampleUsedTranslation": "I don't know how that happened."
+            },
+            {
+                "translation": "Czy możesz to powtórzyć?",
+                "word": "Can you repeat that?",
+                "exampleUsed": "Przepraszam, czy możesz to powtórzyć?",
+                "exampleUsedTranslation": "Excuse me, can you repeat that?"
+            },
+            {
+                "translation": "Miło cię poznać",
+                "word": "Pleased to meet you",
+                "exampleUsed": "Cześć, jestem Piotr. Miło cię poznać.",
+                "exampleUsedTranslation": "Hi, I'm Peter. Pleased to meet you."
+            },
+            {
+                "translation": "Szczęśliwej podróży",
+                "word": "Have a safe trip",
+                "exampleUsed": "Miłej podróży! Szczęśliwej drogi!",
+                "exampleUsedTranslation": "Have a nice trip! Have a safe journey!"
+            },
+            {
+                "translation": "Dawno się nie widzieliśmy",
+                "word": "Long time no see",
+                "exampleUsed": "Cześć! Dawno się nie widzieliśmy!",
+                "exampleUsedTranslation": "Hi! Long time no see!"
+            },
+            {
+                "translation": "Smacznego",
+                "word": "Enjoy your meal",
+                "exampleUsed": "Obiad jest gotowy. Smacznego!",
+                "exampleUsedTranslation": "Lunch is ready. Enjoy your meal!"
+            },
+            {
+                "translation": "Szczęśliwej podróży",
+                "word": "Bon voyage",
+                "exampleUsed": "Życzę ci szczęśliwej podróży!",
+                "exampleUsedTranslation": "I wish you a bon voyage!"
+            },
+            {
+                "translation": "Spokojnie",
+                "word": "Take it easy",
+                "exampleUsed": "Nie stresuj się, spokojnie.",
+                "exampleUsedTranslation": "Don't stress, take it easy."
+            },
+            {
+                "translation": "Nie ma problemu",
+                "word": "No problem",
+                "exampleUsed": "Dziękuję za pomoc. - Nie ma problemu.",
+                "exampleUsedTranslation": "Thanks for your help. - No problem."
+            },
+            {
+                "translation": "To ciekawe",
+                "word": "That's interesting",
+                "exampleUsed": "To ciekawe, co mówisz.",
+                "exampleUsedTranslation": "That's interesting, what you're saying."
+            },
+            {
+                "translation": "To zależy od ciebie",
+                "word": "It's up to you",
+                "exampleUsed": "Co robimy? - To zależy od ciebie.",
+                "exampleUsedTranslation": "What are we doing? - It's up to you."
+            },
+            {
+                "translation": "Czy mogę ci pomóc?",
+                "word": "Can I help you?",
+                "exampleUsed": "Witam w naszym sklepie. Czy mogę ci pomóc?",
+                "exampleUsedTranslation": "Welcome to our store. Can I help you?"
+            },
+            {
+                "translation": "Czekam na to z niecierpliwością",
+                "word": "I'm looking forward to it",
+                "exampleUsed": "Czekam na spotkanie z niecierpliwością.",
+                "exampleUsedTranslation": "I'm looking forward to the meeting."
+            },
+            {
+                "translation": "Co się dzieje?",
+                "word": "What's going on?",
+                "exampleUsed": "Wyglądasz na zmartwionego. Co się dzieje?",
+                "exampleUsedTranslation": "You look worried. What's going on?"
+            },
+            {
+                "translation": "Nie szkodzi",
+                "word": "Never mind",
+                "exampleUsed": "Przepraszam za błąd. - Nie szkodzi.",
+                "exampleUsedTranslation": "Sorry for the mistake. - Never mind."
+            },
+            {
+                "translation": "Co słychać?",
+                "word": "What's up?",
+                "exampleUsed": "Cześć, co słychać?",
+                "exampleUsedTranslation": "Hi, what's up?"
+            },
+            {
+                "translation": "Bułka z masłem",
+                "word": "It's a piece of cake",
+                "exampleUsed": "To zadanie jest łatwe, bułka z masłem.",
+                "exampleUsedTranslation": "This task is easy, it's a piece of cake."
+            },
+            {
+                "translation": "Jestem zmęczony",
+                "word": "I'm tired",
+                "exampleUsed": "Po pracy jestem bardzo zmęczony.",
+                "exampleUsedTranslation": "After work, I'm very tired."
+            },
+            {
+                "translation": "Muszę iść",
+                "word": "I need to go",
+                "exampleUsed": "Jest późno, muszę już iść.",
+                "exampleUsedTranslation": "It's late, I need to go now."
+            },
+            {
+                "translation": "Czas wychodzić",
+                "word": "It's time to leave",
+                "exampleUsed": "Jest już 8 rano, czas wychodzić do pracy.",
+                "exampleUsedTranslation": "It's already 8 AM, it's time to leave for work."
+            },
+            {
+                "translation": "Mam nadzieję",
+                "word": "I hope so",
+                "exampleUsed": "Myślisz, że wygramy? - Mam nadzieję.",
+                "exampleUsedTranslation": "Do you think we'll win? - I hope so."
+            },
+            {
+                "translation": "Zaraz wracam",
+                "word": "I'll be right back",
+                "exampleUsed": "Poczekaj tutaj, zaraz wracam.",
+                "exampleUsedTranslation": "Wait here, I'll be right back."
+            },
+            {
+                "translation": "Zaczynajmy",
+                "word": "Let's get started",
+                "exampleUsed": "Jesteśmy wszyscy? Zaczynajmy!",
+                "exampleUsedTranslation": "Are we all here? Let's get started!"
+            },
+            {
+                "translation": "Wszystkiego najlepszego",
+                "word": "All the best",
+                "exampleUsed": "Życzę ci wszystkiego najlepszego w nowej pracy.",
+                "exampleUsedTranslation": "I wish you all the best in your new job."
+            }
+        ]
+    }
 ]

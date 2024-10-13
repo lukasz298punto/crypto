@@ -1,0 +1,262 @@
+[
+    {
+        "version": "1",
+        "words": [
+            {
+                "word": "be",
+                "translation": "was/were",
+                "wordDesc": "być"
+            },
+            {
+                "word": "have",
+                "translation": "had",
+                "wordDesc": "mieć"
+            },
+            {
+                "word": "do",
+                "translation": "did",
+                "wordDesc": "robić"
+            },
+            {
+                "word": "say",
+                "translation": "said",
+                "wordDesc": "powiedzieć"
+            },
+            {
+                "word": "go",
+                "translation": "went",
+                "wordDesc": "iść"
+            },
+            {
+                "word": "get",
+                "translation": "got",
+                "wordDesc": "dostać"
+            },
+            {
+                "word": "make",
+                "translation": "made",
+                "wordDesc": "zrobić"
+            },
+            {
+                "word": "know",
+                "translation": "knew",
+                "wordDesc": "wiedzieć"
+            },
+            {
+                "word": "think",
+                "translation": "thought",
+                "wordDesc": "myśleć"
+            },
+            {
+                "word": "take",
+                "translation": "took",
+                "wordDesc": "brać"
+            },
+            {
+                "word": "see",
+                "translation": "saw",
+                "wordDesc": "widzieć"
+            },
+            {
+                "word": "come",
+                "translation": "came",
+                "wordDesc": "przyjść"
+            },
+            {
+                "word": "want",
+                "translation": "wanted",
+                "wordDesc": "chcieć"
+            },
+            {
+                "word": "look",
+                "translation": "looked",
+                "wordDesc": "patrzeć"
+            },
+            {
+                "word": "use",
+                "translation": "used",
+                "wordDesc": "używać"
+            },
+            {
+                "word": "find",
+                "translation": "found",
+                "wordDesc": "znaleźć"
+            },
+            {
+                "word": "give",
+                "translation": "gave",
+                "wordDesc": "dać"
+            },
+            {
+                "word": "tell",
+                "translation": "told",
+                "wordDesc": "powiedzieć"
+            },
+            {
+                "word": "work",
+                "translation": "worked",
+                "wordDesc": "pracować"
+            },
+            {
+                "word": "call",
+                "translation": "called",
+                "wordDesc": "dzwonić"
+            },
+            {
+                "word": "try",
+                "translation": "tried",
+                "wordDesc": "próbować"
+            },
+            {
+                "word": "ask",
+                "translation": "asked",
+                "wordDesc": "pytać"
+            },
+            {
+                "word": "need",
+                "translation": "needed",
+                "wordDesc": "potrzebować"
+            },
+            {
+                "word": "feel",
+                "translation": "felt",
+                "wordDesc": "czuć"
+            },
+            {
+                "word": "become",
+                "translation": "became",
+                "wordDesc": "stać się"
+            },
+            {
+                "word": "leave",
+                "translation": "left",
+                "wordDesc": "opuścić"
+            },
+            {
+                "word": "put",
+                "translation": "put",
+                "wordDesc": "położyć"
+            },
+            {
+                "word": "mean",
+                "translation": "meant",
+                "wordDesc": "znaczyć"
+            },
+            {
+                "word": "keep",
+                "translation": "kept",
+                "wordDesc": "trzymać"
+            },
+            {
+                "word": "let",
+                "translation": "let",
+                "wordDesc": "pozwolić"
+            },
+            {
+                "word": "begin",
+                "translation": "began",
+                "wordDesc": "zacząć"
+            },
+            {
+                "word": "seem",
+                "translation": "seemed",
+                "wordDesc": "wydawać się"
+            },
+            {
+                "word": "help",
+                "translation": "helped",
+                "wordDesc": "pomóc"
+            },
+            {
+                "word": "talk",
+                "translation": "talked",
+                "wordDesc": "rozmawiać"
+            },
+            {
+                "word": "turn",
+                "translation": "turned",
+                "wordDesc": "skręcić"
+            },
+            {
+                "word": "start",
+                "translation": "started",
+                "wordDesc": "zacząć"
+            },
+            {
+                "word": "show",
+                "translation": "showed",
+                "wordDesc": "pokazać"
+            },
+            {
+                "word": "hear",
+                "translation": "heard",
+                "wordDesc": "słyszeć"
+            },
+            {
+                "word": "play",
+                "translation": "played",
+                "wordDesc": "grać"
+            },
+            {
+                "word": "run",
+                "translation": "ran",
+                "wordDesc": "biegać"
+            },
+            {
+                "word": "move",
+                "translation": "moved",
+                "wordDesc": "ruszać się"
+            },
+            {
+                "word": "like",
+                "translation": "liked",
+                "wordDesc": "lubić"
+            },
+            {
+                "word": "live",
+                "translation": "lived",
+                "wordDesc": "żyć"
+            },
+            {
+                "word": "believe",
+                "translation": "believed",
+                "wordDesc": "wierzyć"
+            },
+            {
+                "word": "hold",
+                "translation": "held",
+                "wordDesc": "trzymać"
+            },
+            {
+                "word": "bring",
+                "translation": "brought",
+                "wordDesc": "przynieść"
+            },
+            {
+                "word": "happen",
+                "translation": "happened",
+                "wordDesc": "stać się"
+            },
+            {
+                "word": "write",
+                "translation": "wrote",
+                "wordDesc": "pisać"
+            },
+            {
+                "word": "provide",
+                "translation": "provided",
+                "wordDesc": "zapewnić"
+            },
+            {
+                "word": "sit",
+                "translation": "sat",
+                "wordDesc": "siedzieć"
+            },
+            {
+                "word": "stand",
+                "translation": "stood",
+                "wordDesc": "stać"
+            }
+        ]
+    }
+]

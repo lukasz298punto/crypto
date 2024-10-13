@@ -58,6 +58,8 @@ export default function Flashcards() {
         return <Finish onReset={reset} />;
     }
 
+    console.log(currentWord, 'currentWord');
+
     return (
         <Container maxWidth="md">
             <Card className="p-2">
@@ -70,7 +72,14 @@ export default function Flashcards() {
                             direction="row"
                             alignItems="center"
                         >
-                            <NativeWord word={currentWord?.word} />
+                            <NativeWord
+                                word={
+                                    currentWord?.word +
+                                    (currentWord?.wordDesc
+                                        ? ` (${currentWord?.wordDesc})`
+                                        : '')
+                                }
+                            />
                             <VoiceIcon
                                 name={currentWord?.word}
                                 keyCode={KeyCode.Three}
@@ -81,7 +90,7 @@ export default function Flashcards() {
                         <Stack
                             direction="row"
                             alignItems="center"
-                            className={clsx('h-[45px]', {
+                            className={clsx('mb-2 h-[45px]', {
                                 'opacity-0': !isAnswerChecked,
                             })}
                         >
@@ -101,13 +110,12 @@ export default function Flashcards() {
                             )}
                         </Stack>
                         <Box
-                            className={clsx('mb-2', {
+                            className={clsx({
                                 'opacity-0': !isAnswerChecked,
                             })}
                         >
                             {currentWord?.exampleUsedTranslation && (
                                 <Stack
-                                    className="mt-2"
                                     direction="row"
                                     alignItems="center"
                                 >
@@ -130,15 +138,17 @@ export default function Flashcards() {
                                     />
                                 </Stack>
                             )}
-
+                        </Box>
+                        {currentWord?.exampleUsed && (
                             <Typography
+                                className="mb-2"
                                 color="text.secondary"
                                 variant="body2"
                                 align="center"
                             >
                                 {currentWord?.exampleUsed}
                             </Typography>
-                        </Box>
+                        )}
                         {!isAnswerChecked ? (
                             <KeyPressButton
                                 className="w-full"
@@ -181,6 +191,7 @@ export default function Flashcards() {
                                     onClick={() => {
                                         skip();
                                         setIsAnswerChecked(false);
+                                        nextWord();
                                     }}
                                     keyCode={KeyCode.Space}
                                 >
