@@ -1,0 +1,1 @@
+import{j as e,N as t}from"./index-DZ8svFp7.js";import{u as r}from"./useSettingsDb-C5FaGUIL.js";function u(){const{language:s,level:o}=r();return s?o?e.jsx(t,{to:"/categories"}):e.jsx(t,{to:"/levels"}):e.jsx(t,{to:"/languages"})}export{u as default};
