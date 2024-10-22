@@ -16,6 +16,7 @@ import VoiceIcon from '@/components/VoiceIcon';
 import { useTranslation } from 'react-i18next';
 import Finish from '@/components/Finish';
 import useWord from '@/hooks/useWord';
+import size from 'lodash/size';
 import { useState } from 'react';
 import clsx from 'clsx';
 
@@ -30,6 +31,7 @@ export default function Flashcards() {
         lang,
         nativeLang,
         isLoading,
+        words,
     } = useWord();
     const [isAnswerChecked, setIsAnswerChecked] = useState(false);
     const { language } = useSettingsDb();
@@ -62,7 +64,13 @@ export default function Flashcards() {
 
     return (
         <Container maxWidth="md">
-            <Card className="p-2">
+            <Card className="relative p-2">
+                <Typography
+                    className="absolute right-1 top-1"
+                    color="text.secondary"
+                >
+                    {size(words)}
+                </Typography>
                 <CardContent>
                     <Stack
                         alignItems="center"

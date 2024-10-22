@@ -3,320 +3,320 @@
         "version": "1",
         "words": [
             {
-                "translation": "do",
-                "word": "to",
+                "word": "do",
+                "translation": "to",
                 "exampleUsed": "Idę do sklepu.",
                 "exampleUsedTranslation": "I am going to the store."
             },
             {
-                "translation": "w",
-                "word": "in",
+                "word": "w",
+                "translation": "in",
                 "exampleUsed": "Książka jest w torbie.",
                 "exampleUsedTranslation": "The book is in the bag."
             },
             {
-                "translation": "na",
-                "word": "on",
+                "word": "na",
+                "translation": "on",
                 "exampleUsed": "Kubek stoi na stole.",
                 "exampleUsedTranslation": "The mug is on the table."
             },
             {
-                "translation": "przy",
-                "word": "at",
+                "word": "przy",
+                "translation": "at",
                 "exampleUsed": "Spotkamy się przy wejściu.",
                 "exampleUsedTranslation": "We will meet at the entrance."
             },
             {
-                "translation": "z",
-                "word": "with",
+                "word": "z",
+                "translation": "with",
                 "exampleUsed": "Idę z przyjacielem.",
                 "exampleUsedTranslation": "I am going with a friend."
             },
             {
-                "translation": "dla",
-                "word": "for",
+                "word": "dla",
+                "translation": "for",
                 "exampleUsed": "To jest prezent dla ciebie.",
                 "exampleUsedTranslation": "This is a gift for you."
             },
             {
-                "translation": "od",
-                "word": "from",
+                "word": "od",
+                "translation": "from",
                 "exampleUsed": "Dostałem list od mamy.",
                 "exampleUsedTranslation": "I got a letter from my mom."
             },
             {
-                "translation": "przez",
-                "word": "by",
+                "word": "przez",
+                "translation": "by",
                 "exampleUsed": "Książka napisana przez znanego autora.",
                 "exampleUsedTranslation": "A book written by a famous author."
             },
             {
-                "translation": "o",
-                "word": "about",
+                "word": "o",
+                "translation": "about",
                 "exampleUsed": "Czy wiesz coś o tym?",
                 "exampleUsedTranslation": "Do you know anything about this?"
             },
             {
-                "translation": "między",
-                "word": "between",
+                "word": "między",
+                "translation": "between",
                 "exampleUsed": "Stań między nimi.",
                 "exampleUsedTranslation": "Stand between them."
             },
             {
-                "translation": "po",
-                "word": "after",
+                "word": "po",
+                "translation": "after",
                 "exampleUsed": "Spotkajmy się po pracy.",
                 "exampleUsedTranslation": "Let's meet after work."
             },
             {
-                "translation": "przed",
-                "word": "before",
+                "word": "przed",
+                "translation": "before",
                 "exampleUsed": "Przed wyjściem sprawdź pogodę.",
                 "exampleUsedTranslation": "Check the weather before leaving."
             },
             {
-                "translation": "nad",
-                "word": "above",
+                "word": "nad",
+                "translation": "above",
                 "exampleUsed": "Obraz wisi nad łóżkiem.",
                 "exampleUsedTranslation": "The picture hangs above the bed."
             },
             {
-                "translation": "pod",
-                "word": "under",
+                "word": "pod",
+                "translation": "under",
                 "exampleUsed": "Pies schował się pod stołem.",
                 "exampleUsedTranslation": "The dog hid under the table."
             },
             {
-                "translation": "obok",
-                "word": "beside",
+                "word": "obok",
+                "translation": "beside",
                 "exampleUsed": "Usiądź obok mnie.",
                 "exampleUsedTranslation": "Sit beside me."
             },
             {
-                "translation": "w pobliżu",
-                "word": "near",
+                "word": "w pobliżu",
+                "translation": "near",
                 "exampleUsed": "Mieszkam w pobliżu parku.",
                 "exampleUsedTranslation": "I live near the park."
             },
             {
-                "translation": "wśród",
-                "word": "among",
+                "word": "wśród",
+                "translation": "among",
                 "exampleUsed": "Znalazł ją wśród tłumu.",
                 "exampleUsedTranslation": "He found her among the crowd."
             },
             {
-                "translation": "poza",
-                "word": "beyond",
+                "word": "poza",
+                "translation": "beyond",
                 "exampleUsed": "To jest poza moim zasięgiem.",
                 "exampleUsedTranslation": "This is beyond my reach."
             },
             {
-                "translation": "wzdłuż",
-                "word": "along",
+                "word": "wzdłuż",
+                "translation": "along",
                 "exampleUsed": "Spacerowaliśmy wzdłuż plaży.",
                 "exampleUsedTranslation": "We walked along the beach."
             },
             {
-                "translation": "przez",
-                "word": "through",
+                "word": "przez",
+                "translation": "through",
                 "exampleUsed": "Przeszliśmy przez las.",
                 "exampleUsedTranslation": "We went through the forest."
             },
             {
-                "translation": "podczas",
-                "word": "during",
+                "word": "podczas",
+                "translation": "during",
                 "exampleUsed": "Nie rozmawiaj podczas filmu.",
                 "exampleUsedTranslation": "Don't talk during the movie."
             },
             {
-                "translation": "w kierunku",
-                "word": "towards",
+                "word": "w kierunku",
+                "translation": "towards",
                 "exampleUsed": "Idź w kierunku centrum.",
                 "exampleUsedTranslation": "Go towards the city center."
             },
             {
-                "translation": "do",
-                "word": "into",
+                "word": "do",
+                "translation": "into",
                 "exampleUsed": "Wszedł do pokoju.",
                 "exampleUsedTranslation": "He walked into the room."
             },
             {
-                "translation": "na zewnątrz",
-                "word": "out of",
+                "word": "na zewnątrz",
+                "translation": "out of",
                 "exampleUsed": "Wyszedł na zewnątrz domu.",
                 "exampleUsedTranslation": "He went out of the house."
             },
             {
-                "translation": "wbrew",
-                "word": "against",
+                "word": "wbrew",
+                "translation": "against",
                 "exampleUsed": "To jest wbrew zasadom.",
                 "exampleUsedTranslation": "It's against the rules."
             },
             {
-                "translation": "wokół",
-                "word": "around",
+                "word": "wokół",
+                "translation": "around",
                 "exampleUsed": "Spacerowaliśmy wokół jeziora.",
                 "exampleUsedTranslation": "We walked around the lake."
             },
             {
-                "translation": "w",
-                "word": "within",
+                "word": "w",
+                "translation": "within",
                 "exampleUsed": "Zrób to w ciągu godziny.",
                 "exampleUsedTranslation": "Do it within an hour."
             },
             {
-                "translation": "bez",
-                "word": "without",
+                "word": "bez",
+                "translation": "without",
                 "exampleUsed": "Nie mogę żyć bez ciebie.",
                 "exampleUsedTranslation": "I can't live without you."
             },
             {
-                "translation": "pomimo",
-                "word": "despite",
+                "word": "pomimo",
+                "translation": "despite",
                 "exampleUsed": "Poszedł na spacer pomimo deszczu.",
                 "exampleUsedTranslation": "He went for a walk despite the rain."
             },
             {
-                "translation": "według",
-                "word": "according to",
+                "word": "według",
+                "translation": "according to",
                 "exampleUsed": "Według prognozy będzie padać.",
                 "exampleUsedTranslation": "According to the forecast, it will rain."
             },
             {
-                "translation": "z powodu",
-                "word": "because of",
+                "word": "z powodu",
+                "translation": "because of",
                 "exampleUsed": "Spóźniłem się z powodu korków.",
                 "exampleUsedTranslation": "I was late because of traffic."
             },
             {
-                "translation": "wraz z",
-                "word": "along with",
+                "word": "wraz z",
+                "translation": "along with",
                 "exampleUsed": "Ona przyszła wraz z bratem.",
                 "exampleUsedTranslation": "She came along with her brother."
             },
             {
-                "translation": "zamiast",
-                "word": "instead of",
+                "word": "zamiast",
+                "translation": "instead of",
                 "exampleUsed": "Zjedliśmy rybę zamiast mięsa.",
                 "exampleUsedTranslation": "We ate fish instead of meat."
             },
             {
-                "translation": "poza",
-                "word": "besides",
+                "word": "poza",
+                "translation": "besides",
                 "exampleUsed": "Poza tobą nikt nie przyszedł.",
                 "exampleUsedTranslation": "Besides you, nobody came."
             },
             {
-                "translation": "do",
-                "word": "until",
+                "word": "do",
+                "translation": "until",
                 "exampleUsed": "Czekaj tu do mojego powrotu.",
                 "exampleUsedTranslation": "Wait here until I return."
             },
             {
-                "translation": "z wyjątkiem",
-                "word": "except",
+                "word": "z wyjątkiem",
+                "translation": "except",
                 "exampleUsed": "Wszyscy przyszli z wyjątkiem Jana.",
                 "exampleUsedTranslation": "Everyone came except John."
             },
             {
-                "translation": "w celu",
-                "word": "for the purpose of",
+                "word": "w celu",
+                "translation": "for the purpose of",
                 "exampleUsed": "Spotkaliśmy się w celu omówienia planu.",
                 "exampleUsedTranslation": "We met for the purpose of discussing the plan."
             },
             {
-                "translation": "z powodu",
-                "word": "due to",
+                "word": "z powodu",
+                "translation": "due to",
                 "exampleUsed": "Lot został odwołany z powodu burzy.",
                 "exampleUsedTranslation": "The flight was canceled due to a storm."
             },
             {
-                "translation": "pomimo",
-                "word": "in spite of",
+                "word": "pomimo",
+                "translation": "in spite of",
                 "exampleUsed": "Poszedł biegać pomimo kontuzji.",
                 "exampleUsedTranslation": "He went running in spite of his injury."
             },
             {
-                "translation": "w stronę",
-                "word": "toward",
+                "word": "w stronę",
+                "translation": "toward",
                 "exampleUsed": "Idź w stronę mostu.",
                 "exampleUsedTranslation": "Walk toward the bridge."
             },
             {
-                "translation": "przez",
-                "word": "across",
+                "word": "przez",
+                "translation": "across",
                 "exampleUsed": "Przeszliśmy przez ulicę.",
                 "exampleUsedTranslation": "We walked across the street."
             },
             {
-                "translation": "w dół",
-                "word": "down",
+                "word": "w dół",
+                "translation": "down",
                 "exampleUsed": "Zbiegł w dół schodów.",
                 "exampleUsedTranslation": "He ran down the stairs."
             },
             {
-                "translation": "w górę",
-                "word": "up",
+                "word": "w górę",
+                "translation": "up",
                 "exampleUsed": "Weszliśmy w górę wzgórza.",
                 "exampleUsedTranslation": "We walked up the hill."
             },
             {
-                "translation": "wewnątrz",
-                "word": "inside",
+                "word": "wewnątrz",
+                "translation": "inside",
                 "exampleUsed": "Czekałem wewnątrz budynku.",
                 "exampleUsedTranslation": "I waited inside the building."
             },
             {
-                "translation": "na zewnątrz",
-                "word": "outside",
+                "word": "na zewnątrz",
+                "translation": "outside",
                 "exampleUsed": "Spotkamy się na zewnątrz kina.",
                 "exampleUsedTranslation": "We'll meet outside the cinema."
             },
             {
-                "translation": "obok",
-                "word": "next to",
+                "word": "obok",
+                "translation": "next to",
                 "exampleUsed": "Usiądź obok mnie.",
                 "exampleUsedTranslation": "Sit next to me."
             },
             {
-                "translation": "w odniesieniu do",
-                "word": "regarding",
+                "word": "w odniesieniu do",
+                "translation": "regarding",
                 "exampleUsed": "Mam pytanie w odniesieniu do twojej oferty.",
                 "exampleUsedTranslation": "I have a question regarding your offer."
             },
             {
-                "translation": "w poprzek",
-                "word": "across",
+                "word": "w poprzek",
+                "translation": "across",
                 "exampleUsed": "Łódź płynęła w poprzek jeziora.",
                 "exampleUsedTranslation": "The boat sailed across the lake."
             },
             {
-                "translation": "wokół",
-                "word": "round",
+                "word": "wokół",
+                "translation": "round",
                 "exampleUsed": "Usiedliśmy wokół stołu.",
                 "exampleUsedTranslation": "We sat round the table."
             },
             {
-                "translation": "w kierunku",
-                "word": "towards",
+                "word": "w kierunku",
+                "translation": "towards",
                 "exampleUsed": "Popatrzył w kierunku okna.",
                 "exampleUsedTranslation": "He looked towards the window."
             },
             {
-                "translation": "w związku z",
-                "word": "in relation to",
+                "word": "w związku z",
+                "translation": "in relation to",
                 "exampleUsed": "Pytam w związku z twoją reklamą.",
                 "exampleUsedTranslation": "I'm asking in relation to your advertisement."
             },
             {
-                "translation": "z",
-                "word": "off",
+                "word": "z",
+                "translation": "off",
                 "exampleUsed": "Spadł z konia.",
                 "exampleUsedTranslation": "He fell off the horse."
             },
             {
-                "translation": "pomimo",
-                "word": "notwithstanding",
+                "word": "pomimo",
+                "translation": "notwithstanding",
                 "exampleUsed": "Pomimo problemów, kontynuowali pracę.",
                 "exampleUsedTranslation": "Notwithstanding the issues, they continued working."
             }

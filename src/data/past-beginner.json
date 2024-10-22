@@ -5,257 +5,506 @@
             {
                 "word": "be",
                 "translation": "was/were",
-                "wordDesc": "być"
-            },
-            {
-                "word": "have",
-                "translation": "had",
-                "wordDesc": "mieć"
-            },
-            {
-                "word": "do",
-                "translation": "did",
-                "wordDesc": "robić"
-            },
-            {
-                "word": "say",
-                "translation": "said",
-                "wordDesc": "powiedzieć"
-            },
-            {
-                "word": "go",
-                "translation": "went",
-                "wordDesc": "iść"
-            },
-            {
-                "word": "get",
-                "translation": "got",
-                "wordDesc": "dostać"
-            },
-            {
-                "word": "make",
-                "translation": "made",
-                "wordDesc": "zrobić"
-            },
-            {
-                "word": "know",
-                "translation": "knew",
-                "wordDesc": "wiedzieć"
-            },
-            {
-                "word": "think",
-                "translation": "thought",
-                "wordDesc": "myśleć"
-            },
-            {
-                "word": "take",
-                "translation": "took",
-                "wordDesc": "brać"
-            },
-            {
-                "word": "see",
-                "translation": "saw",
-                "wordDesc": "widzieć"
-            },
-            {
-                "word": "come",
-                "translation": "came",
-                "wordDesc": "przyjść"
-            },
-            {
-                "word": "want",
-                "translation": "wanted",
-                "wordDesc": "chcieć"
-            },
-            {
-                "word": "look",
-                "translation": "looked",
-                "wordDesc": "patrzeć"
-            },
-            {
-                "word": "use",
-                "translation": "used",
-                "wordDesc": "używać"
-            },
-            {
-                "word": "find",
-                "translation": "found",
-                "wordDesc": "znaleźć"
-            },
-            {
-                "word": "give",
-                "translation": "gave",
-                "wordDesc": "dać"
-            },
-            {
-                "word": "tell",
-                "translation": "told",
-                "wordDesc": "powiedzieć"
-            },
-            {
-                "word": "work",
-                "translation": "worked",
-                "wordDesc": "pracować"
-            },
-            {
-                "word": "call",
-                "translation": "called",
-                "wordDesc": "dzwonić"
-            },
-            {
-                "word": "try",
-                "translation": "tried",
-                "wordDesc": "próbować"
-            },
-            {
-                "word": "ask",
-                "translation": "asked",
-                "wordDesc": "pytać"
-            },
-            {
-                "word": "need",
-                "translation": "needed",
-                "wordDesc": "potrzebować"
-            },
-            {
-                "word": "feel",
-                "translation": "felt",
-                "wordDesc": "czuć"
+                "wordDesc": "być",
+                "exampleUsed": "Wczoraj byłem w parku.",
+                "exampleUsedTranslation": "Yesterday, I was in the park."
             },
             {
                 "word": "become",
                 "translation": "became",
-                "wordDesc": "stać się"
-            },
-            {
-                "word": "leave",
-                "translation": "left",
-                "wordDesc": "opuścić"
-            },
-            {
-                "word": "put",
-                "translation": "put",
-                "wordDesc": "położyć"
-            },
-            {
-                "word": "mean",
-                "translation": "meant",
-                "wordDesc": "znaczyć"
-            },
-            {
-                "word": "keep",
-                "translation": "kept",
-                "wordDesc": "trzymać"
-            },
-            {
-                "word": "let",
-                "translation": "let",
-                "wordDesc": "pozwolić"
+                "wordDesc": "stać się",
+                "exampleUsed": "Stałem się lepszy w piłce nożnej.",
+                "exampleUsedTranslation": "I became better at football."
             },
             {
                 "word": "begin",
                 "translation": "began",
-                "wordDesc": "zacząć"
+                "wordDesc": "zacząć",
+                "exampleUsed": "Zacząłem nowy projekt.",
+                "exampleUsedTranslation": "I began a new project."
             },
             {
-                "word": "seem",
-                "translation": "seemed",
-                "wordDesc": "wydawać się"
-            },
-            {
-                "word": "help",
-                "translation": "helped",
-                "wordDesc": "pomóc"
-            },
-            {
-                "word": "talk",
-                "translation": "talked",
-                "wordDesc": "rozmawiać"
-            },
-            {
-                "word": "turn",
-                "translation": "turned",
-                "wordDesc": "skręcić"
-            },
-            {
-                "word": "start",
-                "translation": "started",
-                "wordDesc": "zacząć"
-            },
-            {
-                "word": "show",
-                "translation": "showed",
-                "wordDesc": "pokazać"
-            },
-            {
-                "word": "hear",
-                "translation": "heard",
-                "wordDesc": "słyszeć"
-            },
-            {
-                "word": "play",
-                "translation": "played",
-                "wordDesc": "grać"
-            },
-            {
-                "word": "run",
-                "translation": "ran",
-                "wordDesc": "biegać"
-            },
-            {
-                "word": "move",
-                "translation": "moved",
-                "wordDesc": "ruszać się"
-            },
-            {
-                "word": "like",
-                "translation": "liked",
-                "wordDesc": "lubić"
-            },
-            {
-                "word": "live",
-                "translation": "lived",
-                "wordDesc": "żyć"
-            },
-            {
-                "word": "believe",
-                "translation": "believed",
-                "wordDesc": "wierzyć"
-            },
-            {
-                "word": "hold",
-                "translation": "held",
-                "wordDesc": "trzymać"
+                "word": "break",
+                "translation": "broke",
+                "wordDesc": "złamać",
+                "exampleUsed": "Złamałem nogę na nartach.",
+                "exampleUsedTranslation": "I broke my leg while skiing."
             },
             {
                 "word": "bring",
                 "translation": "brought",
-                "wordDesc": "przynieść"
+                "wordDesc": "przynieść",
+                "exampleUsed": "Przyniosłem ci kawę.",
+                "exampleUsedTranslation": "I brought you coffee."
             },
             {
-                "word": "happen",
-                "translation": "happened",
-                "wordDesc": "stać się"
+                "word": "build",
+                "translation": "built",
+                "wordDesc": "budować",
+                "exampleUsed": "Zbudowaliśmy dom w zeszłym roku.",
+                "exampleUsedTranslation": "We built a house last year."
             },
             {
-                "word": "write",
-                "translation": "wrote",
-                "wordDesc": "pisać"
+                "word": "buy",
+                "translation": "bought",
+                "wordDesc": "kupić",
+                "exampleUsed": "Kupiłem nowy telefon.",
+                "exampleUsedTranslation": "I bought a new phone."
             },
             {
-                "word": "provide",
-                "translation": "provided",
-                "wordDesc": "zapewnić"
+                "word": "catch",
+                "translation": "caught",
+                "wordDesc": "złapać",
+                "exampleUsed": "Złapałem piłkę podczas gry.",
+                "exampleUsedTranslation": "I caught the ball during the game."
+            },
+            {
+                "word": "choose",
+                "translation": "chose",
+                "wordDesc": "wybrać",
+                "exampleUsed": "Wybrałem czerwony samochód.",
+                "exampleUsedTranslation": "I chose the red car."
+            },
+            {
+                "word": "come",
+                "translation": "came",
+                "wordDesc": "przyjść",
+                "exampleUsed": "Przyszedłem na czas.",
+                "exampleUsedTranslation": "I came on time."
+            },
+            {
+                "word": "cost",
+                "translation": "cost",
+                "wordDesc": "kosztować",
+                "exampleUsed": "To kosztowało fortunę.",
+                "exampleUsedTranslation": "It cost a fortune."
+            },
+            {
+                "word": "cut",
+                "translation": "cut",
+                "wordDesc": "ciąć",
+                "exampleUsed": "Przeciąłem papier nożyczkami.",
+                "exampleUsedTranslation": "I cut the paper with scissors."
+            },
+            {
+                "word": "do",
+                "translation": "did",
+                "wordDesc": "robić",
+                "exampleUsed": "Zrobiłem zadanie domowe.",
+                "exampleUsedTranslation": "I did my homework."
+            },
+            {
+                "word": "draw",
+                "translation": "drew",
+                "wordDesc": "rysować",
+                "exampleUsed": "Narysowałem obrazek.",
+                "exampleUsedTranslation": "I drew a picture."
+            },
+            {
+                "word": "drink",
+                "translation": "drank",
+                "wordDesc": "pić",
+                "exampleUsed": "Wypiłem szklankę wody.",
+                "exampleUsedTranslation": "I drank a glass of water."
+            },
+            {
+                "word": "drive",
+                "translation": "drove",
+                "wordDesc": "prowadzić",
+                "exampleUsed": "Prowadziłem samochód do pracy.",
+                "exampleUsedTranslation": "I drove to work."
+            },
+            {
+                "word": "eat",
+                "translation": "ate",
+                "wordDesc": "jeść",
+                "exampleUsed": "Zjadłem śniadanie o ósmej.",
+                "exampleUsedTranslation": "I ate breakfast at eight."
+            },
+            {
+                "word": "fall",
+                "translation": "fell",
+                "wordDesc": "upaść",
+                "exampleUsed": "Upadłem na podłogę.",
+                "exampleUsedTranslation": "I fell on the floor."
+            },
+            {
+                "word": "feel",
+                "translation": "felt",
+                "wordDesc": "czuć",
+                "exampleUsed": "Czułem się zmęczony po pracy.",
+                "exampleUsedTranslation": "I felt tired after work."
+            },
+            {
+                "word": "find",
+                "translation": "found",
+                "wordDesc": "znaleźć",
+                "exampleUsed": "Znalazłem klucze w torbie.",
+                "exampleUsedTranslation": "I found the keys in the bag."
+            },
+            {
+                "word": "fly",
+                "translation": "flew",
+                "wordDesc": "lecieć",
+                "exampleUsed": "Leciałem samolotem do Londynu.",
+                "exampleUsedTranslation": "I flew to London."
+            },
+            {
+                "word": "forget",
+                "translation": "forgot",
+                "wordDesc": "zapomnieć",
+                "exampleUsed": "Zapomniałem o naszym spotkaniu.",
+                "exampleUsedTranslation": "I forgot about our meeting."
+            },
+            {
+                "word": "forgive",
+                "translation": "forgave",
+                "wordDesc": "wybaczyć",
+                "exampleUsed": "Wybaczyłem mu za spóźnienie.",
+                "exampleUsedTranslation": "I forgave him for being late."
+            },
+            {
+                "word": "get",
+                "translation": "got",
+                "wordDesc": "dostać",
+                "exampleUsed": "Dostałem list od przyjaciela.",
+                "exampleUsedTranslation": "I got a letter from a friend."
+            },
+            {
+                "word": "give",
+                "translation": "gave",
+                "wordDesc": "dać",
+                "exampleUsed": "Dałem jej prezent na urodziny.",
+                "exampleUsedTranslation": "I gave her a birthday present."
+            },
+            {
+                "word": "go",
+                "translation": "went",
+                "wordDesc": "iść",
+                "exampleUsed": "Poszedłem do kina wczoraj.",
+                "exampleUsedTranslation": "I went to the cinema yesterday."
+            },
+            {
+                "word": "grow",
+                "translation": "grew",
+                "wordDesc": "rosnąć",
+                "exampleUsed": "Rośliny urosły w ogrodzie.",
+                "exampleUsedTranslation": "The plants grew in the garden."
+            },
+            {
+                "word": "have",
+                "translation": "had",
+                "wordDesc": "mieć",
+                "exampleUsed": "Miałem spotkanie wczoraj.",
+                "exampleUsedTranslation": "I had a meeting yesterday."
+            },
+            {
+                "word": "hear",
+                "translation": "heard",
+                "wordDesc": "słyszeć",
+                "exampleUsed": "Słyszałem hałas w nocy.",
+                "exampleUsedTranslation": "I heard a noise at night."
+            },
+            {
+                "word": "hide",
+                "translation": "hid",
+                "wordDesc": "ukrywać",
+                "exampleUsed": "Ukryłem prezent pod łóżkiem.",
+                "exampleUsedTranslation": "I hid the present under the bed."
+            },
+            {
+                "word": "hold",
+                "translation": "held",
+                "wordDesc": "trzymać",
+                "exampleUsed": "Trzymałem książkę w ręce.",
+                "exampleUsedTranslation": "I held the book in my hand."
+            },
+            {
+                "word": "hurt",
+                "translation": "hurt",
+                "wordDesc": "zranić",
+                "exampleUsed": "Zraniłem się w kolano podczas biegu.",
+                "exampleUsedTranslation": "I hurt my knee while running."
+            },
+            {
+                "word": "keep",
+                "translation": "kept",
+                "wordDesc": "trzymać",
+                "exampleUsed": "Trzymałem sekret przez lata.",
+                "exampleUsedTranslation": "I kept the secret for years."
+            },
+            {
+                "word": "know",
+                "translation": "knew",
+                "wordDesc": "wiedzieć",
+                "exampleUsed": "Wiedziałem o tym wcześniej.",
+                "exampleUsedTranslation": "I knew about it earlier."
+            },
+            {
+                "word": "lead",
+                "translation": "led",
+                "wordDesc": "prowadzić",
+                "exampleUsed": "Prowadziłem grupę przez las.",
+                "exampleUsedTranslation": "I led the group through the forest."
+            },
+            {
+                "word": "leave",
+                "translation": "left",
+                "wordDesc": "opuścić",
+                "exampleUsed": "Opuściłem dom wcześnie rano.",
+                "exampleUsedTranslation": "I left the house early in the morning."
+            },
+            {
+                "word": "lend",
+                "translation": "lent",
+                "wordDesc": "pożyczyć",
+                "exampleUsed": "Pożyczyłem mu książkę.",
+                "exampleUsedTranslation": "I lent him a book."
+            },
+            {
+                "word": "let",
+                "translation": "let",
+                "wordDesc": "pozwolić",
+                "exampleUsed": "Pozwoliłem mu odejść.",
+                "exampleUsedTranslation": "I let him leave."
+            },
+            {
+                "word": "lose",
+                "translation": "lost",
+                "wordDesc": "zgubić",
+                "exampleUsed": "Zgubiłem klucze do samochodu.",
+                "exampleUsedTranslation": "I lost my car keys."
+            },
+            {
+                "word": "make",
+                "translation": "made",
+                "wordDesc": "robić",
+                "exampleUsed": "Zrobiłem kanapkę na lunch.",
+                "exampleUsedTranslation": "I made a sandwich for lunch."
+            },
+            {
+                "word": "mean",
+                "translation": "meant",
+                "wordDesc": "oznaczać",
+                "exampleUsed": "To oznaczało wiele dla mnie.",
+                "exampleUsedTranslation": "It meant a lot to me."
+            },
+            {
+                "word": "meet",
+                "translation": "met",
+                "wordDesc": "spotkać",
+                "exampleUsed": "Spotkałem się z przyjacielem wczoraj.",
+                "exampleUsedTranslation": "I met a friend yesterday."
+            },
+            {
+                "word": "pay",
+                "translation": "paid",
+                "wordDesc": "płacić",
+                "exampleUsed": "Zapłaciłem za obiad.",
+                "exampleUsedTranslation": "I paid for the lunch."
+            },
+            {
+                "word": "put",
+                "translation": "put",
+                "wordDesc": "położyć",
+                "exampleUsed": "Położyłem książkę na stole.",
+                "exampleUsedTranslation": "I put the book on the table."
+            },
+            {
+                "word": "read",
+                "translation": "read",
+                "wordDesc": "czytać",
+                "exampleUsed": "Przeczytałem książkę w jeden dzień.",
+                "exampleUsedTranslation": "I read the book in one day."
+            },
+            {
+                "word": "ride",
+                "translation": "rode",
+                "wordDesc": "jeździć",
+                "exampleUsed": "Jeździłem na rowerze po parku.",
+                "exampleUsedTranslation": "I rode my bike in the park."
+            },
+            {
+                "word": "ring",
+                "translation": "rang",
+                "wordDesc": "dzwonić",
+                "exampleUsed": "Telefon zadzwonił w nocy.",
+                "exampleUsedTranslation": "The phone rang at night."
+            },
+            {
+                "word": "run",
+                "translation": "ran",
+                "wordDesc": "biec",
+                "exampleUsed": "Biegłem maraton w zeszłym miesiącu.",
+                "exampleUsedTranslation": "I ran a marathon last month."
+            },
+            {
+                "word": "say",
+                "translation": "said",
+                "wordDesc": "powiedzieć",
+                "exampleUsed": "Powiedziałem mu prawdę.",
+                "exampleUsedTranslation": "I said the truth to him."
+            },
+            {
+                "word": "see",
+                "translation": "saw",
+                "wordDesc": "widzieć",
+                "exampleUsed": "Widziałem film w kinie.",
+                "exampleUsedTranslation": "I saw a movie at the cinema."
+            },
+            {
+                "word": "sell",
+                "translation": "sold",
+                "wordDesc": "sprzedać",
+                "exampleUsed": "Sprzedałem samochód w zeszłym tygodniu.",
+                "exampleUsedTranslation": "I sold my car last week."
+            },
+            {
+                "word": "send",
+                "translation": "sent",
+                "wordDesc": "wysłać",
+                "exampleUsed": "Wysłałem ci e-maila wczoraj.",
+                "exampleUsedTranslation": "I sent you an email yesterday."
+            },
+            {
+                "word": "show",
+                "translation": "showed",
+                "wordDesc": "pokazać",
+                "exampleUsed": "Pokazałem im zdjęcia z wakacji.",
+                "exampleUsedTranslation": "I showed them the vacation photos."
+            },
+            {
+                "word": "shut",
+                "translation": "shut",
+                "wordDesc": "zamknąć",
+                "exampleUsed": "Zamknąłem drzwi za sobą.",
+                "exampleUsedTranslation": "I shut the door behind me."
+            },
+            {
+                "word": "sing",
+                "translation": "sang",
+                "wordDesc": "śpiewać",
+                "exampleUsed": "Zaśpiewałem moją ulubioną piosenkę.",
+                "exampleUsedTranslation": "I sang my favorite song."
             },
             {
                 "word": "sit",
                 "translation": "sat",
-                "wordDesc": "siedzieć"
+                "wordDesc": "siedzieć",
+                "exampleUsed": "Usiadłem przy stole.",
+                "exampleUsedTranslation": "I sat at the table."
+            },
+            {
+                "word": "sleep",
+                "translation": "slept",
+                "wordDesc": "spać",
+                "exampleUsed": "Spałem osiem godzin.",
+                "exampleUsedTranslation": "I slept for eight hours."
+            },
+            {
+                "word": "speak",
+                "translation": "spoke",
+                "wordDesc": "mówić",
+                "exampleUsed": "Rozmawiałem z nim o problemie.",
+                "exampleUsedTranslation": "I spoke to him about the issue."
+            },
+            {
+                "word": "spend",
+                "translation": "spent",
+                "wordDesc": "wydawać",
+                "exampleUsed": "Wydałem dużo pieniędzy na zakupy.",
+                "exampleUsedTranslation": "I spent a lot of money on shopping."
             },
             {
                 "word": "stand",
                 "translation": "stood",
-                "wordDesc": "stać"
+                "wordDesc": "stać",
+                "exampleUsed": "Stałem przed drzwiami przez godzinę.",
+                "exampleUsedTranslation": "I stood in front of the door for an hour."
+            },
+            {
+                "word": "steal",
+                "translation": "stole",
+                "wordDesc": "ukraść",
+                "exampleUsed": "Ktoś ukradł mój rower.",
+                "exampleUsedTranslation": "Someone stole my bike."
+            },
+            {
+                "word": "swim",
+                "translation": "swam",
+                "wordDesc": "pływać",
+                "exampleUsed": "Pływałem w jeziorze latem.",
+                "exampleUsedTranslation": "I swam in the lake during the summer."
+            },
+            {
+                "word": "take",
+                "translation": "took",
+                "wordDesc": "brać",
+                "exampleUsed": "Wziąłem parasol, bo padało.",
+                "exampleUsedTranslation": "I took an umbrella because it was raining."
+            },
+            {
+                "word": "teach",
+                "translation": "taught",
+                "wordDesc": "uczyć",
+                "exampleUsed": "Nauczyłem się nowego języka.",
+                "exampleUsedTranslation": "I taught a new language."
+            },
+            {
+                "word": "tell",
+                "translation": "told",
+                "wordDesc": "powiedzieć",
+                "exampleUsed": "Powiedziałem mu o tym wczoraj.",
+                "exampleUsedTranslation": "I told him about it yesterday."
+            },
+            {
+                "word": "think",
+                "translation": "thought",
+                "wordDesc": "myśleć",
+                "exampleUsed": "Pomyślałem, że to dobry pomysł.",
+                "exampleUsedTranslation": "I thought it was a good idea."
+            },
+            {
+                "word": "throw",
+                "translation": "threw",
+                "wordDesc": "rzucać",
+                "exampleUsed": "Rzuciłem piłkę do kosza.",
+                "exampleUsedTranslation": "I threw the ball into the basket."
+            },
+            {
+                "word": "understand",
+                "translation": "understood",
+                "wordDesc": "rozumieć",
+                "exampleUsed": "Zrozumiałem wszystko, co powiedział.",
+                "exampleUsedTranslation": "I understood everything he said."
+            },
+            {
+                "word": "wake",
+                "translation": "woke",
+                "wordDesc": "obudzić",
+                "exampleUsed": "Obudziłem się wcześnie rano.",
+                "exampleUsedTranslation": "I woke up early in the morning."
+            },
+            {
+                "word": "wear",
+                "translation": "wore",
+                "wordDesc": "nosić",
+                "exampleUsed": "Noszę tę kurtkę codziennie.",
+                "exampleUsedTranslation": "I wore this jacket every day."
+            },
+            {
+                "word": "win",
+                "translation": "won",
+                "wordDesc": "wygrać",
+                "exampleUsed": "Wygrałem mecz wczoraj.",
+                "exampleUsedTranslation": "I won the match yesterday."
+            },
+            {
+                "word": "write",
+                "translation": "wrote",
+                "wordDesc": "pisać",
+                "exampleUsed": "Napisałem list do przyjaciela.",
+                "exampleUsedTranslation": "I wrote a letter to a friend."
             }
         ]
     }

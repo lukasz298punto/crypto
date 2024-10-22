@@ -3,320 +3,320 @@
         "version": "1",
         "words": [
             {
-                "translation": "ja",
-                "word": "I",
+                "word": "ja",
+                "translation": "I",
                 "exampleUsed": "Ja lubię kawę.",
                 "exampleUsedTranslation": "I like coffee."
             },
             {
-                "translation": "ty",
-                "word": "you",
+                "word": "ty",
+                "translation": "you",
                 "exampleUsed": "Ty jesteś moim przyjacielem.",
                 "exampleUsedTranslation": "You are my friend."
             },
             {
-                "translation": "on",
-                "word": "he",
+                "word": "on",
+                "translation": "he",
                 "exampleUsed": "On gra w piłkę nożną.",
                 "exampleUsedTranslation": "He plays football."
             },
             {
-                "translation": "ona",
-                "word": "she",
+                "word": "ona",
+                "translation": "she",
                 "exampleUsed": "Ona lubi muzykę.",
                 "exampleUsedTranslation": "She likes music."
             },
             {
-                "translation": "ono",
-                "word": "it",
+                "word": "ono",
+                "translation": "it",
                 "exampleUsed": "To jest nowe.",
                 "exampleUsedTranslation": "It is new."
             },
             {
-                "translation": "my",
-                "word": "we",
+                "word": "my",
+                "translation": "we",
                 "exampleUsed": "My idziemy do kina.",
                 "exampleUsedTranslation": "We are going to the cinema."
             },
             {
-                "translation": "wy",
-                "word": "you (plural)",
+                "word": "wy",
+                "translation": "you (plural)",
                 "exampleUsed": "Wy jesteście studentami.",
                 "exampleUsedTranslation": "You are students."
             },
             {
-                "translation": "oni",
-                "word": "they (masculine)",
+                "word": "oni",
+                "translation": "they (masculine)",
                 "exampleUsed": "Oni grają w koszykówkę.",
                 "exampleUsedTranslation": "They play basketball."
             },
             {
-                "translation": "one",
-                "word": "they (feminine/neuter)",
+                "word": "one",
+                "translation": "they (feminine/neuter)",
                 "exampleUsed": "One są nauczycielkami.",
                 "exampleUsedTranslation": "They are teachers."
             },
             {
-                "translation": "mnie",
-                "word": "me",
+                "word": "mnie",
+                "translation": "me",
                 "exampleUsed": "Ona widzi mnie.",
                 "exampleUsedTranslation": "She sees me."
             },
             {
-                "translation": "ciebie",
-                "word": "you",
+                "word": "ciebie",
+                "translation": "you",
                 "exampleUsed": "Ja kocham ciebie.",
                 "exampleUsedTranslation": "I love you."
             },
             {
-                "translation": "jego",
-                "word": "him",
+                "word": "jego",
+                "translation": "him",
                 "exampleUsed": "Ona pomaga jego.",
                 "exampleUsedTranslation": "She helps him."
             },
             {
-                "translation": "ją",
-                "word": "her",
+                "word": "ją",
+                "translation": "her",
                 "exampleUsed": "On zna ją dobrze.",
                 "exampleUsedTranslation": "He knows her well."
             },
             {
-                "translation": "nas",
-                "word": "us",
+                "word": "nas",
+                "translation": "us",
                 "exampleUsed": "Zaprosili nas na przyjęcie.",
                 "exampleUsedTranslation": "They invited us to the party."
             },
             {
-                "translation": "was",
-                "word": "you (plural)",
+                "word": "was",
+                "translation": "you (plural)",
                 "exampleUsed": "Czy mogę was prosić o pomoc?",
                 "exampleUsedTranslation": "Can I ask you for help?"
             },
             {
-                "translation": "ich",
-                "word": "them",
+                "word": "ich",
+                "translation": "them",
                 "exampleUsed": "Widzę ich w parku.",
                 "exampleUsedTranslation": "I see them in the park."
             },
             {
-                "translation": "mój",
-                "word": "my",
+                "word": "mój",
+                "translation": "my",
                 "exampleUsed": "To jest mój samochód.",
                 "exampleUsedTranslation": "This is my car."
             },
             {
-                "translation": "twój",
-                "word": "your",
+                "word": "twój",
+                "translation": "your",
                 "exampleUsed": "Gdzie jest twój dom?",
                 "exampleUsedTranslation": "Where is your house?"
             },
             {
-                "translation": "jego",
-                "word": "his",
+                "word": "jego",
+                "translation": "his",
                 "exampleUsed": "To jest jego pies.",
                 "exampleUsedTranslation": "This is his dog."
             },
             {
-                "translation": "jej",
-                "word": "her",
+                "word": "jej",
+                "translation": "her",
                 "exampleUsed": "Jej książka jest ciekawa.",
                 "exampleUsedTranslation": "Her book is interesting."
             },
             {
-                "translation": "nasz",
-                "word": "our",
+                "word": "nasz",
+                "translation": "our",
                 "exampleUsed": "Nasz ogród jest duży.",
                 "exampleUsedTranslation": "Our garden is big."
             },
             {
-                "translation": "wasz",
-                "word": "your (plural)",
+                "word": "wasz",
+                "translation": "your (plural)",
                 "exampleUsed": "Wasz projekt jest imponujący.",
                 "exampleUsedTranslation": "Your project is impressive."
             },
             {
-                "translation": "ich",
-                "word": "their",
+                "word": "ich",
+                "translation": "their",
                 "exampleUsed": "Ich dom jest piękny.",
                 "exampleUsedTranslation": "Their house is beautiful."
             },
             {
-                "translation": "siebie",
-                "word": "oneself",
+                "word": "siebie",
+                "translation": "oneself",
                 "exampleUsed": "Musisz dbać o siebie.",
                 "exampleUsedTranslation": "You must take care of yourself."
             },
             {
-                "translation": "się",
-                "word": "oneself (reflexive)",
+                "word": "się",
+                "translation": "oneself (reflexive)",
                 "exampleUsed": "On się uczy języka.",
                 "exampleUsedTranslation": "He is teaching himself the language."
             },
             {
-                "translation": "kto",
-                "word": "who",
+                "word": "kto",
+                "translation": "who",
                 "exampleUsed": "Kto to jest?",
                 "exampleUsedTranslation": "Who is that?"
             },
             {
-                "translation": "co",
-                "word": "what",
+                "word": "co",
+                "translation": "what",
                 "exampleUsed": "Co robisz?",
                 "exampleUsedTranslation": "What are you doing?"
             },
             {
-                "translation": "który",
-                "word": "which",
+                "word": "który",
+                "translation": "which",
                 "exampleUsed": "Który z nich jest twój?",
                 "exampleUsedTranslation": "Which one is yours?"
             },
             {
-                "translation": "czyj",
-                "word": "whose",
+                "word": "czyj",
+                "translation": "whose",
                 "exampleUsed": "Czyj to jest telefon?",
                 "exampleUsedTranslation": "Whose phone is this?"
             },
             {
-                "translation": "ten",
-                "word": "this",
+                "word": "ten",
+                "translation": "this",
                 "exampleUsed": "Ten komputer jest nowy.",
                 "exampleUsedTranslation": "This computer is new."
             },
             {
-                "translation": "tamten",
-                "word": "that",
+                "word": "tamten",
+                "translation": "that",
                 "exampleUsed": "Tamten budynek jest stary.",
                 "exampleUsedTranslation": "That building is old."
             },
             {
-                "translation": "ci",
-                "word": "these",
+                "word": "ci",
+                "translation": "these",
                 "exampleUsed": "Ci ludzie są mili.",
                 "exampleUsedTranslation": "These people are nice."
             },
             {
-                "translation": "tamci",
-                "word": "those",
+                "word": "tamci",
+                "translation": "those",
                 "exampleUsed": "Tamci studenci są z Polski.",
                 "exampleUsedTranslation": "Those students are from Poland."
             },
             {
-                "translation": "ktoś",
-                "word": "someone",
+                "word": "ktoś",
+                "translation": "someone",
                 "exampleUsed": "Ktoś dzwoni do drzwi.",
                 "exampleUsedTranslation": "Someone is ringing the doorbell."
             },
             {
-                "translation": "coś",
-                "word": "something",
+                "word": "coś",
+                "translation": "something",
                 "exampleUsed": "Mam dla ciebie coś.",
                 "exampleUsedTranslation": "I have something for you."
             },
             {
-                "translation": "nikt",
-                "word": "no one",
+                "word": "nikt",
+                "translation": "no one",
                 "exampleUsed": "Nikt nie przyszedł na spotkanie.",
                 "exampleUsedTranslation": "No one came to the meeting."
             },
             {
-                "translation": "nic",
-                "word": "nothing",
+                "word": "nic",
+                "translation": "nothing",
                 "exampleUsed": "Nic nie słyszę.",
                 "exampleUsedTranslation": "I hear nothing."
             },
             {
-                "translation": "każdy",
-                "word": "everyone",
+                "word": "każdy",
+                "translation": "everyone",
                 "exampleUsed": "Każdy lubi lody.",
                 "exampleUsedTranslation": "Everyone likes ice cream."
             },
             {
-                "translation": "wszyscy",
-                "word": "all",
+                "word": "wszyscy",
+                "translation": "all",
                 "exampleUsed": "Wszyscy są zaproszeni.",
                 "exampleUsedTranslation": "All are invited."
             },
             {
-                "translation": "niektórzy",
-                "word": "some",
+                "word": "niektórzy",
+                "translation": "some",
                 "exampleUsed": "Niektórzy ludzie są niecierpliwi.",
                 "exampleUsedTranslation": "Some people are impatient."
             },
             {
-                "translation": "każdy",
-                "word": "each",
+                "word": "każdy",
+                "translation": "each",
                 "exampleUsed": "Każdy z was musi to zrobić.",
                 "exampleUsedTranslation": "Each of you must do it."
             },
             {
-                "translation": "którykolwiek",
-                "word": "any",
+                "word": "którykolwiek",
+                "translation": "any",
                 "exampleUsed": "Wybierz którykolwiek kolor.",
                 "exampleUsedTranslation": "Choose any color."
             },
             {
-                "translation": "któryś",
-                "word": "some",
+                "word": "któryś",
+                "translation": "some",
                 "exampleUsed": "Któryś z nich kłamie.",
                 "exampleUsedTranslation": "One of them is lying."
             },
             {
-                "translation": "nikt",
-                "word": "nobody",
+                "word": "nikt",
+                "translation": "nobody",
                 "exampleUsed": "Nikt nie wie odpowiedzi.",
                 "exampleUsedTranslation": "Nobody knows the answer."
             },
             {
-                "translation": "coś",
-                "word": "anything",
+                "word": "coś",
+                "translation": "anything",
                 "exampleUsed": "Czy chcesz coś do picia?",
                 "exampleUsedTranslation": "Do you want anything to drink?"
             },
             {
-                "translation": "nic",
-                "word": "nothing",
+                "word": "nic",
+                "translation": "nothing",
                 "exampleUsed": "Nie mam nic przeciwko.",
                 "exampleUsedTranslation": "I have nothing against it."
             },
             {
-                "translation": "ktoś",
-                "word": "anyone",
+                "word": "ktoś",
+                "translation": "anyone",
                 "exampleUsed": "Czy ktoś ma pytania?",
                 "exampleUsedTranslation": "Does anyone have questions?"
             },
             {
-                "translation": "gdzieś",
-                "word": "somewhere",
+                "word": "gdzieś",
+                "translation": "somewhere",
                 "exampleUsed": "Muszę gdzieś odpocząć.",
                 "exampleUsedTranslation": "I need to rest somewhere."
             },
             {
-                "translation": "nigdzie",
-                "word": "nowhere",
+                "word": "nigdzie",
+                "translation": "nowhere",
                 "exampleUsed": "Nie mogę znaleźć tego nigdzie.",
                 "exampleUsedTranslation": "I can't find it anywhere."
             },
             {
-                "translation": "jakikolwiek",
-                "word": "whichever",
+                "word": "jakikolwiek",
+                "translation": "whichever",
                 "exampleUsed": "Wybierz jakikolwiek dzień.",
                 "exampleUsedTranslation": "Choose whichever day."
             },
             {
-                "translation": "jakikolwiek",
-                "word": "any",
+                "word": "jakikolwiek",
+                "translation": "any",
                 "exampleUsed": "Możesz wziąć jakikolwiek z nich.",
                 "exampleUsedTranslation": "You can take any of them."
             },
             {
-                "translation": "nigdy",
-                "word": "never",
+                "word": "nigdy",
+                "translation": "never",
                 "exampleUsed": "Nigdy nie byłem w Paryżu.",
                 "exampleUsedTranslation": "I have never been to Paris."
             },
             {
-                "translation": "kiedykolwiek",
-                "word": "ever",
+                "word": "kiedykolwiek",
+                "translation": "ever",
                 "exampleUsed": "Czy kiedykolwiek to próbowałeś?",
                 "exampleUsedTranslation": "Have you ever tried it?"
             }

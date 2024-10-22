@@ -1,5 +1,299 @@
 [
     {
+        "version": "2",
+        "words": [
+            [
+                {
+                    "version": "1",
+                    "words": [
+                        {
+                            "translation": "door",
+                            "word": "drzwi",
+                            "exampleUsed": "Zamknij drzwi.",
+                            "exampleUsedTranslation": "Close the door."
+                        },
+                        {
+                            "translation": "face",
+                            "word": "twarz",
+                            "exampleUsed": "Twoja twarz wygląda znajomo.",
+                            "exampleUsedTranslation": "Your face looks familiar."
+                        },
+                        {
+                            "translation": "morning",
+                            "word": "rano",
+                            "exampleUsed": "Zaczynam pracę wcześnie rano.",
+                            "exampleUsedTranslation": "I start work early in the morning."
+                        },
+                        {
+                            "translation": "friend",
+                            "word": "przyjaciel",
+                            "exampleUsed": "Mój przyjaciel mieszka blisko.",
+                            "exampleUsedTranslation": "My friend lives nearby."
+                        },
+                        {
+                            "translation": "father",
+                            "word": "ojciec",
+                            "exampleUsed": "Mój ojciec jest inżynierem.",
+                            "exampleUsedTranslation": "My father is an engineer."
+                        },
+                        {
+                            "translation": "power",
+                            "word": "moc",
+                            "exampleUsed": "Moc silnika jest imponująca.",
+                            "exampleUsedTranslation": "The engine's power is impressive."
+                        },
+                        {
+                            "translation": "hour",
+                            "word": "godzina",
+                            "exampleUsed": "Spotykamy się za godzinę.",
+                            "exampleUsedTranslation": "We meet in an hour."
+                        },
+                        {
+                            "translation": "game",
+                            "word": "gra",
+                            "exampleUsed": "Gram w nową grę.",
+                            "exampleUsedTranslation": "I am playing a new game."
+                        },
+                        {
+                            "translation": "line",
+                            "word": "linia",
+                            "exampleUsed": "Narysowałem prostą linię.",
+                            "exampleUsedTranslation": "I drew a straight line."
+                        },
+                        {
+                            "translation": "end",
+                            "word": "koniec",
+                            "exampleUsed": "To był koniec filmu.",
+                            "exampleUsedTranslation": "It was the end of the movie."
+                        },
+                        {
+                            "translation": "member",
+                            "word": "członek",
+                            "exampleUsed": "Jestem członkiem tego klubu.",
+                            "exampleUsedTranslation": "I am a member of this club."
+                        },
+                        {
+                            "translation": "law",
+                            "word": "prawo",
+                            "exampleUsed": "Prawo jest ważne dla społeczeństwa.",
+                            "exampleUsedTranslation": "Law is important for society."
+                        },
+                        {
+                            "translation": "car",
+                            "word": "samochód",
+                            "exampleUsed": "Mam nowy samochód.",
+                            "exampleUsedTranslation": "I have a new car."
+                        },
+                        {
+                            "translation": "city",
+                            "word": "miasto",
+                            "exampleUsed": "Lubię to miasto.",
+                            "exampleUsedTranslation": "I like this city."
+                        },
+                        {
+                            "translation": "community",
+                            "word": "społeczność",
+                            "exampleUsed": "Nasza społeczność jest zgrana.",
+                            "exampleUsedTranslation": "Our community is close-knit."
+                        },
+                        {
+                            "translation": "name",
+                            "word": "imię",
+                            "exampleUsed": "Moje imię to Jan.",
+                            "exampleUsedTranslation": "My name is John."
+                        },
+                        {
+                            "translation": "president",
+                            "word": "prezydent",
+                            "exampleUsed": "Prezydent wygłosił przemówienie.",
+                            "exampleUsedTranslation": "The president gave a speech."
+                        },
+                        {
+                            "translation": "team",
+                            "word": "zespół",
+                            "exampleUsed": "Mój zespół wygrał mecz.",
+                            "exampleUsedTranslation": "My team won the game."
+                        },
+                        {
+                            "translation": "minute",
+                            "word": "minuta",
+                            "exampleUsed": "Potrzebuję tylko minuty.",
+                            "exampleUsedTranslation": "I need just a minute."
+                        },
+                        {
+                            "translation": "idea",
+                            "word": "pomysł",
+                            "exampleUsed": "Mam nowy pomysł.",
+                            "exampleUsedTranslation": "I have a new idea."
+                        },
+                        {
+                            "translation": "kid",
+                            "word": "dziecko",
+                            "exampleUsed": "Ten dzieciak jest bardzo mądry.",
+                            "exampleUsedTranslation": "That kid is very smart."
+                        },
+                        {
+                            "translation": "body",
+                            "word": "ciało",
+                            "exampleUsed": "Ćwiczę, żeby wzmocnić swoje ciało.",
+                            "exampleUsedTranslation": "I exercise to strengthen my body."
+                        },
+                        {
+                            "translation": "information",
+                            "word": "informacja",
+                            "exampleUsed": "Mam nową informację.",
+                            "exampleUsedTranslation": "I have new information."
+                        },
+                        {
+                            "translation": "back",
+                            "word": "plecy",
+                            "exampleUsed": "Boli mnie plecy.",
+                            "exampleUsedTranslation": "My back hurts."
+                        },
+                        {
+                            "translation": "parent",
+                            "word": "rodzic",
+                            "exampleUsed": "Moi rodzice są na wakacjach.",
+                            "exampleUsedTranslation": "My parents are on vacation."
+                        },
+                        {
+                            "translation": "face",
+                            "word": "twarz",
+                            "exampleUsed": "Twoja twarz wygląda znajomo.",
+                            "exampleUsedTranslation": "Your face looks familiar."
+                        },
+                        {
+                            "translation": "others",
+                            "word": "inni",
+                            "exampleUsed": "Inni czekają na swoją kolej.",
+                            "exampleUsedTranslation": "Others are waiting for their turn."
+                        },
+                        {
+                            "translation": "level",
+                            "word": "poziom",
+                            "exampleUsed": "To zadanie jest na wyższym poziomie.",
+                            "exampleUsedTranslation": "This task is on a higher level."
+                        },
+                        {
+                            "translation": "office",
+                            "word": "biuro",
+                            "exampleUsed": "Pracuję w biurze.",
+                            "exampleUsedTranslation": "I work in an office."
+                        },
+                        {
+                            "translation": "door",
+                            "word": "drzwi",
+                            "exampleUsed": "Otwórz drzwi.",
+                            "exampleUsedTranslation": "Open the door."
+                        },
+                        {
+                            "translation": "health",
+                            "word": "zdrowie",
+                            "exampleUsed": "Zdrowie jest najważniejsze.",
+                            "exampleUsedTranslation": "Health is the most important."
+                        },
+                        {
+                            "translation": "person",
+                            "word": "osoba",
+                            "exampleUsed": "Ta osoba jest bardzo miła.",
+                            "exampleUsedTranslation": "This person is very kind."
+                        },
+                        {
+                            "translation": "art",
+                            "word": "sztuka",
+                            "exampleUsed": "Sztuka współczesna jest interesująca.",
+                            "exampleUsedTranslation": "Contemporary art is interesting."
+                        },
+                        {
+                            "translation": "war",
+                            "word": "wojna",
+                            "exampleUsed": "Wojna nigdy nie jest rozwiązaniem.",
+                            "exampleUsedTranslation": "War is never the solution."
+                        },
+                        {
+                            "translation": "history",
+                            "word": "historia",
+                            "exampleUsed": "Historia tego kraju jest fascynująca.",
+                            "exampleUsedTranslation": "The history of this country is fascinating."
+                        },
+                        {
+                            "translation": "party",
+                            "word": "impreza",
+                            "exampleUsed": "Jutro jest impreza.",
+                            "exampleUsedTranslation": "There is a party tomorrow."
+                        },
+                        {
+                            "translation": "result",
+                            "word": "wynik",
+                            "exampleUsed": "Wynik testu był pozytywny.",
+                            "exampleUsedTranslation": "The test result was positive."
+                        },
+                        {
+                            "translation": "change",
+                            "word": "zmiana",
+                            "exampleUsed": "Zaszedł tu duży zmiana.",
+                            "exampleUsedTranslation": "There has been a big change here."
+                        },
+                        {
+                            "translation": "morning",
+                            "word": "rano",
+                            "exampleUsed": "Lubię spokojne poranki.",
+                            "exampleUsedTranslation": "I like peaceful mornings."
+                        },
+                        {
+                            "translation": "reason",
+                            "word": "powód",
+                            "exampleUsed": "Powód jego decyzji jest jasny.",
+                            "exampleUsedTranslation": "The reason for his decision is clear."
+                        },
+                        {
+                            "translation": "research",
+                            "word": "badania",
+                            "exampleUsed": "Prowadzę badania nad rakiem.",
+                            "exampleUsedTranslation": "I conduct research on cancer."
+                        },
+                        {
+                            "translation": "girl",
+                            "word": "dziewczyna",
+                            "exampleUsed": "Ta dziewczyna jest moją siostrą.",
+                            "exampleUsedTranslation": "This girl is my sister."
+                        },
+                        {
+                            "translation": "guy",
+                            "word": "facet",
+                            "exampleUsed": "Ten facet jest bardzo sympatyczny.",
+                            "exampleUsedTranslation": "That guy is very friendly."
+                        },
+                        {
+                            "translation": "moment",
+                            "word": "moment",
+                            "exampleUsed": "Poczekaj chwilę, zaraz wrócę.",
+                            "exampleUsedTranslation": "Wait a moment, I'll be right back."
+                        },
+                        {
+                            "translation": "teacher",
+                            "word": "nauczyciel",
+                            "exampleUsed": "Mój nauczyciel jest bardzo cierpliwy.",
+                            "exampleUsedTranslation": "My teacher is very patient."
+                        },
+                        {
+                            "translation": "force",
+                            "word": "siła",
+                            "exampleUsed": "To zadanie wymaga siły.",
+                            "exampleUsedTranslation": "This task requires strength."
+                        },
+                        {
+                            "translation": "education",
+                            "word": "edukacja",
+                            "exampleUsed": "Edukacja jest kluczem do sukcesu.",
+                            "exampleUsedTranslation": "Education is the key to success."
+                        }
+                    ]
+                }
+            ]
+        ]
+    },
+    {
         "version": "1",
         "words": [
             {

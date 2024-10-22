@@ -86,6 +86,7 @@ export default function Categories() {
             { id: Category.Phrases, label: t('Zwroty') },
             { id: Category.Sentences, label: t('Zdania') },
             { id: Category.PastSimple, label: t('Past Simple') },
+            { id: Category.MostPopular, label: t('Najpopularniejsze') },
         ];
     }, [t]);
 

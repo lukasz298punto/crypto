@@ -23,6 +23,17 @@ export default function useWord() {
     const [isCorrect, setIsCorrect] = useState(false);
     const navigate = useNavigate();
 
+    const { words: wordsList2 } = useWordsDb({
+        selector: useMemo(() => {
+            return {
+                categoryId: { $eq: params.categoryId },
+                levelId: { $eq: level },
+                languageId: { $eq: language },
+                isKnown: { $eq: false },
+            };
+        }, [language, level, params.categoryId]),
+    });
+
     const {
         words: wordsList,
         setWordAsKnown,
@@ -40,46 +51,25 @@ export default function useWord() {
                 isKnown: { $eq: false },
                 $or: [
                     {
-                        correct: 1,
-                        lastCorrectHit: {
-                            $lt: new Date(
-                                today.setDate(today.getDate() - 1)
-                            ).toISOString(),
-                        }, // po 1 dniu
+                        correct: { $lte: 3 },
                     },
                     {
-                        correct: 2,
+                        correct: { $gt: 3, $lte: 10 },
                         lastCorrectHit: {
                             $lt: new Date(
                                 today.setDate(today.getDate() - 3)
                             ).toISOString(),
-                        }, // po 3 dniach
+                        }, // dla correct > 3 i <= 10 sprawdzamy, czy minęły 3 dni
                     },
                     {
-                        correct: 3,
+                        correct: { $gt: 10 },
                         lastCorrectHit: {
                             $lt: new Date(
                                 today.setDate(today.getDate() - 7)
                             ).toISOString(),
-                        }, // po 7 dniach
+                        }, // dla correct > 10 sprawdzamy, czy minęło 7 dni
                     },
-                    {
-                        correct: 4,
-                        lastCorrectHit: {
-                            $lt: new Date(
-                                today.setDate(today.getDate() - 14)
-                            ).toISOString(),
-                        }, // po 14 dniach
-                    },
-                    {
-                        correct: { $gte: 5 },
-                        lastCorrectHit: {
-                            $lt: new Date(
-                                today.setMonth(today.getMonth() - 1)
-                            ).toISOString(),
-                        }, // co miesiąc
-                    },
-                    { lastCorrectHit: { $eq: null } }, // lub null
+                    { lastCorrectHit: { $eq: null } }, // lub null, czyli nigdy nie było poprawnej odpowiedzi
                 ],
             };
         }, [language, level, params.categoryId, usedWords]),
@@ -163,7 +153,9 @@ export default function useWord() {
         ]
     );
 
+    console.log(words, 'words');
     console.log(wordsList, 'wordsList');
+    console.log(wordsList2, 'wordsList2');
     console.log(currentWord, 'currentWord');
 
     console.log({
@@ -180,6 +172,7 @@ export default function useWord() {
     });
 
     return {
+        words,
         isLoading,
         isCorrect,
         currentWord,

@@ -55,7 +55,7 @@ const migrations = {
     },
 };
 
-const activeVersion: string = '4';
+const activeVersion: string = '2';
 
 export default function DatabaseProvider({
     children,
@@ -144,6 +144,11 @@ export default function DatabaseProvider({
                 {
                     id: Category.PastSimple,
                     name: 'PastSimple',
+                    languageId: Language.En,
+                },
+                {
+                    id: Category.MostPopular,
+                    name: 'MostPopular',
                     languageId: Language.En,
                 },
             ]);

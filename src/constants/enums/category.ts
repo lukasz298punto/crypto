@@ -11,6 +11,7 @@ enum Category {
     Phrases = 'phrases', //Zwroty
     Sentences = 'sentences', //Zdania
     PastSimple = 'pastSimple', //PastSimple
+    MostPopular = 'mostPopular', //najpopularniejsze
 }
 
 export default Category;

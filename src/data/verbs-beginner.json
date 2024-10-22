@@ -1,5 +1,312 @@
 [
     {
+        "version:": 2,
+        "words": [
+            [
+                {
+                    "translation": "sit",
+                    "word": "siedzieć",
+                    "exampleUsed": "Siedzę na kanapie.",
+                    "exampleUsedTranslation": "I am sitting on the couch."
+                },
+                {
+                    "translation": "stand",
+                    "word": "stać",
+                    "exampleUsed": "Stoję przy oknie.",
+                    "exampleUsedTranslation": "I am standing by the window."
+                },
+                {
+                    "translation": "lose",
+                    "word": "zgubić",
+                    "exampleUsed": "Zgubiłem klucze.",
+                    "exampleUsedTranslation": "I lost my keys."
+                },
+                {
+                    "translation": "pay",
+                    "word": "płacić",
+                    "exampleUsed": "Zapłaciłem za obiad.",
+                    "exampleUsedTranslation": "I paid for the lunch."
+                },
+                {
+                    "translation": "meet",
+                    "word": "spotkać",
+                    "exampleUsed": "Spotkam się z przyjaciółmi.",
+                    "exampleUsedTranslation": "I will meet with my friends."
+                },
+                {
+                    "translation": "include",
+                    "word": "zawierać",
+                    "exampleUsed": "Ceny zawierają podatek.",
+                    "exampleUsedTranslation": "The prices include tax."
+                },
+                {
+                    "translation": "continue",
+                    "word": "kontynuować",
+                    "exampleUsed": "Kontynuuję naukę języka.",
+                    "exampleUsedTranslation": "I continue learning the language."
+                },
+                {
+                    "translation": "set",
+                    "word": "ustawić",
+                    "exampleUsed": "Ustawiam budzik na 7 rano.",
+                    "exampleUsedTranslation": "I set the alarm for 7 AM."
+                },
+                {
+                    "translation": "learn",
+                    "word": "uczyć się",
+                    "exampleUsed": "Uczę się hiszpańskiego.",
+                    "exampleUsedTranslation": "I am learning Spanish."
+                },
+                {
+                    "translation": "change",
+                    "word": "zmieniać",
+                    "exampleUsed": "Zmieniam plan dnia.",
+                    "exampleUsedTranslation": "I am changing the schedule."
+                },
+                {
+                    "translation": "lead",
+                    "word": "prowadzić",
+                    "exampleUsed": "On prowadzi drużynę.",
+                    "exampleUsedTranslation": "He leads the team."
+                },
+                {
+                    "translation": "understand",
+                    "word": "rozumieć",
+                    "exampleUsed": "Rozumiem, co mówisz.",
+                    "exampleUsedTranslation": "I understand what you're saying."
+                },
+                {
+                    "translation": "watch",
+                    "word": "oglądać",
+                    "exampleUsed": "Oglądam film.",
+                    "exampleUsedTranslation": "I am watching a movie."
+                },
+                {
+                    "translation": "follow",
+                    "word": "śledzić",
+                    "exampleUsed": "Śledzę wiadomości codziennie.",
+                    "exampleUsedTranslation": "I follow the news every day."
+                },
+                {
+                    "translation": "stop",
+                    "word": "zatrzymać się",
+                    "exampleUsed": "Zatrzymałem się na chwilę.",
+                    "exampleUsedTranslation": "I stopped for a moment."
+                },
+                {
+                    "translation": "create",
+                    "word": "tworzyć",
+                    "exampleUsed": "Tworzę nowy projekt.",
+                    "exampleUsedTranslation": "I am creating a new project."
+                },
+                {
+                    "translation": "speak",
+                    "word": "mówić",
+                    "exampleUsed": "Mówię po angielsku.",
+                    "exampleUsedTranslation": "I speak English."
+                },
+                {
+                    "translation": "read",
+                    "word": "czytać",
+                    "exampleUsed": "Czytam książkę.",
+                    "exampleUsedTranslation": "I am reading a book."
+                },
+                {
+                    "translation": "allow",
+                    "word": "pozwalać",
+                    "exampleUsed": "Pozwalam im iść na imprezę.",
+                    "exampleUsedTranslation": "I allow them to go to the party."
+                },
+                {
+                    "translation": "add",
+                    "word": "dodać",
+                    "exampleUsed": "Dodaję cukier do herbaty.",
+                    "exampleUsedTranslation": "I add sugar to my tea."
+                },
+                {
+                    "translation": "spend",
+                    "word": "wydawać",
+                    "exampleUsed": "Wydaję za dużo pieniędzy.",
+                    "exampleUsedTranslation": "I spend too much money."
+                },
+                {
+                    "translation": "grow",
+                    "word": "rosnąć",
+                    "exampleUsed": "Rośliny rosną szybko.",
+                    "exampleUsedTranslation": "The plants are growing fast."
+                },
+                {
+                    "translation": "open",
+                    "word": "otworzyć",
+                    "exampleUsed": "Otwieram drzwi.",
+                    "exampleUsedTranslation": "I am opening the door."
+                },
+                {
+                    "translation": "walk",
+                    "word": "chodzić",
+                    "exampleUsed": "Chodzę do pracy codziennie.",
+                    "exampleUsedTranslation": "I walk to work every day."
+                },
+                {
+                    "translation": "win",
+                    "word": "wygrać",
+                    "exampleUsed": "Wygraliśmy mecz.",
+                    "exampleUsedTranslation": "We won the game."
+                },
+                {
+                    "translation": "offer",
+                    "word": "oferować",
+                    "exampleUsed": "Oferuję pomoc.",
+                    "exampleUsedTranslation": "I offer my help."
+                },
+                {
+                    "translation": "remember",
+                    "word": "pamiętać",
+                    "exampleUsed": "Pamiętam tamte dni.",
+                    "exampleUsedTranslation": "I remember those days."
+                },
+                {
+                    "translation": "love",
+                    "word": "kochać",
+                    "exampleUsed": "Kocham podróżować.",
+                    "exampleUsedTranslation": "I love to travel."
+                },
+                {
+                    "translation": "consider",
+                    "word": "rozważać",
+                    "exampleUsed": "Rozważam zmianę pracy.",
+                    "exampleUsedTranslation": "I am considering changing jobs."
+                },
+                {
+                    "translation": "buy",
+                    "word": "kupić",
+                    "exampleUsed": "Kupiłem nowy telefon.",
+                    "exampleUsedTranslation": "I bought a new phone."
+                },
+                {
+                    "translation": "wait",
+                    "word": "czekać",
+                    "exampleUsed": "Czekam na autobus.",
+                    "exampleUsedTranslation": "I am waiting for the bus."
+                },
+                {
+                    "translation": "serve",
+                    "word": "służyć",
+                    "exampleUsed": "Służę w wojsku.",
+                    "exampleUsedTranslation": "I serve in the military."
+                },
+                {
+                    "translation": "die",
+                    "word": "umrzeć",
+                    "exampleUsed": "Mój kwiat umiera.",
+                    "exampleUsedTranslation": "My flower is dying."
+                },
+                {
+                    "translation": "send",
+                    "word": "wysłać",
+                    "exampleUsed": "Wysłałem ci wiadomość.",
+                    "exampleUsedTranslation": "I sent you a message."
+                },
+                {
+                    "translation": "build",
+                    "word": "budować",
+                    "exampleUsed": "Budujemy nowy dom.",
+                    "exampleUsedTranslation": "We are building a new house."
+                },
+                {
+                    "translation": "stay",
+                    "word": "zostać",
+                    "exampleUsed": "Zostań ze mną.",
+                    "exampleUsedTranslation": "Stay with me."
+                },
+                {
+                    "translation": "fall",
+                    "word": "upadać",
+                    "exampleUsed": "Upadłem na ziemię.",
+                    "exampleUsedTranslation": "I fell to the ground."
+                },
+                {
+                    "translation": "cut",
+                    "word": "ciąć",
+                    "exampleUsed": "Przeciąłem papier nożyczkami.",
+                    "exampleUsedTranslation": "I cut the paper with scissors."
+                },
+                {
+                    "translation": "reach",
+                    "word": "osiągnąć",
+                    "exampleUsed": "Osiągnęliśmy nasz cel.",
+                    "exampleUsedTranslation": "We reached our goal."
+                },
+                {
+                    "translation": "kill",
+                    "word": "zabić",
+                    "exampleUsed": "Zabił owada.",
+                    "exampleUsedTranslation": "He killed the insect."
+                },
+                {
+                    "translation": "remain",
+                    "word": "pozostać",
+                    "exampleUsed": "Pozostałem w domu.",
+                    "exampleUsedTranslation": "I remained at home."
+                },
+                {
+                    "translation": "suggest",
+                    "word": "zasugerować",
+                    "exampleUsed": "Zasugerowałem inny pomysł.",
+                    "exampleUsedTranslation": "I suggested a different idea."
+                },
+                {
+                    "translation": "raise",
+                    "word": "podnieść",
+                    "exampleUsed": "Podniosłem rękę.",
+                    "exampleUsedTranslation": "I raised my hand."
+                },
+                {
+                    "translation": "pass",
+                    "word": "przechodzić",
+                    "exampleUsed": "Przeszedłem obok szkoły.",
+                    "exampleUsedTranslation": "I passed by the school."
+                },
+                {
+                    "translation": "sell",
+                    "word": "sprzedać",
+                    "exampleUsed": "Sprzedałem mój samochód.",
+                    "exampleUsedTranslation": "I sold my car."
+                },
+                {
+                    "translation": "require",
+                    "word": "wymagać",
+                    "exampleUsed": "To wymaga czasu.",
+                    "exampleUsedTranslation": "It requires time."
+                },
+                {
+                    "translation": "report",
+                    "word": "zgłosić",
+                    "exampleUsed": "Zgłosiłem problem.",
+                    "exampleUsedTranslation": "I reported the issue."
+                },
+                {
+                    "translation": "decide",
+                    "word": "zdecydować",
+                    "exampleUsed": "Zdecydowałem się na wyjazd.",
+                    "exampleUsedTranslation": "I decided to leave."
+                },
+                {
+                    "translation": "pull",
+                    "word": "ciągnąć",
+                    "exampleUsed": "Ciągnij drzwi, żeby je otworzyć.",
+                    "exampleUsedTranslation": "Pull the door to open it."
+                },
+                {
+                    "translation": "return",
+                    "word": "wrócić",
+                    "exampleUsed": "Wróciłem do domu.",
+                    "exampleUsedTranslation": "I returned home."
+                }
+            ]
+        ]
+    },
+    {
         "version": "1",
         "words": [
             {

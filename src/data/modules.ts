@@ -1,6 +1,7 @@
 import conjunctionsBeginner from './conjunctions-beginner.json';
 import phrasalVerbsBeginner from './phrasalVerbs-beginner.json';
 import prepositionsBeginner from './prepositions-beginner.json';
+import mostPopularBeginner from './mostPopular-beginner.json';
 import adjectivesBeginner from './adjectives-beginner.json';
 import sentencesBeginner from './sentences-beginner.json';
 import pronounsBeginner from './pronouns-beginner.json';
@@ -32,4 +33,5 @@ export default [
     [Category.PhrasalVerbs, Level.Beginner, phrasalVerbsBeginner as Content[]],
     [Category.Adverbs, Level.Beginner, adverbsBeginner as Content[]],
     [Category.PastSimple, Level.Beginner, pastSimpleBeginner as Content[]],
+    [Category.MostPopular, Level.Beginner, mostPopularBeginner as Content[]],
 ] as const;
