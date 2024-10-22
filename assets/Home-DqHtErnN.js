@@ -1,0 +1,1 @@
+import{j as e,N as t}from"./index-B-prO1Uz.js";import{u as r}from"./useSettingsDb-DadGslDe.js";function u(){const{language:s,level:o}=r();return s?o?e.jsx(t,{to:"/categories"}):e.jsx(t,{to:"/levels"}):e.jsx(t,{to:"/languages"})}export{u as default};
